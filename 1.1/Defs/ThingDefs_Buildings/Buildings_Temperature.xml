@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <ThingDef ParentName="FurnitureBase">
+        <defName>VFEV_Hearth</defName>
+        <label>hearth</label>
+        <description>A bowl-shaped furnishing used to hold a fire. Will light the surroundings and create heat.</description>
+        <graphicData>
+            <texPath>Things/Building/Misc/Hearth/Hearth</texPath>
+            <graphicClass>Graphic_Multi</graphicClass>
+            <shaderType>CutoutComplex</shaderType>
+            <drawSize>(3,3)</drawSize>
+            <damageData>
+                <rect>(0,0.05,1,1.95)</rect>
+            </damageData>
+        </graphicData>
+        <statBases>
+            <MaxHitPoints>80</MaxHitPoints>
+            <WorkToBuild>100</WorkToBuild>
+            <Flammability>0</Flammability>
+            <Mass>15</Mass>
+        </statBases>
+        <category>Building</category>
+        <tickerType>Normal</tickerType>
+        <drawerType>RealtimeOnly</drawerType>
+        <fillPercent>0.15</fillPercent>
+		<size>(3,2)</size>
+        <selectable>true</selectable>
+        <designationCategory>Temperature</designationCategory>
+        <uiIconPath>Things/Building/Misc/Hearth/HearthIcon</uiIconPath>
+        <uiIconOffset>(0, -0.04)</uiIconOffset>
+        <stuffCategories>
+            <li>Stony</li>
+            <li>Metallic</li>
+        </stuffCategories>
+        <costStuffCount>150</costStuffCount>
+        <placeWorkers>
+            <li>PlaceWorker_Heater</li>
+        </placeWorkers>
+        <canOverlapZones>false</canOverlapZones>
+        <altitudeLayer>Building</altitudeLayer>
+        <passability>PassThroughOnly</passability>
+        <pathCost>50</pathCost>
+        <rotatable>true</rotatable>
+        <comps>
+            <li Class="CompProperties_Refuelable">
+                <fuelConsumptionRate>3.0</fuelConsumptionRate>
+                <fuelCapacity>150.0</fuelCapacity>
+                <fuelConsumptionPerTickInRain>0.0012</fuelConsumptionPerTickInRain>
+                <fuelFilter>
+                    <thingDefs>
+                        <li>WoodLog</li>
+                    </thingDefs>
+                </fuelFilter>
+                <initialFuelPercent>0</initialFuelPercent>
+                <showAllowAutoRefuelToggle>true</showAllowAutoRefuelToggle>
+            </li>
+            <li Class="CompProperties_Glower">
+                <glowRadius>15</glowRadius>
+                <glowColor>(252,187,113,0)</glowColor>
+            </li>
+            <li Class="CompProperties_HeatPusher">
+                <compClass>CompHeatPusherPowered</compClass>
+                <heatPerSecond>5.5</heatPerSecond>
+                <heatPushMaxTemperature>23</heatPushMaxTemperature>
+            </li>
+            <li Class="CompProperties_FireOverlay">
+                <fireSize>1.5</fireSize>
+                <offset>(0,0,0.18)</offset>
+            </li>
+            <li Class="CompProperties_MeditationFocus">
+                <statDef>MeditationFocusStrength</statDef>
+                <focusTypes>
+                    <li>Natural</li>
+                    <li>Minimal</li>
+                </focusTypes>
+                <offsets>
+                    <li Class="FocusStrengthOffset_Lit">
+                        <offset>0.08</offset>
+                    </li>
+                </offsets>
+            </li>
+        </comps>
+    </ThingDef>
+
+</Defs>

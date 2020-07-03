@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <HairDef>
+        <defName>VFEV_Freya</defName>
+        <label>freya</label>
+        <hairGender>Female</hairGender>
+        <texPath>Things/Pawn/Humanlike/Hairs/Freya</texPath>
+        <hairTags>
+            <li>Viking</li>
+        </hairTags>
+    </HairDef>
+
+    <HairDef>
+        <defName>VFEV_Helga</defName>
+        <label>helga</label>
+        <hairGender>Female</hairGender>
+        <texPath>Things/Pawn/Humanlike/Hairs/Helga</texPath>
+        <hairTags>
+            <li>Viking</li>
+        </hairTags>
+    </HairDef>
+
+    <HairDef>
+        <defName>VFEV_Ragnar</defName>
+        <label>ragnar</label>
+        <hairGender>Male</hairGender>
+        <texPath>Things/Pawn/Humanlike/Hairs/Ragnar</texPath>
+        <hairTags>
+            <li>Viking</li>
+        </hairTags>
+    </HairDef>
+
+    <HairDef>
+        <defName>VFEV_Ulfrik</defName>
+        <label>ulfrik</label>
+        <hairGender>Male</hairGender>
+        <texPath>Things/Pawn/Humanlike/Hairs/Ulfrik</texPath>
+        <hairTags>
+            <li>Viking</li>
+        </hairTags>
+    </HairDef>
+
+</Defs>
