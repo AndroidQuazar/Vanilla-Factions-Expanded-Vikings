@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <ThingDef ParentName="OrganicProductBase">
+        <defName>VFEV_NjorunMilk</defName>
+        <label>njorun milk</label>
+        <description>Extremely delicious Milk from a njorun.</description>
+        <graphicData>
+            <texPath>Things/Item/Resource/Milk</texPath>
+        </graphicData>
+        <socialPropernessMatters>true</socialPropernessMatters>
+        <statBases>
+            <MarketValue>7.1</MarketValue>
+            <Mass>0.045</Mass>
+            <MaxHitPoints>60</MaxHitPoints>
+            <Flammability>0.6</Flammability>
+            <Nutrition>0.25</Nutrition>
+            <FoodPoisonChanceFixedHuman>0.001</FoodPoisonChanceFixedHuman>
+        </statBases>
+        <comps>
+            <li Class="CompProperties_Rottable">
+                <daysToRotStart>24</daysToRotStart>
+                <rotDestroys>true</rotDestroys>
+            </li>
+        </comps>
+        <ingestible>
+            <preferability>RawTasty</preferability>
+            <foodType>AnimalProduct, Fluid</foodType>
+        </ingestible>
+        <thingCategories>
+            <li>AnimalProductRaw</li>
+        </thingCategories>
+    </ThingDef>
+
+</Defs>
