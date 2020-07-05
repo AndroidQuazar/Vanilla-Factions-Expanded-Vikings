@@ -32,4 +32,38 @@
         </thingCategories>
     </ThingDef>
 
+    <ThingDef ParentName="OrganicProductBase">
+        <defName>VFEV_Honey</defName>
+        <label>raw honey</label>
+        <description>placeholder</description>
+        <graphicData>
+            <texPath>Things/Item/Resource/AnimalProductRaw/Honey</texPath>
+            <graphicClass>Graphic_StackCount</graphicClass>
+        </graphicData>
+        <socialPropernessMatters>true</socialPropernessMatters>
+        <statBases>
+            <MarketValue>5.0</MarketValue>
+            <Mass>0.015</Mass>
+            <Nutrition>0.010</Nutrition>
+            <FoodPoisonChanceFixedHuman>0.04</FoodPoisonChanceFixedHuman>
+        </statBases>
+        <comps>
+            <li Class="CompProperties_Rottable">
+                <daysToRotStart>12</daysToRotStart>
+                <rotDestroys>true</rotDestroys>
+            </li>
+        </comps>
+        <ingestible>
+            <foodType>AnimalProduct</foodType>
+            <preferability>RawTasty</preferability>
+            <joy>0.04</joy>
+            <joyKind>Gluttonous</joyKind>
+            <ingestEffect>EatVegetarian</ingestEffect>
+            <ingestSound>Meal_Eat</ingestSound>
+        </ingestible>
+        <thingCategories>
+            <li>AnimalProductRaw</li>
+        </thingCategories>
+    </ThingDef>
+
 </Defs>

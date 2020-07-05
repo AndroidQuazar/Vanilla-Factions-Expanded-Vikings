@@ -3,8 +3,9 @@
 
     <ThingDef ParentName="BaseGunWithQuality">
         <defName>VFEV_CryptoHeavyCrossbow</defName>
-        <label>heavy crypto crossbow</label>
-        <description>placeholder</description>
+        <label>crypto heavy crossbow</label>
+        <description>An experimental crossbow with metal-cored bolts wrapped in unstable crypto technology, held in place by an energy field. Targets are both pierced by the bolt, as well as frozen by crypto coating. Extremely rare and powerful.</description>
+		<techLevel>Ultra</techLevel>
         <graphicData>
             <texPath>Things/Item/Equipment/WeaponRanged/CryptoHeavyCrossbow</texPath>
             <graphicClass>Graphic_Single</graphicClass>
@@ -56,11 +57,12 @@
             <MoveSpeed>-0.23</MoveSpeed>
         </equippedStatOffsets>
         <thingSetMakerTags>
-            <li>RewardSpecial</li>
+			<li>RewardStandardLowFreq</li>
+			<li>RewardStandardQualitySuper</li>
         </thingSetMakerTags>
         <tradeability>Sellable</tradeability>
         <weaponTags>
-            <li>VFEV_CryptoHeavyGun</li>
+            <li>UltratechGun</li>
         </weaponTags>
     </ThingDef>
 
@@ -85,8 +87,8 @@
     <ThingDef ParentName="BaseGunWithQuality">
         <defName>VFEV_CryptoLightCrossbow</defName>
         <label>crypto crossbow</label>
-        <description>placeholder</description>
-        <techLevel>Spacer</techLevel>
+        <description>An experimental small crossbow with metal-cored bolts wrapped in unstable crypto technology, held in place by an energy field. Targets are both pierced by the bolt, as well as frozen by crypto coating. Extremely rare and powerful.</description>
+		<techLevel>Ultra</techLevel>
         <graphicData>
             <texPath>Things/Item/Equipment/WeaponRanged/CryptoCrossbowSidearm</texPath>
             <graphicClass>Graphic_Single</graphicClass>
@@ -126,11 +128,12 @@
         </tools>
         <generateCommonality>0.0</generateCommonality>
         <thingSetMakerTags>
-            <li>RewardSpecial</li>
+			<li>RewardStandardLowFreq</li>
+			<li>RewardStandardQualitySuper</li>
         </thingSetMakerTags>
         <tradeability>Sellable</tradeability>
         <weaponTags>
-            <li>VFEV_CryptoLightGun</li>
+            <li>UltratechGun</li>
         </weaponTags>
     </ThingDef>
 
@@ -155,8 +158,8 @@
     <ThingDef ParentName="BaseGunWithQuality">
         <defName>VFEV_CryptoRifle</defName>
         <label>crypto rifle</label>
-        <description>placeholder</description>
-        <techLevel>Spacer</techLevel>
+        <description>An experimental rifle with metal-cored projectiles wrapped in unstable crypto technology, held in place by an energy field. Targets are both pierced by the metal core, as well as frozen by crypto coating. Extremely rare and powerful.</description>
+        <techLevel>Ultra</techLevel>
         <graphicData>
             <texPath>Things/Item/Equipment/WeaponRanged/CryptoAssaultRifle</texPath>
             <graphicClass>Graphic_Single</graphicClass>
@@ -206,11 +209,12 @@
         </tools>
         <generateCommonality>0.0</generateCommonality>
         <thingSetMakerTags>
-            <li>RewardSpecial</li>
+			<li>RewardStandardLowFreq</li>
+			<li>RewardStandardQualitySuper</li>
         </thingSetMakerTags>
         <tradeability>Sellable</tradeability>
         <weaponTags>
-            <li>VFEV_CryptoGun</li>
+            <li>UltratechGun</li>
         </weaponTags>
     </ThingDef>
 
@@ -235,8 +239,8 @@
     <ThingDef ParentName="BaseGunWithQuality">
         <defName>VFEV_CryptoPistol</defName>
         <label>crypto pistol</label>
-        <description>placeholder</description>
-        <techLevel>Spacer</techLevel>
+        <description>An experimental pistol with metal-cored projectiles wrapped in unstable crypto technology, held in place by an energy field. Targets are both pierced by the metal core, as well as frozen by crypto coating. Extremely rare and powerful.</description>
+        <techLevel>Ultra</techLevel>
         <graphicData>
             <texPath>Things/Item/Equipment/WeaponRanged/CryptoPistol</texPath>
             <graphicClass>Graphic_Single</graphicClass>
@@ -278,11 +282,12 @@
         </tools>
         <generateCommonality>0.0</generateCommonality>
         <thingSetMakerTags>
-            <li>RewardSpecial</li>
+			<li>RewardStandardLowFreq</li>
+			<li>RewardStandardQualitySuper</li>
         </thingSetMakerTags>
         <tradeability>Sellable</tradeability>
         <weaponTags>
-            <li>VFEV_CryptoLightGun</li>
+            <li>UltratechGun</li>
         </weaponTags>
     </ThingDef>
 
