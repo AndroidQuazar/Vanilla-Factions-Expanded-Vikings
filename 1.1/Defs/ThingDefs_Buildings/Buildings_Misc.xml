@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <ThingDef ParentName="BuildingBase">
+        <defName>VFEV_Apiary</defName>
+        <label>apiary</label>
+        <tickerType>Rare</tickerType>
+        <description>An apiary, the place in wich bees produce honey.</description>
+        <graphicData>
+            <texPath>Things/Building/Misc/Apiary</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>(1,1)</drawSize>
+            <shadowData>
+                <volume>(1.5, 1.5, 1)</volume>
+                <offset>(0,0,0)</offset>
+            </shadowData>
+        </graphicData>
+        <size>(1,1)</size>
+        <rotatable>true</rotatable>
+        <altitudeLayer>Building</altitudeLayer>
+        <passability>Impassable</passability>
+        <castEdgeShadows>false</castEdgeShadows>
+        <fillPercent>1.0</fillPercent>
+        <designationCategory>Misc</designationCategory>
+        <canOverlapZones>false</canOverlapZones>
+        <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+        <statBases>
+            <MaxHitPoints>200</MaxHitPoints>
+            <WorkToBuild>3000</WorkToBuild>
+            <Flammability>0.5</Flammability>
+        </statBases>
+        <building>
+            <soundAmbient>VFEV_Apiary_Ambience</soundAmbient>
+        </building>
+        <stuffCategories>
+            <li>Woody</li>
+        </stuffCategories>
+        <costStuffCount>90</costStuffCount>
+        <constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+        <uiIconScale>0.9</uiIconScale>
+        <specialDisplayRadius>4.9</specialDisplayRadius>
+        <researchPrerequisites>
+            <li>VFEV_Beekeeping</li>
+        </researchPrerequisites>
+    </ThingDef>
+
+</Defs>
