@@ -13,8 +13,8 @@
         </apparelTags>
     </PawnKindDef>
 
-    <!-- Low tier  - Raider -->
-
+    <!-- Low tier - raider, archers -->
+	
     <PawnKindDef ParentName="VFEV_VikingBase">
         <defName>VFEV_Raider</defName>
         <label>raider</label>
@@ -34,8 +34,6 @@
         </techHediffsTags>
         <techHediffsChance>0.15</techHediffsChance>
     </PawnKindDef>
-
-    <!-- Low tier - archers -->
 
     <PawnKindDef ParentName="VFEV_VikingBase" Name="VFEV_ArcherBase" Abstract="True">
         <combatPower>48</combatPower>
@@ -92,6 +90,40 @@
     <!-- Mid tier - warrior, pillager -->
 
     <PawnKindDef ParentName="VFEV_VikingBase">
+        <defName>VFEV_Trader</defName>
+        <label>trader</label>
+        <combatPower>60</combatPower>
+        <itemQuality>Poor</itemQuality>
+        <canBeSapper>true</canBeSapper>
+        <gearHealthRange>0.5~1.8</gearHealthRange>
+        <apparelMoney>200~300</apparelMoney>
+        <apparelRequired>
+            <li>Apparel_WarVeil</li>
+        </apparelRequired>
+        <weaponMoney>150~150</weaponMoney>
+        <weaponTags>
+            <li>NeolithicMeleeDecent</li>
+        </weaponTags>
+    </PawnKindDef>
+	
+    <PawnKindDef ParentName="VFEV_VikingBase">
+        <defName>VFEV_Slaver</defName>
+        <label>slaver</label>
+        <combatPower>60</combatPower>
+        <itemQuality>Poor</itemQuality>
+        <canBeSapper>true</canBeSapper>
+        <gearHealthRange>0.5~1.8</gearHealthRange>
+        <apparelMoney>200~300</apparelMoney>
+        <apparelRequired>
+            <li>Apparel_WarVeil</li>
+        </apparelRequired>
+        <weaponMoney>150~150</weaponMoney>
+        <weaponTags>
+            <li>NeolithicMeleeDecent</li>
+        </weaponTags>
+    </PawnKindDef>
+
+    <PawnKindDef ParentName="VFEV_VikingBase">
         <defName>VFEV_Warrior</defName>
         <label>warrior</label>
         <combatPower>60</combatPower>
@@ -110,7 +142,7 @@
 
     <PawnKindDef ParentName="VFEV_VikingBase">
         <defName>VFEV_Pillager</defName>
-        <label>hunter</label>
+        <label>pillager</label>
         <combatPower>65</combatPower>
         <gearHealthRange>0.5~1.8</gearHealthRange>
         <apparelMoney>200~300</apparelMoney>
@@ -128,6 +160,21 @@
     <PawnKindDef ParentName="VFEV_VikingBase">
         <defName>VFEV_Berserker</defName>
         <label>berserker</label>
+        <combatPower>90</combatPower>
+        <canBeSapper>true</canBeSapper>
+        <apparelMoney>200~550</apparelMoney>
+        <apparelRequired>
+            <li>Apparel_WarMask</li>
+        </apparelRequired>
+        <weaponMoney>300~300</weaponMoney>
+        <weaponTags>
+            <li>NeolithicMeleeAdvanced</li>
+        </weaponTags>
+    </PawnKindDef>
+	
+    <PawnKindDef ParentName="VFEV_VikingBase">
+        <defName>VFEV_Shieldbearer</defName>
+        <label>shieldbearer</label>
         <combatPower>90</combatPower>
         <canBeSapper>true</canBeSapper>
         <apparelMoney>200~550</apparelMoney>
@@ -195,6 +242,7 @@
         </apparelRequired>
         <weaponMoney>500~1000</weaponMoney>
     </PawnKindDef>
+
     <PawnKindDef ParentName="VFEV_HousecarlBase">
         <defName>VFEV_HousecarlMelee</defName>
         <label>housecarl</label>
@@ -203,6 +251,7 @@
             <li>MedievalMeleeAdvanced</li>
         </weaponTags>
     </PawnKindDef>
+
     <PawnKindDef ParentName="VFEV_HousecarlBase">
         <defName>VFEV_HousecarlRanged</defName>
         <label>housecarl</label>
