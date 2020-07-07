@@ -2,7 +2,7 @@
 <Defs>
 
 	<QuestScriptDef>
-		<defName>Util_SlavesWalkIn</defName>
+		<defName>VFEV_Util_SlavesWalkIn</defName>
 		<questDescriptionRules>
 			<rulesStrings>
 				<li>rewardDescription->a [joiner_age]-year-old [joiner_title] named [joiner_nameDef] will arrive and join you. [joiner_relationInfo]</li>
@@ -36,7 +36,7 @@
 	</QuestScriptDef>
 
 	<QuestScriptDef>
-		<defName>Util_JoinerThreat_SlavesJoiner</defName>
+		<defName>VFEV_Util_JoinerThreat_SlavesJoiner</defName>
 		<root Class="QuestNode_Sequence">
 			<nodes>
 				<li Class="QuestNode_Delay">
@@ -44,7 +44,7 @@
 					<node Class="QuestNode_Sequence">
 						<nodes>
 							<li Class="QuestNode_SubScript">
-								<def>Util_SlavesWalkIn</def>
+								<def>VFEV_Util_SlavesWalkIn</def>
 							</li>
 							<li Class="QuestNode_SendSignals">
 								<outSignals>JoinerArrived</outSignals>
@@ -57,8 +57,8 @@
 	</QuestScriptDef>
 
 	<QuestScriptDef>
-		<defName>ThreatReward_Raid_SlavesJoiner</defName>
-		<rootSelectionWeight>0.6</rootSelectionWeight>
+		<defName>VFEV_ThreatReward_Raid_SlavesJoiner</defName>
+		<rootSelectionWeight>0.2</rootSelectionWeight>
 		<rootMinPoints>0</rootMinPoints>
 		<expireDaysRange>0.3</expireDaysRange>
 		<rootIncreasesPopulation>true</rootIncreasesPopulation>
@@ -107,7 +107,7 @@
 
 				<!-- Joiner arrives -->
 				<li Class="QuestNode_SubScript">
-					<def>Util_JoinerThreat_SlavesJoiner</def>
+					<def>VFEV_Util_JoinerThreat_SlavesJoiner</def>
 				</li>
 
 				<li Class="QuestNode_Set">
