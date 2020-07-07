@@ -6,7 +6,7 @@
         <label>plant grower artifact</label>
         <description>A one-use broad-wave psychic effector. The psychic pulse fills lower minds with terrifying imagery, driving all animals in the region into a manhunting rage. Animals currently under your control will not be affected.</description>
         <graphicData>
-            <texPath>Things/Item/Artifact/PsychicAnimalPulser</texPath>
+            <texPath>Things/Item/Artifact/ArchotechGrower</texPath>
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>
         <resourceReadoutPriority>Middle</resourceReadoutPriority>
