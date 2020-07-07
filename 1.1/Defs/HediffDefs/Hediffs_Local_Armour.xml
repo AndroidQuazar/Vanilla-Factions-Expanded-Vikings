@@ -2,7 +2,43 @@
 <Defs>
 
 	<HediffDef>
-		<defName>VFEV_BleedrateCrypto</defName>
+		<defName>VFEV_BleedrateCrypto_5</defName>
+		<defaultLabelColor>(1, 0.2, 0.2)</defaultLabelColor>
+		<label>Cryptobleed</label>
+		<description>placeholder</description>
+		<stages>
+			<li>
+				<label>initial</label>
+				<capMods>
+					<li>
+						<capacity>BloodPumping</capacity>
+						<offset>0.05</offset>
+					</li>
+				</capMods>
+			</li>
+		</stages>
+	</HediffDef> 
+
+	<HediffDef>
+		<defName>VFEV_BleedrateCrypto_10</defName>
+		<defaultLabelColor>(1, 0.2, 0.2)</defaultLabelColor>
+		<label>Cryptobleed</label>
+		<description>placeholder</description>
+		<stages>
+			<li>
+				<label>initial</label>
+				<capMods>
+					<li>
+						<capacity>BloodPumping</capacity>
+						<offset>0.1</offset>
+					</li>
+				</capMods>
+			</li>
+		</stages>
+	</HediffDef> 
+
+	<HediffDef>
+		<defName>VFEV_BleedrateCrypto_20</defName>
 		<defaultLabelColor>(1, 0.2, 0.2)</defaultLabelColor>
 		<label>Cryptobleed</label>
 		<description>placeholder</description>

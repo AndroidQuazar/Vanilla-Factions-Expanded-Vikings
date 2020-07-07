@@ -456,6 +456,29 @@
 	</ThingDef>
 
 	<ThingDef ParentName="VFEV_ApparelArmorCryptoBase">
+		<defName>VFEV_CryptoArmor</defName>
+		<label>crypto armor</label>
+		<description>A suit of experimental powered armor using crypto tech. Layered plasteel-weave plates are very effective at stopping attacks, while crypto tech slows down the bleeding rate of any wound. Originally made for hunting down rogue mechanoids, it is near impossible to find anymore.</description>
+		<graphicData>
+			<texPath>Things/Pawn/Humanlike/Apparel/CryptoHeavyArmor/CryptoHeavyArmor</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<apparel>
+			<wornGraphicPath>Things/Pawn/Humanlike/Apparel/CryptoHeavyArmor/CryptoHeavyArmor</wornGraphicPath>
+			<useWornGraphicMask>True</useWornGraphicMask>
+		</apparel>
+		<tickerType>Normal</tickerType>
+		<comps>
+			<li Class="VFEV.CompProperties_ApparelHediffs">
+				<hediffDefnames>
+					<li>VFEV_BleedrateCrypto_10</li>
+				</hediffDefnames>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<ThingDef ParentName="VFEV_ApparelArmorCryptoBase">
 		<defName>VFEV_CryptoHeavyArmor</defName>
 		<label>crypto heavy armor</label>
 		<description>A suit of experimental powered armor using crypto tech. Layered plasteel-weave plates are very effective at stopping attacks, while crypto tech slows down the bleeding rate of any wound. Originally made for hunting down rogue mechanoids, it is near impossible to find anymore.</description>
@@ -472,7 +495,7 @@
 		<comps>
 			<li Class="VFEV.CompProperties_ApparelHediffs">
 				<hediffDefnames>
-					<li>VFEV_BleedrateCrypto</li>
+					<li>VFEV_BleedrateCrypto_20</li>
 				</hediffDefnames>
 			</li>
 		</comps>
