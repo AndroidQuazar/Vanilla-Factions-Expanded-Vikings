@@ -49,6 +49,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CompApparelHediffs.cs" />
+    <Compile Include="CompProperties_ApparelHediffs.cs" />
+    <Compile Include="CompTargetable_AllPlantsOnTheMap.cs" />
+    <Compile Include="CompTargetEffect_PlantGrower.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
