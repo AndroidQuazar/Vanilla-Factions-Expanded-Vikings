@@ -103,8 +103,9 @@
         <label>nordsman clan</label>
         <description>placeholder</description>
         <colorSpectrum>
-            <li>(0.85, 0, 0)</li>
-            <li>(1, 0.1, 0.1)</li>
+            <li>(0.5, 0.59, 0.64)</li>
+            <li>(0.1, 0.16, 0.23)</li>
+            <li>(0.32, 0.58, 0.47)</li>
         </colorSpectrum>
         <factionIconPath>World/WorldObjects/Expanding/VikingsSavage</factionIconPath>
         <permanentEnemy>false</permanentEnemy>
@@ -129,7 +130,7 @@
             <li>
                 <kindDef>Trader</kindDef>
                 <traders>
-                    <VFEV_Trader>1</VFEV_Trader>
+                    <VFEV_Viking_Merchant>1</VFEV_Viking_Merchant>
                 </traders>
                 <carriers>
                     <Muffalo>8</Muffalo>
@@ -165,8 +166,7 @@
         <label>slaver clan</label>
         <description>These people have been here a very long time. Maybe their ancestors crashed here a thousand years ago. Maybe they survived some cataclysm that destroyed a technological civilization here. In any case, the tribals are mostly nomadic people who live off the land using primitive tools and weapons.\n\nDespite their apparent technological weakness, the tribals can be dangerous enemies because of their skill with low-tech warfare, their numbers, and their hardiness.\n\nThis particular tribe is driven by a blood-and-honor culture; you will not be able to ally with them!</description>
         <colorSpectrum>
-            <li>(0.85, 0, 0)</li>
-            <li>(1, 0.1, 0.1)</li>
+            <li>(0.65, 0.22, 0.14)</li>
         </colorSpectrum>
         <factionIconPath>World/WorldObjects/Expanding/VikingsSlaver</factionIconPath>
         <permanentEnemy>false</permanentEnemy>
@@ -174,23 +174,24 @@
         <!-- Reset goodwill inherited from TribeBase->HumanFactionBase for permanent enemy -->
         <goodwillDailyFall>2</goodwillDailyFall>
         <pawnGroupMakers>
-            <li>
+	            <li>
                 <kindDef>Trader</kindDef>
                 <traders>
-                    <Tribal_Trader>1</Tribal_Trader>
+                    <VFEV_Viking_Slaver>1</VFEV_Viking_Slaver>
                 </traders>
                 <carriers>
-                    <Muffalo>6</Muffalo>
-                    <Dromedary>5</Dromedary>
+                    <Muffalo>8</Muffalo>
+                    <Yak>4</Yak>
                     <Alpaca>2.5</Alpaca>
-                    <Elephant>2</Elephant>
                 </carriers>
                 <guards>
-                    <Tribal_Warrior>7</Tribal_Warrior>
-                    <Tribal_Archer>10</Tribal_Archer>
-                    <Tribal_Hunter>10</Tribal_Hunter>
-                    <Tribal_HeavyArcher>10</Tribal_HeavyArcher>
-                    <Tribal_Berserker>7</Tribal_Berserker>
+                    <VFEV_Warrior>20</VFEV_Warrior>
+                    <VFEV_Archer>10</VFEV_Archer>
+                    <VFEV_Arbalist>10</VFEV_Arbalist>
+                    <VFEV_Berserker>10</VFEV_Berserker>
+                    <VFEV_HeavyArcher>5</VFEV_HeavyArcher>
+					<VFEV_Shieldbearer>5</VFEV_Shieldbearer>
+                    <VFEV_HeavyArbalist>3</VFEV_HeavyArbalist>
                 </guards>
             </li>
             <li>
