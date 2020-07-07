@@ -472,7 +472,7 @@
 		<comps>
 			<li Class="VFEV.CompProperties_ApparelHediffs">
 				<hediffDefnames>
-					<li>VFEV_BleedrateTwenty</li>
+					<li>VFEV_BleedrateCrypto</li>
 				</hediffDefnames>
 			</li>
 		</comps>
