@@ -10,9 +10,10 @@ namespace VFEV
 		{
 			foreach (Thing plant in user.MapHeld.listerThings.AllThings.Where(x => x is Plant))
 			{
-				if (((Plant)plant).Growth < 0.9f)
+				if (((Plant)plant).Growth < 0.9f && ((Plant)plant).LifeStage != PlantLifeStage.Sowing)
 				{
 					((Plant)plant).Growth = 0.9f;
+					plant.Map.mapDrawer.MapMeshDirty(plant.Position, MapMeshFlag.Things);
 				}
 			}
 		}
