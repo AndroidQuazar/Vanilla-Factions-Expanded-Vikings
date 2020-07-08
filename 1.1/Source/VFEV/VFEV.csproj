@@ -49,8 +49,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CompPawnPsyWaver.cs" />
     <Compile Include="CompPawnTeleporter.cs" />
     <Compile Include="CompApparelHediffs.cs" />
+    <Compile Include="CompProperties_PawnPsyWaver.cs" />
     <Compile Include="CompProperties_PawnTeleporter.cs" />
     <Compile Include="CompProperties_ApparelHediffs.cs" />
     <Compile Include="CompTargetable_AllPlantsOnTheMap.cs" />
