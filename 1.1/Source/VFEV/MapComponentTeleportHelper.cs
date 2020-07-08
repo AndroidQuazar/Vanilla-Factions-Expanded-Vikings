@@ -25,13 +25,14 @@ namespace VFEV
                 foreach (var pawnData in pawnsToTeleport)
                 {
                     var teleportComp = pawnData.Key.TryGetComp<CompPawnTeleporter>();
+                    //Log.Message("teleportComp.appearInTick: " + teleportComp.appearInTick);
                     if (teleportComp != null && teleportComp.disappear && Find.TickManager.TicksGame >= teleportComp.appearInTick)
                     {
-                        GenPlace.TryPlaceThing(pawnData.Key, pawnData.Value.Cell, pawnData.Value.Map,
+                        GenPlace.TryPlaceThing(pawnData.Key, pawnData.Value, this.map,
                             ThingPlaceMode.Near, null, null, default(Rot4));
                         teleportComp.disappear = false;
                         keysToRemove.Add(pawnData.Key);
-                        MoteMaker.MakeStaticMote(pawnData.Key.Position, pawnData.Key.Map, ThingDefOf.Mote_PsycastAreaEffect, 10f);
+                        MoteMaker.MakeStaticMote(pawnData.Key.Position, this.map, ThingDefOf.Mote_PsycastAreaEffect, 10f);
                         //Log.Message("APPEARED");
                     }
                 }
@@ -45,10 +46,16 @@ namespace VFEV
         public override void ExposeData()
         {
             base.ExposeData();
-            Scribe_Collections.Look(ref pawnsToTeleport, "pawnsToTeleport", LookMode.Reference, LookMode.TargetInfo);
+            Scribe_Collections.Look<Pawn, IntVec3>(ref pawnsToTeleport, "pawnsToTeleport", 
+                LookMode.Deep, LookMode.Value, ref this.pawnsToTeleportKeys,
+                ref this.pawnsToTeleportValues);
         }
 
-        public Dictionary<Pawn, TargetInfo> pawnsToTeleport = new Dictionary<Pawn, TargetInfo>();
+        public Dictionary<Pawn, IntVec3> pawnsToTeleport = new Dictionary<Pawn, IntVec3>();
+
+        private List<Pawn> pawnsToTeleportKeys;
+
+        private List<IntVec3> pawnsToTeleportValues;
     }
 }
 

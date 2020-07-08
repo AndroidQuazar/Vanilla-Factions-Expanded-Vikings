@@ -15,6 +15,8 @@ namespace VFEV
         public bool disappear = false;
 
         public int appearInTick = 0;
+
+        private int readyToUseTicks = 0;
         public CompProperties_PawnTeleporter Props
         {
             get
@@ -23,7 +25,6 @@ namespace VFEV
             }
         }
 
-        private int readyToUseTicks = 0;
         public override void CompTick()
         {
             base.CompTick();
@@ -42,8 +43,8 @@ namespace VFEV
                     disappear = true;
                     appearInTick = Find.TickManager.TicksGame + 120;
                     var mapComp = pawn.Map.GetComponent<MapComponentTeleportHelper>();
-                    if (mapComp.pawnsToTeleport == null) mapComp.pawnsToTeleport = new Dictionary<Pawn, TargetInfo>();
-                    mapComp.pawnsToTeleport[pawn] = new TargetInfo(loc, pawn.Map);
+                    if (mapComp.pawnsToTeleport == null) mapComp.pawnsToTeleport = new Dictionary<Pawn, IntVec3>();
+                    mapComp.pawnsToTeleport[pawn] = loc;
                     pawn.DeSpawn(DestroyMode.Vanish);
                 }
             }
@@ -53,6 +54,8 @@ namespace VFEV
         {
             base.PostExposeData();
             Scribe_Values.Look<int>(ref readyToUseTicks, "readyToUseTicks", 0);
+            Scribe_Values.Look<int>(ref appearInTick, "appearInTick", 0);
+            Scribe_Values.Look<bool>(ref disappear, "disappear", false);
         }
     }
 }
