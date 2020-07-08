@@ -183,7 +183,7 @@
         <defName>VFEV_Lothurr</defName>
         <label>lothurr</label>
         <description>A gigantic, dragon-like creature of unknown origin. The lothurr is peaceful by nature, but extremely dangerous when enraged. Its fur and armour plates are incredibly resistant to damage and cold, while it's majestic horns fetch a huge price. \n\n Many legends surround the lothurrs. Some say it is the manifestation of the old nordic gods while others claim they are a truly alien species.</description>
-        <statBases>
+		<statBases>
             <MoveSpeed>3.5</MoveSpeed>
             <MarketValue>3500</MarketValue>
             <ComfyTemperatureMin>-65</ComfyTemperatureMin>
@@ -281,6 +281,12 @@
             <soundMeleeHitBuilding>Pawn_Melee_BigBash_HitBuilding</soundMeleeHitBuilding>
             <soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
         </race>
+		<comps>
+            <li Class="VFEV.CompProperties_PawnTeleporter">
+                <cooldown>7200</cooldown>
+				<minDistance>100</minDistance>
+            </li>
+        </comps>
         <tradeTags>
             <li>AnimalExotic</li>
         </tradeTags>
