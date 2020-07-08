@@ -29,6 +29,7 @@ namespace VFEV
                     {
                         GenPlace.TryPlaceThing(pawnData.Key, pawnData.Value.Cell, pawnData.Value.Map,
                             ThingPlaceMode.Near, null, null, default(Rot4));
+                        teleportComp.disappear = false;
                         keysToRemove.Add(pawnData.Key);
                         MoteMaker.MakeStaticMote(pawnData.Key.Position, pawnData.Key.Map, ThingDefOf.Mote_PsycastAreaEffect, 10f);
                         //Log.Message("APPEARED");
