@@ -2,11 +2,11 @@
 <Defs>
 
 	<ThingDef ParentName="ArmorSmithableBase">
-		<defName>VFEV_Apparel_GuardianArmor</defName>
-		<label>guardian armor</label>
+		<defName>VFEV_Apparel_BrigandineArmor</defName>
+		<label>brigandine armor</label>
 		<description>placeholder</description>
 		<graphicData>
-			<texPath>Things/Pawn/Humanlike/Apparel/GuardianArmor/GuardianArmor</texPath>
+			<texPath>Things/Pawn/Humanlike/Apparel/BrigandineArmor/BrigandineArmor</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<techLevel>Medieval</techLevel>
@@ -45,7 +45,7 @@
 				<li>Arms</li>
 				<li>Legs</li>
 			</bodyPartGroups>
-			<wornGraphicPath>Things/Pawn/Humanlike/Apparel/GuardianArmor/GuardianArmor</wornGraphicPath>
+			<wornGraphicPath>Things/Pawn/Humanlike/Apparel/BrigandineArmor/BrigandineArmor</wornGraphicPath>
 			<layers>
 				<li>Middle</li>
 				<li>Shell</li>

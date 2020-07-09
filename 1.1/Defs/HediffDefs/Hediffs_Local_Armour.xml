@@ -18,10 +18,8 @@
 						<capacity>BloodPumping</capacity>
 						<offset>0.05</offset>
 					</li>
-					<li>
-					    <painOffset>0.05</painOffset>
-					</li>
 				</capMods>
+				<painOffset>-0.05</painOffset>
 			</li>
 		</stages>
 	</HediffDef> 
@@ -36,10 +34,8 @@
 						<capacity>BloodPumping</capacity>
 						<offset>0.1</offset>
 					</li>
-					<li>
-					    <painOffset>0.1</painOffset>
-					</li>
 				</capMods>
+				<painOffset>-0.1</painOffset>
 			</li>
 		</stages>
 	</HediffDef> 
@@ -54,10 +50,8 @@
 						<capacity>BloodPumping</capacity>
 						<offset>0.2</offset>
 					</li>
-					<li>
-					    <painOffset>0.2</painOffset>
-					</li>
 				</capMods>
+				<painOffset>-0.2</painOffset>
 			</li>
 		</stages>
 	</HediffDef> 
