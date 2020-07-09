@@ -460,12 +460,12 @@
 		<label>crypto armor</label>
 		<description>A suit of experimental powered armor using crypto tech. Layered plasteel-weave plates are very effective at stopping attacks, while crypto tech slows down the bleeding rate of any wound. Originally made for hunting down rogue mechanoids, it is near impossible to find anymore.</description>
 		<graphicData>
-			<texPath>Things/Pawn/Humanlike/Apparel/CryptoHeavyArmor/CryptoHeavyArmor</texPath>
+			<texPath>Things/Pawn/Humanlike/Apparel/CryptoLightArmor/CryptoLightArmor</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 		</graphicData>
 		<apparel>
-			<wornGraphicPath>Things/Pawn/Humanlike/Apparel/CryptoHeavyArmor/CryptoHeavyArmor</wornGraphicPath>
+			<wornGraphicPath>Things/Pawn/Humanlike/Apparel/CryptoLightArmor/CryptoLightArmor</wornGraphicPath>
 			<useWornGraphicMask>True</useWornGraphicMask>
 		</apparel>
 		<tickerType>Normal</tickerType>
