@@ -57,6 +57,8 @@
     <Compile Include="CompProperties_ApparelHediffs.cs" />
     <Compile Include="CompTargetable_AllPlantsOnTheMap.cs" />
     <Compile Include="CompTargetEffect_PlantGrower.cs" />
+    <Compile Include="IncidentWorker_SlaverRaid.cs" />
+    <Compile Include="JobGiver_CaptureDownedVictimAndLeaveMap.cs" />
     <Compile Include="MapComponentTeleportHelper.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
