@@ -58,11 +58,11 @@
 	</ThingDef>
 
 	<ThingDef ParentName="ApparelMakeableBase">
-		<defName>VFEV_RaiderArmor</defName>
-		<label>raider armor</label>
+		<defName>VFEV_LeatherArmor</defName>
+		<label>leather armor</label>
 		<description>placeholder</description>
 		<graphicData>
-			<texPath>Things/Pawn/Humanlike/Apparel/RaiderArmor/RaiderArmor</texPath>
+			<texPath>Things/Pawn/Humanlike/Apparel/LeatherArmor/LeatherArmor</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<techLevel>Medieval</techLevel>
@@ -92,7 +92,7 @@
 				<li>Torso</li>
 				<li>Legs</li>
 			</bodyPartGroups>
-			<wornGraphicPath>Things/Pawn/Humanlike/Apparel/RaiderArmor/RaiderArmor</wornGraphicPath>
+			<wornGraphicPath>Things/Pawn/Humanlike/Apparel/LeatherArmor/LeatherArmor</wornGraphicPath>
 			<layers>
 				<li>Middle</li>
 				<li>Shell</li>
@@ -105,11 +105,11 @@
 	</ThingDef>
 
 	<ThingDef ParentName="ApparelMakeableBase">
-		<defName>VFEV_RavagerArmor</defName>
-		<label>ravager armor</label>
+		<defName>VFEV_LeatherHeavyArmor</defName>
+		<label>leather heavy armor</label>
 		<description>placeholder</description>
 		<graphicData>
-			<texPath>Things/Pawn/Humanlike/Apparel/RavagerArmor/RavagerArmor</texPath>
+			<texPath>Things/Pawn/Humanlike/Apparel/LeatherHeavyArmor/LeatherHeavyArmor</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<techLevel>Medieval</techLevel>
@@ -141,7 +141,7 @@
 				<li>Torso</li>
 				<li>Legs</li>
 			</bodyPartGroups>
-			<wornGraphicPath>Things/Pawn/Humanlike/Apparel/RavagerArmor/RavagerArmor</wornGraphicPath>
+			<wornGraphicPath>Things/Pawn/Humanlike/Apparel/LeatherHeavyArmor/LeatherHeavyArmor</wornGraphicPath>
 			<layers>
 				<li>Middle</li>
 				<li>Shell</li>

@@ -2,7 +2,7 @@
 <Defs>
 
     <ThingDef ParentName="ArmorHelmetMakeableBase">
-        <defName>VFEV_Apparel_GuardianHelmet</defName>
+        <defName>VFEV_Apparel_BrigandineHelmet</defName>
         <label>guardian helmet</label>
         <description>A bulky medieval helmet that provides full-head coverage. Offers a considerable amount of protectuon but restricts the wearer's field of vision.</description>
         <techLevel>Medieval</techLevel>
@@ -17,7 +17,7 @@
             </skillRequirements>
         </recipeMaker>
         <graphicData>
-            <texPath>Things/Pawn/Humanlike/Apparel/GuardianHelmet/GuardianHelmet</texPath>
+            <texPath>Things/Pawn/Humanlike/Apparel/BrigandineHelmet/BrigandineHelmet</texPath>
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>
         <statBases>
@@ -41,7 +41,7 @@
             <bodyPartGroups>
                 <li>FullHead</li>
             </bodyPartGroups>
-            <wornGraphicPath>Things/Pawn/Humanlike/Apparel/GuardianHelmet/GuardianHelmet</wornGraphicPath>
+            <wornGraphicPath>Things/Pawn/Humanlike/Apparel/BrigandineHelmet/BrigandineHelmet</wornGraphicPath>
             <layers>
                 <li>Overhead</li>
             </layers>
@@ -55,8 +55,8 @@
     </ThingDef>
 	
     <ThingDef ParentName="ArmorHelmetMakeableBase">
-        <defName>VFEV_Apparel_RaiderHelmet</defName>
-        <label>raider helmet</label>
+        <defName>VFEV_Apparel_LeatherHelmet</defName>
+        <label>leather helmet</label>
         <description>A lightweight medieval helmet that provides moderate protection against sharp attacks. Not effective against blunt weapons.</description>
         <techLevel>Medieval</techLevel>
         <recipeMaker>
@@ -69,7 +69,7 @@
             </skillRequirements>
         </recipeMaker>
         <graphicData>
-            <texPath>Things/Pawn/Humanlike/Apparel/RaiderHelmet/RaiderHelmet</texPath>
+            <texPath>Things/Pawn/Humanlike/Apparel/LeatherHelmet/LeatherHelmet</texPath>
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>
         <costStuffCount>40</costStuffCount>
@@ -84,13 +84,13 @@
         </statBases>
         <generateCommonality>0.4</generateCommonality>
         <stuffCategories>
-            <li>Metallic</li>
+			<li>Leathery</li>
         </stuffCategories>
         <apparel>
             <bodyPartGroups>
                 <li>UpperHead</li>
             </bodyPartGroups>
-            <wornGraphicPath>Things/Pawn/Humanlike/Apparel/RaiderHelmet/RaiderHelmet</wornGraphicPath>
+            <wornGraphicPath>Things/Pawn/Humanlike/Apparel/LeatherHelmet/LeatherHelmet</wornGraphicPath>
             <layers>
                 <li>Overhead</li>
             </layers>
