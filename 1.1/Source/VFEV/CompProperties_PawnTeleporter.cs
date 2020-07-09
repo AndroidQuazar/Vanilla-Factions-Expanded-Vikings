@@ -15,6 +15,8 @@ namespace VFEV
 		public float minDistance;
 
 		public int cooldown;
+
+		public bool disableManhunterState = false;
 	}
 }
 
