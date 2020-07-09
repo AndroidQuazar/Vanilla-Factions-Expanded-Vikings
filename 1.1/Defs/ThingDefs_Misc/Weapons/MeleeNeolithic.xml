@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
+        <defName>VFEV_MeleeWeapon_GreatAxe</defName>
+        <label>great axe</label>
+        <description>A mighty weapon on the battlefield in the right kind of hands. Made to cut through flesh and bones alike.\n\nFavored by the Berserker clans, the battle axe is a weapon usually used by nordsmen berserkers. With a powerful swing it is capable of eliminating most enemies in close quarters.</description>
+        <graphicData>
+            <texPath>Things/Item/Equipment/WeaponMelee/GreatAxe</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <techLevel>Neolithic</techLevel>
+        <weaponTags>
+            <li>MedievalMeleeAdvanced</li>
+        </weaponTags>
+        <costStuffCount>100</costStuffCount>
+        <statBases>
+            <WorkToMake>18000</WorkToMake>
+            <Mass>2.6</Mass>
+        </statBases>
+        <equippedAngleOffset>-65</equippedAngleOffset>
+        <stuffCategories>
+            <li>Metallic</li>
+        </stuffCategories>
+        <tools>
+            <li>
+                <label>handle</label>
+                <capacities>
+                    <li>Poke</li>
+                </capacities>
+                <power>6</power>
+                <cooldownTime>2.6</cooldownTime>
+            </li>
+            <li>
+                <label>blade</label>
+                <capacities>
+                    <li>Cut</li>
+                </capacities>
+                <power>23</power>
+                <armorPenetration>0.15</armorPenetration>
+                <cooldownTime>2.6</cooldownTime>
+            </li>
+        </tools>
+        <recipeMaker>
+            <recipeUsers>
+                <li>FueledSmithy</li>
+                <li>ElectricSmithy</li>
+            </recipeUsers>
+            <researchPrerequisite>LongBlades</researchPrerequisite>
+            <skillRequirements>
+                <Crafting>5</Crafting>
+            </skillRequirements>
+        </recipeMaker>
+    </ThingDef>
+
+</Defs>

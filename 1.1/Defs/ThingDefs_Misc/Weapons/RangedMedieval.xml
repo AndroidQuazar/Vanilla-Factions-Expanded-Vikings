@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <ThingDef ParentName="BaseWeaponNeolithic">
+        <defName>VFEV_ThrowingAxe</defName>
+        <label>throwing axe</label>
+        <description>A single-handed axe made for throwing. Light enough to be thrown accurately at medium range.</description>
+        <graphicData>
+            <texPath>Things/Item/Equipment/WeaponRanged/ThrowingAxe</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <soundInteract>Interact_BeatFire</soundInteract>
+        <costStuffCount>50</costStuffCount>
+        <stuffCategories>
+            <li>Metallic</li>
+            <li>Woody</li>
+        </stuffCategories>
+        <techLevel>Neolithic</techLevel>
+        <statBases>
+            <WorkToMake>7200</WorkToMake>
+            <Mass>1.2</Mass>
+            <AccuracyTouch>0.82</AccuracyTouch>
+            <AccuracyShort>0.68</AccuracyShort>
+            <AccuracyMedium>0.30</AccuracyMedium>
+            <AccuracyLong>0.10</AccuracyLong>
+            <RangedWeapon_Cooldown>1.8</RangedWeapon_Cooldown>
+        </statBases>
+        <weaponTags>
+            <li>NeolithicRangedBasic</li>
+        </weaponTags>
+        <recipeMaker>
+            <recipeUsers Inherit="False">
+                <li>FueledSmithy</li>
+                <li>ElectricSmithy</li>
+                <li>CraftingSpot</li>
+            </recipeUsers>
+            <researchPrerequisite>Smithing</researchPrerequisite>
+            <skillRequirements>
+                <Crafting>5</Crafting>
+            </skillRequirements>
+        </recipeMaker>
+        <verbs>
+            <li>
+                <verbClass>Verb_Shoot</verbClass>
+                <hasStandardCommand>true</hasStandardCommand>
+                <defaultProjectile>VFEV_ThrowingAxe_Thrown</defaultProjectile>
+                <warmupTime>2</warmupTime>
+                <range>9.5</range>
+                <soundCast>Interact_BeatFire</soundCast>
+            </li>
+        </verbs>
+        <tools>
+            <li>
+                <label>handle</label>
+                <capacities>
+                    <li>Blunt</li>
+                </capacities>
+                <power>9</power>
+                <cooldownTime>2</cooldownTime>
+            </li>
+            <li>
+                <label>blade</label>
+                <capacities>
+                    <li>Cut</li>
+                </capacities>
+                <power>15</power>
+                <cooldownTime>2</cooldownTime>
+            </li>
+        </tools>
+    </ThingDef>
+
+    <ThingDef ParentName="BaseProjectileNeolithic">
+        <defName>VFEV_ThrowingAxe_Thrown</defName>
+        <label>throwing axe</label>
+        <graphicData>
+            <texPath>Things/Projectile/AxeThrown</texPath>
+            <graphicClass>Graphic_Flicker</graphicClass>
+        </graphicData>
+        <projectile>
+            <flyOverhead>false</flyOverhead>
+            <damageDef>RangedStab</damageDef>
+            <damageAmountBase>16</damageAmountBase>
+            <stoppingPower>2</stoppingPower>
+            <armorPenetrationBase>0.25</armorPenetrationBase>
+            <speed>25</speed>
+        </projectile>
+    </ThingDef>
+
+</Defs>
