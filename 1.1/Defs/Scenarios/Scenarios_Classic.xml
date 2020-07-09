@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <ScenarioDef>
+        <defName>VFEV_NewClan</defName>
+        <label>New Clan</label>
+        <description>After a failed raid the surviving members of the raiding party decided to form a new clan. PLACEHOLDER!</description>
+        <scenario>
+            <summary>A group of nordmen raiders form a new clan. Difficult. PLACEHOLDER!</summary>
+            <playerFaction>
+                <def>PlayerFaction</def>
+                <factionDef>VFEV_PlayerClan</factionDef>
+            </playerFaction>
+            <parts>
+                <!-- Config pages -->
+                <li Class="ScenPart_ConfigPage_ConfigureStartingPawns">
+                    <def>ConfigPage_ConfigureStartingPawns</def>
+                    <pawnCount>5</pawnCount>
+                    <pawnChoiceCount>7</pawnChoiceCount>
+                </li>
+                <!-- Player starting stuff spawn method-->
+                <li Class="ScenPart_PlayerPawnsArriveMethod">
+                    <def>PlayerPawnsArriveMethod</def>
+                    <method>Standing</method>
+                </li>
+                <!-- Player pawns modifiers -->
+                <li Class="ScenPart_SetNeedLevel">
+                    <def>SetNeedLevel</def>
+                    <visible>false</visible>
+                    <context>PlayerStarter</context>
+                    <chance>1.0</chance>
+                    <need>Food</need>
+                    <levelRange>
+                        <min>0.5</min>
+                        <max>0.7</max>
+                    </levelRange>
+                </li>
+                <!-- Player starting things -->
+                <li Class="ScenPart_StartingThing_Defined">
+                    <def>StartingThing_Defined</def>
+                    <thingDef>Gold</thingDef>
+                    <count>150</count>
+                </li>
+                <li Class="ScenPart_StartingThing_Defined">
+                    <def>StartingThing_Defined</def>
+                    <thingDef>Silver</thingDef>
+                    <count>300</count>
+                </li>
+                <li Class="ScenPart_StartingThing_Defined">
+                    <def>StartingThing_Defined</def>
+                    <thingDef>MeleeWeapon_LongSword</thingDef>
+                    <stuff>Steel</stuff>
+                    <count>2</count>
+                </li>
+            </parts>
+        </scenario>
+    </ScenarioDef>
+
+</Defs>

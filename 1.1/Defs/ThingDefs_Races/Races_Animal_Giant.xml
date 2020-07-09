@@ -283,8 +283,8 @@
         </race>
 		<comps>
             <li Class="VFEV.CompProperties_PawnTeleporter">
-                <cooldown>7200</cooldown>
-				<minDistance>100</minDistance>
+                <cooldown>4200</cooldown>
+				<minDistance>200</minDistance>
             </li>
         </comps>
         <tradeTags>
