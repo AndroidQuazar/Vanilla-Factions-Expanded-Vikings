@@ -4,7 +4,7 @@
     <ThingDef ParentName="BedWithQualityBase">
         <defName>VFEV_FurBed</defName>
         <label>fur bed</label>
-        <description>A cozy mattress and sheets on a frame for resting.</description>
+        <description>A wood-framed bed stuffed with dried grasses and covered in a variety of pelts and furs to provide extra insulation during frigid nights.</description>
         <graphicData>
             <texPath>Things/Building/Furniture/Bed/BedPelts</texPath>
             <graphicClass>Graphic_Multi</graphicClass>
@@ -52,11 +52,63 @@
         </researchPrerequisites>
         <uiIconScale>0.90</uiIconScale>
     </ThingDef>
+	
+    <ThingDef ParentName="BedWithQualityBase">
+        <defName>VFEV_DoubleFurBed</defName>
+        <label>double fur bed</label>
+        <description>A wood-framed bed stuffed with dried grasses and covered in a variety of pelts and furs to provide extra insulation during frigid nights.</description>
+        <graphicData>
+            <texPath>Things/Building/Furniture/Bed/DoubleBedPelts</texPath>
+            <graphicClass>Graphic_Multi</graphicClass>
+            <shaderType>CutoutComplex</shaderType>
+            <drawSize>(2.05,2.05)</drawSize>
+            <damageData>
+                <rect>(0,0.05,1,1.95)</rect>
+            </damageData>
+        </graphicData>
+        <comps>
+            <li Class="CompProperties_AffectedByFacilities">
+                <linkableFacilities>
+                    <li>EndTable</li>
+                    <li>Dresser</li>
+                </linkableFacilities>
+            </li>
+        </comps>
+        <castEdgeShadows>True</castEdgeShadows>
+        <statBases>
+            <MaxHitPoints>75</MaxHitPoints>
+            <Flammability>1.0</Flammability>
+            <Mass>2.5</Mass>
+            <BedRestEffectiveness>0.95</BedRestEffectiveness>
+            <ImmunityGainSpeedFactor>1.05</ImmunityGainSpeedFactor>
+            <Comfort>0.68</Comfort>
+            <WorkToBuild>600</WorkToBuild>
+        </statBases>
+        <size>(2,2)</size>
+        <stuffCategories>
+            <li>Fabric</li>
+            <li>Leathery</li>
+        </stuffCategories>
+        <costStuffCount>45</costStuffCount>
+        <building>
+            <bed_showSleeperBody>False</bed_showSleeperBody>
+            <bed_healPerDay>3</bed_healPerDay>
+        </building>
+        <fillPercent>0.4</fillPercent>
+        <pathCost>60</pathCost>
+        <staticSunShadowHeight>0.17</staticSunShadowHeight>
+        <designationHotKey>Misc2</designationHotKey>
+        <techLevel>Medieval</techLevel>
+        <researchPrerequisites>
+            <li>ComplexFurniture</li>
+        </researchPrerequisites>
+        <uiIconScale>0.90</uiIconScale>
+    </ThingDef>
 
     <ThingDef ParentName="BuildingBase">
         <defName>VFEV_Candelabra</defName>
         <label>candelabra</label>
-        <description>A wooden torch for lighting an area. People need light to move and work at full speed. Can be automatically refueled with wood. Produces a small amount of heat.</description>
+        <description>A floor-standing, sturdy lamp raised to about chest height. Puts of a pleasing, inviting hue of flame when burning logs. Meant primarily for lighting and gives off surprisingly little heat.</description>
         <category>Building</category>
         <graphicData>
             <texPath>Things/Building/Misc/Candelabra</texPath>

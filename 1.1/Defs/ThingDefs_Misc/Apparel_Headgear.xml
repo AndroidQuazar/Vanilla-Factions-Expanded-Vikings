@@ -69,7 +69,7 @@
             </skillRequirements>
         </recipeMaker>
         <graphicData>
-            <texPath>Things/Pawn/Humanlike/Apparel/VikingLeatherHelmet/VikingLeatherHelmet</texPath>
+            <texPath>Things/Pawn/Humanlike/Apparel/LeatherHelmet/LeatherHelmet</texPath>
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>
         <costStuffCount>40</costStuffCount>
@@ -90,7 +90,7 @@
             <bodyPartGroups>
                 <li>UpperHead</li>
             </bodyPartGroups>
-            <wornGraphicPath>Things/Pawn/Humanlike/Apparel/VikingLeatherHelmet/VikingLeatherHelmet</wornGraphicPath>
+            <wornGraphicPath>Things/Pawn/Humanlike/Apparel/LeatherHelmet/LeatherHelmet</wornGraphicPath>
             <layers>
                 <li>Overhead</li>
             </layers>

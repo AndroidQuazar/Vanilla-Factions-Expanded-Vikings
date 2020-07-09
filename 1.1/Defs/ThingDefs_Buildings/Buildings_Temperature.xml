@@ -4,7 +4,7 @@
     <ThingDef ParentName="FurnitureBase">
         <defName>VFEV_Hearth</defName>
         <label>hearth</label>
-        <description>A bowl-shaped furnishing used to hold a fire. Will light the surroundings and create heat.</description>
+        <description>A large, tightly packed fire pit capable of holding high amounts of wood at once. Provides hefty warmth and light thrones and halls alike and acts as a gathering spot for idle colonists.</description>
         <graphicData>
             <texPath>Things/Building/Misc/Hearth/Hearth</texPath>
             <graphicClass>Graphic_Multi</graphicClass>

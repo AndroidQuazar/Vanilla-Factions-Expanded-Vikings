@@ -62,7 +62,7 @@
 		<label>leather armor</label>
 		<description>placeholder</description>
 		<graphicData>
-			<texPath>Things/Pawn/Humanlike/Apparel/VikingLeatherArmour/VikingLeatherArmour</texPath>
+			<texPath>Things/Pawn/Humanlike/Apparel/LeatherArmor/LeatherArmor</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<techLevel>Medieval</techLevel>
@@ -92,7 +92,7 @@
 				<li>Torso</li>
 				<li>Legs</li>
 			</bodyPartGroups>
-			<wornGraphicPath>Things/Pawn/Humanlike/Apparel/VikingLeatherArmour/VikingLeatherArmour</wornGraphicPath>
+			<wornGraphicPath>Things/Pawn/Humanlike/Apparel/LeatherArmour/LeatherArmour</wornGraphicPath>
 			<layers>
 				<li>Middle</li>
 				<li>Shell</li>
@@ -109,7 +109,7 @@
 		<label>leather heavy armor</label>
 		<description>placeholder</description>
 		<graphicData>
-			<texPath>Things/Pawn/Humanlike/Apparel/VikingLeatherHeavyArmour/VikingLeatherHeavyArmour</texPath>
+			<texPath>Things/Pawn/Humanlike/Apparel/LeatherHeavyArmor/LeatherHeavyArmor</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<techLevel>Medieval</techLevel>
@@ -141,7 +141,7 @@
 				<li>Torso</li>
 				<li>Legs</li>
 			</bodyPartGroups>
-			<wornGraphicPath>Things/Pawn/Humanlike/Apparel/VikingLeatherHeavyArmour/VikingLeatherHeavyArmour</wornGraphicPath>
+			<wornGraphicPath>Things/Pawn/Humanlike/Apparel/LeatherHeavyArmor/LeatherHeavyArmor</wornGraphicPath>
 			<layers>
 				<li>Middle</li>
 				<li>Shell</li>

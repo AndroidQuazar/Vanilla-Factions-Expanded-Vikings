@@ -4,7 +4,7 @@
     <ThingDef ParentName="ArtifactBase">
         <defName>VFEV_PlantGrowerArtifact</defName>
         <label>plant grower artifact</label>
-        <description>A one-use broad-wave psychic effector. The psychic pulse fills lower minds with terrifying imagery, driving all animals in the region into a manhunting rage. Animals currently under your control will not be affected.</description>
+        <description>One-Use artefact which grows all plants nearby to maturity.</description>
         <graphicData>
             <texPath>Things/Item/Artifact/PsychicPlantGrower</texPath>
             <graphicClass>Graphic_Single</graphicClass>
