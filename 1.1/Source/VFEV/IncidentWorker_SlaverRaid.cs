@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using RimWorld;
+using UnityEngine;
 using UnityEngine.Assertions.Must;
 using Verse;
 using Verse.AI;
@@ -37,6 +38,16 @@ namespace VFEV
             parms.raidArrivalMode = PawnsArrivalModeDefOf.EdgeWalkIn;
         }
 
+        private void GenerateAnimals(Faction faction, List<Pawn> pawns)
+        {
+            int num = (int)((float)pawns.Count * 0.7f);
+            for (int i = 0; i < num; i++)
+            {
+                Pawn pawn = PawnGenerator.GeneratePawn(new PawnGenerationRequest(PawnKindDef.Named("VFEV_Wolfhound"), faction));
+                pawns.Add(pawn);
+            }
+        }
+
         protected override bool TryExecuteWorker(IncidentParms parms)
         {
             this.ResolveRaidPoints(parms);
@@ -59,6 +70,8 @@ namespace VFEV
             }
             parms.points = IncidentWorker_Raid.AdjustedRaidPoints(parms.points, parms.raidArrivalMode, parms.raidStrategy, parms.faction, combat);
             List<Pawn> list = parms.raidStrategy.Worker.SpawnThreats(parms);
+            if (list != null) GenerateAnimals(parms.faction, list);
+
             if (list == null)
             {
                 list = PawnGroupMakerUtility.GeneratePawns(IncidentParmsUtility.GetDefaultPawnGroupMakerParms(combat, parms, false), true).ToList<Pawn>();
@@ -67,6 +80,7 @@ namespace VFEV
                     Log.Error("Got no pawns spawning raid from parms " + parms, false);
                     return false;
                 }
+                GenerateAnimals(parms.faction, list);
                 parms.raidArrivalMode.Worker.Arrive(list, parms);
             }
             StringBuilder stringBuilder = new StringBuilder();
@@ -108,10 +122,16 @@ namespace VFEV
             var lord = new LordJob_AssaultColony(parms.faction, false, true, true, true, false);
             LordMaker.MakeNewLord(parms.faction, lord, (Map)parms.target, list);
 
-            //parms.raidStrategy.Worker.MakeLords(parms, list);
             foreach (var pawn in list)
             {
-                pawn.mindState.duty = new PawnDuty(DefDatabase<DutyDef>.GetNamed("VFEV_CaptureDownedVictimAndLeaveMap"));
+                if (pawn.RaceProps.Humanlike)
+                {
+                    pawn.mindState.duty = new PawnDuty(DefDatabase<DutyDef>.GetNamed("VFEV_CaptureDownedVictimAndLeaveMap"));
+                }
+                else
+                {
+                    pawn.mindState.duty = new PawnDuty(DutyDefOf.AssaultColony);
+                }
             }
             LessonAutoActivator.TeachOpportunity(ConceptDefOf.EquippingWeapons, OpportunityType.Critical);
             if (!PlayerKnowledgeDatabase.IsComplete(ConceptDefOf.ShieldBelts))
