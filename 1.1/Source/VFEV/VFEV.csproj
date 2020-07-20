@@ -49,18 +49,23 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CompPawnPsyWaver.cs" />
-    <Compile Include="CompPawnTeleporter.cs" />
-    <Compile Include="CompApparelHediffs.cs" />
-    <Compile Include="CompProperties_PawnPsyWaver.cs" />
-    <Compile Include="CompProperties_PawnTeleporter.cs" />
-    <Compile Include="CompProperties_ApparelHediffs.cs" />
-    <Compile Include="CompTargetable_AllPlantsOnTheMap.cs" />
-    <Compile Include="CompTargetEffect_PlantGrower.cs" />
+    <Compile Include="Comp\CompPawnPsyWaver.cs" />
+    <Compile Include="Comp\CompPawnTeleporter.cs" />
+    <Compile Include="Comp\CompApparelHediffs.cs" />
+    <Compile Include="Comp\CompProperties_PawnPsyWaver.cs" />
+    <Compile Include="Comp\CompProperties_PawnTeleporter.cs" />
+    <Compile Include="Comp\CompProperties_ApparelHediffs.cs" />
+    <Compile Include="Comp\CompTargetable_AllPlantsOnTheMap.cs" />
+    <Compile Include="Comp\CompTargetEffect_PlantGrower.cs" />
+    <Compile Include="DeathActionWorker_MoodBoost.cs" />
     <Compile Include="IncidentWorker_SlaverRaid.cs" />
     <Compile Include="JobGiver_CaptureDownedVictimAndLeaveMap.cs" />
     <Compile Include="MapComponentTeleportHelper.cs" />
+    <Compile Include="MapGeneration\BeastHuntEvents\GenStep_Njorun.cs" />
+    <Compile Include="MapGeneration\BeastHuntEvents\GenStep_Lothurr.cs" />
+    <Compile Include="MapGeneration\BeastHuntEvents\GenStep_Fenrir.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="VFEV_DefOf.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

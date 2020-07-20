@@ -83,6 +83,7 @@
         </tools>
         <race>
             <body>QuadrupedAnimalWithPawsAndTail</body>
+            <deathActionWorkerClass>VFEV.DeathActionWorker_MoodBoost</deathActionWorkerClass>
             <predator>true</predator>
             <baseBodySize>1.85</baseBodySize>
             <petness>0.1</petness>
@@ -245,6 +246,7 @@
         </tools>
         <race>
             <body>QuadrupedAnimalWithHoovesAndHorn</body>
+            <deathActionWorkerClass>VFEV.DeathActionWorker_MoodBoost</deathActionWorkerClass>
             <herdMigrationAllowed>false</herdMigrationAllowed>
             <baseBodySize>4</baseBodySize>
             <baseHungerRate>4.5</baseHungerRate>
@@ -426,6 +428,7 @@
         </tools>
         <race>
             <body>QuadrupedAnimalWithHoovesAndHorn</body>
+            <deathActionWorkerClass>VFEV.DeathActionWorker_MoodBoost</deathActionWorkerClass>
             <herdMigrationAllowed>false</herdMigrationAllowed>
             <baseBodySize>4</baseBodySize>
             <baseHungerRate>4.5</baseHungerRate>
