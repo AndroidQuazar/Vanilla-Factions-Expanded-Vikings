@@ -96,6 +96,20 @@
             </li>
         </pawnGroupMakers>
         <settlementTexturePath>World/WorldObjects/TribalSettlement</settlementTexturePath>
+		<modExtensions>
+            <li Class="VFECore.FactionDefExtension">
+				<allowedBiomes>
+					<!--
+					<li>IceSheet</li>
+					<li>SeaIce</li> -->
+				    <li>BorealForest</li>
+					<li>ColdBog</li>
+					<li>TemperateForest</li>
+					<li>TemperateSwamp</li>
+					<li>Tundra</li>
+				</allowedBiomes>
+            </li>
+        </modExtensions>
     </FactionDef>
 
     <FactionDef ParentName="VFEV_VikingBase">
