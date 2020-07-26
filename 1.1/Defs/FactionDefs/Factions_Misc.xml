@@ -101,7 +101,8 @@
 				<allowedBiomes>
 					<!--
 					<li>IceSheet</li>
-					<li>SeaIce</li> -->
+					<li>SeaIce</li>
+					-->
 				    <li>BorealForest</li>
 					<li>ColdBog</li>
 					<li>TemperateForest</li>
