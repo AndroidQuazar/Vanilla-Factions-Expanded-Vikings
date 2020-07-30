@@ -12,7 +12,7 @@ namespace VFEV
             {
                 foreach (Pawn pawn in map.mapPawns.FreeColonists)
                 {
-                    pawn.needs.mood.thoughts.memories.TryGainMemory(VFEV_DefOf.VFEI_BeastHunted);
+                    pawn.needs.mood.thoughts.memories.TryGainMemory(VFEV_DefOf.VFEV_BeastHunted);
                 }
             }
         }

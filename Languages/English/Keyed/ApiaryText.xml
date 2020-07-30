@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+    <ANeedTend>The apiary need to be tended to</ANeedTend>
+    <AResting>The apiary is resting, because the ambiant temperature is below 10°C</AResting>
+    <AReady>Honey ready</AReady>
+    <ANeedFlower>The apiary need {0} more flowers around it for bees to forage around</ANeedFlower>
+    <ANeedTIn>The apiary need tending in {0}</ANeedTIn>
+</LanguageData>

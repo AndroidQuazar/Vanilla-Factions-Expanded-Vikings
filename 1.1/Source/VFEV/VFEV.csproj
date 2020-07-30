@@ -49,6 +49,11 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Apiary\JobDriver_TakeHoneyOutOfApiary.cs" />
+    <Compile Include="Apiary\JobDriver_TendToApiary.cs" />
+    <Compile Include="Apiary\VFEV_Apiary.cs" />
+    <Compile Include="Apiary\WorkGiver_TakeHoneyOutOfApiary.cs" />
+    <Compile Include="Apiary\WorkGiver_TendToApiary.cs" />
     <Compile Include="Comp\CompPawnPsyWaver.cs" />
     <Compile Include="Comp\CompPawnTeleporter.cs" />
     <Compile Include="Comp\CompApparelHediffs.cs" />
