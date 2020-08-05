@@ -24,7 +24,7 @@
         <rotatable>false</rotatable>
         <socialPropernessMatters>true</socialPropernessMatters>
         <fillPercent>0.40</fillPercent>
-        <minTechLevelToBuild>Tribal</minTechLevelToBuild>
+        <minTechLevelToBuild>Neolithic</minTechLevelToBuild>
         <building>
             <joyKind>Gaming_Cerebral</joyKind>
         </building>

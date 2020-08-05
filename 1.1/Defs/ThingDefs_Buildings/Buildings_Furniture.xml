@@ -38,7 +38,7 @@
         <fillPercent>0.4</fillPercent>
         <pathCost>50</pathCost>
         <staticSunShadowHeight>0.17</staticSunShadowHeight>
-        <techLevel>Tribal</techLevel>
+        <techLevel>Neolithic</techLevel>
         <uiIconScale>0.90</uiIconScale>
         <comps>
             <li Class="CompProperties_AffectedByFacilities">
@@ -87,7 +87,7 @@
         <fillPercent>0.4</fillPercent>
         <pathCost>60</pathCost>
         <staticSunShadowHeight>0.17</staticSunShadowHeight>
-        <techLevel>Tribal</techLevel>
+        <techLevel>Neolithic</techLevel>
         <uiIconScale>0.90</uiIconScale>
         <comps>
             <li Class="CompProperties_AffectedByFacilities">
