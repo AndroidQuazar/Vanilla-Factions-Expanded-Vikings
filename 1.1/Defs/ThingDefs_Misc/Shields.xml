@@ -7,9 +7,9 @@
             <li>VFEC_Shields</li>
         </thingCategories>
         <equippedStatOffsets>
-            <ShootingAccuracyPawn>-2</ShootingAccuracyPawn>
-            <MeleeHitChance>-2</MeleeHitChance>
-            <MeleeDodgeChance>-5</MeleeDodgeChance>
+            <ShootingAccuracyPawn>-1.2</ShootingAccuracyPawn>
+            <MeleeHitChance>-1.5</MeleeHitChance>
+            <MeleeDodgeChance>-3</MeleeDodgeChance>
         </equippedStatOffsets>
         <comps>
             <li>
@@ -26,8 +26,8 @@
                 <capacities>
                     <li>Poke</li>
                 </capacities>
-                <power>9</power>
-                <cooldownTime>2</cooldownTime>
+                <power>8</power>
+                <cooldownTime>1.5</cooldownTime>
             </li>
             <li>
                 <label>centre</label>
@@ -35,30 +35,25 @@
                 <capacities>
                     <li>Blunt</li>
                 </capacities>
-                <power>9</power>
-                <cooldownTime>2</cooldownTime>
+                <power>8</power>
+                <cooldownTime>1.5</cooldownTime>
             </li>
         </tools>
-        <modExtensions>
-            <li Class="VFECore.ThingDefExtension">
-                <useFactionColourForPawnKinds></useFactionColourForPawnKinds>
-            </li>
-        </modExtensions>
     </ThingDef>
 
     <ThingDef ParentName="VFEV_BaseShield">
         <defName>VFEV_Shield_Round</defName>
         <label>round shield</label>
-        <description>placeholder</description>
+        <description>A wooden shield held together with a metal band, finished off with a leather inset to protect from rain. A leather strap and metal handle are also present on the back to allow for easy one-handed maneuvering during combat.</description>
         <graphicData>
             <texPath>Things/Item/Equipment/Shield/RoundShield/RoundShield</texPath>
             <graphicClass>Graphic_Single</graphicClass>
-            <drawSize>0.75</drawSize>
+            <drawSize>0.85</drawSize>
         </graphicData>
         <costStuffCount>20</costStuffCount>
         <costList>
-            <Steel>20</Steel>
             <WoodLog>40</WoodLog>
+			<Steel>20</Steel>
         </costList>
         <statBases>
             <MaxHitPoints>120</MaxHitPoints>

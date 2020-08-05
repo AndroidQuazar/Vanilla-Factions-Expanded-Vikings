@@ -18,6 +18,7 @@
             <MaxHitPoints>80</MaxHitPoints>
             <WorkToBuild>100</WorkToBuild>
             <Flammability>0</Flammability>
+            <Beauty>5</Beauty>
             <Mass>15</Mass>
         </statBases>
         <category>Building</category>

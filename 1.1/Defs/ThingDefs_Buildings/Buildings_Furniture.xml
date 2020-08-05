@@ -14,6 +14,32 @@
                 <rect>(0,0.05,1,1.95)</rect>
             </damageData>
         </graphicData>
+        <castEdgeShadows>True</castEdgeShadows>
+        <statBases>
+            <MaxHitPoints>125</MaxHitPoints>
+            <Flammability>1.0</Flammability>
+            <Mass>25</Mass>
+            <BedRestEffectiveness>0.98</BedRestEffectiveness>
+            <ImmunityGainSpeedFactor>1.06</ImmunityGainSpeedFactor>
+            <Comfort>0.71</Comfort>
+            <WorkToBuild>750</WorkToBuild>
+			<SurgerySuccessChanceFactor>0.8</SurgerySuccessChanceFactor>
+        </statBases>
+        <size>(1,2)</size>
+        <stuffCategories>
+            <li>Fabric</li>
+            <li>Leathery</li>
+        </stuffCategories>
+        <costStuffCount>35</costStuffCount>
+        <building>
+            <bed_showSleeperBody>False</bed_showSleeperBody>
+            <bed_healPerDay>4</bed_healPerDay>
+        </building>
+        <fillPercent>0.4</fillPercent>
+        <pathCost>50</pathCost>
+        <staticSunShadowHeight>0.17</staticSunShadowHeight>
+        <techLevel>Tribal</techLevel>
+        <uiIconScale>0.90</uiIconScale>
         <comps>
             <li Class="CompProperties_AffectedByFacilities">
                 <linkableFacilities>
@@ -22,35 +48,6 @@
                 </linkableFacilities>
             </li>
         </comps>
-        <castEdgeShadows>True</castEdgeShadows>
-        <statBases>
-            <MaxHitPoints>75</MaxHitPoints>
-            <Flammability>1.0</Flammability>
-            <Mass>2.5</Mass>
-            <BedRestEffectiveness>0.95</BedRestEffectiveness>
-            <ImmunityGainSpeedFactor>1.05</ImmunityGainSpeedFactor>
-            <Comfort>0.68</Comfort>
-            <WorkToBuild>600</WorkToBuild>
-        </statBases>
-        <size>(1,2)</size>
-        <stuffCategories>
-            <li>Fabric</li>
-            <li>Leathery</li>
-        </stuffCategories>
-        <costStuffCount>45</costStuffCount>
-        <building>
-            <bed_showSleeperBody>False</bed_showSleeperBody>
-            <bed_healPerDay>4</bed_healPerDay>
-        </building>
-        <fillPercent>0.4</fillPercent>
-        <pathCost>60</pathCost>
-        <staticSunShadowHeight>0.17</staticSunShadowHeight>
-        <designationHotKey>Misc2</designationHotKey>
-        <techLevel>Medieval</techLevel>
-        <researchPrerequisites>
-            <li>ComplexFurniture</li>
-        </researchPrerequisites>
-        <uiIconScale>0.90</uiIconScale>
     </ThingDef>
 	
     <ThingDef ParentName="BedWithQualityBase">
@@ -66,6 +63,32 @@
                 <rect>(0,0.05,1,1.95)</rect>
             </damageData>
         </graphicData>
+        <castEdgeShadows>True</castEdgeShadows>
+        <statBases>
+            <MaxHitPoints>175</MaxHitPoints>
+            <Flammability>1.0</Flammability>
+            <Mass>50</Mass>
+            <BedRestEffectiveness>0.98</BedRestEffectiveness>
+            <ImmunityGainSpeedFactor>1.06</ImmunityGainSpeedFactor>
+            <Comfort>0.71</Comfort>
+            <WorkToBuild>1500</WorkToBuild>
+			<SurgerySuccessChanceFactor>0.8</SurgerySuccessChanceFactor>
+        </statBases>
+        <size>(2,2)</size>
+        <stuffCategories>
+            <li>Fabric</li>
+            <li>Leathery</li>
+        </stuffCategories>
+        <costStuffCount>75</costStuffCount>
+        <building>
+            <bed_showSleeperBody>False</bed_showSleeperBody>
+            <bed_healPerDay>3</bed_healPerDay>
+        </building>
+        <fillPercent>0.4</fillPercent>
+        <pathCost>60</pathCost>
+        <staticSunShadowHeight>0.17</staticSunShadowHeight>
+        <techLevel>Tribal</techLevel>
+        <uiIconScale>0.90</uiIconScale>
         <comps>
             <li Class="CompProperties_AffectedByFacilities">
                 <linkableFacilities>
@@ -74,86 +97,6 @@
                 </linkableFacilities>
             </li>
         </comps>
-        <castEdgeShadows>True</castEdgeShadows>
-        <statBases>
-            <MaxHitPoints>75</MaxHitPoints>
-            <Flammability>1.0</Flammability>
-            <Mass>2.5</Mass>
-            <BedRestEffectiveness>0.95</BedRestEffectiveness>
-            <ImmunityGainSpeedFactor>1.05</ImmunityGainSpeedFactor>
-            <Comfort>0.68</Comfort>
-            <WorkToBuild>600</WorkToBuild>
-        </statBases>
-        <size>(2,2)</size>
-        <stuffCategories>
-            <li>Fabric</li>
-            <li>Leathery</li>
-        </stuffCategories>
-        <costStuffCount>45</costStuffCount>
-        <building>
-            <bed_showSleeperBody>False</bed_showSleeperBody>
-            <bed_healPerDay>3</bed_healPerDay>
-        </building>
-        <fillPercent>0.4</fillPercent>
-        <pathCost>60</pathCost>
-        <staticSunShadowHeight>0.17</staticSunShadowHeight>
-        <designationHotKey>Misc2</designationHotKey>
-        <techLevel>Medieval</techLevel>
-        <researchPrerequisites>
-            <li>ComplexFurniture</li>
-        </researchPrerequisites>
-        <uiIconScale>0.90</uiIconScale>
-    </ThingDef>
-
-    <ThingDef ParentName="BuildingBase">
-        <defName>VFEV_Candelabra</defName>
-        <label>candelabra</label>
-        <description>A floor-standing, sturdy lamp raised to about chest height. Puts of a pleasing, inviting hue of flame when burning logs. Meant primarily for lighting and gives off surprisingly little heat.</description>
-        <category>Building</category>
-        <graphicData>
-            <texPath>Things/Building/Misc/Candelabra</texPath>
-            <graphicClass>Graphic_Single</graphicClass>
-            <drawRotated>false</drawRotated>
-            <damageData>
-                <rect>(0.35,0.35,0.3,0.3)</rect>
-            </damageData>
-        </graphicData>
-        <uiIconPath>Things/Building/Misc/Candelabra</uiIconPath>
-        <uiIconScale>0.85</uiIconScale>
-        <rotatable>false</rotatable>
-        <altitudeLayer>Building</altitudeLayer>
-        <passability>PassThroughOnly</passability>
-        <pathCost>8</pathCost>
-        <constructEffect>ConstructWood</constructEffect>
-        <tickerType>Normal</tickerType>
-        <drawerType>RealtimeOnly</drawerType>
-        <fillPercent>0.15</fillPercent>
-        <statBases>
-            <MaxHitPoints>80</MaxHitPoints>
-            <WorkToBuild>100</WorkToBuild>
-            <Flammability>0</Flammability>
-        </statBases>
-        <selectable>true</selectable>
-        <costList>
-            <WoodLog>20</WoodLog>
-        </costList>
-        <building>
-            <artificialForMeditationPurposes>false</artificialForMeditationPurposes>
-        </building>
-        <soundImpactDefault>BulletImpact_Ground</soundImpactDefault>
-        <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
-        <resourcesFractionWhenDeconstructed>0</resourcesFractionWhenDeconstructed>
-        <placeWorkers>
-            <li>PlaceWorker_Heater</li>
-        </placeWorkers>
-        <drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
-        <comps>
-            <li Class="CompProperties_Glower">
-                <glowRadius>10</glowRadius>
-                <glowColor>(252,187,113,0)</glowColor>
-            </li>
-        </comps>
-        <designationCategory>Furniture</designationCategory>
     </ThingDef>
 
 </Defs>

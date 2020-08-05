@@ -24,20 +24,17 @@
         <rotatable>false</rotatable>
         <socialPropernessMatters>true</socialPropernessMatters>
         <fillPercent>0.40</fillPercent>
-        <minTechLevelToBuild>Medieval</minTechLevelToBuild>
+        <minTechLevelToBuild>Tribal</minTechLevelToBuild>
         <building>
             <joyKind>Gaming_Cerebral</joyKind>
         </building>
-        <researchPrerequisites>
-            <li>ComplexFurniture</li>
-        </researchPrerequisites>
         <statBases>
             <MaxHitPoints>100</MaxHitPoints>
             <WorkToBuild>8000</WorkToBuild>
             <Mass>5</Mass>
             <Flammability>1.0</Flammability>
             <Beauty>4</Beauty>
-            <JoyGainFactor>1</JoyGainFactor>
+            <JoyGainFactor>0.7</JoyGainFactor>
         </statBases>
         <stuffCategories>
             <li>Metallic</li>
@@ -48,7 +45,6 @@
         <pathCost>50</pathCost>
         <passability>PassThroughOnly</passability>
         <designationCategory>Joy</designationCategory>
-        <designationHotKey>Misc2</designationHotKey>
     </ThingDef>
 
 </Defs>
