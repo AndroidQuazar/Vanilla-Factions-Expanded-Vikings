@@ -8,29 +8,24 @@
         <isPlayer>true</isPlayer>
         <pawnSingular>member</pawnSingular>
         <pawnsPlural>members</pawnsPlural>
-        <basicMemberKind>VFEM_Subject</basicMemberKind>
+        <basicMemberKind>VFEV_Member</basicMemberKind>
         <techLevel>Medieval</techLevel>
         <backstoryCategories>
             <li>Tribal</li>
         </backstoryCategories>
         <factionIconPath>World/WorldObjects/Expanding/VikingsClan</factionIconPath>
         <settlementTexturePath>World/WorldObjects/Settlement</settlementTexturePath>
-        <playerInitialSettlementNameMaker>NamerInitialSettlementColony</playerInitialSettlementNameMaker>
-        <factionNameMaker>VFEV_NamerFactionViking</factionNameMaker>
-        <settlementNameMaker>VFEV_NamerSettlementMViking</settlementNameMaker>
+        <playerInitialSettlementNameMaker>NamerSettlementViking</playerInitialSettlementNameMaker>
+        <factionNameMaker>NamerFactionViking</factionNameMaker>
+        <settlementNameMaker>NamerSettlementViking</settlementNameMaker>
         <geneticVariance>1</geneticVariance>
+        <pawnNameMaker>NamerPersonViking</pawnNameMaker>
         <startingResearchTags>
             <li>TribalStart</li>
-            <li>VFEV_VikingStart</li>
         </startingResearchTags>
         <hairTags>
             <li>Rural</li>
         </hairTags>
-        <apparelStuffFilter>
-            <thingDefs>
-                <li>Cloth</li>
-            </thingDefs>
-        </apparelStuffFilter>
     </FactionDef>
 
 </Defs>

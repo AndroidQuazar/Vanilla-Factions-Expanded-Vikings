@@ -2,8 +2,8 @@
 <Defs>
 
 	<ThingDef ParentName="ArmorSmithableBase">
-		<defName>VFEV_Apparel_BrigandineArmor</defName>
-		<label>brigandine armor</label>
+		<defName>VFEV_Apparel_GuardianArmor</defName>
+		<label>guardian armor</label>
 		<description>placeholder</description>
 		<graphicData>
 			<texPath>Things/Pawn/Humanlike/Apparel/BrigandineArmor/BrigandineArmor</texPath>
@@ -50,6 +50,10 @@
 				<li>Middle</li>
 				<li>Shell</li>
 			</layers>
+			<tags Inherit="False">
+				<li>Apparel_Viking</li>
+				<li>Apparel_VikingGuardian</li>
+			</tags>
 			<defaultOutfitTags>
 				<li>Soldier</li>
 			</defaultOutfitTags>
@@ -92,11 +96,14 @@
 				<li>Torso</li>
 				<li>Legs</li>
 			</bodyPartGroups>
-			<wornGraphicPath>Things/Pawn/Humanlike/Apparel/LeatherArmour/LeatherArmour</wornGraphicPath>
+			<wornGraphicPath>Things/Pawn/Humanlike/Apparel/LeatherArmor/LeatherArmor</wornGraphicPath>
 			<layers>
 				<li>Middle</li>
 				<li>Shell</li>
 			</layers>
+			<tags Inherit="False">
+				<li>Apparel_Viking</li>
+			</tags>
 			<defaultOutfitTags>
 				<li>Soldier</li>
 			</defaultOutfitTags>
@@ -105,8 +112,8 @@
 	</ThingDef>
 
 	<ThingDef ParentName="ApparelMakeableBase">
-		<defName>VFEV_LeatherHeavyArmor</defName>
-		<label>leather heavy armor</label>
+		<defName>VFEV_Apparel_RavagerArmor</defName>
+		<label>ravager armor</label>
 		<description>placeholder</description>
 		<graphicData>
 			<texPath>Things/Pawn/Humanlike/Apparel/LeatherHeavyArmor/LeatherHeavyArmor</texPath>
@@ -146,6 +153,9 @@
 				<li>Middle</li>
 				<li>Shell</li>
 			</layers>
+			<tags Inherit="False">
+				<li>Apparel_VikingRavager</li>
+			</tags>
 			<defaultOutfitTags>
 				<li>Soldier</li>
 			</defaultOutfitTags>
@@ -193,6 +203,9 @@
 			<layers>
 				<li>Shell</li>
 			</layers>
+			<tags Inherit="False">
+				<li>Apparel_VikingJarl</li>
+			</tags>
 			<defaultOutfitTags>
 				<li>Worker</li>
 			</defaultOutfitTags>
@@ -272,6 +285,9 @@
 			<layers>
 				<li>Shell</li>
 			</layers>
+			<tags Inherit="False">
+				<li>Apparel_VikingJarl</li>
+			</tags>
 			<defaultOutfitTags>
 				<li>Worker</li>
 				<li>Soldier</li>
@@ -350,6 +366,9 @@
 			<layers>
 				<li>Shell</li>
 			</layers>
+			<tags Inherit="False">
+				<li>Apparel_Viking</li>
+			</tags>
 			<defaultOutfitTags>
 				<li>Worker</li>
 			</defaultOutfitTags>

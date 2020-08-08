@@ -2,7 +2,7 @@
 <Defs>
 
     <ThingDef ParentName="ArmorHelmetMakeableBase">
-        <defName>VFEV_Apparel_BrigandineHelmet</defName>
+        <defName>VFEV_Apparel_GuardianHelmet</defName>
         <label>guardian helmet</label>
         <description>A bulky medieval helmet that provides full-head coverage. Offers a considerable amount of protectuon but restricts the wearer's field of vision.</description>
         <techLevel>Medieval</techLevel>
@@ -45,9 +45,9 @@
             <layers>
                 <li>Overhead</li>
             </layers>
-            <tags>
-                <li>MedievalArmorElite</li>
-            </tags>
+			<tags Inherit="False">
+				<li>Apparel_VikingGuardian</li>
+			</tags>
             <defaultOutfitTags>
                 <li>Soldier</li>
             </defaultOutfitTags>
@@ -94,10 +94,9 @@
             <layers>
                 <li>Overhead</li>
             </layers>
-            <tags>
-                <li>MedievalArmorBasic</li>
-                <li>MedievalArmorDecent</li>
-            </tags>
+			<tags Inherit="False">
+				<li>Apparel_Viking</li>
+			</tags>
             <defaultOutfitTags>
                 <li>Soldier</li>
             </defaultOutfitTags>
@@ -144,10 +143,9 @@
             <layers>
                 <li>Overhead</li>
             </layers>
-            <tags>
-                <li>MedievalArmorBasic</li>
-                <li>MedievalArmorDecent</li>
-            </tags>
+			<tags Inherit="False">
+				<li>Apparel_VikingRavager</li>
+			</tags>
             <defaultOutfitTags>
                 <li>Soldier</li>
             </defaultOutfitTags>
@@ -199,6 +197,9 @@
       <layers>
         <li>Overhead</li>
       </layers>
+			<tags Inherit="False">
+				<li>Apparel_VikingBerserker</li>
+			</tags>
       <defaultOutfitTags>
         <li>Worker</li>
       </defaultOutfitTags>
@@ -247,6 +248,9 @@
       <layers>
         <li>Overhead</li>
       </layers>
+			<tags Inherit="False">
+				<li>Apparel_VikingBerserker</li>
+			</tags>
       <defaultOutfitTags>
         <li>Worker</li>
       </defaultOutfitTags>
@@ -292,6 +296,9 @@
       <layers>
         <li>Overhead</li>
       </layers>
+			<tags Inherit="False">
+				<li>Apparel_VikingJarl</li>
+			</tags>
       <canBeGeneratedToSatisfyWarmth>false</canBeGeneratedToSatisfyWarmth>
     </apparel>
   </ThingDef>

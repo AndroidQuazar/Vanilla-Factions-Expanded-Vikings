@@ -12,9 +12,9 @@
         <canStageAttacks>true</canStageAttacks>
         <factionIconPath>World/WorldObjects/Expanding/Village</factionIconPath>
         <geneticVariance>0.1</geneticVariance>
-        <factionNameMaker>NamerFactionTribal</factionNameMaker>
-        <settlementNameMaker>NamerSettlementTribal</settlementNameMaker>
-        <pawnNameMaker>NamerPersonTribal</pawnNameMaker>
+        <factionNameMaker>NamerFactionViking</factionNameMaker>
+        <settlementNameMaker>NamerSettlementViking</settlementNameMaker>
+        <pawnNameMaker>NamerPersonViking</pawnNameMaker>
         <techLevel>Medieval</techLevel>
         <backstoryFilters>
             <li>
@@ -63,9 +63,9 @@
                 <commonality>100</commonality>
                 <options>
                     <VFEV_Raider>25</VFEV_Raider>
-                    <VFEV_Pillager>20</VFEV_Pillager>
-                    <VFEV_Berserker>10</VFEV_Berserker>
-					<VFEV_Shieldbearer>15</VFEV_Shieldbearer>
+                    <VFEV_Guardian>20</VFEV_Guardian>
+                    <VFEV_Ravager>10</VFEV_Ravager>
+					<VFEV_Berserker>15</VFEV_Berserker>
                     <VFEV_HousecarlMelee>1</VFEV_HousecarlMelee>
                 </options>
             </li>
@@ -75,9 +75,6 @@
                 <commonality>60</commonality>
                 <options>
                     <VFEV_Archer>10</VFEV_Archer>
-                    <VFEV_Arbalist>10</VFEV_Arbalist>
-                    <VFEV_HeavyArcher>10</VFEV_HeavyArcher>
-                    <VFEV_HeavyArbalist>10</VFEV_HeavyArbalist>
                     <VFEV_HousecarlRanged>1</VFEV_HousecarlRanged>
                 </options>
             </li>
@@ -87,11 +84,13 @@
                 <commonality>40</commonality>
                 <options>
                     <VFEV_Raider>25</VFEV_Raider>
-                    <VFEV_Pillager>20</VFEV_Pillager>
-                    <VFEV_Berserker>10</VFEV_Berserker>
-					<VFEV_Shieldbearer>15</VFEV_Shieldbearer>
-                    <VFEV_HeavyArcher>10</VFEV_HeavyArcher>
-                    <VFEV_HeavyArbalist>10</VFEV_HeavyArbalist>
+                    <VFEV_Guardian>20</VFEV_Guardian>
+                    <VFEV_Ravager>10</VFEV_Ravager>
+					<VFEV_Berserker>15</VFEV_Berserker>
+                    <VFEV_Shieldbearer>10</VFEV_Shieldbearer>
+                    <VFEV_ShieldedGuardian>10</VFEV_ShieldedGuardian>
+					<VFEV_ShieldedRavager>10</VFEV_ShieldedRavager>
+					<VFEV_HousecarlMelee>1</VFEV_HousecarlMelee>
                 </options>
             </li>
         </pawnGroupMakers>
@@ -99,14 +98,10 @@
 		<modExtensions>
             <li Class="VFECore.FactionDefExtension">
 				<allowedBiomes>
-					<!--
 					<li>IceSheet</li>
 					<li>SeaIce</li>
-					-->
 				    <li>BorealForest</li>
 					<li>ColdBog</li>
-					<li>TemperateForest</li>
-					<li>TemperateSwamp</li>
 					<li>Tundra</li>
 				</allowedBiomes>
             </li>
@@ -115,31 +110,32 @@
 
     <FactionDef ParentName="VFEV_VikingBase">
         <defName>VFEV_VikingsClan</defName>
-        <label>nordsman clan</label>
-        <description>placeholder</description>
+        <label>rough clan</label>
+        <description>These clanmen have been here for a long time. Perhaps their ancestors crashed here a thousand years ago, as their legends suggest. In any case, the nordmen are fierce people who live off of the work of others, and they are not afraid to use force to take what's not theirs.\n\nAlbeit not as technologically advanced as other factions, the nordmen can be a valuable ally and a terrible enemy due to their hardiness and savage, heathen ways.\n\nThis particular clan values warlike dominance; it may be difficult to turn them into an ally.</description>
         <colorSpectrum>
-            <li>(0.5, 0.59, 0.64)</li>
-            <li>(0.1, 0.16, 0.23)</li>
-            <li>(0.32, 0.58, 0.47)</li>
+            <li>(0.30, 0.58, 0.65)</li>
+            <li>(0.35, 0.75, 0.70)</li>
         </colorSpectrum>
         <factionIconPath>World/WorldObjects/Expanding/VikingsSavage</factionIconPath>
         <permanentEnemy>false</permanentEnemy>
         <goodwillDailyGain>0</goodwillDailyGain>
         <goodwillDailyFall>2</goodwillDailyFall>
+		<startingGoodwill>-20~20</startingGoodwill>
         <pawnGroupMakers>
             <li>
                 <!-- Peaceful -->
                 <kindDef>Peaceful</kindDef>
                 <options>
-                    <VFEV_Warrior>20</VFEV_Warrior>
-                    <VFEV_Archer>10</VFEV_Archer>
-                    <VFEV_Arbalist>10</VFEV_Arbalist>
-                    <VFEV_Berserker>10</VFEV_Berserker>
-                    <VFEV_HeavyArcher>5</VFEV_HeavyArcher>
-					<VFEV_Shieldbearer>5</VFEV_Shieldbearer>
-                    <VFEV_HeavyArbalist>3</VFEV_HeavyArbalist>
-                    <VFEV_HousecarlMelee>1</VFEV_HousecarlMelee>
-                    <VFEV_HousecarlRanged>1</VFEV_HousecarlRanged>
+                    <VFEV_Raider>25</VFEV_Raider>
+                    <VFEV_Guardian>20</VFEV_Guardian>
+                    <VFEV_Ravager>10</VFEV_Ravager>
+					<VFEV_Berserker>15</VFEV_Berserker>
+                    <VFEV_Shieldbearer>10</VFEV_Shieldbearer>
+                    <VFEV_ShieldedGuardian>10</VFEV_ShieldedGuardian>
+					<VFEV_ShieldedRavager>10</VFEV_ShieldedRavager>
+					<VFEV_HousecarlMelee>1</VFEV_HousecarlMelee>
+					<VFEV_HousecarlRanged>1</VFEV_HousecarlRanged>
+					<VFEV_Archer>10</VFEV_Archer>
                 </options>
             </li>
             <li>
@@ -153,24 +149,31 @@
                     <Alpaca>2.5</Alpaca>
                 </carriers>
                 <guards>
-                    <VFEV_Warrior>20</VFEV_Warrior>
-                    <VFEV_Archer>10</VFEV_Archer>
-                    <VFEV_Arbalist>10</VFEV_Arbalist>
-                    <VFEV_Berserker>10</VFEV_Berserker>
-                    <VFEV_HeavyArcher>5</VFEV_HeavyArcher>
-					<VFEV_Shieldbearer>5</VFEV_Shieldbearer>
-                    <VFEV_HeavyArbalist>3</VFEV_HeavyArbalist>
+                    <VFEV_Raider>25</VFEV_Raider>
+                    <VFEV_Guardian>20</VFEV_Guardian>
+                    <VFEV_Ravager>10</VFEV_Ravager>
+					<VFEV_Berserker>15</VFEV_Berserker>
+                    <VFEV_Shieldbearer>10</VFEV_Shieldbearer>
+                    <VFEV_ShieldedGuardian>10</VFEV_ShieldedGuardian>
+					<VFEV_ShieldedRavager>10</VFEV_ShieldedRavager>
+					<VFEV_HousecarlMelee>1</VFEV_HousecarlMelee>
+					<VFEV_HousecarlRanged>1</VFEV_HousecarlRanged>
+					<VFEV_Archer>10</VFEV_Archer>
                 </guards>
             </li>
             <li>
                 <kindDef>Settlement</kindDef>
                 <options>
-                    <Tribal_Warrior>7</Tribal_Warrior>
-                    <Tribal_Archer>10</Tribal_Archer>
-                    <Tribal_Hunter>10</Tribal_Hunter>
-                    <Tribal_HeavyArcher>10</Tribal_HeavyArcher>
-                    <Tribal_Berserker>7</Tribal_Berserker>
-                    <Tribal_ChiefRanged>10</Tribal_ChiefRanged>
+                    <VFEV_Raider>25</VFEV_Raider>
+                    <VFEV_Guardian>20</VFEV_Guardian>
+                    <VFEV_Ravager>10</VFEV_Ravager>
+					<VFEV_Berserker>15</VFEV_Berserker>
+                    <VFEV_Shieldbearer>10</VFEV_Shieldbearer>
+                    <VFEV_ShieldedGuardian>10</VFEV_ShieldedGuardian>
+					<VFEV_ShieldedRavager>10</VFEV_ShieldedRavager>
+					<VFEV_HousecarlMelee>1</VFEV_HousecarlMelee>
+					<VFEV_HousecarlRanged>1</VFEV_HousecarlRanged>
+					<VFEV_Archer>10</VFEV_Archer>
                 </options>
             </li>
         </pawnGroupMakers>
@@ -178,16 +181,18 @@
 
     <FactionDef ParentName="VFEV_VikingBase">
         <defName>VFEV_VikingsSlaver</defName>
-        <label>slaver clan</label>
-        <description>These people have been here a very long time. Maybe their ancestors crashed here a thousand years ago. Maybe they survived some cataclysm that destroyed a technological civilization here. In any case, the tribals are mostly nomadic people who live off the land using primitive tools and weapons.\n\nDespite their apparent technological weakness, the tribals can be dangerous enemies because of their skill with low-tech warfare, their numbers, and their hardiness.\n\nThis particular tribe is driven by a blood-and-honor culture; you will not be able to ally with them!</description>
+        <label>savage clan</label>
+        <description>These clanmen have been here for a long time. Perhaps their ancestors crashed here a thousand years ago, as their legends suggest. In any case, the nordmen are fierce people who live off of the work of others, and they are not afraid to use force to take what's not theirs.\n\nAlbeit not as technologically advanced as other factions, the nordmen can be a valuable ally and a terrible enemy due to their hardiness and savage, heathen ways.\n\nThis particular clan wreaks havoc in surrounding settlements and takes any survivors into slavery - it will be very difficult to become their ally!</description>
         <colorSpectrum>
-            <li>(0.65, 0.22, 0.14)</li>
+            <li>(0.80, 0.36, 0.30)</li>
+            <li>(0.90, 0.34, 0.34)</li>
         </colorSpectrum>
         <factionIconPath>World/WorldObjects/Expanding/VikingsSlaver</factionIconPath>
         <permanentEnemy>false</permanentEnemy>
         <goodwillDailyGain>0</goodwillDailyGain>
         <!-- Reset goodwill inherited from TribeBase->HumanFactionBase for permanent enemy -->
-        <goodwillDailyFall>2</goodwillDailyFall>
+        <goodwillDailyFall>5</goodwillDailyFall>
+		<startingGoodwill>-60~-20</startingGoodwill>
         <pawnGroupMakers>
 	            <li>
                 <kindDef>Trader</kindDef>
@@ -200,24 +205,33 @@
                     <Alpaca>2.5</Alpaca>
                 </carriers>
                 <guards>
-                    <VFEV_Warrior>20</VFEV_Warrior>
-                    <VFEV_Archer>10</VFEV_Archer>
-                    <VFEV_Arbalist>10</VFEV_Arbalist>
-                    <VFEV_Berserker>10</VFEV_Berserker>
-                    <VFEV_HeavyArcher>5</VFEV_HeavyArcher>
-					<VFEV_Shieldbearer>5</VFEV_Shieldbearer>
-                    <VFEV_HeavyArbalist>3</VFEV_HeavyArbalist>
+					<VFEV_Slave>25</VFEV_Slave>
+                    <VFEV_Raider>25</VFEV_Raider>
+                    <VFEV_Guardian>20</VFEV_Guardian>
+                    <VFEV_Ravager>10</VFEV_Ravager>
+					<VFEV_Berserker>15</VFEV_Berserker>
+                    <VFEV_Shieldbearer>10</VFEV_Shieldbearer>
+                    <VFEV_ShieldedGuardian>10</VFEV_ShieldedGuardian>
+					<VFEV_ShieldedRavager>10</VFEV_ShieldedRavager>
+					<VFEV_HousecarlMelee>1</VFEV_HousecarlMelee>
+					<VFEV_HousecarlRanged>1</VFEV_HousecarlRanged>
+					<VFEV_Archer>10</VFEV_Archer>
                 </guards>
             </li>
             <li>
                 <kindDef>Settlement</kindDef>
                 <options>
-                    <Tribal_Warrior>7</Tribal_Warrior>
-                    <Tribal_Archer>10</Tribal_Archer>
-                    <Tribal_Hunter>10</Tribal_Hunter>
-                    <Tribal_HeavyArcher>10</Tribal_HeavyArcher>
-                    <Tribal_Berserker>7</Tribal_Berserker>
-                    <Tribal_ChiefRanged>10</Tribal_ChiefRanged>
+					<VFEV_Slave>25</VFEV_Slave>
+                    <VFEV_Raider>25</VFEV_Raider>
+                    <VFEV_Guardian>20</VFEV_Guardian>
+                    <VFEV_Ravager>10</VFEV_Ravager>
+					<VFEV_Berserker>15</VFEV_Berserker>
+                    <VFEV_Shieldbearer>10</VFEV_Shieldbearer>
+                    <VFEV_ShieldedGuardian>10</VFEV_ShieldedGuardian>
+					<VFEV_ShieldedRavager>10</VFEV_ShieldedRavager>
+					<VFEV_HousecarlMelee>1</VFEV_HousecarlMelee>
+					<VFEV_HousecarlRanged>1</VFEV_HousecarlRanged>
+					<VFEV_Archer>10</VFEV_Archer>
                 </options>
             </li>
         </pawnGroupMakers>

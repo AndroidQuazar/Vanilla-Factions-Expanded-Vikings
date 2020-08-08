@@ -2,20 +2,21 @@
 <Defs>
 
     <PawnKindDef ParentName="BasePlayerPawnKind">
-        <defName>VFEM_Subject</defName>
-        <label>subject</label>
+        <defName>VFEV_Member</defName>
+        <label>member</label>
         <race>Human</race>
-        <defaultFactionType>VFEM_PlayerKingdom</defaultFactionType>
+        <defaultFactionType>VFEV_PlayerClan</defaultFactionType>
         <backstoryCategories>
             <li>Tribal</li>
         </backstoryCategories>
         <chemicalAddictionChance>0.05</chemicalAddictionChance>
         <apparelTags>
-            <li>MedievalBasic</li>
+			<li>Apparel_Viking</li>
+			<li>Neolithic</li>
         </apparelTags>
         <apparelMoney>
-            <min>200</min>
-            <max>200</max>
+            <min>500</min>
+            <max>1200</max>
         </apparelMoney>
         <backstoryCryptosleepCommonality>0</backstoryCryptosleepCommonality>
         <techHediffsMoney>

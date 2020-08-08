@@ -48,13 +48,14 @@
         <description>A target dummy made out of wood, soil, and dried plant matter. Surprisingly durable, allows oneself to test their swordsmanship and train over time without risking fatal confrontation.</description>
         <graphicData>
             <texPath>Things/Building/Misc/TrainingDummy</texPath>
-            <graphicClass>Graphic_Single</graphicClass>
+            <graphicClass>Graphic_Multi</graphicClass>
             <drawSize>(2,2)</drawSize>
             <shadowData>
                 <volume>(1.5, 1.5, 1)</volume>
                 <offset>(0,0,0)</offset>
             </shadowData>
         </graphicData>
+		<uiIconPath>Things/Building/Misc/TrainingDummy_MenuIcon</uiIconPath>
         <size>(2,1)</size>
         <rotatable>true</rotatable>
         <altitudeLayer>Building</altitudeLayer>

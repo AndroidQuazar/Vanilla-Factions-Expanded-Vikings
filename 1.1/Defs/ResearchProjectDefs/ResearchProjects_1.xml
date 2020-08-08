@@ -7,9 +7,6 @@
         <description>Keeping bees to produce honey from nearby plants.</description>
         <baseCost>500</baseCost>
         <techLevel>Neolithic</techLevel>
-        <tags>
-            <li>VFEV_VikingStart</li>
-        </tags>
         <researchViewX>4.00</researchViewX>
         <researchViewY>1.40</researchViewY>
     </ResearchProjectDef>

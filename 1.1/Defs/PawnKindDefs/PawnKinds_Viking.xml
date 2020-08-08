@@ -10,6 +10,7 @@
         <invFoodDef>Pemmican</invFoodDef>
         <apparelTags>
             <li>Neolithic</li>
+			<li>Apparel_Viking</li>
         </apparelTags>
     </PawnKindDef>
 	
@@ -30,7 +31,7 @@
             <min>50</min>
             <max>125</max>
         </apparelMoney>
-        <apparelTags>
+        <apparelTags Inherit="False">
             <li>Neolithic</li>
         </apparelTags>
         <weaponMoney>
@@ -99,16 +100,102 @@
     <PawnKindDef ParentName="VFEV_NordsmenBase">
         <defName>VFEV_Raider</defName>
         <label>raider</label>
-        <combatPower>35</combatPower>
+        <combatPower>100</combatPower>
         <chemicalAddictionChance>0.10</chemicalAddictionChance>
         <invNutrition>0</invNutrition>
         <itemQuality>Poor</itemQuality>
         <gearHealthRange>0.2~1.1</gearHealthRange>
-        <apparelMoney>50~100</apparelMoney>
-        <weaponMoney>90~150</weaponMoney>
+        <apparelMoney>250~700</apparelMoney>
+        <weaponMoney>90~550</weaponMoney>
         <weaponTags>
             <li>NeolithicMeleeBasic</li>
+			<li>MedievalMeleeDecent</li>
+            <li>MedievalMeleeAdvanced</li>
         </weaponTags>
+        <techHediffsMoney>50~50</techHediffsMoney>
+        <techHediffsTags>
+            <li>Poor</li>
+        </techHediffsTags>
+        <techHediffsChance>0.15</techHediffsChance>
+    </PawnKindDef>
+	
+    <PawnKindDef ParentName="VFEV_NordsmenBase">
+        <defName>VFEV_Guardian</defName>
+        <label>guardian</label>
+        <combatPower>155</combatPower>
+        <chemicalAddictionChance>0.10</chemicalAddictionChance>
+        <invNutrition>2</invNutrition>
+        <itemQuality>Normal</itemQuality>
+        <gearHealthRange>0.2~1.1</gearHealthRange>
+        <apparelMoney>450~1000</apparelMoney>
+        <weaponMoney>290~550</weaponMoney>
+        <weaponTags>
+            <li>NeolithicMeleeBasic</li>
+			<li>MedievalMeleeDecent</li>
+            <li>MedievalMeleeAdvanced</li>
+        </weaponTags>
+        <apparelTags Inherit="False">
+			<li>Apparel_VikingGuardian</li>
+        </apparelTags>
+		<apparelRequired>
+			<li>VFEV_Apparel_GuardianArmor</li>
+			<li>VFEV_Apparel_GuardianHelmet</li>
+		</apparelRequired>
+        <techHediffsMoney>50~50</techHediffsMoney>
+        <techHediffsTags>
+            <li>Poor</li>
+        </techHediffsTags>
+        <techHediffsChance>0.15</techHediffsChance>
+    </PawnKindDef>
+	
+    <PawnKindDef ParentName="VFEV_NordsmenBase">
+        <defName>VFEV_Ravager</defName>
+        <label>ravager</label>
+        <combatPower>175</combatPower>
+        <chemicalAddictionChance>0.10</chemicalAddictionChance>
+        <invNutrition>2</invNutrition>
+        <itemQuality>Excellent</itemQuality>
+        <gearHealthRange>0.2~1.1</gearHealthRange>
+        <apparelMoney>450~1400</apparelMoney>
+        <weaponMoney>290~550</weaponMoney>
+        <weaponTags>
+            <li>NeolithicMeleeBasic</li>
+			<li>MedievalMeleeDecent</li>
+            <li>MedievalMeleeAdvanced</li>
+        </weaponTags>
+        <apparelTags Inherit="False">
+			<li>Apparel_VikingRavager</li>
+        </apparelTags>
+		<apparelRequired>
+			<li>VFEV_Apparel_RavagerArmor</li>
+			<li>VFEV_Apparel_RavagerHelmet</li>
+		</apparelRequired>
+        <techHediffsMoney>50~50</techHediffsMoney>
+        <techHediffsTags>
+            <li>Poor</li>
+        </techHediffsTags>
+        <techHediffsChance>0.15</techHediffsChance>
+    </PawnKindDef>
+	
+    <PawnKindDef ParentName="VFEV_NordsmenBase">
+        <defName>VFEV_Berserker</defName>
+        <label>berserker</label>
+        <combatPower>160</combatPower>
+        <chemicalAddictionChance>0.10</chemicalAddictionChance>
+        <invNutrition>2</invNutrition>
+        <itemQuality>Excellent</itemQuality>
+        <gearHealthRange>0.2~1.1</gearHealthRange>
+        <apparelMoney>450~1000</apparelMoney>
+        <weaponMoney>290~550</weaponMoney>
+        <weaponTags>
+            <li>NeolithicMeleeBasic</li>
+			<li>MedievalMeleeDecent</li>
+            <li>MedievalMeleeAdvanced</li>
+        </weaponTags>
+        <apparelTags>
+			<li>Apparel_Viking</li>
+			<li>Apparel_VikingBerserker</li>
+        </apparelTags>
         <techHediffsMoney>50~50</techHediffsMoney>
         <techHediffsTags>
             <li>Poor</li>
@@ -120,8 +207,8 @@
         <combatPower>48</combatPower>
         <itemQuality>Poor</itemQuality>
         <gearHealthRange>0.5~1.8</gearHealthRange>
-        <apparelMoney>180~350</apparelMoney>
-        <weaponMoney>80~80</weaponMoney>
+        <apparelMoney>180~550</apparelMoney>
+        <weaponMoney>80~160</weaponMoney>
         <weaponTags>
             <li>NeolithicRangedBasic</li>
         </weaponTags>
@@ -138,8 +225,11 @@
         <combatPower>48</combatPower>
         <itemQuality>Poor</itemQuality>
         <gearHealthRange>0.5~1.8</gearHealthRange>
-        <apparelMoney>180~350</apparelMoney>
-        <weaponMoney>80~80</weaponMoney>
+        <apparelMoney>180~550</apparelMoney>
+        <weaponMoney>80~160</weaponMoney>
+        <apparelTags>
+			<li>Apparel_Viking</li>
+        </apparelTags>
         <weaponTags>
             <li>NeolithicRangedBasic</li>
         </weaponTags>
@@ -148,143 +238,154 @@
             <li>Poor</li>
         </techHediffsTags>
         <techHediffsChance>0.03</techHediffsChance>
-    </PawnKindDef>
-
-    <PawnKindDef ParentName="VFEV_NordsmenArcherBase">
-        <defName>VFEV_Arbalist</defName>
-        <label>arbalist</label>
-        <combatPower>48</combatPower>
-        <itemQuality>Poor</itemQuality>
-        <gearHealthRange>0.5~1.8</gearHealthRange>
-        <apparelMoney>180~350</apparelMoney>
-        <weaponMoney>80~80</weaponMoney>
-        <weaponTags>
-            <li>NeolithicRangedBasic</li>
-        </weaponTags>
-        <techHediffsMoney>50~50</techHediffsMoney>
-        <techHediffsTags>
-            <li>Poor</li>
-        </techHediffsTags>
-        <techHediffsChance>0.03</techHediffsChance>
-    </PawnKindDef>
-	
-    <!-- Mid tier - warrior, pillager -->
-
-    <PawnKindDef ParentName="VFEV_NordsmenBase">
-        <defName>VFEV_Warrior</defName>
-        <label>warrior</label>
-        <combatPower>60</combatPower>
-        <itemQuality>Poor</itemQuality>
-        <canBeSapper>true</canBeSapper>
-        <gearHealthRange>0.5~1.8</gearHealthRange>
-        <apparelMoney>200~300</apparelMoney>
-        <apparelRequired>
-            <li>Apparel_WarVeil</li>
-        </apparelRequired>
-        <weaponMoney>150~150</weaponMoney>
-        <weaponTags>
-            <li>NeolithicMeleeDecent</li>
-        </weaponTags>
-    </PawnKindDef>
-
-    <PawnKindDef ParentName="VFEV_NordsmenBase">
-        <defName>VFEV_Pillager</defName>
-        <label>pillager</label>
-        <combatPower>65</combatPower>
-        <gearHealthRange>0.5~1.8</gearHealthRange>
-        <apparelMoney>200~300</apparelMoney>
-        <apparelRequired>
-            <li>Apparel_WarVeil</li>
-        </apparelRequired>
-        <weaponMoney>100~100</weaponMoney>
-        <weaponTags>
-            <li>NeolithicRangedDecent</li>
-        </weaponTags>
-    </PawnKindDef>
-
-    <!-- High tier - berserker, heavy archer, housecarl -->
-
-    <PawnKindDef ParentName="VFEV_NordsmenBase">
-        <defName>VFEV_Berserker</defName>
-        <label>berserker</label>
-        <combatPower>90</combatPower>
-        <canBeSapper>true</canBeSapper>
-        <apparelMoney>200~550</apparelMoney>
-        <apparelRequired>
-            <li>Apparel_WarMask</li>
-        </apparelRequired>
-        <weaponMoney>300~300</weaponMoney>
-        <weaponTags>
-            <li>NeolithicMeleeAdvanced</li>
-        </weaponTags>
     </PawnKindDef>
 	
     <PawnKindDef ParentName="VFEV_NordsmenBase">
         <defName>VFEV_Shieldbearer</defName>
         <label>shieldbearer</label>
-        <combatPower>90</combatPower>
+        <combatPower>100</combatPower>
         <canBeSapper>true</canBeSapper>
-        <apparelMoney>200~550</apparelMoney>
-        <apparelRequired>
-            <li>Apparel_WarMask</li>
-        </apparelRequired>
-        <weaponMoney>300~300</weaponMoney>
+        <apparelMoney>200~750</apparelMoney>
+        <weaponMoney>300~400</weaponMoney>
         <weaponTags>
-            <li>NeolithicMeleeAdvanced</li>
+            <li>NeolithicMeleeBasic</li>
+			<li>MedievalMeleeDecent</li>
+            <li>MedievalMeleeAdvanced</li>
         </weaponTags>
+        <modExtensions Inherit="False">
+            <li Class="VFECore.PawnKindDefExtension">
+                <factionColourApparelPartList>
+                    <li>Torso</li>
+                </factionColourApparelPartList>
+                <factionColourApparelLayerList>
+                    <li>VFEC_OuterShell</li>
+                </factionColourApparelLayerList>
+                <shieldMoney>
+                    <min>100</min>
+                    <max>1000</max>
+                </shieldMoney>
+                <shieldTags>
+                    <li>VikingBasic</li>
+                </shieldTags>
+            </li>
+        </modExtensions>
+    </PawnKindDef>
+	
+    <PawnKindDef ParentName="VFEV_NordsmenBase">
+        <defName>VFEV_ShieldedGuardian</defName>
+        <label>guardian</label>
+        <combatPower>155</combatPower>
+        <chemicalAddictionChance>0.10</chemicalAddictionChance>
+        <invNutrition>2</invNutrition>
+        <itemQuality>Normal</itemQuality>
+        <gearHealthRange>0.2~1.1</gearHealthRange>
+        <apparelMoney>250~1000</apparelMoney>
+        <weaponMoney>290~650</weaponMoney>
+        <weaponTags>
+            <li>NeolithicMeleeBasic</li>
+			<li>MedievalMeleeDecent</li>
+            <li>MedievalMeleeAdvanced</li>
+        </weaponTags>
+		<apparelRequired>
+			<li>VFEV_Apparel_GuardianArmor</li>
+			<li>VFEV_Apparel_GuardianHelmet</li>
+		</apparelRequired>
+        <apparelTags Inherit="False">
+			<li>Apparel_VikingGuardian</li>
+        </apparelTags>
+        <techHediffsMoney>50~50</techHediffsMoney>
+        <techHediffsTags>
+            <li>Poor</li>
+        </techHediffsTags>
+        <techHediffsChance>0.15</techHediffsChance>
+        <modExtensions Inherit="False">
+            <li Class="VFECore.PawnKindDefExtension">
+                <factionColourApparelPartList>
+                    <li>Torso</li>
+                </factionColourApparelPartList>
+                <factionColourApparelLayerList>
+                    <li>VFEC_OuterShell</li>
+                </factionColourApparelLayerList>
+                <shieldMoney>
+                    <min>100</min>
+                    <max>1000</max>
+                </shieldMoney>
+                <shieldTags>
+                    <li>VikingBasic</li>
+                </shieldTags>
+            </li>
+        </modExtensions>
+    </PawnKindDef>
+	
+    <PawnKindDef ParentName="VFEV_NordsmenBase">
+        <defName>VFEV_ShieldedRavager</defName>
+        <label>ravager</label>
+        <combatPower>175</combatPower>
+        <chemicalAddictionChance>0.10</chemicalAddictionChance>
+        <invNutrition>2</invNutrition>
+        <itemQuality>Excellent</itemQuality>
+        <gearHealthRange>0.2~1.1</gearHealthRange>
+        <apparelMoney>450~1400</apparelMoney>
+        <weaponMoney>290~650</weaponMoney>
+        <weaponTags>
+            <li>NeolithicMeleeBasic</li>
+			<li>MedievalMeleeDecent</li>
+            <li>MedievalMeleeAdvanced</li>
+        </weaponTags>
+        <apparelTags Inherit="False">
+			<li>Apparel_VikingRavager</li>
+        </apparelTags>
+		<apparelRequired>
+			<li>VFEV_Apparel_RavagerArmor</li>
+			<li>VFEV_Apparel_RavagerHelmet</li>
+		</apparelRequired>
+        <techHediffsMoney>50~50</techHediffsMoney>
+        <techHediffsTags>
+            <li>Poor</li>
+        </techHediffsTags>
+        <techHediffsChance>0.15</techHediffsChance>
+        <modExtensions Inherit="False">
+            <li Class="VFECore.PawnKindDefExtension">
+                <factionColourApparelPartList>
+                    <li>Torso</li>
+                </factionColourApparelPartList>
+                <factionColourApparelLayerList>
+                    <li>VFEC_OuterShell</li>
+                </factionColourApparelLayerList>
+                <shieldMoney>
+                    <min>100</min>
+                    <max>1000</max>
+                </shieldMoney>
+                <shieldTags>
+                    <li>VikingBasic</li>
+                </shieldTags>
+            </li>
+        </modExtensions>
     </PawnKindDef>
 
-    <PawnKindDef ParentName="VFEV_NordsmenBase" Name="VFEV_NordsmenHeavyArcherBase" Abstract="True">
-        <combatPower>90</combatPower>
-        <apparelMoney>200~550</apparelMoney>
-        <apparelRequired>
-            <li>Apparel_WarMask</li>
-        </apparelRequired>
-        <weaponMoney>250~250</weaponMoney>
-        <weaponTags>
-            <li>NeolithicRangedHeavy</li>
-        </weaponTags>
-    </PawnKindDef>
-
-    <PawnKindDef ParentName="VFEV_NordsmenHeavyArcherBase">
-        <defName>VFEV_HeavyArcher</defName>
-        <label>heavy archer</label>
-        <combatPower>90</combatPower>
-        <apparelMoney>200~550</apparelMoney>
-        <weaponMoney>250~250</weaponMoney>
-        <weaponTags>
-            <li>NeolithicRangedHeavy</li>
-        </weaponTags>
-    </PawnKindDef>
-
-    <PawnKindDef ParentName="VFEV_NordsmenHeavyArcherBase">
-        <defName>VFEV_HeavyArbalist</defName>
-        <label>heavy archer</label>
-        <combatPower>90</combatPower>
-        <apparelMoney>200~550</apparelMoney>
-        <weaponMoney>250~250</weaponMoney>
-        <weaponTags>
-            <li>NeolithicRangedHeavy</li>
-        </weaponTags>
-    </PawnKindDef>
 
     <PawnKindDef ParentName="VFEV_NordsmenBase" Name="VFEV_NordsmeHousecarlBase" Abstract="True">
-        <combatPower>130</combatPower>
+        <combatPower>230</combatPower>
         <baseRecruitDifficulty>0.90</baseRecruitDifficulty>
         <minGenerationAge>30</minGenerationAge>
-        <maxGenerationAge>999</maxGenerationAge>
+        <maxGenerationAge>70</maxGenerationAge>
         <itemQuality>Normal</itemQuality>
-        <factionLeader>true</factionLeader>
+		<factionLeader>true</factionLeader>
         <canBeSapper>true</canBeSapper>
-        <apparelMoney>450~750</apparelMoney>
+        <apparelMoney>1450~1750</apparelMoney>
         <weaponMoney>500~1000</weaponMoney>
+        <apparelTags>
+				<li>Apparel_VikingJarl</li>
+				<li>Apparel_Viking</li>
+        </apparelTags>
     </PawnKindDef>
 
     <PawnKindDef ParentName="VFEV_NordsmeHousecarlBase">
         <defName>VFEV_HousecarlMelee</defName>
         <label>housecarl</label>
         <weaponTags>
-            <li>NeolithicMeleeAdvanced</li>
+            <li>NeolithicMeleeBasic</li>
+			<li>MedievalMeleeDecent</li>
             <li>MedievalMeleeAdvanced</li>
         </weaponTags>
     </PawnKindDef>
@@ -295,17 +396,6 @@
         <weaponTags>
             <li>NeolithicRangedChief</li>
         </weaponTags>
-    </PawnKindDef>
-
-    <!-- High tier - Jarl -->
-
-    <PawnKindDef ParentName="VFEV_NordsmenBase">
-        <defName>VFEV_Jarl</defName>
-        <label>jarl</label>
-        <combatPower>140</combatPower>
-        <baseRecruitDifficulty>0.90</baseRecruitDifficulty>
-        <itemQuality>Good</itemQuality>
-        <factionLeader>true</factionLeader>
     </PawnKindDef>
 
 </Defs>

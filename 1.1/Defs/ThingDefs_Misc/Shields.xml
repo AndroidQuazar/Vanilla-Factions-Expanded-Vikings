@@ -7,9 +7,8 @@
             <li>VFEC_Shields</li>
         </thingCategories>
         <equippedStatOffsets>
-            <ShootingAccuracyPawn>-1.2</ShootingAccuracyPawn>
-            <MeleeHitChance>-1.5</MeleeHitChance>
-            <MeleeDodgeChance>-3</MeleeDodgeChance>
+            <ShootingAccuracyPawn>-2</ShootingAccuracyPawn>
+            <MeleeDodgeChance>-2</MeleeDodgeChance>
         </equippedStatOffsets>
         <comps>
             <li>
@@ -26,8 +25,8 @@
                 <capacities>
                     <li>Poke</li>
                 </capacities>
-                <power>8</power>
-                <cooldownTime>1.5</cooldownTime>
+                <power>9</power>
+                <cooldownTime>2</cooldownTime>
             </li>
             <li>
                 <label>centre</label>
@@ -35,8 +34,8 @@
                 <capacities>
                     <li>Blunt</li>
                 </capacities>
-                <power>8</power>
-                <cooldownTime>1.5</cooldownTime>
+                <power>9</power>
+                <cooldownTime>2</cooldownTime>
             </li>
         </tools>
     </ThingDef>
@@ -48,30 +47,32 @@
         <graphicData>
             <texPath>Things/Item/Equipment/Shield/RoundShield/RoundShield</texPath>
             <graphicClass>Graphic_Single</graphicClass>
-            <drawSize>0.85</drawSize>
+            <shaderType>CutoutComplex</shaderType>
+            <drawSize>1</drawSize>
         </graphicData>
-        <costStuffCount>20</costStuffCount>
+        <costStuffCount>25</costStuffCount>
         <costList>
-            <WoodLog>40</WoodLog>
+            <WoodLog>50</WoodLog>
 			<Steel>20</Steel>
         </costList>
         <statBases>
             <MaxHitPoints>120</MaxHitPoints>
-            <Flammability>0.6</Flammability>
-            <ArmorRating_Sharp>0.56</ArmorRating_Sharp>
-            <ArmorRating_Blunt>0.75</ArmorRating_Blunt>
-            <ArmorRating_Heat>0.5</ArmorRating_Heat>
-            <WorkToMake>6000</WorkToMake>
-            <Mass>3</Mass>
+            <Flammability>1.0</Flammability>
+            <ArmorRating_Sharp>0.35</ArmorRating_Sharp>
+            <ArmorRating_Blunt>0.30</ArmorRating_Blunt>
+            <ArmorRating_Heat>0.55</ArmorRating_Heat>
+            <WorkToMake>2600</WorkToMake>
+            <Mass>1.7</Mass>
         </statBases>
         <comps>
-            <li Class="CompOversizedWeapon.CompProperties_OversizedWeapon" />
+            <li Class="CompOversizedWeapon.CompProperties_OversizedWeapon"/>
             <li Class="VFECore.CompProperties_Shield">
                 <shieldTags>
-                    <li>MedievalDecent</li>
+                    <li>VikingBasic</li>
                 </shieldTags>
-                <useDeflectMetalEffect>true</useDeflectMetalEffect>
+                <useDeflectMetalEffect>false</useDeflectMetalEffect>
                 <coveredBodyPartGroups>
+                    <li>Neck</li>
                     <li>Torso</li>
                     <li>Arms</li>
                     <li>Hands</li>
@@ -80,7 +81,7 @@
                     <texPath>Things/Item/Equipment/Shield/RoundShield/RoundShield</texPath>
                     <graphicClass>Graphic_Multi</graphicClass>
                     <shaderType>CutoutComplex</shaderType>
-                    <drawSize>1.3</drawSize>
+                    <drawSize>1.6</drawSize>
                 </offHandGraphicData>
                 <offHandHoldOffset>
                     <northDefault>
@@ -88,14 +89,14 @@
                         <behind>true</behind>
                     </northDefault>
                     <east>
-                        <offset>(-0.05, 0, 0.2)</offset>
+                        <offset>(-0.1, 0, 0.2)</offset>
                         <behind>true</behind>
                     </east>
                     <south>
-                        <offset>(0, -0.04, 0.2)</offset>
+                        <offset>(-0.1, -0.04, 0.2)</offset>
                     </south>
                     <west>
-                        <offset>(0.05, 0, 0.2)</offset>
+                        <offset>(0.1, 0, 0.2)</offset>
                     </west>
                 </offHandHoldOffset>
             </li>
