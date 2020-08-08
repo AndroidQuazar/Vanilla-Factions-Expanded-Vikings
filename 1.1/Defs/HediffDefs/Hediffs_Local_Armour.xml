@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<HediffDef Name="VFEV_CryptoBleedBase" Abstract="True">
+		<defaultLabelColor>(0, 0.71, 0.93)</defaultLabelColor>
+		<label>Cryptobleed</label>
+		<description>Experimental crypto tech from the armour slows down bleeding.</description>
+	</HediffDef> 
+
+
+	<HediffDef ParentName="VFEV_CryptoBleedBase">
+		<defName>VFEV_BleedrateCrypto_5</defName>
+		<stages>
+			<li>
+				<label>Armour</label>
+				<capMods>
+					<li>
+						<capacity>BloodPumping</capacity>
+						<offset>0.05</offset>
+					</li>
+				</capMods>
+				<painOffset>-0.05</painOffset>
+			</li>
+		</stages>
+	</HediffDef> 
+
+	<HediffDef ParentName="VFEV_CryptoBleedBase">
+		<defName>VFEV_BleedrateCrypto_10</defName>
+		<stages>
+			<li>
+				<label>Armour</label>
+				<capMods>
+					<li>
+						<capacity>BloodPumping</capacity>
+						<offset>0.1</offset>
+					</li>
+				</capMods>
+				<painOffset>-0.1</painOffset>
+			</li>
+		</stages>
+	</HediffDef> 
+
+	<HediffDef ParentName="VFEV_CryptoBleedBase">
+		<defName>VFEV_BleedrateCrypto_20</defName>
+		<stages>
+			<li>
+				<label>Armour</label>
+				<capMods>
+					<li>
+						<capacity>BloodPumping</capacity>
+						<offset>0.2</offset>
+					</li>
+				</capMods>
+				<painOffset>-0.2</painOffset>
+			</li>
+		</stages>
+	</HediffDef> 
+
+</Defs>

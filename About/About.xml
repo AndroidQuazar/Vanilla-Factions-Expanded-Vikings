@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ModMetaData>
 	<name>Vanilla Factions Expanded - Vikings</name>
-	<author>Helixien, Chowder, Oskar Potocki</author>
+	<author>Oskar Potocki, Chowder</author>
 	<supportedVersions>
 		<li>1.1</li>
 	</supportedVersions>
-	<packageId>Helixien.VFE.Vikings</packageId>
+	<packageId>OskarPotocki.VFE.Vikings</packageId>
 	<description>Placeholder</description>
 	<modDependencies>
         <li>

@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <ThingDef ParentName="BaseGunWithQuality">
+        <defName>VFEV_Gun_TeslaCoil</defName>
+        <label>tesla gun</label>
+        <description>A mid-range weapon used by mechanoids. Using a mechanoids power source to generate a lighting projectile which strikes its target with great accuracy. While it does less damage than charge weapons, it can reach over very long distances and has an extremely low reload time.</description>
+        <techLevel>Spacer</techLevel>
+        <graphicData>
+            <texPath>Things/Item/Equipment/WeaponRanged/TeslaGun</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <menuHidden>True</menuHidden>
+        <tradeability>None</tradeability>
+        <destroyOnDrop>true</destroyOnDrop>
+        <statBases>
+            <MarketValue>1400</MarketValue>
+            <Mass>2.6</Mass>
+            <AccuracyTouch>0.80</AccuracyTouch>
+            <AccuracyShort>0.90</AccuracyShort>
+            <AccuracyMedium>0.95</AccuracyMedium>
+            <AccuracyLong>0.90</AccuracyLong>
+            <RangedWeapon_Cooldown>1.2</RangedWeapon_Cooldown>
+        </statBases>
+        <weaponTags>
+            <li>VFEV_MechanoidGunTesla</li>
+        </weaponTags>
+        <verbs>
+            <li>
+                <verbClass>Verb_Shoot</verbClass>
+                <hasStandardCommand>true</hasStandardCommand>
+                <defaultProjectile>VFEV_Bullet_TeslaCoil</defaultProjectile>
+                <warmupTime>1.2</warmupTime>
+                <range>44.9</range>
+                <soundCast>Shot_NeedleGun</soundCast>
+                <soundCastTail>GunTail_Heavy</soundCastTail>
+                <muzzleFlashScale>9</muzzleFlashScale>
+            </li>
+        </verbs>
+        <tools>
+            <li>
+                <label>coil</label>
+                <capacities>
+                    <li>Blunt</li>
+                    <li>Poke</li>
+                </capacities>
+                <power>9</power>
+                <cooldownTime>2.6</cooldownTime>
+            </li>
+        </tools>
+    </ThingDef>
+
+    <ThingDef ParentName="BaseBullet">
+        <defName>VFEV_Bullet_TeslaCoil</defName>
+        <label>lighting</label>
+        <graphicData>
+            <texPath>Things/Projectile/Needle</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>1.3</drawSize>
+        </graphicData>
+        <projectile>
+            <damageDef>Bullet</damageDef>
+            <damageAmountBase>5</damageAmountBase>
+            <armorPenetrationBase>0.35</armorPenetrationBase>
+            <stoppingPower>3.0</stoppingPower>
+            <speed>100</speed>
+        </projectile>
+    </ThingDef>
+
+</Defs>
