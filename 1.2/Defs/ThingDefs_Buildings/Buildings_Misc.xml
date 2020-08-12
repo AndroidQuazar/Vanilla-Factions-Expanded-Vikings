@@ -11,7 +11,6 @@
             <texPath>Things/Building/Misc/Apiary</texPath>
             <graphicClass>Graphic_Single</graphicClass>
             <drawSize>(2,2)</drawSize>
-			<Mass>20</Mass>
             <shadowData>
                 <volume>(1.5, 1.5, 1)</volume>
                 <offset>(0,0,0)</offset>
@@ -34,6 +33,7 @@
             <MaxHitPoints>200</MaxHitPoints>
             <WorkToBuild>3000</WorkToBuild>
             <Flammability>0.5</Flammability>
+			<Mass>20</Mass>
         </statBases>
         <building>
             <soundAmbient>VFEV_Apiary_Ambience</soundAmbient>
