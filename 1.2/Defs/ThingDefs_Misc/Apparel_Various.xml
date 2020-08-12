@@ -141,6 +141,9 @@
 			<StuffEffectMultiplierInsulation_Heat>0.11</StuffEffectMultiplierInsulation_Heat>
 			<EquipDelay>15</EquipDelay>
 		</statBases>
+		<equippedStatOffsets>
+			<PainShockThreshold>0.10</PainShockThreshold>
+		</equippedStatOffsets>
 		<apparel>
 			<bodyPartGroups>
 				<li>Shoulders</li>
