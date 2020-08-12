@@ -4,7 +4,7 @@
     <ThingDef ParentName="SculptureBase">
         <defName>VFEV_RuneStone</defName>
         <label>rune stone</label>
-        <description>A loosely carved and stacked structure ascribed with ancient text and ornate patterns. Ancient northern tribes were known to pray at these shrines as well as keep them in their halls as aesthetic decorum.</description>
+        <description>A loosely carved and smoothed structure ascribed with ancient text and ornate patterns. Ancient northern tribes were known to pray at these shrines as well as keep them in their halls as aesthetic decorum.</description>
         <castEdgeShadows>true</castEdgeShadows>
         <graphicData>
             <graphicClass>Graphic_Random</graphicClass>

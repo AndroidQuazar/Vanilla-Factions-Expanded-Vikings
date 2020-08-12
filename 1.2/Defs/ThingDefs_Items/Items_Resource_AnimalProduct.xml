@@ -4,7 +4,7 @@
     <ThingDef ParentName="OrganicProductBase">
         <defName>VFEV_NjorunMilk</defName>
         <label>njorun milk</label>
-        <description>Extremely delicious Milk from a njorun.</description>
+        <description>Extremely rich and creamy milk from the prolific Njorun, very smooth to taste and packed with nutrition.</description>
         <graphicData>
             <texPath>Things/Item/Resource/Milk</texPath>
         </graphicData>
@@ -35,7 +35,7 @@
     <ThingDef ParentName="OrganicProductBase">
         <defName>VFEV_Honey</defName>
         <label>raw honey</label>
-        <description>placeholder</description>
+        <description>Raw, unprocessed honey harvested from an apiary, very sugary and fun to eat while also extremely long-lasting, perfect for taking on caravan trips or fermenting into mead.</description>
         <graphicData>
             <texPath>Things/Item/Resource/AnimalProductRaw/Honey</texPath>
             <graphicClass>Graphic_StackCount</graphicClass>

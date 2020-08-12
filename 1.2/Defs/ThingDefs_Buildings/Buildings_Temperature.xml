@@ -4,7 +4,7 @@
     <ThingDef ParentName="FurnitureBase">
         <defName>VFEV_Hearth</defName>
         <label>hearth</label>
-        <description>A large, tightly packed fire pit capable of holding high amounts of wood at once. Provides hefty warmth and light thrones and halls alike and acts as a gathering spot for idle colonists.</description>
+        <description>A large, tightly packed fire pit capable of holding high amounts of wood at once. Provides hefty warmth and light to thronerooms and halls alike and acts as a gathering spot for idle colonists.</description>
         <graphicData>
             <texPath>Things/Building/Misc/Hearth/Hearth</texPath>
             <graphicClass>Graphic_Multi</graphicClass>
