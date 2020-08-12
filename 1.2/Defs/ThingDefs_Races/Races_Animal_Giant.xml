@@ -353,7 +353,7 @@
     <ThingDef ParentName="AnimalThingBase">
         <defName>VFEV_Njorun</defName>
         <label>njorun</label>
-        <description>A gigantic, ox-like creature of unknown origin. The njorun is wary by nature, fleeing at the sight of danger, the creature is said to travel the planet in small herds, staying hidden from anyone who might wish it harm. Though docile, the beast is far to skittish to be tamed.\n\n Legends say the njoruns are the result of breeding by long gone corporations in an attempt to create the perfect animal to breed for profits.</description>
+        <description>A gigantic, ox-like creature of unknown origin. The njorun is wary by nature, traveling the planet in small herds and staying hidden from anyone who might wish it harm. Though docile, the beast is far too skittish to be tamed and is likely to retaliate if attacked.\n\n Legends say the njoruns are the result of breeding by long gone corporations in an attempt to create the perfect animal to breed for profits.</description>
         <statBases>
             <MoveSpeed>2.5</MoveSpeed>
             <MarketValue>7000</MarketValue>
@@ -472,7 +472,7 @@
                 <labelPlural>njorun calves</labelPlural>
                 <bodyGraphicData>
                     <texPath>Things/Pawn/Animal/Njorun/Njorun</texPath>
-                    <drawSize>1.0</drawSize>
+                    <drawSize>2.3</drawSize>
                     <shadowData>
                         <volume>(0.4, 0.3, 0.3)</volume>
                         <offset>(0,0,-0.2)</offset>
@@ -480,13 +480,13 @@
                 </bodyGraphicData>
                 <dessicatedBodyGraphicData>
                     <texPath>Things/Pawn/Animal/Njorun/Dessicated_Njorun</texPath>
-                    <drawSize>1.0</drawSize>
+                    <drawSize>2.3</drawSize>
                 </dessicatedBodyGraphicData>
             </li>
             <li>
                 <bodyGraphicData>
                     <texPath>Things/Pawn/Animal/Njorun/Njorun</texPath>
-                    <drawSize>1.5</drawSize>
+                    <drawSize>3.5</drawSize>
                     <shadowData>
                         <volume>(0.7, 0.6, 0.4)</volume>
                         <offset>(0,0,-0.25)</offset>
@@ -494,13 +494,13 @@
                 </bodyGraphicData>
                 <dessicatedBodyGraphicData>
                     <texPath>Things/Pawn/Animal/Njorun/Dessicated_Njorun</texPath>
-                    <drawSize>1.5</drawSize>
+                    <drawSize>3.5</drawSize>
                 </dessicatedBodyGraphicData>
             </li>
             <li>
                 <bodyGraphicData>
                     <texPath>Things/Pawn/Animal/Njorun/Njorun</texPath>
-                    <drawSize>2.0</drawSize>
+                    <drawSize>4.0</drawSize>
                     <shadowData>
                         <volume>(1, 0.8, 0.5)</volume>
                         <offset>(0,0,-0.5)</offset>
@@ -508,7 +508,7 @@
                 </bodyGraphicData>
                 <dessicatedBodyGraphicData>
                     <texPath>Things/Pawn/Animal/Njorun/Dessicated_Njorun</texPath>
-                    <drawSize>2.0</drawSize>
+                    <drawSize>4.0</drawSize>
                 </dessicatedBodyGraphicData>
             </li>
         </lifeStages>
