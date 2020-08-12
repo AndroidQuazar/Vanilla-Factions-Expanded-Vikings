@@ -28,7 +28,7 @@
     <ThingDef ParentName="LeatherBase">
         <defName>VFEV_Leather_Lothurr</defName>
         <label>lothurr leather</label>
-        <description>The fuzzy pelt of a lothurr. Luxurious, smooth, and has a shimmering shine to it. Used in many crafts primarily for aesthetics.</description>
+        <description>The soft pelt of a lothurr. Luxurious, smooth, and has a shimmering shine to it. Used in many crafts primarily for aesthetics.</description>
         <graphicData>
             <color>(75,67,50)</color>
         </graphicData>
@@ -52,7 +52,7 @@
     <ThingDef ParentName="LeatherBase">
         <defName>VFEV_Leather_Njorun</defName>
         <label>njorunfur</label>
-        <description>The wiry pelt of njorun. Similar in colour to muffalo pelt, it is much softer and far rarer. Absurdly good at temperature regulation in cold climates, though not as good as its actual wool.</description>
+        <description>The wiry pelt of njorun. Similar in colour to muffalo pelt, it is much softer and far rarer. Absurdly good at temperature regulation in cold climates.</description>
         <graphicData>
             <color>(121,138,151)</color>
         </graphicData>
