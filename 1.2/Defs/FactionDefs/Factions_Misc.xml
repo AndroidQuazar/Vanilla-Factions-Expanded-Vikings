@@ -100,7 +100,7 @@
                     <VFEV_Raider>30</VFEV_Raider>
                     <VFEV_ShieldedGuardian>5</VFEV_ShieldedGuardian>
                     <VFEV_ShieldedRavager>5</VFEV_ShieldedRavager>
-					<VFEV_VFEV_Shieldbearer>50</VFEV_Shieldbearer>
+					<VFEV_Shieldbearer>50</VFEV_Shieldbearer>
                     <VFEV_Archer>10</VFEV_Archer>
                 </options>
             </li>

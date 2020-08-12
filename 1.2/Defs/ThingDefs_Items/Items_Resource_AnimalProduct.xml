@@ -56,7 +56,6 @@
         <ingestible>
             <foodType>AnimalProduct</foodType>
 			<preferability>DesperateOnly</preferability>
-			<foodType>Processed</foodType>
 			<joy>0.10</joy>
 			<joyKind>Gluttonous</joyKind>
 			<maxNumToIngestAtOnce>4</maxNumToIngestAtOnce>

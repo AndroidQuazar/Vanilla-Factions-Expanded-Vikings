@@ -18,6 +18,9 @@
         </graphicData>
         <size>(1,1)</size>
 		<minifiedDef>MinifiedThing</minifiedDef>
+		<thingCategories>
+			<li>BuildingsMisc</li>
+		</thingCategories>
         <rotatable>false</rotatable>
         <altitudeLayer>Building</altitudeLayer>
         <passability>Impassable</passability>
