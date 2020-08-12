@@ -11,6 +11,7 @@
             <texPath>Things/Building/Misc/Apiary</texPath>
             <graphicClass>Graphic_Single</graphicClass>
             <drawSize>(2,2)</drawSize>
+			<Mass>20</Mass>
             <shadowData>
                 <volume>(1.5, 1.5, 1)</volume>
                 <offset>(0,0,0)</offset>
