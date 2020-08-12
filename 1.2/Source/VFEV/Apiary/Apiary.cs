@@ -7,7 +7,7 @@ using RimWorld;
 
 namespace VFEV
 {
-    public class VFEV_Apiary : Building
+    public class Apiary : Building
     {
         int ApiaryProgress;
         int duration = 420000;

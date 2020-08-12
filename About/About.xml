@@ -3,6 +3,7 @@
 	<name>Vanilla Factions Expanded - Vikings</name>
 	<author>Oskar Potocki, Chowder</author>
 	<supportedVersions>
+		<li>1.2</li>
 		<li>1.1</li>
 	</supportedVersions>
 	<packageId>OskarPotocki.VFE.Vikings</packageId>

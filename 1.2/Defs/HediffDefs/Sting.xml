@@ -27,7 +27,7 @@
                 <labelSolidTendedWell>bandaged</labelSolidTendedWell>
             </li>
             <li Class="HediffCompProperties_Infecter">
-                <infectionChance>0.05</infectionChance>
+                <infectionChance>0.01</infectionChance>
             </li>
             <li Class="HediffCompProperties_GetsPermanent">
                 <permanentLabel>sting scar</permanentLabel>

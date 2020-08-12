@@ -13,11 +13,11 @@ namespace VFEV
         private const TargetIndex StorageCellInd = TargetIndex.C;
         private const int Duration = 200;
 
-        protected VFEV_Apiary Apiary
+        protected Apiary Apiary
         {
             get
             {
-                return (VFEV_Apiary)this.job.GetTarget(TargetIndex.A).Thing;
+                return (Apiary)this.job.GetTarget(TargetIndex.A).Thing;
             }
         }
 

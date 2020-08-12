@@ -25,7 +25,7 @@ namespace VFEV
 
         public override bool HasJobOnThing(Pawn pawn, Thing t, bool forced = false)
         {
-            VFEV_Apiary tNR_Apiary = t as VFEV_Apiary;
+            Apiary tNR_Apiary = t as Apiary;
             int skill = pawn.skills.skills.Find((SkillRecord r) => r.def.defName == "Animals").levelInt;
             if (tNR_Apiary == null || !tNR_Apiary.HoneyReady || skill < 5)
             {

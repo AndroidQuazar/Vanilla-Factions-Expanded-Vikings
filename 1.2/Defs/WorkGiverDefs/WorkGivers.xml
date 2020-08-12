@@ -2,7 +2,7 @@
 <Defs>
     <!-- ============= NewWorkType ============== -->
 
-    <WorkTypeDef>
+    <!-- <WorkTypeDef>
         <defName>VFEV_Beekeeping</defName>
         <labelShort>Beekeeping</labelShort>
         <pawnLabel>Beekeeper</pawnLabel>
@@ -11,7 +11,7 @@
         <verb>Beekeeping</verb>
         <naturalPriority>1060</naturalPriority>
         <alwaysStartActive>false</alwaysStartActive>
-    </WorkTypeDef>
+    </WorkTypeDef> -->
 
     <!-- ============= TakeHoneyOutOfApiary ============= -->
 
@@ -19,7 +19,7 @@
         <defName>VFEV_TakeHoneyOutOfApiary</defName>
         <label>take honey out of apiary</label>
         <giverClass>VFEV.WorkGiver_TakeHoneyOutOfApiary</giverClass>
-        <workType>VFEV_Beekeeping</workType>
+        <workType>Handling</workType>
         <verb>take honey</verb>
         <gerund>taking honey from</gerund>
         <priorityInType>20</priorityInType>
@@ -34,7 +34,7 @@
         <defName>VFEV_endToTheApiary</defName>
         <label>tend to the apiary</label>
         <giverClass>VFEV.WorkGiver_TendToApiary</giverClass>
-        <workType>VFEV_Beekeeping</workType>
+        <workType>Handling</workType>
         <verb>tend apiary</verb>
         <gerund>tend to</gerund>
         <priorityInType>20</priorityInType>

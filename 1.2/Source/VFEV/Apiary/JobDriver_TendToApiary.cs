@@ -8,11 +8,11 @@ namespace VFEV
 {
     class JobDriver_TendToApiary : JobDriver
     {
-        protected VFEV_Apiary Apiary
+        protected Apiary Apiary
         {
             get
             {
-                return (VFEV_Apiary)this.job.GetTarget(TargetIndex.A).Thing;
+                return (Apiary)this.job.GetTarget(TargetIndex.A).Thing;
             }
         }
 
@@ -36,16 +36,16 @@ namespace VFEV
                 {
                     int skill = pawn.skills.skills.Find((SkillRecord r) => r.def.defName == "Animals").levelInt / 2;
                     Random rnd = new Random();
-                    if (rnd.Next(0, 11 - skill) == 1)
+                    if (rnd.Next(0, 11 - skill) <= 5)
                     {
                         this.Apiary.tickBeforeTend += 120000;
                     }
                     else
                     {
-                        if (rnd.Next(1, 3) == 2)
+                        if (rnd.Next(1, 4) == 2)
                         {
-                            pawn.TakeDamage(new DamageInfo(VFEV_DefOf.VFEV_DamageSting, 2));
-                            pawn.TakeDamage(new DamageInfo(DamageDefOf.Stun, 20));
+                            pawn.TakeDamage(new DamageInfo(VFEV_DefOf.VFEV_DamageSting, 1));
+                            pawn.TakeDamage(new DamageInfo(DamageDefOf.Stun, 1));
                         } 
                         pawn.needs.mood.thoughts.memories.TryGainMemoryFast(VFEV_DefOf.VFEV_StingMoodDebuff);
                         MoteMaker.ThrowText(pawn.DrawPos, pawn.Map, "Tending failed", 5f);

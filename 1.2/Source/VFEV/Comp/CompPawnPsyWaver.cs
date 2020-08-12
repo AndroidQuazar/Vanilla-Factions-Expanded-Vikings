@@ -40,7 +40,7 @@ namespace VFEV
                         {
                             stunPeriod /= victim.story.traits.GetTrait(TraitDefOf.PsychicSensitivity).Degree;
                         }
-                        victim.stances.stunner.StunFor(stunPeriod, pawn, true);
+                        victim.stances.stunner.StunFor_NewTmp(stunPeriod, pawn, true);
                     }
                 }
             }
