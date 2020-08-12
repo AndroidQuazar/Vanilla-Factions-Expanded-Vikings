@@ -4,7 +4,7 @@
     <ThingDef ParentName="OrganicProductBase">
         <defName>VFEV_NjorunMilk</defName>
         <label>njorun milk</label>
-        <description>Extremely delicious Milk from a njorun.</description>
+        <description>Extremely rich and creamy milk from the prolific Njorun, tastes slightly sweet and is packed with nutrition.</description>
         <graphicData>
             <texPath>Things/Item/Resource/Milk</texPath>
         </graphicData>
