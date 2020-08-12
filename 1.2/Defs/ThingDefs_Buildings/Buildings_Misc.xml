@@ -85,5 +85,58 @@
         <uiIconScale>0.6</uiIconScale>
         <specialDisplayRadius>4.9</specialDisplayRadius>
     </ThingDef>
+	
+    <ThingDef ParentName="BuildingBase">
+        <defName>VFE_TableFacePaints</defName>
+        <label>face painting table</label>
+        <description>A table with a vast assortments of pigments and brushes for face painting.</description>
+        <graphicData>
+            <texPath>Things/Building/Misc/TableFacePainting/TableFacePainting</texPath>
+            <graphicClass>Graphic_Multi</graphicClass>
+            <drawSize>(3.5,1.5)</drawSize>
+            <shadowData>
+                <volume>(1, 1, 0.3)</volume>
+                <offset>(0, 0, 0)</offset>
+            </shadowData>
+            <damageData>
+                <cornerTL>Damage/Corner</cornerTL>
+                <cornerTR>Damage/Corner</cornerTR>
+                <cornerBL>Damage/Corner</cornerBL>
+                <cornerBR>Damage/Corner</cornerBR>
+            </damageData>
+        </graphicData>
+        <costList>
+            <WoodLog>20</WoodLog>
+        </costList>
+        <stuffCategories>
+            <li>Stony</li>
+            <li>Woody</li>
+        </stuffCategories>
+        <costStuffCount>25</costStuffCount>
+        <altitudeLayer>Building</altitudeLayer>
+        <fillPercent>0.5</fillPercent>
+        <useHitPoints>True</useHitPoints>
+        <statBases>
+            <WorkToBuild>1500</WorkToBuild>
+            <MaxHitPoints>100</MaxHitPoints>
+            <Flammability>1.0</Flammability>
+            <Mass>15</Mass>
+        </statBases>
+        <canOverlapZones>false</canOverlapZones>
+		<defaultPlacingRot>South</defaultPlacingRot>
+        <minifiedDef>MinifiedThing</minifiedDef>
+        <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+        <thingCategories>
+            <li>BuildingsMisc</li>
+        </thingCategories>
+        <size>(1,1)</size>
+        <designationCategory>Misc</designationCategory>
+        <passability>PassThroughOnly</passability>
+        <pathCost>70</pathCost>
+        <uiIconScale>1.5</uiIconScale>
+        <hasInteractionCell>True</hasInteractionCell>
+        <interactionCellOffset>(0,0,-1)</interactionCellOffset>
+        <surfaceType>Item</surfaceType>
+    </ThingDef>
 
 </Defs>
