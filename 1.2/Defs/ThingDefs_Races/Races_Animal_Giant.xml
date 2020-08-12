@@ -183,7 +183,7 @@
     <ThingDef ParentName="AnimalThingBase">
         <defName>VFEV_Lothurr</defName>
         <label>lothurr</label>
-        <description>A gigantic, dragon-like creature of unknown origin. The lothurr is peaceful by nature, but extremely dangerous when enraged. Its fur and armour plates are incredibly resistant to damage and cold, while it's majestic horns fetch a huge price. \n\n Many legends surround the lothurrs. Some say it is the manifestation of the old nordic gods while others claim they are a truly alien species.</description>
+        <description>A gigantic, moose-like creature of unknown origin. The lothurr is peaceful by nature, but extremely dangerous when enraged. Its fur and armour plates are incredibly resistant to damage and cold, while it's majestic horns fetch a huge price. \n\n Many legends surround the lothurrs. Some say it is the manifestation of the old nordic gods while others claim they are a truly alien species.</description>
 		<statBases>
             <MoveSpeed>3.5</MoveSpeed>
             <MarketValue>3500</MarketValue>
@@ -353,7 +353,7 @@
     <ThingDef ParentName="AnimalThingBase">
         <defName>VFEV_Njorun</defName>
         <label>njorun</label>
-        <description>A gigantic, ox-like creature of unknown origin. The njorun is wary by nature, fleeing at the sight of danger. Its hide is extremely soft and it’s milk tastes delicious. It travels the planets in small herds, staying hidden from anyone who might wish it harm.\n\n Legendes say the njoruns are the result of breeding by long gone corporations in an attempt to create the perfect animal to breed for profits.</description>
+        <description>A gigantic, ox-like creature of unknown origin. The njorun is wary by nature, fleeing at the sight of danger, the creature is said to travel the planet in small herds, staying hidden from anyone who might wish it harm. Though docile, the beast is far to skittish to be tamed.\n\n Legends say the njoruns are the result of breeding by long gone corporations in an attempt to create the perfect animal to breed for profits.</description>
         <statBases>
             <MoveSpeed>2.5</MoveSpeed>
             <MarketValue>7000</MarketValue>
@@ -363,18 +363,6 @@
             <ArmorRating_Blunt>0.35</ArmorRating_Blunt>
             <ArmorRating_Heat>0.25</ArmorRating_Heat>
         </statBases>
-        <comps>
-            <li Class="CompProperties_Milkable">
-                <milkDef>VFEV_NjorunMilk</milkDef>
-                <milkIntervalDays>5</milkIntervalDays>
-                <milkAmount>50</milkAmount>
-            </li>
-            <li Class="CompProperties_Shearable">
-                <woolDef>VFEV_WoolNjorun</woolDef>
-                <shearIntervalDays>25</shearIntervalDays>
-                <woolAmount>125</woolAmount>
-            </li>
-        </comps>
         <uiIconScale>1.75</uiIconScale>
         <tools>
             <li>
@@ -430,7 +418,7 @@
             <body>QuadrupedAnimalWithHoovesAndHorn</body>
             <deathActionWorkerClass>VFEV.DeathActionWorker_MoodBoost</deathActionWorkerClass>
             <herdMigrationAllowed>false</herdMigrationAllowed>
-            <baseBodySize>4</baseBodySize>
+            <baseBodySize>5</baseBodySize>
             <baseHungerRate>4.5</baseHungerRate>
             <baseHealthScale>12.0</baseHealthScale>
             <foodType>OmnivoreRoughAnimal</foodType>
