@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <ThingDef ParentName="SculptureBase">
+        <defName>VFEV_RuneStone</defName>
+        <label>rune stone</label>
+        <description>A loosely carved and stacked structure ascribed with ancient text and ornate patterns. Ancient northern tribes were known to pray at these shrines as well as keep them in their halls as aesthetic decorum.</description>
+        <castEdgeShadows>true</castEdgeShadows>
+        <graphicData>
+            <graphicClass>Graphic_Random</graphicClass>
+            <texPath>Things/Building/Art/VikingShrine</texPath>
+            <drawSize>(2,2)</drawSize>
+        </graphicData>
+        <fillPercent>0.5</fillPercent>
+        <rotatable>false</rotatable>
+        <statBases>
+            <MaxHitPoints>185</MaxHitPoints>
+            <Mass>12</Mass>
+            <Beauty>125</Beauty>
+            <WorkToMake>35000</WorkToMake>
+        </statBases>
+        <stuffCategories>
+            <li>Stony</li>
+        </stuffCategories>
+        <costStuffCount>125</costStuffCount>
+    <comps>
+      <li Class="CompProperties_MeditationFocus">
+        <statDef>MeditationFocusStrength</statDef>
+        <focusTypes>
+          <li>Artistic</li>
+        </focusTypes>
+      </li>
+    </comps>
+    </ThingDef>
+
+</Defs>
