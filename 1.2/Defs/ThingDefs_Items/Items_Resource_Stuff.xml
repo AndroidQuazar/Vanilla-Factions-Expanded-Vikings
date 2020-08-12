@@ -1,22 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
-    <ThingDef ParentName="WoolBase">
-        <defName>VFEV_WoolNjorun</defName>
-        <label>njorun wool</label>
-        <description>Soft, light and extremely good insulation. Njorun wool clothes can keep the body warm even in extremely cold conditions and is softer than any other wool known to man.</description>
-        <graphicData>
-            <color>(219,214,209)</color>
-        </graphicData>
-        <statBases>
-			<StuffPower_Armor_Sharp>0.35</StuffPower_Armor_Sharp>
-            <StuffPower_Insulation_Cold>50</StuffPower_Insulation_Cold>
-            <StuffPower_Insulation_Heat>20</StuffPower_Insulation_Heat>
-        </statBases>
-        <stuffProps>
-            <color>(219,214,209)</color>
-            <commonality>0.0</commonality>
-        </stuffProps>
-    </ThingDef>
+
 
 </Defs>
