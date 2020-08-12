@@ -4,7 +4,7 @@
     <ThingDef ParentName="LeatherBase">
         <defName>VFEV_Leather_Fenrir</defName>
         <label>fenrirskin</label>
-        <description>A ragged, furry pelt harvested from a fenrir. It is extremely difficult to pierce and is quite long-lasting. Fetches a high price on the market.</description>
+        <description>A ragged, furry pelt harvested from a fenrir. It is extremely difficult to pierce and is quite long-lasting, perfect for armor. Fetches a high price on the market.</description>
         <graphicData>
             <color>(236,236,236)</color>
         </graphicData>
@@ -20,7 +20,7 @@
             <commonality>0.0018</commonality>
             <statFactors>
                 <MaxHitPoints>3.8</MaxHitPoints>
-                <Beauty>6</Beauty>
+                <Beauty>1.1</Beauty>
             </statFactors>
         </stuffProps>
     </ThingDef>
@@ -28,12 +28,12 @@
     <ThingDef ParentName="LeatherBase">
         <defName>VFEV_Leather_Lothurr</defName>
         <label>lothurr leather</label>
-        <description>The soft pelt of a lothurr. Luxurious, smooth, and has a shimmering shine to it. Used in many crafts primarily for aesthetics.</description>
+        <description>The shiny pelt of a lothurr. Luxurious, smooth, and has a shimmering shine to it. Used in many crafts and furnishings, primarily for aesthetics.</description>
         <graphicData>
             <color>(75,67,50)</color>
         </graphicData>
         <statBases>
-            <MarketValue>18.0</MarketValue>
+            <MarketValue>13.0</MarketValue>
             <StuffPower_Armor_Sharp>1.86</StuffPower_Armor_Sharp>
             <StuffPower_Armor_Blunt>0.29</StuffPower_Armor_Blunt>
             <StuffPower_Insulation_Cold>29</StuffPower_Insulation_Cold>
@@ -44,7 +44,7 @@
             <commonality>0.0010</commonality>
             <statFactors>
                 <MaxHitPoints>2.2</MaxHitPoints>
-                <Beauty>10</Beauty>
+                <Beauty>6</Beauty>
             </statFactors>
         </stuffProps>
     </ThingDef>
@@ -52,12 +52,12 @@
     <ThingDef ParentName="LeatherBase">
         <defName>VFEV_Leather_Njorun</defName>
         <label>njorunfur</label>
-        <description>The wiry pelt of njorun. Similar in colour to muffalo pelt, it is much softer and far rarer. Absurdly good at temperature regulation in cold climates.</description>
+        <description>The thick pelt of njorun. Similar in colour to muffalo pelt, it is much softer and far rarer. Absurdly good at temperature regulation in cold climates.</description>
         <graphicData>
             <color>(121,138,151)</color>
         </graphicData>
         <statBases>
-            <MarketValue>8.0</MarketValue>
+            <MarketValue>10.0</MarketValue>
             <StuffPower_Armor_Sharp>1.73</StuffPower_Armor_Sharp>
             <StuffPower_Armor_Blunt>0.35</StuffPower_Armor_Blunt>
             <StuffPower_Insulation_Cold>38</StuffPower_Insulation_Cold>
@@ -68,7 +68,7 @@
             <commonality>0.0035</commonality>
             <statFactors>
                 <MaxHitPoints>1.5</MaxHitPoints>
-                <Beauty>6</Beauty>
+                <Beauty>2</Beauty>
             </statFactors>
         </stuffProps>
     </ThingDef>
