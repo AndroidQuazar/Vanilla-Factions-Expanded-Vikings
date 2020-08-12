@@ -6,6 +6,11 @@
         <label>crypto heavy crossbow</label>
         <description>An experimental crossbow with metal-cored bolts wrapped in unstable crypto technology, held in place by an energy field. Targets are both pierced by the bolt, as well as frozen by crypto coating. Extremely rare and powerful.</description>
 		<techLevel>Ultra</techLevel>
+		<recipeMaker Inherit="False" />
+		<costList>
+			<ComponentSpacer>7</ComponentSpacer>
+			<Plasteel>70</Plasteel>
+		</costList>
         <graphicData>
             <texPath>Things/Item/Equipment/WeaponRanged/CryptoHeavyCrossbow</texPath>
             <graphicClass>Graphic_Single</graphicClass>
@@ -56,13 +61,9 @@
         <equippedStatOffsets>
             <MoveSpeed>-0.23</MoveSpeed>
         </equippedStatOffsets>
-        <thingSetMakerTags>
-			<li>RewardStandardLowFreq</li>
-			<li>RewardStandardQualitySuper</li>
-        </thingSetMakerTags>
         <tradeability>Sellable</tradeability>
         <weaponTags>
-            <li>UltratechGun</li>
+            <li>CryptoWeaponAdvanced</li>
         </weaponTags>
     </ThingDef>
 
@@ -94,6 +95,11 @@
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>
         <soundInteract>VFEV_CryptoGunPickup</soundInteract>
+		<recipeMaker Inherit="False" />
+		<costList>
+			<ComponentSpacer>7</ComponentSpacer>
+			<Plasteel>70</Plasteel>
+		</costList>
         <statBases>
             <Mass>3.1</Mass>
             <AccuracyTouch>0.50</AccuracyTouch>
@@ -127,14 +133,15 @@
             </li>
         </tools>
         <generateCommonality>0.0</generateCommonality>
-        <thingSetMakerTags>
-			<li>RewardStandardLowFreq</li>
-			<li>RewardStandardQualitySuper</li>
-        </thingSetMakerTags>
         <tradeability>Sellable</tradeability>
         <weaponTags>
-            <li>UltratechGun</li>
+            <li>CryptoWeaponAdvanced</li>
         </weaponTags>
+        <modExtensions>
+	            <li Class="VFECore.ThingDefExtension">
+                <usableWithShields>true</usableWithShields>
+            </li>
+        </modExtensions>
     </ThingDef>
 
     <ThingDef ParentName="BaseBullet">
@@ -165,6 +172,11 @@
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>
         <soundInteract>VFEV_CryptoGunPickup</soundInteract>
+		<recipeMaker Inherit="False" />
+		<costList>
+			<ComponentSpacer>7</ComponentSpacer>
+			<Plasteel>70</Plasteel>
+		</costList>
         <statBases>
             <Mass>2.3</Mass>
             <AccuracyTouch>0.85</AccuracyTouch>
@@ -200,14 +212,15 @@
             </li>
         </tools>
         <generateCommonality>0.0</generateCommonality>
-        <thingSetMakerTags>
-			<li>RewardStandardLowFreq</li>
-			<li>RewardStandardQualitySuper</li>
-        </thingSetMakerTags>
         <tradeability>Sellable</tradeability>
         <weaponTags>
-            <li>UltratechGun</li>
+            <li>CryptoWeaponAdvanced</li>
         </weaponTags>
+        <modExtensions>
+	            <li Class="VFECore.ThingDefExtension">
+                <usableWithShields>true</usableWithShields>
+            </li>
+        </modExtensions>
     </ThingDef>
 
     <ThingDef ParentName="BaseBullet">
@@ -226,87 +239,6 @@
             <speed>55</speed>
         </projectile>
     </ThingDef>
-	
-    <ThingDef ParentName="BaseGunWithQuality">
-        <defName>VFEV_CryptoSniperRifle</defName>
-        <label>crypto sniper rifle</label>
-        <description>An experimental rifle with metal-cored projectiles wrapped in unstable crypto technology, held in place by an energy field. Targets are both pierced by the metal core, as well as frozen by crypto coating. Extremely rare and powerful.</description>
-        <techLevel>Ultra</techLevel>
-        <graphicData>
-            <texPath>Things/Item/Equipment/WeaponRanged/CryptoSniperRifle</texPath>
-            <graphicClass>Graphic_Single</graphicClass>
-        </graphicData>
-        <soundInteract>VFEV_HeavyCryptoGunPickup</soundInteract>
-        <statBases>
-            <Mass>5.1</Mass>
-            <AccuracyTouch>0.45</AccuracyTouch>
-            <AccuracyShort>0.60</AccuracyShort>
-            <AccuracyMedium>0.65</AccuracyMedium>
-            <AccuracyLong>0.55</AccuracyLong>
-            <RangedWeapon_Cooldown>1.6</RangedWeapon_Cooldown>
-            <MarketValue>1260</MarketValue>
-        </statBases>
-        <verbs>
-            <li>
-                <verbClass>Verb_Shoot</verbClass>
-                <hasStandardCommand>true</hasStandardCommand>
-                <defaultProjectile>VFEV_CryptoSniperRifleBullet</defaultProjectile>
-                <warmupTime>1.6</warmupTime>
-                <range>47.0</range>
-                <soundCast>VFEV_CryptoRifleShot</soundCast>
-                <soundCastTail>GunTail_Medium</soundCastTail>
-                <muzzleFlashScale>11</muzzleFlashScale>
-                <ticksBetweenBurstShots>22</ticksBetweenBurstShots>
-                <burstShotCount>1</burstShotCount>
-            </li>
-        </verbs>
-        <tools>
-            <li>
-                <label>stock</label>
-                <capacities>
-                    <li>Blunt</li>
-                </capacities>
-                <power>11</power>
-                <cooldownTime>2.1</cooldownTime>
-            </li>
-            <li>
-                <label>barrel</label>
-                <capacities>
-                    <li>Blunt</li>
-                    <li>Poke</li>
-                </capacities>
-                <power>7</power>
-                <cooldownTime>2.2</cooldownTime>
-            </li>
-        </tools>
-        <generateCommonality>0.0</generateCommonality>
-        <thingSetMakerTags>
-			<li>RewardStandardLowFreq</li>
-			<li>RewardStandardQualitySuper</li>
-        </thingSetMakerTags>
-        <tradeability>Sellable</tradeability>
-        <weaponTags>
-            <li>UltratechGun</li>
-        </weaponTags>
-    </ThingDef>
-
-    <ThingDef ParentName="BaseBullet">
-        <defName>VFEV_CryptoSniperRifleBullet</defName>
-        <label>crypto bullet</label>
-        <graphicData>
-            <texPath>Things/Projectile/CryptoBullet</texPath>
-            <graphicClass>Graphic_Single</graphicClass>
-            <shaderType>TransparentPostLight</shaderType>
-            <drawSize>0.80</drawSize>
-        </graphicData>
-        <projectile>
-            <damageDef>VFEV_CryptoDamageBullet</damageDef>
-            <damageAmountBase>18</damageAmountBase>
-            <armorPenetrationBase>0.35</armorPenetrationBase>
-            <speed>60</speed>
-            <stoppingPower>0.5</stoppingPower>
-        </projectile>
-    </ThingDef>
 
     <ThingDef ParentName="BaseGunWithQuality">
         <defName>VFEV_CryptoRifle</defName>
@@ -318,6 +250,11 @@
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>
         <soundInteract>VFEV_HeavyCryptoGunPickup</soundInteract>
+		<recipeMaker Inherit="False" />
+		<costList>
+			<ComponentSpacer>7</ComponentSpacer>
+			<Plasteel>70</Plasteel>
+		</costList>
         <statBases>
             <Mass>5.1</Mass>
             <AccuracyTouch>0.45</AccuracyTouch>
@@ -361,13 +298,9 @@
             </li>
         </tools>
         <generateCommonality>0.0</generateCommonality>
-        <thingSetMakerTags>
-			<li>RewardStandardLowFreq</li>
-			<li>RewardStandardQualitySuper</li>
-        </thingSetMakerTags>
         <tradeability>Sellable</tradeability>
         <weaponTags>
-            <li>UltratechGun</li>
+            <li>CryptoWeaponAdvanced</li>
         </weaponTags>
     </ThingDef>
 
@@ -399,6 +332,11 @@
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>
         <soundInteract>VFEV_HeavyCryptoGunPickup</soundInteract>
+		<recipeMaker Inherit="False" />
+		<costList>
+			<ComponentSpacer>7</ComponentSpacer>
+			<Plasteel>70</Plasteel>
+		</costList>
         <statBases>
             <Mass>5.1</Mass>
             <AccuracyTouch>0.45</AccuracyTouch>
@@ -442,13 +380,9 @@
             </li>
         </tools>
         <generateCommonality>0.0</generateCommonality>
-        <thingSetMakerTags>
-			<li>RewardStandardLowFreq</li>
-			<li>RewardStandardQualitySuper</li>
-        </thingSetMakerTags>
         <tradeability>Sellable</tradeability>
         <weaponTags>
-            <li>UltratechGun</li>
+            <li>CryptoWeaponAdvanced</li>
         </weaponTags>
     </ThingDef>
 

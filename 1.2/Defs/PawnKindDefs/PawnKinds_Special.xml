@@ -36,5 +36,78 @@
         <invNutrition>1</invNutrition>
         <invFoodDef>Pemmican</invFoodDef>
     </PawnKindDef>
+	
+    <PawnKindDef ParentName="VFEV_NordsmenBase">
+        <defName>VFEV_VikingHero</defName>
+        <label>hero</label>
+        <combatPower>455</combatPower>
+        <chemicalAddictionChance>0.10</chemicalAddictionChance>
+        <invNutrition>2</invNutrition>
+        <itemQuality>Normal</itemQuality>
+        <gearHealthRange>0.2~1.1</gearHealthRange>
+        <apparelMoney>4250~6000</apparelMoney>
+        <weaponMoney>4290~6650</weaponMoney>
+        <weaponTags>
+			<li>CryptoLightMelee</li>
+            <li>CryptoHeavyMelee</li>
+        </weaponTags>
+		<apparelRequired>
+			<li>VFEV_CryptoArmor</li>
+			<li>VFEV_Apparel_CryptoLightHelmet</li>
+		</apparelRequired>
+        <apparelTags Inherit="False">
+			<li>CryptoLight</li>
+        </apparelTags>
+        <techHediffsMoney>50~50</techHediffsMoney>
+        <techHediffsTags>
+            <li>Poor</li>
+        </techHediffsTags>
+        <techHediffsChance>0.15</techHediffsChance>
+        <modExtensions Inherit="False">
+            <li Class="VFECore.PawnKindDefExtension">
+                <factionColourApparelPartList>
+                    <li>Torso</li>
+                </factionColourApparelPartList>
+                <factionColourApparelLayerList>
+                    <li>VFEC_OuterShell</li>
+                </factionColourApparelLayerList>
+                <shieldMoney>
+                    <min>1000</min>
+                    <max>1700</max>
+                </shieldMoney>
+                <shieldTags>
+                    <li>Crypto</li>
+                </shieldTags>
+            </li>
+        </modExtensions>
+    </PawnKindDef>
+	
+    <PawnKindDef ParentName="VFEV_NordsmenBase">
+        <defName>VFEV_VikingLegend</defName>
+        <label>legend</label>
+        <combatPower>455</combatPower>
+        <chemicalAddictionChance>0.10</chemicalAddictionChance>
+        <invNutrition>2</invNutrition>
+        <itemQuality>Normal</itemQuality>
+        <gearHealthRange>0.2~1.1</gearHealthRange>
+        <apparelMoney>4250~6000</apparelMoney>
+        <weaponMoney>4290~6650</weaponMoney>
+        <weaponTags>
+            <li>CryptoWeaponAdvanced</li>
+        </weaponTags>
+		<apparelRequired>
+			<li>VFEV_CryptoHeavyArmor</li>
+			<li>VFEV_Apparel_CryptoHeavyHelmet</li>
+		</apparelRequired>
+        <apparelTags Inherit="False">
+			<li>CryptoHeavy</li>
+        </apparelTags>
+        <techHediffsMoney>50~50</techHediffsMoney>
+        <techHediffsTags>
+            <li>Poor</li>
+        </techHediffsTags>
+        <techHediffsChance>0.15</techHediffsChance>
+
+    </PawnKindDef>
 
 </Defs>

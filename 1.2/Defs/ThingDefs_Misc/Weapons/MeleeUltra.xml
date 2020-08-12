@@ -2,12 +2,16 @@
 <Defs>
 
     <ThingDef Name="VFEV_BaseMeleeWeapon" Abstract="True" ParentName="BaseWeapon">
-        <techLevel>Industrial</techLevel>
+        <techLevel>Ultra</techLevel>
         <smeltable>true</smeltable>
         <burnableByRecipe>true</burnableByRecipe>
         <thingCategories>
             <li>WeaponsMelee</li>
         </thingCategories>
+		<costList>
+			<ComponentSpacer>7</ComponentSpacer>
+			<Plasteel>70</Plasteel>
+		</costList>
         <inspectorTabs>
             <li>ITab_Art</li>
         </inspectorTabs>
@@ -34,11 +38,13 @@
             <texPath>Things/Item/Equipment/WeaponMelee/CryptoHeavyAxe</texPath>
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>
-        <techLevel>Spacer</techLevel>
+        <techLevel>Ultra</techLevel>
+		<recipeMaker Inherit="False" />
         <statBases>
             <Mass>3.5</Mass>
             <MarketValue>1450</MarketValue>
         </statBases>
+
         <equippedAngleOffset>-65</equippedAngleOffset>
         <tools>
             <li>
@@ -60,13 +66,15 @@
             </li>
         </tools>
         <generateCommonality>0.0</generateCommonality>
-        <thingSetMakerTags>
-            <li>RewardSpecial</li>
-        </thingSetMakerTags>
         <tradeability>Sellable</tradeability>
         <weaponTags>
             <li>CryptoHeavyMelee</li>
         </weaponTags>
+        <modExtensions>
+	            <li Class="VFECore.ThingDefExtension">
+                <usableWithShields>true</usableWithShields>
+            </li>
+        </modExtensions>
     </ThingDef>
 
     <ThingDef ParentName="VFEV_BaseMeleeWeapon_Sharp_Quality">
@@ -77,7 +85,8 @@
             <texPath>Things/Item/Equipment/WeaponMelee/CryptoLightAxe</texPath>
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>
-        <techLevel>Spacer</techLevel>
+		<recipeMaker Inherit="False" />
+        <techLevel>Ultra</techLevel>
         <statBases>
             <Mass>2.3</Mass>
             <AccuracyTouch>0.72</AccuracyTouch>
@@ -108,13 +117,15 @@
             </li>
         </tools>
         <generateCommonality>1.0</generateCommonality>
-        <thingSetMakerTags>
-            <li>RewardSpecial</li>
-        </thingSetMakerTags>
         <tradeability>Sellable</tradeability>
         <weaponTags>
             <li>CryptoLightMelee</li>
         </weaponTags>
+        <modExtensions>
+	            <li Class="VFECore.ThingDefExtension">
+                <usableWithShields>true</usableWithShields>
+            </li>
+        </modExtensions>
     </ThingDef>
 
 </Defs>
