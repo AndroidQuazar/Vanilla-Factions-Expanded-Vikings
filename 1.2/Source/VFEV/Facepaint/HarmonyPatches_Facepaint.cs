@@ -77,20 +77,20 @@ namespace VFEV.Facepaint
                             instruction = new CodeInstruction(OpCodes.Stloc_S, hideFacepaint.LocalIndex); // hideFacepaint = ShouldHideFacepaint(hideFacepaint, apparelGraphics[j])
                             hideHairAssigned = true;
                         }
+                    }else if (!drawFacepaintCall && hideHairAssigned && instruction.opcode == OpCodes.Ldloc_S)
+                    {
+
+                        yield return new CodeInstruction(OpCodes.Ldarg_0) { labels = instruction.ExtractLabels()};                           // this
+                        yield return new CodeInstruction(OpCodes.Ldloc_S, hideFacepaint.LocalIndex); // hideFacepaint
+                        yield return new CodeInstruction(OpCodes.Ldarg_S, 6);                        // bodyDrawType
+                        yield return new CodeInstruction(OpCodes.Ldarg_S, 8);                        // headStump
+                        yield return new CodeInstruction(OpCodes.Ldarg_S, 5);                        // headFacing
+                        yield return new CodeInstruction(OpCodes.Ldloc_S, 13);                       // loc2
+                        yield return new CodeInstruction(OpCodes.Ldloc_0);                           // quaternion
+                        yield return new CodeInstruction(OpCodes.Ldarg_S, 7);                        // portrait
+                        yield return new CodeInstruction(OpCodes.Call,    renderFacepaint);          // RenderFacepaint(this, hideFacepaint, bodyDrawType, headStump, headFacing, loc2, quaternion, portrait)
+                        drawFacepaintCall = true;
                     }
-                }
-                if (!drawFacepaintCall && hideHairAssigned && instructionList[i - 7].opcode == OpCodes.Ldloc_S && instructionList[i - 7].operand is LocalBuilder llb && llb.LocalIndex == 14)
-                {
-                    yield return new CodeInstruction(OpCodes.Ldarg_0); // this
-                    yield return new CodeInstruction(OpCodes.Ldloc_S, hideFacepaint.LocalIndex); // hideFacepaint
-                    yield return new CodeInstruction(OpCodes.Ldarg_S, 6);                    // bodyDrawType
-                    yield return new CodeInstruction(OpCodes.Ldarg_S, 8);                    // headStump
-                    yield return new CodeInstruction(OpCodes.Ldarg_S, 5);                    // headFacing
-                    yield return new CodeInstruction(OpCodes.Ldloc_S, 13);                   // loc2
-                    yield return new CodeInstruction(OpCodes.Ldloc_0);                       // quaternion
-                    yield return new CodeInstruction(OpCodes.Ldarg_S, 7);                    // portrait
-                    yield return new CodeInstruction(OpCodes.Call, renderFacepaint);      // RenderFacepaint(this, hideFacepaint, bodyDrawType, headStump, headFacing, loc2, quaternion, portrait)
-                    drawFacepaintCall = true;
                 }
 
 
@@ -117,7 +117,7 @@ namespace VFEV.Facepaint
         private static void RenderFacepaint(PawnRenderer instance, bool hideFacepaint, RotDrawMode bodyDrawType, bool headStump, Rot4 headFacing, Vector3 baseDrawPos, Quaternion quaternion, bool portrait)
         {
             var pawn = instance.graphics.pawn;
-            if (!hideFacepaint && bodyDrawType != RotDrawMode.Dessicated && !headStump &&
+            if (bodyDrawType != RotDrawMode.Dessicated && !headStump &&
                 pawn.GetComp<CompFacepaint>() is CompFacepaint facepaintComp)
             {
                 Mesh mesh = instance.graphics.HairMeshSet.MeshAt(headFacing);
