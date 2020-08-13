@@ -179,7 +179,7 @@ namespace VFEV.Facepaint
 
             if (Widgets.ButtonInvisible(rect, true))
             {
-                hairToChange = listedFacepaint;
+                hairToChange = hairToChange == listedFacepaint ? null : listedFacepaint;
                 RimWorld.SoundDefOf.Click.PlayOneShotOnCamera();
             }
 
@@ -297,13 +297,13 @@ namespace VFEV.Facepaint
                 int restyleTicks = 0;
 
                 if (this.newFacepaintCombo.facepaintDefOne != this.initFacepaintCombo.facepaintDefOne)
-                    restyleTicks += this.newFacepaintCombo.facepaintDefOne.workToStyle;
+                    restyleTicks += this.newFacepaintCombo.facepaintDefOne?.workToStyle ?? ShaveWorkTicks;
 
                 if (!this.newFacepaintCombo.colourOne.IndistinguishableFrom(this.initFacepaintCombo.colourOne))
                     restyleTicks += RecolourWorkTicks;
 
                 if (this.newFacepaintCombo.facepaintDefTwo != this.initFacepaintCombo.facepaintDefTwo)
-                    restyleTicks += this.newFacepaintCombo.facepaintDefTwo.workToStyle;
+                    restyleTicks += this.newFacepaintCombo.facepaintDefTwo?.workToStyle ?? ShaveWorkTicks;
 
                 if (!this.newFacepaintCombo.FacepaintColor(coloursTied).IndistinguishableFrom(this.initFacepaintCombo.FacepaintColor(coloursTied)))
                     restyleTicks += RecolourWorkTicks;
@@ -313,6 +313,7 @@ namespace VFEV.Facepaint
         }
 
         private const           int       RecolourWorkTicks = 300;
+        private const int ShaveWorkTicks = 150;
         private static readonly Texture2D BlankColourTex    = ContentFinder<Texture2D>.Get("UI/Misc/BlankUICol");
 
         private FacepaintCombination      initFacepaintCombo;

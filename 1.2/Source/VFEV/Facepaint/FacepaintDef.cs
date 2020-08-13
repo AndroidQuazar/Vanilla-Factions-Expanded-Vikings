@@ -16,7 +16,7 @@ namespace VFEV.Facepaint
 
         public string texPath = string.Empty;
         public List<string> tags;
-        public ShaderTypeDef shader = ShaderTypeDefOf.Cutout;
+        public ShaderTypeDef shader;
         private Graphic graphic = null;
         public int  workToStyle = 300;
         public float commonality = 10f;
@@ -40,7 +40,7 @@ namespace VFEV.Facepaint
         {
             base.ResolveReferences();
 
-            if (this.shader == null)
+            if (this.shader == null) 
                 this.shader = ShaderTypeDefOf.Cutout;
 
             foreach (string tag in this.tags)

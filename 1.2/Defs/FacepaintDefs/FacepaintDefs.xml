@@ -10,9 +10,9 @@
             <li>Rural</li>
         </tags>
         <workToStyle>150</workToStyle>
+        <shader>Transparent</shader>
     </VFEV.Facepaint.FacepaintDef>
-
-        <VFEV.Facepaint.FacepaintDef>
+    <VFEV.Facepaint.FacepaintDef>
         <defName>VFEV_Facepaint_Beak</defName>
         <label>Beak</label>
         <texPath>Things/Pawn/Humanlike/Facepaints/Beak</texPath>
@@ -21,5 +21,7 @@
             <li>Tribal</li>
         </tags>
         <workToStyle>450</workToStyle>
+        <commonality>10</commonality>
+        <shader>Cutout</shader>
     </VFEV.Facepaint.FacepaintDef>
 </Defs>
