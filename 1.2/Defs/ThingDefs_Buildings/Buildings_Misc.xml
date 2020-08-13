@@ -63,7 +63,7 @@
         </graphicData>
 		<defaultPlacingRot>South</defaultPlacingRot>
 		<uiIconPath>Things/Building/Misc/TrainingDummy_MenuIcon</uiIconPath>
-        <size>(2,1)</size>
+        <size>(1,1)</size>
         <rotatable>true</rotatable>
         <altitudeLayer>Building</altitudeLayer>
         <passability>Impassable</passability>
@@ -124,7 +124,7 @@
             <Mass>15</Mass>
         </statBases>
         <canOverlapZones>false</canOverlapZones>
-		<defaultPlacingRot>South</defaultPlacingRot>
+		<defaultPlacingRot>North</defaultPlacingRot>
         <minifiedDef>MinifiedThing</minifiedDef>
         <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
         <thingCategories>

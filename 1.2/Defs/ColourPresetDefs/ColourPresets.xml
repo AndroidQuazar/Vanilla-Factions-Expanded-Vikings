@@ -2,48 +2,38 @@
 <Defs>
 
     <VFEV.Facepaint.ColourPresetDef>
-        <defName>VHE_Grey</defName>
-        <colour>(0.75, 0.75, 0.75, 1)</colour>
+        <defName>VFEV_Red</defName>
+        <colour>(0.89, 0.14, 0.14, 1)</colour>
     </VFEV.Facepaint.ColourPresetDef>
 
     <VFEV.Facepaint.ColourPresetDef>
-        <defName>VHE_DarkGrey</defName>
-        <colour>(0.2, 0.2, 0.2, 1)</colour>
+        <defName>VFEV_Yellow</defName>
+        <colour>(0.89, 0.78, 0.14, 1)</colour>
     </VFEV.Facepaint.ColourPresetDef>
-
+	
     <VFEV.Facepaint.ColourPresetDef>
-        <defName>VHE_BrownishDarkGreyA</defName>
-        <colour>(0.31, 0.28, 0.26, 1)</colour>
+        <defName>VFEV_Green</defName>
+        <colour>(0.31, 0.48, 0.31, 1)</colour>
     </VFEV.Facepaint.ColourPresetDef>
-
+	
     <VFEV.Facepaint.ColourPresetDef>
-        <defName>VHE_BrownishDarkGreyB</defName>
-        <colour>(0.25, 0.2, 0.15, 1)</colour>
+        <defName>VFEV_Blue</defName>
+        <colour>(0.22, 0.27, 0.55, 1)</colour>
     </VFEV.Facepaint.ColourPresetDef>
-
+	
     <VFEV.Facepaint.ColourPresetDef>
-        <defName>VHE_DarkBrown</defName>
-        <colour>(0.3, 0.2, 0.1, 1)</colour>
+        <defName>VFEV_Purple</defName>
+        <colour>(0.60, 0.36, 0.60, 1)</colour>
     </VFEV.Facepaint.ColourPresetDef>
-
+	
     <VFEV.Facepaint.ColourPresetDef>
-        <defName>VHE_Brown</defName>
-        <colour>(0.3529412, 0.227450982, 0.1254902, 1)</colour>
+        <defName>VFEV_White</defName>
+        <colour>(1, 1, 1, 1)</colour>
     </VFEV.Facepaint.ColourPresetDef>
-
+	
     <VFEV.Facepaint.ColourPresetDef>
-        <defName>VHE_LightBrownA</defName>
-        <colour>(0.5176471, 0.3254902, 0.184313729, 1)</colour>
-    </VFEV.Facepaint.ColourPresetDef>
-
-    <VFEV.Facepaint.ColourPresetDef>
-        <defName>VHE_LightBrownB</defName>
-        <colour>(0.75686276, 0.572549045, 0.333333343, 1)</colour>
-    </VFEV.Facepaint.ColourPresetDef>
-
-    <VFEV.Facepaint.ColourPresetDef>
-        <defName>VHE_Blonde</defName>
-        <colour>(0.929411769, 0.7921569, 0.6117647, 1)</colour>
+        <defName>VFEV_Black</defName>
+        <colour>(0, 0, 0, 1)</colour>
     </VFEV.Facepaint.ColourPresetDef>
 
 </Defs>
