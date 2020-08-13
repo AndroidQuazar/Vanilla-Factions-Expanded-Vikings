@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    <VFEV.Facepaint.FacepaintDef>
+        <defName>VFEV_Facepaint_Barbarian</defName>
+        <label>Barbarian</label>
+        <texPath>Things/Pawn/Humanlike/Facepaints/Barbarian</texPath>
+        <tags>
+            <li>Punk</li>
+            <li>Tribal</li>
+            <li>Rural</li>
+        </tags>
+        <workToStyle>150</workToStyle>
+    </VFEV.Facepaint.FacepaintDef>
+
+        <VFEV.Facepaint.FacepaintDef>
+        <defName>VFEV_Facepaint_Beak</defName>
+        <label>Beak</label>
+        <texPath>Things/Pawn/Humanlike/Facepaints/Beak</texPath>
+        <tags>
+            <li>Punk</li>
+            <li>Tribal</li>
+        </tags>
+        <workToStyle>450</workToStyle>
+    </VFEV.Facepaint.FacepaintDef>
+</Defs>

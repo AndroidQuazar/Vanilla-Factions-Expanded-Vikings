@@ -13,4 +13,11 @@
         <reportString>tending to TargetA.</reportString>
         <allowOpportunisticPrefix>true</allowOpportunisticPrefix>
     </JobDef>
+
+    <JobDef>
+        <defName>VFEV_ChangeFacepaint</defName>
+        <driverClass>VFEV.Facepaint.JobDriver_ChangeFacepaint</driverClass>
+        <reportString>changing facepaint at TargetA.</reportString>
+        <allowOpportunisticPrefix>true</allowOpportunisticPrefix>
+    </JobDef>
 </Defs>

@@ -89,6 +89,7 @@
     <ThingDef ParentName="BuildingBase">
         <defName>VFE_TableFacePaints</defName>
         <label>face painting table</label>
+        <thingClass>VFEV.Facepaint.Building_FacepaintingTable</thingClass>
         <description>A table with a vast assortments of pigments and brushes for face painting.</description>
         <graphicData>
             <texPath>Things/Building/Misc/TableFacePainting/TableFacePainting</texPath>
