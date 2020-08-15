@@ -7,7 +7,7 @@
         <hairGender>Female</hairGender>
         <texPath>Things/Pawn/Humanlike/Hairs/Aslaug</texPath>
         <hairTags>
-            <li>VFEV_Viking</li>
+            <li>VFEV_Vikings</li>
         </hairTags>
     </HairDef>
 
@@ -17,7 +17,7 @@
         <hairGender>Any</hairGender>
         <texPath>Things/Pawn/Humanlike/Hairs/Erik</texPath>
         <hairTags>
-            <li>VFEV_Viking</li>
+            <li>VFEV_Vikings</li>
         </hairTags>
     </HairDef>
 
@@ -27,7 +27,7 @@
         <hairGender>Male</hairGender>
         <texPath>Things/Pawn/Humanlike/Hairs/Bjorn</texPath>
         <hairTags>
-            <li>VFEV_Viking</li>
+            <li>VFEV_Vikings</li>
         </hairTags>
     </HairDef>
 
@@ -37,7 +37,7 @@
         <hairGender>Any</hairGender>
         <texPath>Things/Pawn/Humanlike/Hairs/Egil</texPath>
         <hairTags>
-            <li>VFEV_Viking</li>
+            <li>VFEV_Vikings</li>
         </hairTags>
     </HairDef>
 	
@@ -47,7 +47,7 @@
         <hairGender>Any</hairGender>
         <texPath>Things/Pawn/Humanlike/Hairs/Freydis</texPath>
         <hairTags>
-            <li>VFEV_Viking</li>
+            <li>VFEV_Vikings</li>
         </hairTags>
     </HairDef>
 	
@@ -57,7 +57,7 @@
         <hairGender>Female</hairGender>
         <texPath>Things/Pawn/Humanlike/Hairs/Frida</texPath>
         <hairTags>
-            <li>VFEV_Viking</li>
+            <li>VFEV_Vikings</li>
         </hairTags>
     </HairDef>
 	
@@ -67,7 +67,7 @@
         <hairGender>Male</hairGender>
         <texPath>Things/Pawn/Humanlike/Hairs/Gunnar</texPath>
         <hairTags>
-            <li>VFEV_Viking</li>
+            <li>VFEV_Vikings</li>
         </hairTags>
     </HairDef>
 	
@@ -77,7 +77,7 @@
         <hairGender>Male</hairGender>
         <texPath>Things/Pawn/Humanlike/Hairs/Halfdan</texPath>
         <hairTags>
-            <li>VFEV_Viking</li>
+            <li>VFEV_Vikings</li>
         </hairTags>
     </HairDef>
 	
@@ -87,7 +87,7 @@
         <hairGender>Any</hairGender>
         <texPath>Things/Pawn/Humanlike/Hairs/Harald</texPath>
         <hairTags>
-            <li>VFEV_Viking</li>
+            <li>VFEV_Vikings</li>
         </hairTags>
     </HairDef>
 	
@@ -97,7 +97,7 @@
         <hairGender>Female</hairGender>
         <texPath>Things/Pawn/Humanlike/Hairs/Helga</texPath>
         <hairTags>
-            <li>VFEV_Viking</li>
+            <li>VFEV_Vikings</li>
         </hairTags>
     </HairDef>
 	
@@ -107,7 +107,7 @@
         <hairGender>Female</hairGender>
         <texPath>Things/Pawn/Humanlike/Hairs/Lagertha</texPath>
         <hairTags>
-            <li>VFEV_Viking</li>
+            <li>VFEV_Vikings</li>
         </hairTags>
     </HairDef>
 	
@@ -117,7 +117,7 @@
         <hairGender>Male</hairGender>
         <texPath>Things/Pawn/Humanlike/Hairs/Ragnar</texPath>
         <hairTags>
-            <li>VFEV_Viking</li>
+            <li>VFEV_Vikings</li>
         </hairTags>
     </HairDef>
 	
@@ -127,7 +127,7 @@
         <hairGender>Any</hairGender>
         <texPath>Things/Pawn/Humanlike/Hairs/Sigurd</texPath>
         <hairTags>
-            <li>VFEV_Viking</li>
+            <li>VFEV_Vikings</li>
         </hairTags>
     </HairDef>
 	
@@ -137,7 +137,7 @@
         <hairGender>Male</hairGender>
         <texPath>Things/Pawn/Humanlike/Hairs/Ulfrik</texPath>
         <hairTags>
-            <li>VFEV_Viking</li>
+            <li>VFEV_Vikings</li>
         </hairTags>
     </HairDef>
 
