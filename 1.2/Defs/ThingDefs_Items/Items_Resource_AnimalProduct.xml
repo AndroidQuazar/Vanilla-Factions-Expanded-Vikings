@@ -11,20 +11,14 @@
         </graphicData>
         <socialPropernessMatters>true</socialPropernessMatters>
         <statBases>
-            <MarketValue>5.0</MarketValue>
+            <MarketValue>4.2</MarketValue>
             <Mass>0.015</Mass>
-            <Nutrition>0.01</Nutrition>
+            <Nutrition>0.05</Nutrition>
             <FoodPoisonChanceFixedHuman>0.04</FoodPoisonChanceFixedHuman>
         </statBases>
-        <comps>
-            <li Class="CompProperties_Rottable">
-                <daysToRotStart>256</daysToRotStart>
-                <rotDestroys>true</rotDestroys>
-            </li>
-        </comps>
         <ingestible>
             <foodType>AnimalProduct</foodType>
-			<preferability>DesperateOnly</preferability>
+			<preferability>RawTasty</preferability>
 			<joy>0.10</joy>
 			<joyKind>Gluttonous</joyKind>
 			<maxNumToIngestAtOnce>4</maxNumToIngestAtOnce>

@@ -10,7 +10,7 @@
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>
         <soundInteract>Interact_BeatFire</soundInteract>
-        <costStuffCount>50</costStuffCount>
+        <costStuffCount>65</costStuffCount>
         <stuffCategories>
             <li>Metallic</li>
             <li>Woody</li>
@@ -32,7 +32,6 @@
             <recipeUsers Inherit="False">
                 <li>FueledSmithy</li>
                 <li>ElectricSmithy</li>
-                <li>CraftingSpot</li>
             </recipeUsers>
             <researchPrerequisite>Smithing</researchPrerequisite>
             <skillRequirements>
@@ -45,7 +44,7 @@
                 <hasStandardCommand>true</hasStandardCommand>
                 <defaultProjectile>VFEV_ThrowingAxe_Thrown</defaultProjectile>
                 <warmupTime>3.6</warmupTime>
-                <range>9.5</range>
+                <range>7.5</range>
                 <soundCast>Interact_BeatFire</soundCast>
             </li>
         </verbs>
@@ -63,7 +62,7 @@
                 <capacities>
                     <li>Cut</li>
                 </capacities>
-                <power>15</power>
+                <power>19</power>
                 <cooldownTime>2</cooldownTime>
             </li>
         </tools>

@@ -14,7 +14,7 @@
             <li>Tribal</li>
         </backstoryCategories>
         <factionIconPath>World/WorldObjects/Expanding/VikingsClan</factionIconPath>
-        <settlementTexturePath>World/WorldObjects/Settlement</settlementTexturePath>
+        <settlementTexturePath>World/WorldObjects/DefaultSettlement</settlementTexturePath>
         <playerInitialSettlementNameMaker>NamerSettlementViking</playerInitialSettlementNameMaker>
         <factionNameMaker>NamerFactionViking</factionNameMaker>
         <settlementNameMaker>NamerSettlementViking</settlementNameMaker>
@@ -24,7 +24,8 @@
             <li>TribalStart</li>
         </startingResearchTags>
         <hairTags>
-            <li>Rural</li>
+            <li>Tribal</li>
+            <li>VFEV_Vikings</li>
         </hairTags>
     </FactionDef>
 

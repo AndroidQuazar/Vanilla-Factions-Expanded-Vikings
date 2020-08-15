@@ -14,21 +14,21 @@
         <modExtensions>
             <li Class="VFEV.Facepaint.FacepaintExtension">
                 <tags>
-                    <li>Rural</li>
+                    <li>Tribal</li>
                 </tags>
                 <color Class="ColorGenerator_Options">
                     <options>
                         <li>
                             <weight>10</weight>
-                            <only>RGBA(0.000, 1.000, 0.000, 1.000)</only>
+                            <only>RGBA(0.89, 0.14, 0.14, 1)</only>
                         </li>
                         <li>
                             <weight>10</weight>
-                            <only>RGBA(0.000, 0.500, 1.000, 1.000)</only>
+                            <only>RGBA(0.22, 0.27, 0.55, 1)</only>
                         </li>
                         <li>
                             <weight>10</weight>
-                            <only>RGBA(0.000, 0.000, 1.000, 1.000)</only>
+                            <only>RGBA(1, 1, 1, 1)</only>
                         </li>
                     </options>
                 </color>

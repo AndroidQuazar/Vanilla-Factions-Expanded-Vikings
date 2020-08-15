@@ -75,7 +75,7 @@
 				<Crafting>6</Crafting>
 			</skillRequirements>
 		</recipeMaker>
-		<costStuffCount>120</costStuffCount>
+		<costStuffCount>100</costStuffCount>
 		<stuffCategories>
 			<li>Leathery</li>
 		</stuffCategories>
@@ -86,7 +86,7 @@
 			<MaxHitPoints>150</MaxHitPoints>
 			<WorkToMake>25000</WorkToMake>
 			<Mass>10</Mass>
-			<StuffEffectMultiplierArmor>0.4</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierArmor>0.6</StuffEffectMultiplierArmor>
 			<StuffEffectMultiplierInsulation_Cold>0.90</StuffEffectMultiplierInsulation_Cold>
 			<StuffEffectMultiplierInsulation_Heat>0.11</StuffEffectMultiplierInsulation_Heat>
 			<EquipDelay>10</EquipDelay>
@@ -219,7 +219,6 @@
 			<recipeUsers Inherit="False">
 				<li>ElectricTailoringBench</li>
 				<li>HandTailoringBench</li>
-				<li>CraftingSpot</li>
 			</recipeUsers>
 		</recipeMaker>
 		<colorGenerator Class="ColorGenerator_Options">
@@ -252,7 +251,7 @@
 
 	<ThingDef ParentName="ApparelMakeableBase">
 		<defName>VFEV_Apparel_RoyalFurCoat</defName>
-		<label>royal fur coat</label>
+		<label>noble fur coat</label>
 		<description>placeholder</description>
 		<graphicData>
 			<texPath>Things/Pawn/Humanlike/Apparel/RoyalFurCoat/RoyalFurCoat</texPath>
@@ -263,7 +262,6 @@
 		<generateCommonality>0.4</generateCommonality>
 		<costStuffCount>100</costStuffCount>
 		<stuffCategories>
-			<li>Fabric</li>
 			<li>Leathery</li>
 		</stuffCategories>
 		<thingCategories>
@@ -293,7 +291,7 @@
 			<tags Inherit="False">
 				<li>Apparel_VikingJarl</li>
 				<li>Royal</li>
-				<li>RoyalTier5</li>
+				<li>RoyalTier2</li>
 			</tags>
 			<defaultOutfitTags>
 				<li>Worker</li>
@@ -304,87 +302,6 @@
 			<recipeUsers Inherit="False">
 				<li>ElectricTailoringBench</li>
 				<li>HandTailoringBench</li>
-				<li>CraftingSpot</li>
-			</recipeUsers>
-		</recipeMaker>
-		<colorGenerator Class="ColorGenerator_Options">
-			<options>
-				<li>
-					<weight>10</weight>
-					<only>(0.33,0.33,0.33)</only>
-				</li>
-				<li>
-					<weight>10</weight>
-					<only>(0.65,0.65,0.65)</only>
-				</li>
-				<li>
-					<weight>10</weight>
-					<only>(0.4,0.3,0.15)</only>
-				</li>
-				<li>
-					<weight>15</weight>
-					<min>(0.3,0.3,0.3)</min>
-					<max>(0.5,0.5,0.5)</max>
-				</li>
-				<li>
-					<weight>6</weight>
-					<min>(0.5,0.5,0.5)</min>
-					<max>(1,1,1)</max>
-				</li>
-			</options>
-		</colorGenerator>
-	</ThingDef>
-
-	<ThingDef ParentName="ApparelMakeableBase">
-		<defName>VFEV_Apparel_FurCoat</defName>
-		<label>fur coat</label>
-		<description>A tough jacket to stop scrapes and bruises, and to keep one warm in chilly weather.</description>
-		<graphicData>
-			<texPath>Things/Pawn/Humanlike/Apparel/FurCoat/FurCoat</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-		</graphicData>
-		<techLevel>Neolithic</techLevel>
-		<tradeability>Sellable</tradeability>
-		<generateCommonality>0.6</generateCommonality>
-		<costStuffCount>80</costStuffCount>
-		<stuffCategories>
-			<li>Leathery</li>
-		</stuffCategories>
-		<thingCategories>
-			<li>Apparel</li>
-		</thingCategories>
-		<statBases>
-			<MaxHitPoints>160</MaxHitPoints>
-			<WorkToMake>10000</WorkToMake>
-			<Mass>3.6</Mass>
-			<StuffEffectMultiplierArmor>0.3</StuffEffectMultiplierArmor>
-			<StuffEffectMultiplierInsulation_Cold>1.8</StuffEffectMultiplierInsulation_Cold>
-			<StuffEffectMultiplierInsulation_Heat>0.1</StuffEffectMultiplierInsulation_Heat>
-			<EquipDelay>1.5</EquipDelay>
-		</statBases>
-		<apparel>
-			<bodyPartGroups>
-				<li>Torso</li>
-				<li>Neck</li>
-				<li>Shoulders</li>
-				<li>Arms</li>
-			</bodyPartGroups>
-			<wornGraphicPath>Things/Pawn/Humanlike/Apparel/FurCoat/FurCoat</wornGraphicPath>
-			<layers>
-				<li>Shell</li>
-			</layers>
-			<tags Inherit="False">
-				<li>Apparel_Viking</li>
-			</tags>
-			<defaultOutfitTags>
-				<li>Worker</li>
-			</defaultOutfitTags>
-		</apparel>
-		<recipeMaker>
-			<recipeUsers Inherit="False">
-				<li>ElectricTailoringBench</li>
-				<li>HandTailoringBench</li>
-				<li>CraftingSpot</li>
 			</recipeUsers>
 		</recipeMaker>
 		<colorGenerator Class="ColorGenerator_Options">

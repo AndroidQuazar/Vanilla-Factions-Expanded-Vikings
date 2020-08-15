@@ -60,10 +60,10 @@
         <description>A lightweight medieval helmet that provides moderate protection against sharp attacks. Not effective against blunt weapons.</description>
         <techLevel>Medieval</techLevel>
         <recipeMaker>
-            <recipeUsers>
-                <li>ElectricSmithy</li>
-                <li>FueledSmithy</li>
-            </recipeUsers>
+      <recipeUsers Inherit="False">
+        <li>ElectricTailoringBench</li>
+        <li>HandTailoringBench</li>
+      </recipeUsers>
             <skillRequirements>
                 <Crafting>5</Crafting>
             </skillRequirements>
@@ -77,7 +77,7 @@
             <WorkToMake>3200</WorkToMake>
             <MaxHitPoints>100</MaxHitPoints>
             <Mass>2</Mass>
-            <StuffEffectMultiplierArmor>0.32</StuffEffectMultiplierArmor>
+            <StuffEffectMultiplierArmor>0.42</StuffEffectMultiplierArmor>
             <StuffEffectMultiplierInsulation_Cold>0.15</StuffEffectMultiplierInsulation_Cold>
             <StuffEffectMultiplierInsulation_Heat>0</StuffEffectMultiplierInsulation_Heat>
             <EquipDelay>2.5</EquipDelay>
@@ -106,7 +106,7 @@
     <ThingDef ParentName="ArmorHelmetMakeableBase">
         <defName>VFEV_Apparel_RavagerHelmet</defName>
         <label>ravager helmet</label>
-        <description>A lightweight medieval helmet that provides moderate protection against sharp attacks. Not effective against blunt weapons.</description>
+        <description>placeholder</description>
         <techLevel>Medieval</techLevel>
         <recipeMaker>
             <recipeUsers>
@@ -126,14 +126,15 @@
             <WorkToMake>3200</WorkToMake>
             <MaxHitPoints>100</MaxHitPoints>
             <Mass>2</Mass>
-            <StuffEffectMultiplierArmor>0.32</StuffEffectMultiplierArmor>
-            <StuffEffectMultiplierInsulation_Cold>0.15</StuffEffectMultiplierInsulation_Cold>
+            <StuffEffectMultiplierArmor>0.42</StuffEffectMultiplierArmor>
+            <StuffEffectMultiplierInsulation_Cold>0.25</StuffEffectMultiplierInsulation_Cold>
             <StuffEffectMultiplierInsulation_Heat>0</StuffEffectMultiplierInsulation_Heat>
             <EquipDelay>2.5</EquipDelay>
         </statBases>
         <generateCommonality>0.4</generateCommonality>
 		<equippedStatOffsets>
 			<PainShockThreshold>0.20</PainShockThreshold>
+            <ShootingAccuracyPawn>-8</ShootingAccuracyPawn>
 		</equippedStatOffsets>
         <stuffCategories>
             <li>Metallic</li>
@@ -263,7 +264,7 @@
   <ThingDef ParentName="HatMakeableBase">
     <defName>VFEV_JarlCrown</defName>
     <label>jarl crown</label>
-    <description>A grand crown of metal with an elaborate design. Worn by upper-ranking nobles.</description>
+    <description>A grand crown worthy of nordic leaders. As a symbol of status, it requires the antlers of a legendary Lothurr.</description>
 	<techLevel>Medieval</techLevel>
     <recipeMaker>
       <recipeUsers>
@@ -281,7 +282,10 @@
       <texPath>Things/Pawn/Humanlike/Apparel/CrownJarl/CrownJarl</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
-    <costStuffCount>100</costStuffCount>
+	<costList>
+		<VFEV_LothurrAntler>1</VFEV_LothurrAntler>
+	</costList>
+    <costStuffCount>80</costStuffCount>
     <stuffCategories>
       <li>Metallic</li>
     </stuffCategories>

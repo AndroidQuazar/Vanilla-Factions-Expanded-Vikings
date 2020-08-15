@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  
+
+  <!--=============== Lothurr Antler ====================-->
+  
+  <ThingDef ParentName="ResourceVerbBase">
+    <defName>VFEV_LothurrAntler</defName>
+    <label>lothurr antler</label>
+    <description>An antler of a Lothurr. Incredibly heavy and priceless in most markets. This is a true trophy, as well as a deadly blunt weapon.</description>
+    <graphicData>
+      <texPath>Things/Item/Special/LothurrAntler</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <equippedAngleOffset>-20</equippedAngleOffset>
+    <statBases>
+      <MarketValue>1200</MarketValue>
+      <MaxHitPoints>150</MaxHitPoints>
+      <Mass>12</Mass>
+      <Flammability>0.2</Flammability>
+      <DeteriorationRate>0.5</DeteriorationRate>
+    </statBases>
+    <resourceReadoutPriority>Middle</resourceReadoutPriority>
+    <stackLimit>10</stackLimit>
+    <tools>
+      <li>
+        <label>edge</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>36</power>
+        <cooldownTime>4.2</cooldownTime>
+      </li>
+      <li>
+        <label>base</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+    <thingCategories>
+      <li>Items</li>
+    </thingCategories>
+    <tradeTags>
+      <li>ExoticMisc</li>
+    </tradeTags>
+    <thingSetMakerTags>
+      <li>AnimalPart</li>
+    </thingSetMakerTags>
+  </ThingDef>
+
+</Defs>
