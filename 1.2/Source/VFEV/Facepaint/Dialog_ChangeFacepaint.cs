@@ -265,16 +265,14 @@ namespace VFEV.Facepaint
         private void SetHairstyle()
         {
             // Hair def
-            if (this.newFacepaintCombo.facepaintDefOne != this.initFacepaintCombo.facepaintDefOne)
-                jobDriver.newFacepaintDefOne = this.newFacepaintCombo.facepaintDefOne;
+            jobDriver.newFacepaintDefOne = this.newFacepaintCombo.facepaintDefOne;
 
             // Hair colour
             if (!this.newFacepaintCombo.colourOne.IndistinguishableFrom(this.initFacepaintCombo.colourOne))
                 jobDriver.newFacepaintColorOne = this.newFacepaintCombo.colourOne;
 
             // Beard def
-            if (this.newFacepaintCombo.facepaintDefTwo != this.initFacepaintCombo.facepaintDefTwo)
-                jobDriver.newFacepaintDefTwo = this.newFacepaintCombo.facepaintDefTwo;
+            jobDriver.newFacepaintDefTwo = this.newFacepaintCombo.facepaintDefTwo;
 
             // Beard colour
             if (!this.newFacepaintCombo.FacepaintColor(coloursTied).IndistinguishableFrom(this.initFacepaintCombo.FacepaintColor(coloursTied)))

@@ -22,7 +22,7 @@ namespace VFEV.Facepaint
         protected override IEnumerable<Toil> MakeNewToils()
         {
             // Go to hairdressing table
-            var gotoToil = Toils_Goto.GotoThing(TableIndex, PathEndMode.InteractionCell);
+            Toil gotoToil = Toils_Goto.GotoThing(TableIndex, PathEndMode.InteractionCell);
             yield return gotoToil;
 
             // Bring up interface
@@ -33,37 +33,36 @@ namespace VFEV.Facepaint
                          };
 
             // Change hairstyle
-            var hairdressToil = new Toil
-                                {
-                                    tickAction = () =>
-                                                 {
-                                                     // Work on changing hairstyle
-                                                     restyleTicksDone += pawn.GetStatValue(RimWorld.StatDefOf.GeneralLaborSpeed);
-                                                     if (restyleTicksDone >= ticksToRestyle)
-                                                     {
-                                                         if (AnyChanges)
-                                                             ;//FilthMaker.TryMakeFilth(pawn.Position, pawn.Map, ThingDefOf.VHE_Filth_Hair, 3);
+            Toil hairdressToil = new Toil
+                                 {
+                                     tickAction = () =>
+                                                  {
+                                                      // Work on changing hairstyle
+                                                      restyleTicksDone += pawn.GetStatValue(RimWorld.StatDefOf.GeneralLaborSpeed);
+                                                      if (restyleTicksDone >= ticksToRestyle)
+                                                      {
+                                                          //if (AnyChanges)
+                                                          ;//FilthMaker.TryMakeFilth(pawn.Position, pawn.Map, ThingDefOf.VHE_Filth_Hair, 3);
 
 
-                                                         if (pawn.GetComp<CompFacepaint>() is CompFacepaint facepaintComp)
-                                                         {
-                                                             if (this.newFacepaintDefOne != null)
-                                                                 facepaintComp.facepaintDefOne = this.newFacepaintDefOne;
-                                                             if (this.newFacepaintColorOne.HasValue)
-                                                                 facepaintComp.colorOne = this.newFacepaintColorOne.Value;
-                                                             if (this.newFacepaintDefTwo != null)
-                                                                 facepaintComp.facepaintDefTwo = this.newFacepaintDefTwo;
-                                                             if (this.newFacepaintColorTwo.HasValue)
-                                                                 facepaintComp.colorTwo = this.newFacepaintColorTwo.Value;
-                                                         }
+                                                          if (pawn.GetComp<CompFacepaint>() is CompFacepaint facepaintComp)
+                                                          {
+                                                              facepaintComp.facepaintDefOne = this.newFacepaintDefOne;
+                                                              if (this.newFacepaintColorOne.HasValue)
+                                                                  facepaintComp.colorOne = this.newFacepaintColorOne.Value;
+                                                              facepaintComp.facepaintDefTwo = this.newFacepaintDefTwo;
+                                                              if (this.newFacepaintColorTwo.HasValue)
+                                                                  facepaintComp.colorTwo = this.newFacepaintColorTwo.Value;
+                                                          }
 
-                                                         pawn.Drawer.renderer.graphics.ResolveAllGraphics();
-                                                         PortraitsCache.SetDirty(pawn);
-                                                         pawn.jobs.EndCurrentJob(JobCondition.Succeeded);
-                                                     }
-                                                 },
-                                    defaultCompleteMode = ToilCompleteMode.Never
-                                };
+                                                          pawn.Drawer.renderer.graphics.ResolveAllGraphics();
+                                                          PortraitsCache.SetDirty(pawn);
+                                                          pawn.jobs.EndCurrentJob(JobCondition.Succeeded);
+                                                      }
+                                                  },
+                                     defaultCompleteMode = ToilCompleteMode.Never
+                                 };
+
             hairdressToil.WithProgressBar(TableIndex, () => restyleTicksDone / ticksToRestyle, true);
             hairdressToil.FailOnCannotTouch(TableIndex, PathEndMode.Touch);
             hairdressToil.PlaySustainerOrSound(SoundDefOf.TinyBell);
@@ -83,7 +82,7 @@ namespace VFEV.Facepaint
 
         private const TargetIndex TableIndex = TargetIndex.A;
 
-        private bool AnyChanges => this.newFacepaintDefOne != null || this.newFacepaintColorOne.HasValue || this.newFacepaintDefTwo != null || this.newFacepaintColorTwo.HasValue;
+        //private bool AnyChanges => this.newFacepaintDefOne != null || this.newFacepaintColorOne.HasValue || this.newFacepaintDefTwo != null || this.newFacepaintColorTwo.HasValue;
 
         public  FacepaintDef newFacepaintDefOne;
         public  Color?  newFacepaintColorOne;
