@@ -4,8 +4,9 @@
     <ResearchProjectDef>
         <defName>VFEV_Beekeeping</defName>
         <label>bee keeping</label>
-        <description>Keeping bees to produce honey from nearby plants.</description>
+        <description>Learn how to keep bees to produce honey from nearby plants.</description>
         <baseCost>500</baseCost>
+		<tab>VanillaExpanded</tab>
         <techLevel>Neolithic</techLevel>
         <researchViewX>4.00</researchViewX>
         <researchViewY>1.40</researchViewY>
