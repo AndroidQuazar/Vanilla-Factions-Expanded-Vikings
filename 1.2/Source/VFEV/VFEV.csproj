@@ -92,8 +92,14 @@
     <Compile Include="Facepaint\FacepaintExtension.cs" />
     <Compile Include="Facepaint\HarmonyPatches_Facepaint.cs" />
     <Compile Include="Facepaint\JobDriver_ChangeFacepaint.cs" />
-    <Compile Include="IncidentWorker_SlaverRaid.cs" />
-    <Compile Include="JobGiver_CaptureDownedVictimAndLeaveMap.cs" />
+    <Compile Include="Raids\LordToil_BurnStealColonySappers.cs" />
+    <Compile Include="Raids\LordToil_BurnStealColony.cs" />
+    <Compile Include="Raids\LordJob_BurnAndStealColony.cs" />
+    <Compile Include="Raids\IncidentWorker_PillageRaid.cs" />
+    <Compile Include="Raids\IncidentWorker_SlaverRaid.cs" />
+    <Compile Include="Raids\JobDriver_IgniteWithTorches.cs" />
+    <Compile Include="Raids\JobGiver_BurnAndStealColony.cs" />
+    <Compile Include="Raids\JobGiver_CaptureDownedVictimAndLeaveMap.cs" />
     <Compile Include="MapComponentTeleportHelper.cs" />
     <Compile Include="MapGeneration\BeastHuntEvents\GenStep_Njorun.cs" />
     <Compile Include="MapGeneration\BeastHuntEvents\GenStep_Lothurr.cs" />

@@ -138,8 +138,7 @@
       <explosionRadius>0.9</explosionRadius>
       <damageDef>Flame</damageDef>
       <!-- Use default damage from explosion def -->
-      <preExplosionSpawnThingDef>Filth_Fuel</preExplosionSpawnThingDef>
-		<speed>12</speed>
+		<speed>24</speed>
       <ai_IsIncendiary>true</ai_IsIncendiary>
     </projectile>
   </ThingDef>

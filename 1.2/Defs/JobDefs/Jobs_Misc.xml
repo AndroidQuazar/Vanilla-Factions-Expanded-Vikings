@@ -20,4 +20,11 @@
         <reportString>changing facepaint at TargetA.</reportString>
         <allowOpportunisticPrefix>true</allowOpportunisticPrefix>
     </JobDef>
+	
+	<JobDef>
+        <defName>VFEV_IgniteWithTorches</defName>
+        <driverClass>VFEV.JobDriver_IgniteWithTorches</driverClass>
+        <reportString>igniting TargetA with torches.</reportString>
+        <allowOpportunisticPrefix>true</allowOpportunisticPrefix>
+    </JobDef>
 </Defs>

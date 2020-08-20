@@ -11,21 +11,17 @@ using Verse.AI.Group;
 
 namespace VFEV
 {
-    public class IncidentWorker_SlaverRaid : IncidentWorker_RaidEnemy
+    public class IncidentWorker_PillageRaid : IncidentWorker_RaidEnemy
     {
         protected override bool TryResolveRaidFaction(IncidentParms parms)
         {
-            parms.faction = Find.FactionManager.FirstFactionOfDef(FactionDef.Named("VFEV_VikingsSlaver"));
+            parms.faction = Find.FactionManager.FirstFactionOfDef(VFEV_DefOf.VFEV_VikingsSlaver);
             return true;
         }
 
         protected override void ResolveRaidPoints(IncidentParms parms)
         {
-            if (parms.points <= 0f)
-            {
-                Log.Error("RaidEnemy is resolving raid points. They should always be set before initiating the incident.");
-                parms.points = StorytellerUtility.DefaultThreatPointsNow(parms.target);
-            }
+            parms.points = StorytellerUtility.DefaultThreatPointsNow(parms.target) * 5f;
         }
 
         public override void ResolveRaidStrategy(IncidentParms parms, PawnGroupKindDef groupKind)
@@ -38,15 +34,15 @@ namespace VFEV
             parms.raidArrivalMode = PawnsArrivalModeDefOf.EdgeWalkIn;
         }
 
-        private void GenerateAnimals(Faction faction, List<Pawn> pawns)
-        {
-            int num = (int)((float)pawns.Count * 0.7f);
-            for (int i = 0; i < num; i++)
-            {
-                Pawn pawn = PawnGenerator.GeneratePawn(new PawnGenerationRequest(PawnKindDef.Named("VFEV_Wolfhound"), faction));
-                pawns.Add(pawn);
-            }
-        }
+        //private void GenerateAnimals(Faction faction, List<Pawn> pawns)
+        //{
+        //    int num = (int)((float)pawns.Count * 0.7f);
+        //    for (int i = 0; i < num; i++)
+        //    {
+        //        Pawn pawn = PawnGenerator.GeneratePawn(new PawnGenerationRequest(PawnKindDef.Named("VFEV_Wolfhound"), faction));
+        //        pawns.Add(pawn);
+        //    }
+        //}
 
         protected override bool TryExecuteWorker(IncidentParms parms)
         {
@@ -61,6 +57,7 @@ namespace VFEV
                 return false;
             }
             PawnGroupKindDef combat = PawnGroupKindDefOf.Combat;
+
             this.ResolveRaidStrategy(parms, combat);
             this.ResolveRaidArriveMode(parms);
             parms.raidStrategy.Worker.TryGenerateThreats(parms);
@@ -69,19 +66,49 @@ namespace VFEV
                 return false;
             }
             parms.points = IncidentWorker_Raid.AdjustedRaidPoints(parms.points, parms.raidArrivalMode, parms.raidStrategy, parms.faction, combat);
-            List<Pawn> list = parms.raidStrategy.Worker.SpawnThreats(parms);
-            if (list != null) GenerateAnimals(parms.faction, list);
-
-            if (list == null)
+            int num = 0;
+            List<Pawn> list = new List<Pawn>();
+            while (num < 10)
             {
-                list = PawnGroupMakerUtility.GeneratePawns(IncidentParmsUtility.GetDefaultPawnGroupMakerParms(combat, parms, false), true).ToList<Pawn>();
-                if (list.Count == 0)
+                Log.Message("Loop", true);
+                list = parms.raidStrategy.Worker.SpawnThreats(parms);
+                //if (list != null) GenerateAnimals(parms.faction, list);
+
+                if (list == null)
                 {
-                    Log.Error("Got no pawns spawning raid from parms " + parms, false);
-                    return false;
+                    list = PawnGroupMakerUtility.GeneratePawns(IncidentParmsUtility.GetDefaultPawnGroupMakerParms(combat, parms, false), true).ToList<Pawn>();
+                    if (list.Count == 0)
+                    {
+                        Log.Error("Got no pawns spawning raid from parms " + parms, false);
+                        return false;
+                    }
+                    //GenerateAnimals(parms.faction, list);
+                    parms.raidArrivalMode.Worker.Arrive(list, parms);
                 }
-                GenerateAnimals(parms.faction, list);
-                parms.raidArrivalMode.Worker.Arrive(list, parms);
+                if (list.Where(p => p.RaceProps.Humanlike).Count() == 0)
+                {
+                    for (int i = list.Count - 1; i >= 0; i--)
+                    {
+                        list[i].Destroy(DestroyMode.Vanish);
+                    }
+                    list.Clear();
+                    num++;
+                }
+                else
+                {
+                    break;
+                }
+            }
+
+            var ignitors = new List<Pawn>();
+            foreach (var p in list)
+            {
+                if (p.apparel != null && Rand.Chance(0.5f))
+                {
+                    var throwableTorches = ThingMaker.MakeThing(VFEV_DefOf.VFEV_Apparel_TorchBelt) as Apparel;
+                    p.apparel.Wear(throwableTorches, false);
+                    ignitors.Add(p);
+                }
             }
             StringBuilder stringBuilder = new StringBuilder();
             stringBuilder.AppendLine("Points = " + parms.points.ToString("F0"));
@@ -118,21 +145,34 @@ namespace VFEV
                 }
             }
             base.SendStandardLetter(baseLetterLabel, baseLetterText, this.GetLetterDef(), parms, list2, Array.Empty<NamedArgument>());
-            
-            var lord = new LordJob_AssaultColony(parms.faction, false, true, true, true, false);
-            LordMaker.MakeNewLord(parms.faction, lord, (Map)parms.target, list);
+            Log.Message("Checking1 : " + list, true);
 
             foreach (var pawn in list)
             {
+                Log.Message("Checking2 : " + pawn, true);
                 if (pawn.RaceProps.Humanlike)
                 {
-                    pawn.mindState.duty = new PawnDuty(DefDatabase<DutyDef>.GetNamed("VFEV_CaptureDownedVictimAndLeaveMap"));
+                    if (Rand.Chance(0.3f) && !ignitors.Contains(pawn))
+                    {
+                        Log.Message(pawn + " got duty: " + DutyDefOf.AssaultColony, true);
+                        pawn.mindState.duty = new PawnDuty(DutyDefOf.AssaultColony);
+                    }
+                    else
+                    {
+                        Log.Message(pawn + " got duty: " + VFEV_DefOf.VFEV_BurnAndStealColony, true);
+                        pawn.mindState.duty = new PawnDuty(VFEV_DefOf.VFEV_BurnAndStealColony);
+                    }
                 }
                 else
                 {
+                    Log.Message(pawn + " got duty: " + DutyDefOf.AssaultColony, true);
                     pawn.mindState.duty = new PawnDuty(DutyDefOf.AssaultColony);
                 }
             }
+
+            var lord = new LordJob_BurnAndStealColony(parms.faction, false, true, true, true, true);
+            LordMaker.MakeNewLord(parms.faction, lord, (Map)parms.target, list);
+
             LessonAutoActivator.TeachOpportunity(ConceptDefOf.EquippingWeapons, OpportunityType.Critical);
             if (!PlayerKnowledgeDatabase.IsComplete(ConceptDefOf.ShieldBelts))
             {
@@ -150,22 +190,12 @@ namespace VFEV
 
         protected override string GetLetterLabel(IncidentParms parms)
         {
-            return parms.raidStrategy.letterLabelEnemy;
+            return base.def.letterLabel;
         }
 
         protected override string GetLetterText(IncidentParms parms, List<Pawn> pawns)
         {
-            string text = string.Format(parms.raidArrivalMode.textEnemy, parms.faction.def.pawnsPlural, parms.faction.Name);
-            text += "\n\n";
-            text += parms.raidStrategy.arrivalTextEnemy;
-            Pawn pawn = pawns.Find((Pawn x) => x.Faction.leader == x);
-            bool flag = pawn != null;
-            if (flag)
-            {
-                text += "\n\n";
-                text += TranslatorFormattedStringExtensions.Translate("EnemyRaidLeaderPresent", pawn.Faction.def.pawnsPlural, pawn.LabelShort, NamedArgumentUtility.Named(pawn, "LEADER"));
-            }
-            return text;
+            return "VFEV.PillageRaidDesc".Translate(parms.faction);
         }
 
         protected override LetterDef GetLetterDef()

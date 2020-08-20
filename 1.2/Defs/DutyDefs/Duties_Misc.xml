@@ -30,5 +30,16 @@
 			</subNodes>
 		</thinkNode>
 	</DutyDef>
+	
+	<DutyDef>
+		<defName>VFEV_BurnAndStealColony</defName>
+		<alwaysShowWeapon>true</alwaysShowWeapon>
+		<thinkNode Class="ThinkNode_Priority">
+			<subNodes>
+				<li Class="JobGiver_TakeCombatEnhancingDrug" />
+				<li Class="VFEV.JobGiver_BurnAndStealColony" />
+			</subNodes>
+		</thinkNode>
+	</DutyDef>
 
 </Defs>
