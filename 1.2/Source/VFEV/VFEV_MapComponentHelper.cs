@@ -7,12 +7,15 @@ using UnityEngine;
 using UnityEngine.Assertions.Must;
 using Verse;
 using Verse.AI;
+using Verse.AI.Group;
 
 namespace VFEV
 {
-    public class MapComponentTeleportHelper : MapComponent
+    public class VFEV_MapComponentHelper : MapComponent
     {
-        public MapComponentTeleportHelper(Map map) : base(map)
+
+        public int lastFeastStartTick;
+        public VFEV_MapComponentHelper(Map map) : base(map)
         {
 
         }
@@ -53,6 +56,7 @@ namespace VFEV
         public override void ExposeData()
         {
             base.ExposeData();
+            Scribe_Values.Look<int>(ref lastFeastStartTick, "lastFeastStartTick", 0);
             Scribe_Collections.Look<Pawn, IntVec3>(ref pawnsToTeleport, "pawnsToTeleport", 
                 LookMode.Deep, LookMode.Value, ref this.pawnsToTeleportKeys,
                 ref this.pawnsToTeleportValues);

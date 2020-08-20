@@ -92,6 +92,9 @@
     <Compile Include="Facepaint\FacepaintExtension.cs" />
     <Compile Include="Facepaint\HarmonyPatches_Facepaint.cs" />
     <Compile Include="Facepaint\JobDriver_ChangeFacepaint.cs" />
+    <Compile Include="Feast\JobGiver_EatDrinkAndTakeDrugsInGatheringArea.cs" />
+    <Compile Include="Feast\LordJob_Joinable_Feast.cs" />
+    <Compile Include="Feast\GatheringWorker_Feast.cs" />
     <Compile Include="Raids\LordToil_BurnStealColonySappers.cs" />
     <Compile Include="Raids\LordToil_BurnStealColony.cs" />
     <Compile Include="Raids\LordJob_BurnAndStealColony.cs" />
@@ -100,7 +103,7 @@
     <Compile Include="Raids\JobDriver_IgniteWithTorches.cs" />
     <Compile Include="Raids\JobGiver_BurnAndStealColony.cs" />
     <Compile Include="Raids\JobGiver_CaptureDownedVictimAndLeaveMap.cs" />
-    <Compile Include="MapComponentTeleportHelper.cs" />
+    <Compile Include="VFEV_MapComponentHelper.cs" />
     <Compile Include="MapGeneration\BeastHuntEvents\GenStep_Njorun.cs" />
     <Compile Include="MapGeneration\BeastHuntEvents\GenStep_Lothurr.cs" />
     <Compile Include="MapGeneration\BeastHuntEvents\GenStep_Fenrir.cs" />
@@ -110,5 +113,6 @@
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

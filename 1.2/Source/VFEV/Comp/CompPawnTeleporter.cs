@@ -42,7 +42,7 @@ namespace VFEV
                     MoteMaker.MakeStaticMote(pawn.Position, pawn.Map, ThingDefOf.Mote_PsycastAreaEffect, 10f);
                     disappear = true;
                     appearInTick = Find.TickManager.TicksGame + 120;
-                    var mapComp = pawn.Map.GetComponent<MapComponentTeleportHelper>();
+                    var mapComp = pawn.Map.GetComponent<VFEV_MapComponentHelper>();
                     if (mapComp.pawnsToTeleport == null) mapComp.pawnsToTeleport = new Dictionary<Pawn, IntVec3>();
                     mapComp.pawnsToTeleport[pawn] = loc;
                     pawn.DeSpawn(DestroyMode.Vanish);

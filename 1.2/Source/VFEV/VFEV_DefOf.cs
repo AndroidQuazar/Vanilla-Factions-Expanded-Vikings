@@ -28,11 +28,13 @@ namespace VFEV
 
         public static JobDef VFEV_ChangeFacepaint;
 
+        // raids
         public static ThingDef VFEV_Apparel_TorchBelt;
         public static FactionDef VFEV_VikingsSlaver;
         public static DutyDef VFEV_BurnAndStealColony;
         public static JobDef VFEV_IgniteWithTorches;
 
-
+        //feast
+        public static DutyDef VFEV_Feast;
     }
 }
