@@ -12,7 +12,16 @@ namespace VFEV
 		protected override Job TryGiveJob(Pawn pawn)
 		{
 			Log.Message(pawn + " at feast", true);
-			PawnDuty duty = pawn.mindState.duty;
+            if (pawn.MentalState != null)
+            {
+                var socialFighting = (MentalState_SocialFighting)pawn.MentalState;
+                if (socialFighting != null)
+                {
+                    Log.Message("other pawn: " + socialFighting.otherPawn, true);
+                }
+            }
+
+            PawnDuty duty = pawn.mindState.duty;
 			if (duty == null)
 			{
 				Log.Message(pawn + " - TryGiveJob - return null; - 4", true);
@@ -36,13 +45,16 @@ namespace VFEV
 			return job;
 		}
 
-
-
         private Thing FindFood(Pawn pawn, IntVec3 gatheringSpot)
         {
             Predicate<Thing> validator = delegate (Thing x)
             {
                 Log.Message("Item candidate: " + x, true);
+                if (IntVec3Utility.DistanceTo(x.Position, pawn.Position) > 50f)
+                {
+                    Log.Message(" - FindFood - return false; - 1", true);
+                    return false;
+                }
                 if (!x.IngestibleNow)
                 {
                     Log.Message(" - FindFood - return false; - 2", true);
@@ -64,7 +76,7 @@ namespace VFEV
                     Log.Message(" - FindFood - return false; - 10", true);
                     return false;
                 }
-                if (!pawn.WillEat(x))
+                if (!x.def.IsDrug && !pawn.WillEat(x))
                 {
                     Log.Message(" - FindFood - return false; - 12", true);
                     return false;
@@ -79,10 +91,21 @@ namespace VFEV
                     Log.Message(" - FindFood - return false; - 16", true);
                     return false;
                 }
-                return pawn.CanReserve(x) ? true : false;
+                var canReserve = pawn.CanReserve(x);
+                Log.Message(pawn + " canReserve " + x + ": " + canReserve, true);
+                return canReserve;
             };
-            List<Thing> list = pawn.Map.listerThings.ThingsInGroup(ThingRequestGroup.FoodSourceNotPlantOrTree).OrderByDescending(x => x.def.ingestible.joy).ToList();
-            return GenClosest.ClosestThing_Global_Reachable(pawn.Position, pawn.Map, list, PathEndMode.ClosestTouch, TraverseParms.For(TraverseMode.PassDoors), 50, validator);
+
+            List<Thing> list = pawn.Map.listerThings.ThingsInGroup(ThingRequestGroup.FoodSourceNotPlantOrTree);
+            if (pawn.needs.food.CurLevel < 0.4)
+            {
+                list = list.OrderByDescending(x => x.GetStatValue(StatDefOf.Nutrition)).ToList();
+            }
+            else
+            {
+                list = list.OrderByDescending(x => x.def.ingestible.joy).ToList();
+            }
+            return list.Where(x => validator(x)).FirstOrDefault();
         }
 	}
 }

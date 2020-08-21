@@ -76,16 +76,71 @@ namespace VFEV
 
 		protected override bool ShouldBeCalledOff()
 		{
-			if (!GatheringsUtility.PawnCanStartOrContinueGathering(organizer))
+			if (!PawnCanStartOrContinueGathering(organizer))
 			{
+				Log.Message(" - ShouldBeCalledOff - return true; - 2", true);
 				return true;
 			}
-			if (!GatheringsUtility.AcceptableGameConditionsToContinueGathering(base.Map))
+			if (!AcceptableGameConditionsToContinueGathering(base.Map))
 			{
+				Log.Message(" - ShouldBeCalledOff - return true; - 4", true);
 				return true;
 			}
 			return false;
 		}
+
+		public static bool AcceptableGameConditionsToContinueGathering(Map map)
+		{
+			if (map.dangerWatcher.DangerRating == StoryDanger.High)
+			{
+				Log.Message(" - AcceptableGameConditionsToContinueGathering - return false; - 7", true);
+				return false;
+			}
+			return true;
+		}
+
+
+		public static bool PawnCanStartOrContinueGathering(Pawn pawn)
+		{
+			if (pawn.Drafted)
+			{
+				Log.Message(" - PawnCanStartOrContinueGathering - return false; - 2", true);
+				return false;
+			}
+			if (pawn.health.hediffSet.BleedRateTotal > 0.3f)
+			{
+				Log.Message(" - PawnCanStartOrContinueGathering - return false; - 4", true);
+				return false;
+			}
+			if (pawn.IsPrisoner)
+			{
+				Log.Message(" - PawnCanStartOrContinueGathering - return false; - 6", true);
+				return false;
+			}
+			Hediff firstHediffOfDef = pawn.health.hediffSet.GetFirstHediffOfDef(HediffDefOf.BloodLoss);
+			if (firstHediffOfDef != null && firstHediffOfDef.Severity > 0.2f)
+			{
+				Log.Message(" - PawnCanStartOrContinueGathering - return false; - 9", true);
+				return false;
+			}
+			if (pawn.IsWildMan())
+			{
+				Log.Message(" - PawnCanStartOrContinueGathering - return false; - 11", true);
+				return false;
+			}
+
+			//if (pawn.psychicEntropy != null && pawn.psychicEntropy.IsCurrentlyMeditating)
+			//{
+			//      return false;
+			//}
+			//if (pawn.Spawned && !pawn.Downed)
+			//{
+			//      return !pawn.InMentalState;
+			//}
+			return true;
+		}
+
+
 
 		protected virtual Trigger_TicksPassed GetTimeoutTrigger()
 		{

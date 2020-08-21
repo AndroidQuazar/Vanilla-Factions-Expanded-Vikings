@@ -92,7 +92,9 @@
     <Compile Include="Facepaint\FacepaintExtension.cs" />
     <Compile Include="Facepaint\HarmonyPatches_Facepaint.cs" />
     <Compile Include="Facepaint\JobDriver_ChangeFacepaint.cs" />
+    <Compile Include="HarmonyInit.cs" />
     <Compile Include="Feast\JobGiver_EatDrinkAndTakeDrugsInGatheringArea.cs" />
+    <Compile Include="Feast\DrunkFighting.cs" />
     <Compile Include="Feast\LordJob_Joinable_Feast.cs" />
     <Compile Include="Feast\GatheringWorker_Feast.cs" />
     <Compile Include="Raids\LordToil_BurnStealColonySappers.cs" />

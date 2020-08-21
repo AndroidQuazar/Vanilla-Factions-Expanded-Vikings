@@ -36,5 +36,8 @@ namespace VFEV
 
         //feast
         public static DutyDef VFEV_Feast;
+        public static InteractionDef VFEV_DrunkChitchat;
+        public static InteractionDef VFEV_VeryDrunkChitchat;
+
     }
 }
