@@ -15,6 +15,8 @@ namespace VFEV
     {
 
         public int lastFeastStartTick;
+
+        public bool feastIsActive;
         public VFEV_MapComponentHelper(Map map) : base(map)
         {
 
@@ -57,6 +59,8 @@ namespace VFEV
         {
             base.ExposeData();
             Scribe_Values.Look<int>(ref lastFeastStartTick, "lastFeastStartTick", 0);
+            Scribe_Values.Look<bool>(ref feastIsActive, "feastIsActive", false);
+
             Scribe_Collections.Look<Pawn, IntVec3>(ref pawnsToTeleport, "pawnsToTeleport", 
                 LookMode.Deep, LookMode.Value, ref this.pawnsToTeleportKeys,
                 ref this.pawnsToTeleportValues);

@@ -14,7 +14,7 @@ namespace VFEV
         public static void Prefix(Pawn_InteractionsTracker __instance, Pawn ___pawn, ref InteractionDef interaction, Pawn initiator)
         {
             var alcoholHediff = ___pawn.health?.hediffSet?.GetFirstHediffOfDef(HediffDefOf.AlcoholHigh);
-            if (alcoholHediff != null)
+            if (alcoholHediff != null && ___pawn.Map.GetComponent<VFEV_MapComponentHelper>().feastIsActive)
             {
                 if (alcoholHediff.CurStageIndex == 2) //drunk
                 {

@@ -46,7 +46,7 @@ namespace VFEV
 		public override StateGraph CreateGraph()
 		{
 			Log.Message("START: " + Find.TickManager.TicksGame, true);
-
+			this.Map.GetComponent<VFEV_MapComponentHelper>().feastIsActive = true;
 			StateGraph stateGraph = new StateGraph();
 			LordToil party = CreateGatheringToil(spot, organizer, gatheringDef);
 			stateGraph.AddToil(party);
@@ -174,9 +174,11 @@ namespace VFEV
         {
             base.Cleanup();
 			Log.Message("END: " + Find.TickManager.TicksGame, true);
-        }
+			this.Map.GetComponent<VFEV_MapComponentHelper>().feastIsActive = false;
 
-        public override void ExposeData()
+		}
+
+		public override void ExposeData()
 		{
 			base.ExposeData();
 			Scribe_Values.Look(ref durationTicks, "durationTicks", 0);

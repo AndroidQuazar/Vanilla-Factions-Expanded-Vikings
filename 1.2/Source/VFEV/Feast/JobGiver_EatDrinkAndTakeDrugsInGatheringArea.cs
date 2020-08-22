@@ -12,15 +12,6 @@ namespace VFEV
 		protected override Job TryGiveJob(Pawn pawn)
 		{
 			Log.Message(pawn + " at feast", true);
-            if (pawn.MentalState != null)
-            {
-                var socialFighting = (MentalState_SocialFighting)pawn.MentalState;
-                if (socialFighting != null)
-                {
-                    Log.Message("other pawn: " + socialFighting.otherPawn, true);
-                }
-            }
-
             PawnDuty duty = pawn.mindState.duty;
 			if (duty == null)
 			{
