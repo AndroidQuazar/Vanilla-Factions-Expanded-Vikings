@@ -141,7 +141,6 @@
 				<raidRestlessness>
 					<startAfterTicks>3600000</startAfterTicks> <!-- 1 year -->
 					<thoughtDef>VFEV_RaidRestlessness</thoughtDef>
-					<deadlineQuadrum>1</deadlineQuadrum> <!-- Aprimay, the game has only four months named "quadrums" -->
 				</raidRestlessness>
 			</li>
 		</modExtensions>
