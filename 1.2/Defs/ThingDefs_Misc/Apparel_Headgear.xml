@@ -4,7 +4,7 @@
     <ThingDef ParentName="ArmorHelmetMakeableBase">
         <defName>VFEV_Apparel_GuardianHelmet</defName>
         <label>guardian helmet</label>
-        <description>A bulky medieval helmet that provides full-head coverage. Offers a considerable amount of protectuon but restricts the wearer's field of vision.</description>
+        <description>A strong medieval helmet that provides full-head coverage. While it offers fantastic protection, ones vision is grealy obscured.</description>
         <techLevel>Medieval</techLevel>
         <recipeMaker>
             <researchPrerequisite>PlateArmor</researchPrerequisite>
@@ -57,7 +57,7 @@
     <ThingDef ParentName="ArmorHelmetMakeableBase">
         <defName>VFEV_Apparel_LeatherHelmet</defName>
         <label>leather helmet</label>
-        <description>A lightweight medieval helmet that provides moderate protection against sharp attacks. Not effective against blunt weapons.</description>
+        <description>A lightweight medieval helmet meant for stropping bladed weapon and animal attacks, notably leaves ones chin and jaw exposed. Not effective against blunt weapons.</description>
         <techLevel>Medieval</techLevel>
         <recipeMaker>
       <recipeUsers Inherit="False">
