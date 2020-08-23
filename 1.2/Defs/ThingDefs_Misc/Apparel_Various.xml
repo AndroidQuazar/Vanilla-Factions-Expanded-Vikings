@@ -4,7 +4,7 @@
 	<ThingDef ParentName="ArmorSmithableBase">
 		<defName>VFEV_Apparel_GuardianArmor</defName>
 		<label>guardian armor</label>
-		<description>placeholder</description>
+		<description>A heavy, metallic breastplate meant to provide warmth and protection to heavy infantry during battles in frigid tundras. Unfortunately, this armor leaves on slowed and more vulnerable to melee attacks.</description>
 		<graphicData>
 			<texPath>Things/Pawn/Humanlike/Apparel/BrigandineArmor/BrigandineArmor</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -64,7 +64,7 @@
 	<ThingDef ParentName="ApparelMakeableBase">
 		<defName>VFEV_LeatherArmor</defName>
 		<label>leather armor</label>
-		<description>placeholder</description>
+		<description>Flexible, medium-thickness leather armor made from squares of animal hide. Meant to be worn under a pelt cloak or parka, offers suitable protection for light combat without restricting movement, making it a favorite of archers and scouts.</description>
 		<graphicData>
 			<texPath>Things/Pawn/Humanlike/Apparel/LeatherArmor/LeatherArmor</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -114,7 +114,7 @@
 	<ThingDef ParentName="ApparelMakeableBase">
 		<defName>VFEV_Apparel_RavagerArmor</defName>
 		<label>ravager armor</label>
-		<description>placeholder</description>
+		<description>Much heavier than its leather armor cousin, this armor is made much more carefully and tightly out of processed leathers. Intended to be worn by front-line troops and often accompanied by a shield.</description>
 		<graphicData>
 			<texPath>Things/Pawn/Humanlike/Apparel/LeatherHeavyArmor/LeatherHeavyArmor</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -169,7 +169,7 @@
 	<ThingDef ParentName="ApparelMakeableBase">
 		<defName>VFEV_Apparel_JarlCape</defName>
 		<label>jarl cape</label>
-		<description>placeholder</description>
+		<description>A painstakingly sewn cloak topped with a broad, furry mantle and ornate clasp. Satisfies even the highest ranks of royalty and offers surprising amounts of insulation, even down to the legs.</description>
 		<graphicData>
 			<texPath>Things/Pawn/Humanlike/Apparel/JarlCape/JarlCape</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -252,7 +252,7 @@
 	<ThingDef ParentName="ApparelMakeableBase">
 		<defName>VFEV_Apparel_RoyalFurCoat</defName>
 		<label>noble fur coat</label>
-		<description>placeholder</description>
+		<description>An intently woven series of pelts then strapped together tightly with cured animal sinew, quite pleasing to wear even for nobility.</description>
 		<graphicData>
 			<texPath>Things/Pawn/Humanlike/Apparel/RoyalFurCoat/RoyalFurCoat</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
