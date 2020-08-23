@@ -213,7 +213,7 @@
   <ThingDef ParentName="HatMakeableBase">
     <defName>VFEV_BearHeaddress</defName>
     <label>bear headdress</label>
-    <description>An exceedingly cozy helmet stitched together from many hides and furs made to represent a ferocious bear. Offers high protection and some warmth to those who wear it. In battle, those who wear this headpiece are anectodally known to experience adrenaline rushes while there enemies look onwards in terror..</description>
+    <description>An exceedingly cozy helmet stitched together from many hides and furs made to represent a ferocious bear. Offers high protection and some warmth to those who wear it. In battle, those who wear this headpiece are anectodally known to experience adrenaline rushes while there enemies look onwards in terror.</description>
     <recipeMaker>
       <researchPrerequisite />
       <recipeUsers>
