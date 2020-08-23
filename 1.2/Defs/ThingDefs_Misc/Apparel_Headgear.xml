@@ -4,7 +4,7 @@
     <ThingDef ParentName="ArmorHelmetMakeableBase">
         <defName>VFEV_Apparel_GuardianHelmet</defName>
         <label>guardian helmet</label>
-        <description>A strong medieval helmet that provides full-head coverage. While it offers fantastic protection, ones vision is grealy obscured.</description>
+        <description>A strong medieval helmet that provides full-head coverage. While it offers fantastic protection, ones vision is grealy obscured, thus it is only recommended for front line infantry, particularly those foregoing shields.</description>
         <techLevel>Medieval</techLevel>
         <recipeMaker>
             <researchPrerequisite>PlateArmor</researchPrerequisite>
@@ -106,7 +106,7 @@
     <ThingDef ParentName="ArmorHelmetMakeableBase">
         <defName>VFEV_Apparel_RavagerHelmet</defName>
         <label>ravager helmet</label>
-        <description>placeholder</description>
+        <description>A simple metallic helmet designed to not block ones communication during combat. Often worn by front line, shield-wielding infantry to soak damage.</description>
         <techLevel>Medieval</techLevel>
         <recipeMaker>
             <recipeUsers>
