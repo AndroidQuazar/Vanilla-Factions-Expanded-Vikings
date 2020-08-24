@@ -75,9 +75,11 @@
     <Compile Include="Apiary\Apiary.cs" />
     <Compile Include="Apiary\WorkGiver_TakeHoneyOutOfApiary.cs" />
     <Compile Include="Apiary\WorkGiver_TendToApiary.cs" />
+    <Compile Include="Comp\CompLightningWhenHit.cs" />
     <Compile Include="Comp\CompPawnPsyWaver.cs" />
     <Compile Include="Comp\CompPawnTeleporter.cs" />
     <Compile Include="Comp\CompApparelHediffs.cs" />
+    <Compile Include="Comp\CompProperties_LightningWhenHit.cs" />
     <Compile Include="Comp\CompProperties_PawnPsyWaver.cs" />
     <Compile Include="Comp\CompProperties_PawnTeleporter.cs" />
     <Compile Include="Comp\CompProperties_ApparelHediffs.cs" />

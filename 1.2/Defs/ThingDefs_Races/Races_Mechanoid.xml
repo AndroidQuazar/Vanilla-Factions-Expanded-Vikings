@@ -54,6 +54,7 @@
         <maxDistance>25</maxDistance>
         <stunPeriod>150</stunPeriod>
       </li>
+      <li Class="VFEV.Comp.CompProperties_LightningWhenHit" />
     </comps>
   </ThingDef>
 
