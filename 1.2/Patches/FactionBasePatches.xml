@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+    <Operation Class="PatchOperationAdd">
+        <xpath>/Defs/FactionDef[defName="VFEV_VikingsClan"]</xpath>
+        <value>
+            <modExtensions>
+                <li Class="KCSG.FactionSettlement">
+                    <chooseFrom>
+                        <li>VFEV_Viking_Village_1</li>
+                        <li>VFEV_Viking_Village_2</li>
+                        <li>VFEV_Viking_Village_3</li>
+                        <li>VFEV_Viking_Village_4</li>
+                        <li>VFEV_Viking_Village_5</li>
+                        <li>VFEV_Viking_Village_6</li>
+                    </chooseFrom>
+                </li>
+            </modExtensions>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>/Defs/FactionDef[defName="VFEV_VikingsSlaver"]</xpath>
+        <value>
+            <modExtensions>
+                <li Class="KCSG.FactionSettlement">
+                    <chooseFrom>
+                        <li>VFEV_Viking_Village_1</li>
+                        <li>VFEV_Viking_Village_2</li>
+                        <li>VFEV_Viking_Village_3</li>
+                        <li>VFEV_Viking_Village_4</li>
+                        <li>VFEV_Viking_Village_5</li>
+                        <li>VFEV_Viking_Village_6</li>
+                    </chooseFrom>
+                </li>
+            </modExtensions>
+        </value>
+    </Operation>
+</Patch>

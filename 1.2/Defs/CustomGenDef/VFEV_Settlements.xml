@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+    <KCSG.SettlementLayoutDef>
+		<defName>VFEV_Viking_Village_1</defName>
+		<gridSize>(57,57)</gridSize>
+		<settlementSize>(57,57)</settlementSize>
+		<vanillaLikeDefense>false</vanillaLikeDefense>
+		<path>false</path>
+		<clearEverything>false</clearEverything>
+		<roomLayout>
+			<li>VFEV_VikingVillage1</li>
+		</roomLayout>
+	</KCSG.SettlementLayoutDef>
+
+	<KCSG.SettlementLayoutDef>
+		<defName>VFEV_Viking_Village_2</defName>
+		<gridSize>(75,97)</gridSize>
+		<settlementSize>(75,97)</settlementSize>
+		<vanillaLikeDefense>false</vanillaLikeDefense>
+		<path>false</path>
+		<clearEverything>false</clearEverything>
+		<roomLayout>
+			<li>VFEV_VikingVillage2</li>
+		</roomLayout>
+	</KCSG.SettlementLayoutDef>
+
+	<KCSG.SettlementLayoutDef>
+		<defName>VFEV_Viking_Village_3</defName>
+		<gridSize>(64,82)</gridSize>
+		<settlementSize>(64,82)</settlementSize>
+		<vanillaLikeDefense>false</vanillaLikeDefense>
+		<path>false</path>
+		<clearEverything>false</clearEverything>
+		<roomLayout>
+			<li>VFEV_VikingVillage3</li>
+		</roomLayout>
+	</KCSG.SettlementLayoutDef>
+
+	<KCSG.SettlementLayoutDef>
+		<defName>VFEV_Viking_Village_4</defName>
+		<gridSize>(87,117)</gridSize>
+		<settlementSize>(87,117)</settlementSize>
+		<vanillaLikeDefense>false</vanillaLikeDefense>
+		<path>false</path>
+		<clearEverything>false</clearEverything>
+		<roomLayout>
+			<li>VFEV_VikingVillage4</li>
+		</roomLayout>
+	</KCSG.SettlementLayoutDef>
+
+	<KCSG.SettlementLayoutDef>
+		<defName>VFEV_Viking_Village_5</defName>
+		<gridSize>(47,51)</gridSize>
+		<settlementSize>(47,51)</settlementSize>
+		<vanillaLikeDefense>false</vanillaLikeDefense>
+		<path>false</path>
+		<clearEverything>false</clearEverything>
+		<roomLayout>
+			<li>VFEV_VikingVillage5</li>
+		</roomLayout>
+	</KCSG.SettlementLayoutDef>
+
+	<KCSG.SettlementLayoutDef>
+		<defName>VFEV_Viking_Village_6</defName>
+		<gridSize>(65,64)</gridSize>
+		<settlementSize>(65,64)</settlementSize>
+		<vanillaLikeDefense>false</vanillaLikeDefense>
+		<path>false</path>
+		<clearEverything>false</clearEverything>
+		<roomLayout>
+			<li>VFEV_VikingVillage6</li>
+		</roomLayout>
+	</KCSG.SettlementLayoutDef>
+</Defs>
