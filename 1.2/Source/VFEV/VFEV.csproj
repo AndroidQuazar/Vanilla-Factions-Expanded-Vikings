@@ -97,6 +97,7 @@
     <Compile Include="Feast\DrunkFighting.cs" />
     <Compile Include="Feast\LordJob_Joinable_Feast.cs" />
     <Compile Include="Feast\GatheringWorker_Feast.cs" />
+    <Compile Include="LightningStrike.cs" />
     <Compile Include="Raids\LordToil_BurnStealColonySappers.cs" />
     <Compile Include="Raids\LordToil_BurnStealColony.cs" />
     <Compile Include="Raids\LordJob_BurnAndStealColony.cs" />
@@ -105,6 +106,7 @@
     <Compile Include="Raids\JobDriver_IgniteWithTorches.cs" />
     <Compile Include="Raids\JobGiver_BurnAndStealColony.cs" />
     <Compile Include="Raids\JobGiver_CaptureDownedVictimAndLeaveMap.cs" />
+    <Compile Include="Verb_LightningStrike.cs" />
     <Compile Include="VFEV_MapComponentHelper.cs" />
     <Compile Include="MapGeneration\BeastHuntEvents\GenStep_Njorun.cs" />
     <Compile Include="MapGeneration\BeastHuntEvents\GenStep_Lothurr.cs" />

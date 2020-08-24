@@ -13,7 +13,7 @@
     </graphicData>
     <verbs>
       <li>
-        <verbClass>Verb_Bombardment</verbClass>
+        <verbClass>VFEV.Verb_LightningStrike</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
         <warmupTime>3</warmupTime>
         <ai_AvoidFriendlyFireRadius>23</ai_AvoidFriendlyFireRadius>
@@ -39,4 +39,15 @@
     </comps>
   </ThingDef>
 
+  <ThingDef ParentName="OrbitalStrikeBase">
+    <defName>VFEV_LightningStrike</defName>
+    <label>lightning strike</label>
+    <thingClass>VFEV.LightningStrike</thingClass>
+    <comps>
+      <li Class="CompProperties_OrbitalBeam">
+        <width>0.2</width>
+        <color>(255, 20, 20, 242)</color>
+      </li>
+    </comps>
+  </ThingDef>
 </Defs>
