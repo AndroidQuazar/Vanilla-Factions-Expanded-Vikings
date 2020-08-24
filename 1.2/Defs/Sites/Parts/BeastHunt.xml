@@ -70,7 +70,7 @@
     </genStep>
   </GenStepDef>
 
-  <!-- Njörun Hunt -->
+  <!-- Thrumbo Hunt -->
   <SitePartDef>
     <defName>VFEV_ThrumboHunt</defName>
     <label>thrumbo hunt</label>
@@ -88,6 +88,29 @@
     <linkWithSite>VFEV_ThrumboHunt</linkWithSite>
     <order>400</order>
     <genStep Class="VFEV.MapGeneration.BeastHuntEvents.GenStep_Thrumbo">
+      <count>1</count>
+      <nearMapCenter>true</nearMapCenter>
+    </genStep>
+  </GenStepDef>
+
+  <!-- Odin Hunt -->
+  <SitePartDef>
+    <defName>VFEV_OdinHunt</defName>
+    <label>odin hunt</label>
+    <description>A legendary Odin has been sighted here. It will stay there for the foreseeable future but move on in time.</description>
+    <siteTexture>World/WorldObjects/Sites/GenericSite</siteTexture>
+    <expandingIconTexture>UI/Hunt_Odin</expandingIconTexture>
+    <handlesWorldObjectTimeoutInspectString>true</handlesWorldObjectTimeoutInspectString>
+    <tags>
+      <li>VFEV_OdinHunt</li>
+    </tags>
+  </SitePartDef>
+
+  <GenStepDef>
+    <defName>VFEV_OdinHuntGen</defName>
+    <linkWithSite>VFEV_OdinHunt</linkWithSite>
+    <order>400</order>
+    <genStep Class="VFEV.MapGeneration.BeastHuntEvents.GenStep_Odin">
       <count>1</count>
       <nearMapCenter>true</nearMapCenter>
     </genStep>

@@ -13,6 +13,7 @@ namespace VFEV
         public static PawnKindDef VFEV_Fenrir;
         public static PawnKindDef VFEV_Lothurr;
         public static PawnKindDef VFEV_Njorun;
+        public static PawnKindDef VFEV_Mech_Odin;
 
         public static ThoughtDef VFEV_BeastHunted;
 
