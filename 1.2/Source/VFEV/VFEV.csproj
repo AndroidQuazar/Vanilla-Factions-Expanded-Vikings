@@ -99,6 +99,7 @@
     <Compile Include="Feast\DrunkFighting.cs" />
     <Compile Include="Feast\LordJob_Joinable_Feast.cs" />
     <Compile Include="Feast\GatheringWorker_Feast.cs" />
+    <Compile Include="Hnefatal\JoyGiver_PlayHnefatal.cs" />
     <Compile Include="LightningStrike.cs" />
     <Compile Include="MapGeneration\BeastHuntEvents\GenStep_Odin.cs" />
     <Compile Include="MapGeneration\BeastHuntEvents\GenStep_Thrumbo.cs" />

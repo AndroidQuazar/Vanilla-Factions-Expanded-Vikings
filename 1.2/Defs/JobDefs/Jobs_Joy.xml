@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+  <JobDef>
+    <defName>Play_Hnefatafl</defName>
+    <driverClass>VFEV.JobDriver_PlayHnfatal</driverClass>
+    <reportString>playing hnefatafl.</reportString>
+    <joyDuration>4000</joyDuration>
+    <joyMaxParticipants>2</joyMaxParticipants>
+    <joySkill>Intellectual</joySkill>
+    <joyXpPerTick>0.004</joyXpPerTick>
+    <joyKind>Gaming_Cerebral</joyKind>
+    <taleOnCompletion>PlayedGame</taleOnCompletion>
+    <allowOpportunisticPrefix>true</allowOpportunisticPrefix>
+  </JobDef>
+
+  <JoyGiverDef>
+    <defName>Play_Hnefatafl</defName>
+    <giverClass>JoyGiver_InteractBuildingSitAdjacent</giverClass>
+    <baseChance>2</baseChance>
+    <thingDefs>
+      <li>VFEV_Hnefatafl</li>
+    </thingDefs>
+    <jobDef>Play_Hnefatafl</jobDef>
+    <joyKind>Gaming_Cerebral</joyKind>
+    <requiredCapacities>
+      <li>Manipulation</li>
+    </requiredCapacities>
+  </JoyGiverDef>
+
+</Defs>
