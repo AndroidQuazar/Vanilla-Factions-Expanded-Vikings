@@ -13,4 +13,3 @@ c:\GAMES\Rimworld\Mods\Vanilla-Factions-Expanded-Vikings\1.2\Assemblies\VFEV.dll
 c:\GAMES\Rimworld\Mods\Vanilla-Factions-Expanded-Vikings\1.2\Source\VFEV\obj\Debug\VFEV.csprojAssemblyReference.cache
 c:\GAMES\Rimworld\Mods\Vanilla-Factions-Expanded-Vikings\1.2\Source\VFEV\obj\Debug\VFEV.csproj.CoreCompileInputs.cache
 c:\GAMES\Rimworld\Mods\Vanilla-Factions-Expanded-Vikings\1.2\Source\VFEV\obj\Debug\VFEV.dll
-C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Vanilla-Factions-Expanded-Vikings\1.2\Source\VFEV\obj\Debug\VFEV.csprojAssemblyReference.cache

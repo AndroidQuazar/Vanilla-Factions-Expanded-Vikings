@@ -28,4 +28,34 @@
     </requiredCapacities>
   </JoyGiverDef>
 
+  <!-- Training dummy -->
+  <JobDef>
+    <defName>Play_TrainingDummy</defName>
+    <driverClass>VFEV.JobDriver_TrainAtDummy</driverClass>
+    <reportString>training at dummy.</reportString>
+    <joyDuration>4000</joyDuration>
+    <joyMaxParticipants>1</joyMaxParticipants>
+    <joySkill>Melee</joySkill>
+    <joyXpPerTick>0.003</joyXpPerTick>
+    <joyKind>Gaming_Dexterity</joyKind>
+    <taleOnCompletion>PlayedGame</taleOnCompletion>
+    <allowOpportunisticPrefix>true</allowOpportunisticPrefix>
+  </JobDef>
+
+  <JoyGiverDef>
+    <defName>Play_TrainingDummy</defName>
+    <giverClass>JoyGiver_WatchBuilding</giverClass>
+    <baseChance>2</baseChance>
+    <thingDefs>
+      <li>VFEV_TrainingDummy</li>
+    </thingDefs>
+    <jobDef>Play_TrainingDummy</jobDef>
+    <desireSit>false</desireSit>
+    <joyKind>Gaming_Dexterity</joyKind>
+    <requiredCapacities>
+      <li>Sight</li>
+      <li>Manipulation</li>
+    </requiredCapacities>
+  </JoyGiverDef>
+
 </Defs>

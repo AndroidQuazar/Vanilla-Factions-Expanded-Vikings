@@ -52,44 +52,6 @@
     </ThingDef>
 	
     <ThingDef ParentName="BuildingBase">
-        <defName>VFEV_TrainingDummy</defName>
-        <label>training dummy</label>
-        <description>A target dummy made out of wood, soil, and dried plant matter. Surprisingly durable, allows oneself to test their swordsmanship and train over time without risking fatal confrontation.</description>
-        <graphicData>
-            <texPath>Things/Building/Misc/TrainingDummy</texPath>
-            <graphicClass>Graphic_Multi</graphicClass>
-            <drawSize>(1.5,1.5)</drawSize>
-            <shadowData>
-                <volume>(1.5, 1.5, 1)</volume>
-                <offset>(0,0,0)</offset>
-            </shadowData>
-        </graphicData>
-		<defaultPlacingRot>South</defaultPlacingRot>
-		<uiIconPath>Things/Building/Misc/TrainingDummy_MenuIcon</uiIconPath>
-        <size>(1,1)</size>
-        <rotatable>true</rotatable>
-        <altitudeLayer>Building</altitudeLayer>
-        <passability>Impassable</passability>
-        <castEdgeShadows>false</castEdgeShadows>
-        <fillPercent>1.0</fillPercent>
-        <designationCategory>Misc</designationCategory>
-        <canOverlapZones>false</canOverlapZones>
-        <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
-		<costList>
-			<WoodLog>25</WoodLog>
-			<Hay>15</Hay>
-		</costList>
-        <statBases>
-            <MaxHitPoints>200</MaxHitPoints>
-            <WorkToBuild>3000</WorkToBuild>
-            <Flammability>0.5</Flammability>
-        </statBases>
-        <constructionSkillPrerequisite>6</constructionSkillPrerequisite>
-        <uiIconScale>0.6</uiIconScale>
-        <specialDisplayRadius>4.9</specialDisplayRadius>
-    </ThingDef>
-	
-    <ThingDef ParentName="BuildingBase">
         <defName>VFE_TableFacePaints</defName>
         <label>face painting table</label>
         <thingClass>VFEV.Facepaint.Building_FacepaintingTable</thingClass>

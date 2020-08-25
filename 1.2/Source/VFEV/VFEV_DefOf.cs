@@ -29,6 +29,8 @@ namespace VFEV
         // Orbital lightning strike
         public static ThingDef VFEV_LightningStrike;
 
+        public static JobDef VFEV_HypothermiaResponse;
+
         public static JobDef VFEV_ChangeFacepaint;
 
         // raids

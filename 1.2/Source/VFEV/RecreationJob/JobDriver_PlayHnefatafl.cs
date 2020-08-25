@@ -10,7 +10,7 @@ using RimWorld;
 
 namespace VFEV
 	{
-		class JobDriver_PlayHnfatal : JobDriver_SitFacingBuilding
+		class JobDriver_PlayHnefatafl : JobDriver_SitFacingBuilding
 		{
 			protected override IEnumerable<Toil> MakeNewToils()
 			{
@@ -40,19 +40,19 @@ namespace VFEV
 
 			private void MayStartSocialFight(Pawn pawn)
 			{
-			if (Rand.RangeInclusive(1, 100) <= 10)
+			if (Rand.RangeInclusive(1, 100) <= 5)
 			{
 				IntVec3 cell = pawn.Position;
-				if (pawn.Rotation == Rot4.South) { cell.z -= 2; Map.terrainGrid.SetTerrain(cell, TerrainDefOf.MetalTile); }
-				else if (pawn.Rotation == Rot4.North) { cell.z += 2; Map.terrainGrid.SetTerrain(cell, TerrainDefOf.PavedTile); }
-				else if (pawn.Rotation == Rot4.West) { cell.x -= 2; Map.terrainGrid.SetTerrain(cell, TerrainDefOf.WoodPlankFloor); }
-				else if (pawn.Rotation == Rot4.East) { cell.x += 2; Map.terrainGrid.SetTerrain(cell, TerrainDefOf.FlagstoneSandstone); }
+				if (pawn.Rotation == Rot4.South) cell.z -= 2;
+				else if (pawn.Rotation == Rot4.North) cell.z += 2;
+				else if (pawn.Rotation == Rot4.West) cell.x -= 2;
+				else if (pawn.Rotation == Rot4.East) cell.x += 2;
 
 				Pawn otherPlayer = cell.GetFirstPawn(pawn.Map);
 				if (otherPlayer != null && otherPlayer.IsColonist)
                 {
-					pawn.mindState.mentalStateHandler.TryStartMentalState(MentalStateDefOf.SocialFighting, "Due to the fierce game of hnfatal players engaged in a social fight", false, false, otherPlayer);
-					otherPlayer.mindState.mentalStateHandler.TryStartMentalState(MentalStateDefOf.SocialFighting, "Due to the fierce game of hnfatal players engaged in a social fight", false, false, pawn);
+					pawn.mindState.mentalStateHandler.TryStartMentalState(MentalStateDefOf.SocialFighting, "Due to the fierce game of hnefatafl players engaged in a social fight", false, false, otherPlayer);
+					otherPlayer.mindState.mentalStateHandler.TryStartMentalState(MentalStateDefOf.SocialFighting, "Due to the fierce game of hnefatafl players engaged in a social fight", false, false, pawn);
 				}
 			}
 		}
