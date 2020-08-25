@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Defs>
+  <!-- Hnefatafl -->
   <JobDef>
     <defName>Play_Hnefatafl</defName>
-    <driverClass>VFEV.JobDriver_PlayHnfatal</driverClass>
+    <driverClass>VFEV.JobDriver_PlayHnefatafl</driverClass>
     <reportString>playing hnefatafl.</reportString>
     <joyDuration>4000</joyDuration>
     <joyMaxParticipants>2</joyMaxParticipants>
