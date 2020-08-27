@@ -22,8 +22,8 @@
                 <li Class="QuestNode_SubScript">
                     <def>Util_RandomizePointsChallengeRating</def>
                     <parms>
-                        <pointsFactorTwoStar>1.5</pointsFactorTwoStar>
-                        <pointsFactorThreeStar>2</pointsFactorThreeStar>
+                        <pointsFactorTwoStar>0.5</pointsFactorTwoStar>
+                        <pointsFactorThreeStar>1</pointsFactorThreeStar>
                     </parms>
                 </li>
                 <li Class="QuestNode_SubScript">
@@ -97,8 +97,8 @@
                 <li Class="QuestNode_SubScript">
                     <def>Util_RandomizePointsChallengeRating</def>
                     <parms>
-                        <pointsFactorTwoStar>1.5</pointsFactorTwoStar>
-                        <pointsFactorThreeStar>2</pointsFactorThreeStar>
+                        <pointsFactorTwoStar>0.5</pointsFactorTwoStar>
+                        <pointsFactorThreeStar>1</pointsFactorThreeStar>
                     </parms>
                 </li>
                 <li Class="QuestNode_SubScript">
@@ -172,8 +172,8 @@
                 <li Class="QuestNode_SubScript">
                     <def>Util_RandomizePointsChallengeRating</def>
                     <parms>
-                        <pointsFactorTwoStar>1.5</pointsFactorTwoStar>
-                        <pointsFactorThreeStar>2</pointsFactorThreeStar>
+                        <pointsFactorTwoStar>0.5</pointsFactorTwoStar>
+                        <pointsFactorThreeStar>1</pointsFactorThreeStar>
                     </parms>
                 </li>
                 <li Class="QuestNode_SubScript">
@@ -247,8 +247,8 @@
                 <li Class="QuestNode_SubScript">
                     <def>Util_RandomizePointsChallengeRating</def>
                     <parms>
-                        <pointsFactorTwoStar>1.5</pointsFactorTwoStar>
-                        <pointsFactorThreeStar>2</pointsFactorThreeStar>
+                        <pointsFactorTwoStar>0.5</pointsFactorTwoStar>
+                        <pointsFactorThreeStar>1</pointsFactorThreeStar>
                     </parms>
                 </li>
                 <li Class="QuestNode_SubScript">
@@ -322,8 +322,8 @@
                 <li Class="QuestNode_SubScript">
                     <def>Util_RandomizePointsChallengeRating</def>
                     <parms>
-                        <pointsFactorTwoStar>1.5</pointsFactorTwoStar>
-                        <pointsFactorThreeStar>2</pointsFactorThreeStar>
+                        <pointsFactorTwoStar>0.5</pointsFactorTwoStar>
+                        <pointsFactorThreeStar>1</pointsFactorThreeStar>
                     </parms>
                 </li>
                 <li Class="QuestNode_SubScript">
