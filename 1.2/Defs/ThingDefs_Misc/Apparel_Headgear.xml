@@ -159,7 +159,7 @@
   <ThingDef ParentName="HatMakeableBase">
     <defName>VFEV_MooseHeaddress</defName>
     <label>moose headdress</label>
-    <description>A very heavy, durable helmet stitched together from many hides and furs made to represent a noble moose. Offers high protection and some warmth to those who wear it. Often those wearing this headpiece are viewed as wise elders or seers.</description>
+    <description>A very heavy, albeit fragile helmet stitched together from many hides and furs made to represent a hardy moose. This shamanistic headdress is believed to bring great durability and tenacity to it's wearer. Due to the simple design, this helmet does not offer defense or insulation.</description>
     <recipeMaker>
       <researchPrerequisite />
       <recipeUsers>
@@ -213,7 +213,7 @@
   <ThingDef ParentName="HatMakeableBase">
     <defName>VFEV_BearHeaddress</defName>
     <label>bear headdress</label>
-    <description>An exceedingly cozy helmet stitched together from many hides and furs made to represent a ferocious bear. Offers high protection and some warmth to those who wear it. In battle, those who wear this headpiece are anectodally known to experience adrenaline rushes while there enemies look onwards in terror.</description>
+    <description>A very heavy, albeit fragile helmet stitched together from many hides and furs made to represent a ferocious bear. This shamanistic headdress is believed to bring great aggression and strength to it's wearer. Due to the simple design, this helmet does not offer defense or insulation.</description>
     <recipeMaker>
       <researchPrerequisite />
       <recipeUsers>
