@@ -35,10 +35,7 @@ namespace VFEV
 					GenSpawn.Spawn(pawn, result, map);
 				}
 			}
-
-			// MapGenerator.rootsToUnfog.Add(map.Center);
 			MapGenerator.SetVar<CellRect>("RectOfInterest", CellRect.CenteredOn(map.Center, 1, 1));
-
 			LordMaker.MakeNewLord(incidentParms.faction, new LordJob_DefendBase(incidentParms.faction, map.Center), map, list);
 		}
 	}

@@ -42,6 +42,7 @@
       </li>
     </tools>
     <race>
+      <fleshType>OdinMechanoid</fleshType>
       <body>Lancer</body>
       <baseHealthScale>5.0</baseHealthScale>
       <soundMeleeHitPawn>Pawn_Melee_Punch_HitPawn</soundMeleeHitPawn>
@@ -58,11 +59,30 @@
     </comps>
   </ThingDef>
 
-  <PawnKindDef ParentName="BaseMechanoidKind">
+  <FleshTypeDef>
+    <defName>OdinMechanoid</defName>
+    <corpseCategory>CorpsesMechanoid</corpseCategory>
+    <damageEffecter>Damage_HitMechanoid</damageEffecter>
+    <wounds>
+      <li>
+        <texture>Things/Pawn/Wounds/WoundMechA</texture>
+      </li>
+      <li>
+        <texture>Things/Pawn/Wounds/WoundMechB</texture>
+      </li>
+      <li>
+        <texture>Things/Pawn/Wounds/WoundMechC</texture>
+      </li>
+    </wounds>
+  </FleshTypeDef>
+
+  <PawnKindDef>
     <defName>VFEV_Mech_Odin</defName>
     <label>odin</label>
     <race>VFEV_Mech_Odin</race>
     <combatPower>750</combatPower>
+    <aiAvoidCover>true</aiAvoidCover>
+    <destroyGearOnDrop>true</destroyGearOnDrop>
     <lifeStages>
       <li>
         <bodyGraphicData>
