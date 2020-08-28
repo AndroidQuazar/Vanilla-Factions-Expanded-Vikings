@@ -9,15 +9,15 @@
       <rulesStrings>
         <li>questName(priority=1)->[legendary] [grave]</li>
         <li>grave->Grave</li>
-        <li>grave->Tomb</li>
+        <!--<li>grave->Tomb</li>
         <li>grave->Crypt</li>
         <li>grave->Mausoleum</li>
-        <li>grave->Catacomb</li>
+        <li>grave->Catacomb</li>-->
         <li>legendary->Legendary</li>
-        <li>legendary->Mythical</li>
+        <!--<li>legendary->Mythical</li>
         <li>legendary->Ancient</li>
         <li>legendary->Lost</li>
-        <li>legendary->Fabled</li>
+        <li>legendary->Fabled</li>-->
       </rulesStrings>
     </questNameRules>
     <questDescriptionRules>
@@ -62,13 +62,8 @@
           <storeAs>sitePartDefs</storeAs>
           <storeFactionAs>siteFaction</storeFactionAs>
           <sitePartsTags>
-            <li>
-              <tag>VFEV_LegendaryGrave</tag>
-            </li>
-            <li>
-              <tag>VFEV_VikingsGuarding</tag>
-              <chance>$siteThreatChance</chance>
-            </li>
+            <li><tag>VFEV_LegendaryGrave</tag></li>
+            <li><tag>VFEV_VikingsGuarding</tag></li>
           </sitePartsTags>
         </li>
 

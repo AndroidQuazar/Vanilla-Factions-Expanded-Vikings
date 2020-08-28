@@ -27,7 +27,7 @@
 
   <SitePartDef>
     <defName>VFEV_VikingsGuarding</defName>
-    <label>vikings guard</label>
+    <label>vikings guards</label>
     <description>Vikings are guarding this place.</description>
     <workerClass>SitePartWorker_ItemStash</workerClass>
     <siteTexture>World/WorldObjects/Sites/GenericSite</siteTexture>
