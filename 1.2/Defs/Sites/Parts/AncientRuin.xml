@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  
+  <SitePartDef>
+    <defName>VFEV_AncientRuins</defName>
+    <label>ancient ruins</label>
+    <description>Ancient ruins.</description>
+    <workerClass>SitePartWorker</workerClass>
+    <siteTexture>World/WorldObjects/Sites/GenericSite</siteTexture>
+    <expandingIconTexture>UI/AncientDanger</expandingIconTexture>
+    <handlesWorldObjectTimeoutInspectString>true</handlesWorldObjectTimeoutInspectString>
+    <tags>
+      <li>VFEV_AncientRuins</li>
+    </tags>
+  </SitePartDef>
+
+  <GenStepDef>
+    <defName>VFEV_ScatterRuinsSimple</defName>
+    <linkWithSite>VFEV_AncientRuins</linkWithSite>
+    <order>300</order>
+    <genStep Class="GenStep_ScatterRuinsSimple">
+      <allowInWaterBiome>false</allowInWaterBiome>
+      <countPer10kCellsRange>6~16</countPer10kCellsRange>
+    </genStep>
+  </GenStepDef>
+
+  <GenStepDef>
+    <defName>VFEV_ScatterShrines</defName>
+    <linkWithSite>VFEV_AncientRuins</linkWithSite>
+    <order>299</order>
+    <genStep Class="GenStep_ScatterShrines">
+      <allowInWaterBiome>false</allowInWaterBiome>
+      <countPer10kCellsRange>0.25~6</countPer10kCellsRange>
+    </genStep>
+  </GenStepDef>
+
+</Defs>

@@ -214,7 +214,8 @@
     <defName>VFEV_BearHeaddress</defName>
     <label>bear headdress</label>
     <description>A very heavy, albeit fragile helmet stitched together from many hides and furs made to represent a ferocious bear. This shamanistic headdress is believed to bring great aggression and strength to it's wearer. Due to the simple design, this helmet does not offer defense or insulation.</description>
-    <recipeMaker>
+	<tickerType>Normal</tickerType>
+	<recipeMaker>
       <researchPrerequisite />
       <recipeUsers>
         <li>ElectricTailoringBench</li>
@@ -256,6 +257,13 @@
         <li>Worker</li>
       </defaultOutfitTags>
     </apparel>
+	<comps>
+		<li Class="VFEV.CompProperties_ApparelHediffs">
+			<hediffDefnames>
+				<li>VFEV_EnragedWithDamage</li>
+			</hediffDefnames>
+		</li>
+	</comps>
   </ThingDef>
   
   <ThingDef ParentName="HatMakeableBase">

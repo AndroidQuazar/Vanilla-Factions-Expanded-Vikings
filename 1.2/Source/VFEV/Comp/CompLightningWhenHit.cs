@@ -22,7 +22,7 @@ namespace VFEV.Comp
         {
             base.CompTick();
             Pawn odin = this.parent as Pawn;
-            if (odin != null)
+            if (odin != null && odin.Spawned)
             {
                 if (odin.health.summaryHealth.SummaryHealthPercent < pastHealtSummaryPercent)
                 {
