@@ -1,6 +1,23 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
+	<HediffDef> <!--it's just a way to check when a pawn will be enraged with a damage, don't delete it-->
+    <defName>VFEV_EnragedWithDamage</defName>
+	<hediffClass>VFEV.Hediff_EnragedWithDamage</hediffClass>
+	<defaultLabelColor>(0.5, 0.1, 0.5)</defaultLabelColor>
+    <label>dummy</label>
+    <labelNoun>dummy</labelNoun>
+	<description>dummy</description>
+	<isBad>false</isBad>
+	<stages>
+		<li>
+			<label>dummy</label>
+			<becomeVisible>false</becomeVisible>
+			<lifeThreatening>false</lifeThreatening>
+		</li>
+	</stages>
+  </HediffDef>
+
 	<HediffDef Name="VFEV_CryptoBleedBase" Abstract="True">
 		<defaultLabelColor>(0, 0.71, 0.93)</defaultLabelColor>
 		<label>Cryptobleed</label>

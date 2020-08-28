@@ -322,9 +322,33 @@
 
   <KCSG.SymbolDef>
     <defName>VFEV_FurBed_Cloth_North</defName>
-    <thing>VFEV_FurBed2</thing>
+    <thing>VFEV_FurBed</thing>
     <stuff>Cloth</stuff>
     <rotation>North</rotation>
     <symbol>VFEV_FurBed_Cloth_North</symbol>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+		<defName>VFEV_CryptosleepCasket_West_SpecialViking</defName>
+    <thing>CryptosleepCasket</thing>
+    <containPawnKind>VFEV_VikingHero</containPawnKind>
+		<rotation>West</rotation>
+		<symbol>VFEV_CryptosleepCasket_West_SpecialViking</symbol>
+	</KCSG.SymbolDef>
+
+
+	<KCSG.SymbolDef>
+		<defName>VFEV_CryptosleepCasket_East_SpecialViking</defName>
+    <thing>CryptosleepCasket</thing>
+    <containPawnKind>VFEV_VikingLegend</containPawnKind>
+		<rotation>East</rotation>
+		<symbol>VFEV_CryptosleepCasket_East_SpecialViking</symbol>
+  </KCSG.SymbolDef>
+  
+  <KCSG.SymbolDef>
+    <defName>VFEV_RunedColumn_BlocksGranite</defName>
+    <thing>VFEV_RunedColumn</thing>
+    <stuff>BlocksGranite</stuff>
+    <symbol>VFEV_RunedColumn_BlocksGranite</symbol>
   </KCSG.SymbolDef>
 </Defs>
