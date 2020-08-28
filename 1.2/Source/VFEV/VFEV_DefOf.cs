@@ -44,5 +44,8 @@ namespace VFEV
         public static InteractionDef VFEV_DrunkChitchat;
         public static InteractionDef VFEV_VeryDrunkChitchat;
 
+        //mental break
+        public static MentalBreakDef VFEV_Enraged;
+
     }
 }

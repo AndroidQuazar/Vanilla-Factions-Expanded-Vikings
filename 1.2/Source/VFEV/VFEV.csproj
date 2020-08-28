@@ -86,6 +86,8 @@
     <Compile Include="Comp\CompProperties_ApparelHediffs.cs" />
     <Compile Include="Comp\CompTargetable_AllPlantsOnTheMap.cs" />
     <Compile Include="Comp\CompTargetEffect_PlantGrower.cs" />
+    <Compile Include="Enraged_MentalState\AdjustedCooldown_Patch.cs" />
+    <Compile Include="Enraged_MentalState\MentalState_Enraged.cs" />
     <Compile Include="DeathActionWorker_MoodBoost.cs" />
     <Compile Include="Facepaint\Building_FacepaintingTable.cs" />
     <Compile Include="Facepaint\ColourPresetDef.cs" />
@@ -100,6 +102,7 @@
     <Compile Include="Feast\DrunkFighting.cs" />
     <Compile Include="Feast\LordJob_Joinable_Feast.cs" />
     <Compile Include="Feast\GatheringWorker_Feast.cs" />
+    <Compile Include="Enraged_MentalState\Hediff_EnragedWithDamage.cs" />
     <Compile Include="RecreationJob\JobDriver_PlayHnefatafl.cs" />
     <Compile Include="LightningStrike.cs" />
     <Compile Include="MapGeneration\BeastHuntEvents\GenStep_Odin.cs" />
