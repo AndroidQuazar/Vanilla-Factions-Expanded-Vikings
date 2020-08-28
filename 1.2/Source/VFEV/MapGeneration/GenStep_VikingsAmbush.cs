@@ -22,7 +22,7 @@ namespace VFEV
 		public override void Generate(Map map, GenStepParams parms)
 		{
 			IncidentParms incidentParms = StorytellerUtility.DefaultParmsNow(IncidentCategoryDefOf.ThreatBig, map);
-			incidentParms.faction = Find.FactionManager.AllFactionsListForReading.Find(f => !f.defeated && f.RelationKindWith(Faction.OfPlayer) == FactionRelationKind.Hostile && f.def.defName.Contains("VFEV_Vikings"));
+			incidentParms.faction = parms.sitePart.site.Faction;
 			incidentParms.points = parms.sitePart.parms.threatPoints;
 			
 			List<Pawn> list = PawnGroupMakerUtility.GeneratePawns(IncidentParmsUtility.GetDefaultPawnGroupMakerParms(PawnGroupKindDefOf.Combat, incidentParms, false), true).ToList<Pawn>();

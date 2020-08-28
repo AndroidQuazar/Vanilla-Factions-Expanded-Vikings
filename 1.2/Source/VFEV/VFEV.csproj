@@ -98,7 +98,7 @@
     <Compile Include="Facepaint\FacepaintExtension.cs" />
     <Compile Include="Facepaint\HarmonyPatches_Facepaint.cs" />
     <Compile Include="Facepaint\JobDriver_ChangeFacepaint.cs" />
-    <Compile Include="GenStep_VikingsAmbush.cs" />
+    <Compile Include="MapGeneration\GenStep_VikingsAmbush.cs" />
     <Compile Include="HarmonyInit.cs" />
     <Compile Include="Feast\JobGiver_EatDrinkAndTakeDrugsInGatheringArea.cs" />
     <Compile Include="Feast\DrunkFighting.cs" />
@@ -119,6 +119,7 @@
     <Compile Include="Raids\JobGiver_CaptureDownedVictimAndLeaveMap.cs" />
     <Compile Include="RecreationJob\JobDriver_TrainAtDummy.cs" />
     <Compile Include="HypothermiaResponse.cs" />
+    <Compile Include="SitePartWorker_LegendaryGrave.cs" />
     <Compile Include="Verb_LightningStrike.cs" />
     <Compile Include="VFEV_MapComponentHelper.cs" />
     <Compile Include="MapGeneration\BeastHuntEvents\GenStep_Njorun.cs" />
