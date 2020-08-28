@@ -37,8 +37,7 @@
           <storeAs>sitePartDefs</storeAs>
           <storeFactionAs>siteFaction</storeFactionAs>
           <sitePartsTags>
-            <li><tag>VFEV_LegendaryGrave</tag></li>
-            <li><tag>VFEV_VikingsGuarding</tag></li>
+            <li><tag>VFEV_AncientRuins</tag></li>
           </sitePartsTags>
         </li>
 
