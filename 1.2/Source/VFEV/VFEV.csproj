@@ -97,6 +97,7 @@
     <Compile Include="Facepaint\FacepaintExtension.cs" />
     <Compile Include="Facepaint\HarmonyPatches_Facepaint.cs" />
     <Compile Include="Facepaint\JobDriver_ChangeFacepaint.cs" />
+    <Compile Include="GenStep_VikingsAmbush.cs" />
     <Compile Include="HarmonyInit.cs" />
     <Compile Include="Feast\JobGiver_EatDrinkAndTakeDrugsInGatheringArea.cs" />
     <Compile Include="Feast\DrunkFighting.cs" />

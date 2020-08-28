@@ -79,40 +79,32 @@
   <KCSG.SymbolDef>
     <defName>Item_VFEV_Shield_Round</defName>
     <thing>VFEV_Shield_Round</thing>
-    <stuff>Leather_Bird</stuff>
     <isItem>true</isItem>
     <stackCount>1~1</stackCount>
-    <quality>Masterwork</quality>
     <symbol>Item_VFEV_Shield_Round</symbol>
   </KCSG.SymbolDef>
 
   <KCSG.SymbolDef>
     <defName>Item_VFE_ThrowingAxe</defName>
     <thing>VFE_ThrowingAxe</thing>
-    <stuff>Uranium</stuff>
     <isItem>true</isItem>
     <stackCount>1~1</stackCount>
-    <quality>Normal</quality>
     <symbol>Item_VFE_ThrowingAxe</symbol>
   </KCSG.SymbolDef>
 
   <KCSG.SymbolDef>
     <defName>Item_VFE_MeleeWeapon_BeardedAxe</defName>
     <thing>VFE_MeleeWeapon_BeardedAxe</thing>
-    <stuff>Uranium</stuff>
     <isItem>true</isItem>
     <stackCount>1~1</stackCount>
-    <quality>Good</quality>
     <symbol>Item_VFE_MeleeWeapon_BeardedAxe</symbol>
   </KCSG.SymbolDef>
 
   <KCSG.SymbolDef>
     <defName>Item_VFEV_Apparel_LeatherHelmet</defName>
     <thing>VFEV_Apparel_LeatherHelmet</thing>
-    <stuff>Leather_Camel</stuff>
     <isItem>true</isItem>
     <stackCount>1~1</stackCount>
-    <quality>Masterwork</quality>
     <symbol>Item_VFEV_Apparel_LeatherHelmet</symbol>
   </KCSG.SymbolDef>
 
@@ -129,17 +121,14 @@
     <thing>VFEV_BearHeaddress</thing>
     <isItem>true</isItem>
     <stackCount>1~1</stackCount>
-    <quality>Good</quality>
     <symbol>Item_VFEV_BearHeaddress</symbol>
   </KCSG.SymbolDef>
 
   <KCSG.SymbolDef>
     <defName>Item_VFEV_Apparel_JarlCape</defName>
     <thing>VFEV_Apparel_JarlCape</thing>
-    <stuff>Leather_Wolf</stuff>
     <isItem>true</isItem>
     <stackCount>1~1</stackCount>
-    <quality>Poor</quality>
     <symbol>Item_VFEV_Apparel_JarlCape</symbol>
   </KCSG.SymbolDef>
 
@@ -207,10 +196,8 @@
   <KCSG.SymbolDef>
     <defName>Item_VFEV_Apparel_GuardianArmor</defName>
     <thing>VFEV_Apparel_GuardianArmor</thing>
-    <stuff>Silver</stuff>
     <isItem>true</isItem>
     <stackCount>1~1</stackCount>
-    <quality>Poor</quality>
     <symbol>Item_VFEV_Apparel_GuardianArmor</symbol>
   </KCSG.SymbolDef>
 
@@ -219,7 +206,6 @@
     <thing>VFE_Harpoon</thing>
     <isItem>true</isItem>
     <stackCount>1~1</stackCount>
-    <quality>Normal</quality>
     <symbol>Item_VFE_Harpoon</symbol>
   </KCSG.SymbolDef>
 
@@ -242,10 +228,8 @@
   <KCSG.SymbolDef>
     <defName>Item_VFE_MeleeWeapon_DaneAxe</defName>
     <thing>VFE_MeleeWeapon_DaneAxe</thing>
-    <stuff>WoodLog</stuff>
     <isItem>true</isItem>
     <stackCount>1~1</stackCount>
-    <quality>Masterwork</quality>
     <symbol>Item_VFE_MeleeWeapon_DaneAxe</symbol>
   </KCSG.SymbolDef>
 
@@ -260,10 +244,8 @@
   <KCSG.SymbolDef>
     <defName>Item_VFEV_Apparel_GuardianHelmet</defName>
     <thing>VFEV_Apparel_GuardianHelmet</thing>
-    <stuff>Uranium</stuff>
     <isItem>true</isItem>
     <stackCount>1~1</stackCount>
-    <quality>Excellent</quality>
     <symbol>Item_VFEV_Apparel_GuardianHelmet</symbol>
   </KCSG.SymbolDef>
 
@@ -325,10 +307,8 @@
   <KCSG.SymbolDef>
     <defName>Item_VFEV_LeatherArmor</defName>
     <thing>VFEV_LeatherArmor</thing>
-    <stuff>Leather_Heavy</stuff>
     <isItem>true</isItem>
     <stackCount>1~1</stackCount>
-    <quality>Good</quality>
     <symbol>Item_VFEV_LeatherArmor</symbol>
   </KCSG.SymbolDef>
 
@@ -342,7 +322,7 @@
 
   <KCSG.SymbolDef>
     <defName>VFEV_FurBed_Cloth_North</defName>
-    <thing>VFEV_FurBed</thing>
+    <thing>VFEV_FurBed2</thing>
     <stuff>Cloth</stuff>
     <rotation>North</rotation>
     <symbol>VFEV_FurBed_Cloth_North</symbol>
