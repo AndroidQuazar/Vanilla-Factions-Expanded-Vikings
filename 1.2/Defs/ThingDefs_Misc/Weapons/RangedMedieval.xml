@@ -16,6 +16,7 @@
             <li>Woody</li>
         </stuffCategories>
         <techLevel>Medieval</techLevel>
+		<equippedAngleOffset>-65</equippedAngleOffset>
         <statBases>
             <WorkToMake>7200</WorkToMake>
             <Mass>1.2</Mass>

@@ -23,7 +23,7 @@
 		<costStuffCount>220</costStuffCount>
 		<statBases>
 			<WorkToMake>38000</WorkToMake>
-			<MaxHitPoints>210</MaxHitPoints>
+			<MaxHitPoints>280</MaxHitPoints>
 			<Mass>18</Mass>
 			<StuffEffectMultiplierArmor>0.85</StuffEffectMultiplierArmor>
 			<Insulation_Cold>40</Insulation_Cold>

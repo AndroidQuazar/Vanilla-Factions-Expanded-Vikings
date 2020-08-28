@@ -117,8 +117,8 @@
         <extraMeleeDamages>
           <li>
             <def>Stun</def>
-            <amount>2</amount>
-            <chance>0.5</chance>
+            <amount>5</amount>
+            <chance>1</chance>
           </li>
         </extraMeleeDamages>
       </li>
@@ -181,8 +181,8 @@
         <extraMeleeDamages>
           <li>
             <def>Stun</def>
-            <amount>2</amount>
-            <chance>0.5</chance>
+            <amount>5</amount>
+            <chance>1</chance>
           </li>
         </extraMeleeDamages>
       </li>

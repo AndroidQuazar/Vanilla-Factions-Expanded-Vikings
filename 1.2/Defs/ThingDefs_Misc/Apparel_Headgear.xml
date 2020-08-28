@@ -191,7 +191,7 @@
       <EquipDelay>1.5</EquipDelay>
     </statBases>
     <equippedStatOffsets>
-      <PainShockThreshold>0.50</PainShockThreshold>
+      <PainShockThreshold>0.20</PainShockThreshold>
     </equippedStatOffsets>
     <apparel>
       <bodyPartGroups>
@@ -241,9 +241,6 @@
       <Mass>0.11</Mass>
       <EquipDelay>1</EquipDelay>
     </statBases>
-    <equippedStatOffsets>
-      <PainShockThreshold>0.50</PainShockThreshold>
-    </equippedStatOffsets>
     <apparel>
       <bodyPartGroups>
         <li>UpperHead</li>

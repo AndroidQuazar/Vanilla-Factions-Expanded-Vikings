@@ -74,7 +74,7 @@
             </li>
 			      <li Class="CompProperties_Art">
         <nameMaker>NamerArtSarcophagusPlate</nameMaker>
-        <descriptionMaker>ArtDescription_SarcophagusPlate</descriptionMaker>
+        <descriptionMaker>ArtDescription_Hearth</descriptionMaker>
         <mustBeFullGrave>true</mustBeFullGrave>
       </li>
       <li Class="CompProperties_MeditationFocus">
@@ -99,21 +99,11 @@
         </offsets>
       </li>
         </comps>
-    <recipes>
-      <li>CookMealSimple</li>
-      <li>CookMealSimpleBulk</li>
-      <li>Make_Pemmican</li>
-      <li>Make_PemmicanBulk</li>
-      <li>BurnApparel</li>
-      <li>BurnWeapon</li>
-      <li>BurnDrugs</li>
-    </recipes>
     <inspectorTabs>
-      <li>ITab_Bills</li>
       <li>ITab_Art</li>
     </inspectorTabs>
     <building>
-      <isMealSource>true</isMealSource>
+      <isMealSource>false</isMealSource>
       <spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
       <artificialForMeditationPurposes>false</artificialForMeditationPurposes>
       <destroySound>BuildingDestroyed_Wood_Small</destroySound>
