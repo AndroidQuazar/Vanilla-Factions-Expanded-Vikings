@@ -34,7 +34,7 @@
       <Mass>5</Mass>
       <Flammability>1.0</Flammability>
       <Beauty>4</Beauty>
-      <JoyGainFactor>0.7</JoyGainFactor>
+      <JoyGainFactor>1.1</JoyGainFactor>
     </statBases>
     <stuffCategories>
       <li>Metallic</li>

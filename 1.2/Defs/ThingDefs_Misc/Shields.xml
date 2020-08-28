@@ -115,7 +115,7 @@
         </comps>
     </ThingDef>
 	
-    <ThingDef ParentName="VFEV_BaseShield">
+    <ThingDef>
         <defName>VFEV_Shield_Crypto</defName>
         <label>crypto shield</label>
         <description>A stabilized crypto-tech field wrapped around an advanced frame, capable of slowing the speed of the atoms of incoming projectiles to a halt. Does nothing to protect against heat and blunt trauma.</description>
@@ -136,10 +136,26 @@
             <Mass>2</Mass>
             <MarketValue>1300</MarketValue>
         </statBases>
+        <equippedStatOffsets>
+            <ShootingAccuracyPawn>-2</ShootingAccuracyPawn>
+            <MeleeDodgeChance>-2</MeleeDodgeChance>
+        </equippedStatOffsets>
         <costList>
 			<Plasteel>120</Plasteel>
 			<ComponentSpacer>6</ComponentSpacer>
         </costList>
+		<thingClass>VFECore.Apparel_Shield</thingClass>
+		<apparel>
+			<defaultOutfitTags>
+				<li>Soldier</li>
+			</defaultOutfitTags>
+			<bodyPartGroups>
+				<li>LeftHand</li>
+			</bodyPartGroups>
+			<layers>
+				<li>VFEC_OuterShell</li>
+			</layers>
+		</apparel>
         <comps>
             <li Class="CompOversizedWeapon.CompProperties_OversizedWeapon"/>
             <li Class="VFECore.CompProperties_Shield">
@@ -177,6 +193,25 @@
                 </offHandHoldOffset>
             </li>
         </comps>
+        <tools>
+            <li>
+                <label>base</label>
+                <capacities>
+                    <li>Poke</li>
+                </capacities>
+                <power>9</power>
+                <cooldownTime>2</cooldownTime>
+            </li>
+            <li>
+                <label>centre</label>
+                <labelUsedInLogging>false</labelUsedInLogging>
+                <capacities>
+                    <li>Blunt</li>
+                </capacities>
+                <power>9</power>
+                <cooldownTime>2</cooldownTime>
+            </li>
+        </tools>
     </ThingDef>
 
 

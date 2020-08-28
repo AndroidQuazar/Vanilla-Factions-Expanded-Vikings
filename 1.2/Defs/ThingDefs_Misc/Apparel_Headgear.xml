@@ -214,8 +214,7 @@
     <defName>VFEV_BearHeaddress</defName>
     <label>bear headdress</label>
     <description>A very heavy, albeit fragile helmet stitched together from many hides and furs made to represent a ferocious bear. This shamanistic headdress is believed to bring great aggression and strength to it's wearer. Due to the simple design, this helmet does not offer defense or insulation.</description>
-	<tickerType>Normal</tickerType>
-	<recipeMaker>
+    <recipeMaker>
       <researchPrerequisite />
       <recipeUsers>
         <li>ElectricTailoringBench</li>
@@ -229,6 +228,7 @@
         <li>Viking</li>
       </factionPrerequisiteTags>
     </recipeMaker>
+	<tickerType>Normal</tickerType>
     <graphicData>
       <texPath>Things/Pawn/Humanlike/Apparel/BearHeaddress/BearHeaddress</texPath>
       <graphicClass>Graphic_Single</graphicClass>
