@@ -14,9 +14,7 @@
 			<li>Apparel_Viking</li>
 			<li>Neolithic</li>
         </apparelTags>
-        <apparelRequired>
-            <li>VFEV_Apparel_LeatherHelmet</li>
-        </apparelRequired>
+    <apparelAllowHeadgearChance>0</apparelAllowHeadgearChance>
         <apparelMoney>
             <min>500</min>
             <max>1200</max>

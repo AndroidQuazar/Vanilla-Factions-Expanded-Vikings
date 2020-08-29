@@ -11,6 +11,7 @@
     </graphicData>
     <soundInteract>Interact_BeatFire</soundInteract>
     <costStuffCount>65</costStuffCount>
+    <equippedAngleOffset>-65</equippedAngleOffset>
     <stuffCategories>
       <li>Metallic</li>
       <li>Woody</li>

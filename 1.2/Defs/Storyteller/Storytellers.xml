@@ -3,10 +3,10 @@
 
 	<StorytellerDef ParentName="BaseStoryteller">
 		<defName>VFEV-Freya</defName>
-		<label>Freya Fair</label>
-		<description>Cassandra creates story events on a classic increasing curve of challenge and tension. She'll push you with dangerous events, then give breathing room, then come back to push once more.</description>
-		<portraitLarge>UI/HeroArt/Storytellers/FreyaFair</portraitLarge>
-		<portraitTiny>UI/HeroArt/Storytellers/FreyaFairTiny</portraitTiny>
+		<label>Freya Fierce</label>
+		<description>Freya believes in the importance of showing your strength and using force to show others their place. Every year after the first year, at the start of Aprimay your settlement will become increasingly unhappy until you send your colonists on an adventure or a raid, and bring back the spoils of war.</description>
+		<portraitLarge>UI/HeroArt/Storytellers/FreyaFierce</portraitLarge>
+		<portraitTiny>UI/HeroArt/Storytellers/FreyaFierceTiny</portraitTiny>
 		<listOrder>50</listOrder>
 		<populationIntentFactorFromPopCurve>
 			<points>
