@@ -97,18 +97,18 @@
                 </offHandGraphicData>
                 <offHandHoldOffset>
                     <northDefault>
-                        <offset>(0, 0, 0.2)</offset>
+                        <offset>(-1, 0, 0.2)</offset>
                         <behind>true</behind>
                     </northDefault>
                     <east>
-                        <offset>(-0.1, 0, 0.2)</offset>
+                        <offset>(-0.15, 0, 0.2)</offset>
                         <behind>true</behind>
                     </east>
                     <south>
-                        <offset>(-0.1, -0.04, 0.2)</offset>
+                        <offset>(0.4, -0.04, 0.2)</offset>
                     </south>
                     <west>
-                        <offset>(0.1, 0, 0.2)</offset>
+                        <offset>(0.15, 0, 0.2)</offset>
                     </west>
                 </offHandHoldOffset>
             </li>
@@ -123,7 +123,7 @@
         <defName>VFEV_Shield_Crypto</defName>
         <label>crypto shield</label>
         <description>A stabilized crypto-tech field wrapped around an advanced frame, capable of slowing the speed of the atoms of incoming projectiles to a halt. Does nothing to protect against heat and blunt trauma.</description>
-        <graphicData>
+        <graphicData Inherit='False'>
             <texPath>Things/Item/Equipment/Shield/CryptoShield/CryptoShield</texPath>
             <graphicClass>Graphic_Single</graphicClass>
             <drawSize>1</drawSize>
@@ -147,6 +147,7 @@
 			<Plasteel>120</Plasteel>
 			<ComponentSpacer>6</ComponentSpacer>
         </costList>
+        <costStuffCount Inherit='False' />
 		<thingClass>VFECore.Apparel_Shield</thingClass>
 		<apparel>
 			<defaultOutfitTags>
@@ -180,18 +181,18 @@
                 </offHandGraphicData>
                 <offHandHoldOffset>
                     <northDefault>
-                        <offset>(0, 0, 0.2)</offset>
+                        <offset>(-1, 0, 0.2)</offset>
                         <behind>true</behind>
                     </northDefault>
                     <east>
-                        <offset>(-0.2, 0, 0.2)</offset>
+                        <offset>(-0.15, 0, 0.2)</offset>
                         <behind>true</behind>
                     </east>
                     <south>
-                        <offset>(-0.4, -0.04, 0.2)</offset>
+                        <offset>(0.4, -0.04, 0.2)</offset>
                     </south>
                     <west>
-                        <offset>(0.1, 0, 0.2)</offset>
+                        <offset>(0.15, 0, 0.2)</offset>
                     </west>
                 </offHandHoldOffset>
             </li>
