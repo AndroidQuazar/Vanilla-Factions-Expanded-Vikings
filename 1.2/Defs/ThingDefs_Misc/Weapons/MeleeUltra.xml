@@ -33,7 +33,7 @@
     <ThingDef ParentName="VFEV_BaseMeleeWeapon_Sharp_Quality">
         <defName>VFEV_CryptoHeavyAxe</defName>
         <label>heavy crypto axe</label>
-        <description>A two-handed, high-tech axe of unknown origin with an icy cold alloy edge. Crypto weapons are laced with what appears to be a cryogenic coating along their blade, targets struck by them without proper insulation may feel themselves crippled by hypothermia./description>
+        <description>A two-handed, high-tech axe of unknown origin with an icy cold alloy edge. Crypto weapons are laced with what appears to be a cryogenic coating along their blade, targets struck by them without proper insulation may feel themselves crippled by hypothermia.</description>
         <graphicData>
             <texPath>Things/Item/Equipment/WeaponMelee/CryptoHeavyAxe</texPath>
             <graphicClass>Graphic_Single</graphicClass>
