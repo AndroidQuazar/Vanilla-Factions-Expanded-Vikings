@@ -67,6 +67,7 @@
             <skillRequirements>
                 <Crafting>5</Crafting>
             </skillRequirements>
+			<researchPrerequisite>ComplexClothing</researchPrerequisite>
         </recipeMaker>
         <graphicData>
             <texPath>Things/Pawn/Humanlike/Apparel/LeatherHelmet/LeatherHelmet</texPath>
@@ -116,6 +117,7 @@
             <skillRequirements>
                 <Crafting>5</Crafting>
             </skillRequirements>
+			<researchPrerequisite>Smithing</researchPrerequisite>
         </recipeMaker>
         <graphicData>
             <texPath>Things/Pawn/Humanlike/Apparel/RavagerHelmet/RavagerHelmet</texPath>
@@ -173,6 +175,7 @@
       <factionPrerequisiteTags>
         <li>Viking</li>
       </factionPrerequisiteTags>
+	  <researchPrerequisite>ComplexClothing</researchPrerequisite>
     </recipeMaker>
     <graphicData>
       <texPath>Things/Pawn/Humanlike/Apparel/MooseHeaddress/MooseHeaddress</texPath>
@@ -227,6 +230,7 @@
       <factionPrerequisiteTags>
         <li>Viking</li>
       </factionPrerequisiteTags>
+	  <researchPrerequisite>ComplexClothing</researchPrerequisite>
     </recipeMaker>
 	<tickerType>Normal</tickerType>
     <graphicData>

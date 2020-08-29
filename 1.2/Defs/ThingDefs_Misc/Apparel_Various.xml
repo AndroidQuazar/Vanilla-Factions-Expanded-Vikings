@@ -16,6 +16,7 @@
 			<skillRequirements>
 				<Crafting>9</Crafting>
 			</skillRequirements>
+			<researchPrerequisite>PlateArmor</researchPrerequisite>
 		</recipeMaker>
 		<stuffCategories>
 			<li>Metallic</li>
@@ -74,6 +75,7 @@
 			<skillRequirements>
 				<Crafting>6</Crafting>
 			</skillRequirements>
+			<researchPrerequisite>ComplexClothing</researchPrerequisite>
 		</recipeMaker>
 		<costStuffCount>100</costStuffCount>
 		<stuffCategories>
@@ -125,6 +127,7 @@
 			<skillRequirements>
 				<Crafting>8</Crafting>
 			</skillRequirements>
+			<researchPrerequisite>Smithing</researchPrerequisite>
 		</recipeMaker>
 		<stuffCategories>
 			<li>Leathery</li>
