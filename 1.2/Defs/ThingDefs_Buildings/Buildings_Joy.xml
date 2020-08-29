@@ -34,7 +34,7 @@
       <Mass>5</Mass>
       <Flammability>1.0</Flammability>
       <Beauty>4</Beauty>
-      <JoyGainFactor>0.7</JoyGainFactor>
+      <JoyGainFactor>1.1</JoyGainFactor>
     </statBases>
     <stuffCategories>
       <li>Metallic</li>
@@ -45,6 +45,9 @@
     <pathCost>50</pathCost>
     <passability>PassThroughOnly</passability>
     <designationCategory>Joy</designationCategory>
+    <researchPrerequisites>
+      <li>ComplexFurniture</li>
+    </researchPrerequisites>
   </ThingDef>
 
   <ThingDef ParentName="BuildingBase">
@@ -93,6 +96,9 @@
     <canOverlapZones>false</canOverlapZones>
     <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
     <constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+    <researchPrerequisites>
+      <li>Smithing</li>
+    </researchPrerequisites>
   </ThingDef>
 
 </Defs>

@@ -15,7 +15,32 @@ namespace VFEV
     {
         protected override bool TryResolveRaidFaction(IncidentParms parms)
         {
-            parms.faction = Find.FactionManager.FirstFactionOfDef(VFEV_DefOf.VFEV_VikingsSlaver);
+            Faction faction = null;
+            if (Rand.Chance(0.5f))
+            {
+                faction = Find.FactionManager.FirstFactionOfDef(VFEV_DefOf.VFEV_VikingsSlaver);
+                if (!faction.HostileTo(Faction.OfPlayer))
+                {
+                    faction = Find.FactionManager.FirstFactionOfDef(VFEV_DefOf.VFEV_VikingsClan);
+                    if (!faction.HostileTo(Faction.OfPlayer))
+                    {
+                        return false;
+                    }
+                }
+            }
+            else
+            {
+                faction = Find.FactionManager.FirstFactionOfDef(VFEV_DefOf.VFEV_VikingsClan);
+                if (!faction.HostileTo(Faction.OfPlayer))
+                {
+                    faction = Find.FactionManager.FirstFactionOfDef(VFEV_DefOf.VFEV_VikingsSlaver);
+                    if (!faction.HostileTo(Faction.OfPlayer))
+                    {
+                        return false;
+                    }
+                }
+            }
+            parms.faction = faction;
             return true;
         }
 

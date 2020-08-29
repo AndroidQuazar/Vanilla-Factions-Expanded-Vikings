@@ -31,8 +31,8 @@
         <additionalHediffs>
             <li>
                 <hediff>Hypothermia</hediff>
-                <severityPerDamageDealt>0.010</severityPerDamageDealt>
-                <victimSeverityScaling>ToxicSensitivity</victimSeverityScaling>
+                <severityPerDamageDealt>0.20</severityPerDamageDealt>
+                <victimSeverityScaling>ComfyTemperatureMin</victimSeverityScaling>
             </li>
         </additionalHediffs>
     </DamageDef>

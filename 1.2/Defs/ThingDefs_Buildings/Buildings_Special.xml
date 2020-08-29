@@ -16,8 +16,9 @@
         <statBases>
             <MaxHitPoints>185</MaxHitPoints>
             <Mass>12</Mass>
-            <Beauty>125</Beauty>
+            <Beauty>20</Beauty>
             <WorkToMake>35000</WorkToMake>
+			<MeditationFocusStrength>0.08</MeditationFocusStrength>
         </statBases>
         <stuffCategories>
             <li>Stony</li>
@@ -27,8 +28,29 @@
       <li Class="CompProperties_MeditationFocus">
         <statDef>MeditationFocusStrength</statDef>
         <focusTypes>
-          <li>Artistic</li>
+          <li>Natural</li>
         </focusTypes>
+        <offsets>
+          <li Class="FocusStrengthOffset_ArtificialBuildings">
+            <radius>34.9</radius>
+            <curve>
+              <points>
+                <li>(0,   0.0)</li>
+                <li>(5,  -0.06)</li>
+                <li>(10, -0.12)</li>
+                <li>(50, -0.22)</li>
+              </points>
+            </curve>
+          </li>
+          <li Class="FocusStrengthOffset_BuildingDefs">
+            <defs><li>AnimusStone</li></defs>
+            <radius>9.9</radius>
+            <maxBuildings>4</maxBuildings>
+            <offsetPerBuilding>0.02</offsetPerBuilding>
+            <explanationKey>MeditationFocusPerAnimusStone</explanationKey>
+            <explanationKeyAbstract>MeditationFocusPerAnimusStoneAbstract</explanationKeyAbstract>
+          </li>
+        </offsets>
       </li>
     </comps>
     </ThingDef>

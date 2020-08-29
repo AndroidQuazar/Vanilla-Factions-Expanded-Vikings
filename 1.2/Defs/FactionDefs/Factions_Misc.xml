@@ -33,6 +33,7 @@
             <li>Caravan_Neolithic_WarMerchant</li>
             <li>Caravan_Neolithic_Slaver</li>
             <li>Caravan_Neolithic_ShamanMerchant</li>
+			<li>VFEV_Caravan_Looter</li>
         </caravanTraderKinds>
         <visitorTraderKinds>
             <li>Visitor_Neolithic_Standard</li>

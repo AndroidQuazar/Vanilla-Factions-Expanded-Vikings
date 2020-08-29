@@ -20,7 +20,7 @@
             <commonality>0.0018</commonality>
             <statFactors>
                 <MaxHitPoints>3.8</MaxHitPoints>
-                <Beauty>1.1</Beauty>
+                <Beauty>2</Beauty>
             </statFactors>
         </stuffProps>
     </ThingDef>
@@ -35,7 +35,7 @@
         <statBases>
             <MarketValue>13.0</MarketValue>
             <StuffPower_Armor_Sharp>1.86</StuffPower_Armor_Sharp>
-            <StuffPower_Armor_Blunt>0.29</StuffPower_Armor_Blunt>
+            <StuffPower_Armor_Blunt>0.38</StuffPower_Armor_Blunt>
             <StuffPower_Insulation_Cold>29</StuffPower_Insulation_Cold>
             <StuffPower_Insulation_Heat>26</StuffPower_Insulation_Heat>
         </statBases>
@@ -44,7 +44,7 @@
             <commonality>0.0010</commonality>
             <statFactors>
                 <MaxHitPoints>2.2</MaxHitPoints>
-                <Beauty>6</Beauty>
+                <Beauty>10</Beauty>
             </statFactors>
         </stuffProps>
     </ThingDef>
@@ -58,10 +58,10 @@
         </graphicData>
         <statBases>
             <MarketValue>10.0</MarketValue>
-            <StuffPower_Armor_Sharp>1.73</StuffPower_Armor_Sharp>
-            <StuffPower_Armor_Blunt>0.35</StuffPower_Armor_Blunt>
-            <StuffPower_Insulation_Cold>38</StuffPower_Insulation_Cold>
-            <StuffPower_Insulation_Heat>22</StuffPower_Insulation_Heat>
+            <StuffPower_Armor_Sharp>1.43</StuffPower_Armor_Sharp>
+            <StuffPower_Armor_Blunt>0.25</StuffPower_Armor_Blunt>
+            <StuffPower_Insulation_Cold>41</StuffPower_Insulation_Cold>
+            <StuffPower_Insulation_Heat>16</StuffPower_Insulation_Heat>
         </statBases>
         <stuffProps>
             <color>(121,138,151)</color>

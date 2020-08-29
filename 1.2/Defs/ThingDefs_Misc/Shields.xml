@@ -97,32 +97,35 @@
                 </offHandGraphicData>
                 <offHandHoldOffset>
                     <northDefault>
-                        <offset>(0, 0, 0.2)</offset>
+                        <offset>(-1, 0, 0.2)</offset>
                         <behind>true</behind>
                     </northDefault>
                     <east>
-                        <offset>(-0.1, 0, 0.2)</offset>
+                        <offset>(-0.15, 0, 0.2)</offset>
                         <behind>true</behind>
                     </east>
                     <south>
-                        <offset>(-0.1, -0.04, 0.2)</offset>
+                        <offset>(0.4, -0.04, 0.2)</offset>
                     </south>
                     <west>
-                        <offset>(0.1, 0, 0.2)</offset>
+                        <offset>(0.15, 0, 0.2)</offset>
                     </west>
                 </offHandHoldOffset>
             </li>
         </comps>
     </ThingDef>
 	
-    <ThingDef ParentName="VFEV_BaseShield">
+    <ThingDef Name="VFEV_BaseShieldCrypto" ParentName="VFEV_BaseShield" Abstract="True">
+        <techLevel>Ultra</techLevel>
+    </ThingDef>
+	
+    <ThingDef ParentName="VFEV_BaseShieldCrypto">
         <defName>VFEV_Shield_Crypto</defName>
         <label>crypto shield</label>
         <description>A stabilized crypto-tech field wrapped around an advanced frame, capable of slowing the speed of the atoms of incoming projectiles to a halt. Does nothing to protect against heat and blunt trauma.</description>
-        <graphicData>
+        <graphicData Inherit='False'>
             <texPath>Things/Item/Equipment/Shield/CryptoShield/CryptoShield</texPath>
             <graphicClass>Graphic_Single</graphicClass>
-            <shaderType>CutoutComplex</shaderType>
             <drawSize>1</drawSize>
         </graphicData>
 		<recipeMaker Inherit="False" />
@@ -136,10 +139,27 @@
             <Mass>2</Mass>
             <MarketValue>1300</MarketValue>
         </statBases>
+        <equippedStatOffsets>
+            <ShootingAccuracyPawn>-2</ShootingAccuracyPawn>
+            <MeleeDodgeChance>-2</MeleeDodgeChance>
+        </equippedStatOffsets>
         <costList>
 			<Plasteel>120</Plasteel>
 			<ComponentSpacer>6</ComponentSpacer>
         </costList>
+        <costStuffCount Inherit='False' />
+		<thingClass>VFECore.Apparel_Shield</thingClass>
+		<apparel>
+			<defaultOutfitTags>
+				<li>Soldier</li>
+			</defaultOutfitTags>
+			<bodyPartGroups>
+				<li>LeftHand</li>
+			</bodyPartGroups>
+			<layers>
+				<li>VFEC_OuterShell</li>
+			</layers>
+		</apparel>
         <comps>
             <li Class="CompOversizedWeapon.CompProperties_OversizedWeapon"/>
             <li Class="VFECore.CompProperties_Shield">
@@ -157,26 +177,45 @@
                     <texPath>Things/Item/Equipment/Shield/CryptoShield/CryptoShield</texPath>
                     <graphicClass>Graphic_Multi</graphicClass>
 					<shaderType>CutoutComplex</shaderType>
-                    <drawSize>1.6</drawSize>
+                    <drawSize>1.8</drawSize>
                 </offHandGraphicData>
                 <offHandHoldOffset>
                     <northDefault>
-                        <offset>(0, 0, 0.2)</offset>
+                        <offset>(-1, 0, 0.2)</offset>
                         <behind>true</behind>
                     </northDefault>
                     <east>
-                        <offset>(-0.1, 0, 0.2)</offset>
+                        <offset>(-0.15, 0, 0.2)</offset>
                         <behind>true</behind>
                     </east>
                     <south>
-                        <offset>(-0.1, -0.04, 0.2)</offset>
+                        <offset>(0.4, -0.04, 0.2)</offset>
                     </south>
                     <west>
-                        <offset>(0.1, 0, 0.2)</offset>
+                        <offset>(0.15, 0, 0.2)</offset>
                     </west>
                 </offHandHoldOffset>
             </li>
         </comps>
+        <tools>
+            <li>
+                <label>base</label>
+                <capacities>
+                    <li>Poke</li>
+                </capacities>
+                <power>9</power>
+                <cooldownTime>2</cooldownTime>
+            </li>
+            <li>
+                <label>centre</label>
+                <labelUsedInLogging>false</labelUsedInLogging>
+                <capacities>
+                    <li>Blunt</li>
+                </capacities>
+                <power>9</power>
+                <cooldownTime>2</cooldownTime>
+            </li>
+        </tools>
     </ThingDef>
 
 

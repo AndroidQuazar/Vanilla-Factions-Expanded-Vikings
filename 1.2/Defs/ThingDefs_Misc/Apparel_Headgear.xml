@@ -191,7 +191,7 @@
       <EquipDelay>1.5</EquipDelay>
     </statBases>
     <equippedStatOffsets>
-      <PainShockThreshold>0.50</PainShockThreshold>
+      <PainShockThreshold>0.20</PainShockThreshold>
     </equippedStatOffsets>
     <apparel>
       <bodyPartGroups>
@@ -214,8 +214,7 @@
     <defName>VFEV_BearHeaddress</defName>
     <label>bear headdress</label>
     <description>A very heavy, albeit fragile helmet stitched together from many hides and furs made to represent a ferocious bear. This shamanistic headdress is believed to bring great aggression and strength to it's wearer. Due to the simple design, this helmet does not offer defense or insulation.</description>
-	<tickerType>Normal</tickerType>
-	<recipeMaker>
+    <recipeMaker>
       <researchPrerequisite />
       <recipeUsers>
         <li>ElectricTailoringBench</li>
@@ -229,6 +228,7 @@
         <li>Viking</li>
       </factionPrerequisiteTags>
     </recipeMaker>
+	<tickerType>Normal</tickerType>
     <graphicData>
       <texPath>Things/Pawn/Humanlike/Apparel/BearHeaddress/BearHeaddress</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -242,9 +242,6 @@
       <Mass>0.11</Mass>
       <EquipDelay>1</EquipDelay>
     </statBases>
-    <equippedStatOffsets>
-      <PainShockThreshold>0.50</PainShockThreshold>
-    </equippedStatOffsets>
     <apparel>
       <bodyPartGroups>
         <li>UpperHead</li>
@@ -261,7 +258,7 @@
       </defaultOutfitTags>
     </apparel>
 	<comps>
-		<li Class="VFEV.CompProperties_ApparelHediffs">
+		<li Class="VFECore.CompProperties_ApparelHediffs">
 			<hediffDefnames>
 				<li>VFEV_EnragedWithDamage</li>
 			</hediffDefnames>
@@ -314,9 +311,9 @@
 			<tags Inherit="False">
 				<li>Apparel_VikingJarl</li>
 				<li>Royal</li>
-				<li>RoyalTier5</li>
+				<li>RoyalTier7</li>
 			</tags>
-      <canBeGeneratedToSatisfyWarmth>false</canBeGeneratedToSatisfyWarmth>
+		<canBeGeneratedToSatisfyWarmth>false</canBeGeneratedToSatisfyWarmth>
     </apparel>
   </ThingDef>
 

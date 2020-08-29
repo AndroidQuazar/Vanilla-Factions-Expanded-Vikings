@@ -23,7 +23,7 @@
 		<costStuffCount>220</costStuffCount>
 		<statBases>
 			<WorkToMake>38000</WorkToMake>
-			<MaxHitPoints>210</MaxHitPoints>
+			<MaxHitPoints>280</MaxHitPoints>
 			<Mass>18</Mass>
 			<StuffEffectMultiplierArmor>0.85</StuffEffectMultiplierArmor>
 			<Insulation_Cold>40</Insulation_Cold>
@@ -209,8 +209,9 @@
 			<tags Inherit="False">
 				<li>Apparel_VikingJarl</li>
 				<li>Royal</li>
-				<li>RoyalTier5</li>
+				<li>RoyalTier7</li>
 			</tags>
+		<canBeGeneratedToSatisfyWarmth>false</canBeGeneratedToSatisfyWarmth>
 			<defaultOutfitTags>
 				<li>Worker</li>
 			</defaultOutfitTags>
@@ -419,7 +420,7 @@
 		</apparel>
 		<tickerType>Normal</tickerType>
 		<comps>
-			<li Class="VFEV.CompProperties_ApparelHediffs">
+			<li Class="VFECore.CompProperties_ApparelHediffs">
 				<hediffDefnames>
 					<li>VFEV_BleedrateCrypto_10</li>
 				</hediffDefnames>
@@ -445,7 +446,7 @@
 		</apparel>
 		<tickerType>Normal</tickerType>
 		<comps>
-			<li Class="VFEV.CompProperties_ApparelHediffs">
+			<li Class="VFECore.CompProperties_ApparelHediffs">
 				<hediffDefnames>
 					<li>VFEV_BleedrateCrypto_20</li>
 				</hediffDefnames>

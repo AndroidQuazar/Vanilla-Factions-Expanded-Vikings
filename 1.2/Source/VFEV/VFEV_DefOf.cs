@@ -36,6 +36,7 @@ namespace VFEV
         // raids
         public static ThingDef VFEV_Apparel_TorchBelt;
         public static FactionDef VFEV_VikingsSlaver;
+        public static FactionDef VFEV_VikingsClan;
         public static DutyDef VFEV_BurnAndStealColony;
         public static JobDef VFEV_IgniteWithTorches;
 

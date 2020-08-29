@@ -24,9 +24,10 @@
         <fillPercent>0.25</fillPercent>
         <pathCost>0</pathCost>
         <minTechLevelToBuild>Neolithic</minTechLevelToBuild>
+		<specialDisplayRadius>6.9</specialDisplayRadius> <!-- must be kept in sync with roof hold-up radius -->
         <statBases>
             <MaxHitPoints>140</MaxHitPoints>
-            <WorkToBuild>1250</WorkToBuild>
+            <WorkToBuild>1550</WorkToBuild>
             <Mass>8</Mass>
             <Flammability>1.0</Flammability>
             <Beauty>10</Beauty>

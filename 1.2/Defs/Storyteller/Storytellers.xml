@@ -3,11 +3,27 @@
 
 	<StorytellerDef ParentName="BaseStoryteller">
 		<defName>VFEV-Freya</defName>
-		<label>Freya Fair</label>
-		<description>Cassandra creates story events on a classic increasing curve of challenge and tension. She'll push you with dangerous events, then give breathing room, then come back to push once more.</description>
-		<portraitLarge>UI/HeroArt/Storytellers/FreyaFair</portraitLarge>
-		<portraitTiny>UI/HeroArt/Storytellers/FreyaFairTiny</portraitTiny>
-		<listOrder>20</listOrder>
+		<label>Freya Fierce</label>
+		<description>Freya believes in the importance of showing your strength and using force to show others their place. Every year after the first year, at the start of Aprimay your settlement will become increasingly unhappy until you send your colonists on an adventure or a raid, and bring back the spoils of war.</description>
+		<portraitLarge>UI/HeroArt/Storytellers/FreyaFierce</portraitLarge>
+		<portraitTiny>UI/HeroArt/Storytellers/FreyaFierceTiny</portraitTiny>
+		<listOrder>50</listOrder>
+		<populationIntentFactorFromPopCurve>
+			<points>
+				<li>0,  8.0</li>
+				<li>2,  8.0</li>
+				<li>10,  4.0</li>
+				<li>18,  2.0</li>
+				<li>24,  1.0</li>
+				<li>40, -1.0</li>
+			</points>
+		</populationIntentFactorFromPopCurve>
+		<populationIntentFactorFromPopAdaptDaysCurve>
+			<points>
+				<li>( 0, 0)</li>
+				<li>(20, 1.00)</li>
+			</points>
+		</populationIntentFactorFromPopAdaptDaysCurve>
 		<comps>
 			<!-- Home all -->
 			<li Class="StorytellerCompProperties_RandomMain">
@@ -132,7 +148,7 @@
 			</li>
 			<!-- Triggered -->
 			<li Class="StorytellerCompProperties_Triggered">
-				<incident>StrangerInBlackJoin</incident>
+				<incident>VFE_MysteriousHeroJoins</incident>
 				<delayTicks>180</delayTicks>
 			</li>
 		</comps>
