@@ -84,9 +84,6 @@
     </costList>
     <building>
       <joyKind>Gaming_Dexterity</joyKind>
-      <watchBuildingStandDistanceRange>1~1</watchBuildingStandDistanceRange>
-      <watchBuildingStandRectWidth>1</watchBuildingStandRectWidth>
-      <watchBuildingInSameRoom>true</watchBuildingInSameRoom>
     </building>
     <passability>Impassable</passability>
     <designationCategory>Joy</designationCategory>

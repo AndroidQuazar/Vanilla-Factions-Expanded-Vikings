@@ -44,7 +44,7 @@
 
   <JoyGiverDef>
     <defName>Play_TrainingDummy</defName>
-    <giverClass>JoyGiver_WatchBuilding</giverClass>
+    <giverClass>VFEV.JoyGiver_PlayTrainingDummy</giverClass>
     <baseChance>2</baseChance>
     <thingDefs>
       <li>VFEV_TrainingDummy</li>
