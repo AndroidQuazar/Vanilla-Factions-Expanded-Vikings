@@ -22,7 +22,7 @@
         <additionalHediffs>
             <li>
                 <hediff>Hypothermia</hediff>
-                <severityPerDamageDealt>1.4</severityPerDamageDealt>
+                <severityPerDamageDealt>0.20</severityPerDamageDealt>
                 <victimSeverityScaling>ComfyTemperatureMin</victimSeverityScaling>
             </li>
         </additionalHediffs>
@@ -50,7 +50,7 @@
         <additionalHediffs>
             <li>
                 <hediff>Hypothermia</hediff>
-                <severityPerDamageDealt>1.8</severityPerDamageDealt>
+                <severityPerDamageDealt>0.20</severityPerDamageDealt>
                 <victimSeverityScaling>ComfyTemperatureMin</victimSeverityScaling>
             </li>
         </additionalHediffs>
