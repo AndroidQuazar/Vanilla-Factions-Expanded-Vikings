@@ -109,13 +109,16 @@
       <artificialForMeditationPurposes>false</artificialForMeditationPurposes>
       <destroySound>BuildingDestroyed_Wood_Small</destroySound>
     </building>
+    <researchPrerequisites>
+      <li>ComplexFurniture</li>
+    </researchPrerequisites>
     </ThingDef>
 	
 	
     <ThingDef ParentName="BuildingBase">
         <defName>VFEV_FuneralPyre</defName>
         <label>funeral pyre</label>
-        <description>to-do</description>
+        <description>A ceremonial pile of wood, temporarily erected to perform honorable funerals.</description>
         <graphicData>
             <texPath>Things/Building/Misc/FuneralPyre/FuneralPyre</texPath>
             <graphicClass>Graphic_Multi</graphicClass>
@@ -167,7 +170,7 @@
         <rotatable>true</rotatable>
     <comps>
       <li Class="CompProperties_Refuelable">
-        <fuelConsumptionRate>5.0</fuelConsumptionRate>
+        <fuelConsumptionRate>10.0</fuelConsumptionRate>
         <fuelCapacity>50.0</fuelCapacity>
         <fuelConsumptionPerTickInRain>0.0006</fuelConsumptionPerTickInRain>
         <fuelFilter>
