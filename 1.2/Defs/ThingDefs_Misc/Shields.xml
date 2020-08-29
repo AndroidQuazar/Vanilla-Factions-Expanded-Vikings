@@ -115,14 +115,17 @@
         </comps>
     </ThingDef>
 	
-    <ThingDef>
+    <ThingDef Name="VFEV_BaseShieldCrypto" ParentName="VFEV_BaseShield" Abstract="True">
+        <techLevel>Ultra</techLevel>
+    </ThingDef>
+	
+    <ThingDef ParentName="VFEV_BaseShieldCrypto">
         <defName>VFEV_Shield_Crypto</defName>
         <label>crypto shield</label>
         <description>A stabilized crypto-tech field wrapped around an advanced frame, capable of slowing the speed of the atoms of incoming projectiles to a halt. Does nothing to protect against heat and blunt trauma.</description>
         <graphicData>
             <texPath>Things/Item/Equipment/Shield/CryptoShield/CryptoShield</texPath>
             <graphicClass>Graphic_Single</graphicClass>
-            <shaderType>CutoutComplex</shaderType>
             <drawSize>1</drawSize>
         </graphicData>
 		<recipeMaker Inherit="False" />
@@ -173,7 +176,7 @@
                     <texPath>Things/Item/Equipment/Shield/CryptoShield/CryptoShield</texPath>
                     <graphicClass>Graphic_Multi</graphicClass>
 					<shaderType>CutoutComplex</shaderType>
-                    <drawSize>1.6</drawSize>
+                    <drawSize>1.8</drawSize>
                 </offHandGraphicData>
                 <offHandHoldOffset>
                     <northDefault>
@@ -181,11 +184,11 @@
                         <behind>true</behind>
                     </northDefault>
                     <east>
-                        <offset>(-0.1, 0, 0.2)</offset>
+                        <offset>(-0.2, 0, 0.2)</offset>
                         <behind>true</behind>
                     </east>
                     <south>
-                        <offset>(-0.1, -0.04, 0.2)</offset>
+                        <offset>(-0.4, -0.04, 0.2)</offset>
                     </south>
                     <west>
                         <offset>(0.1, 0, 0.2)</offset>
