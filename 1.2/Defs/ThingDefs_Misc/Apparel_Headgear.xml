@@ -258,7 +258,7 @@
       </defaultOutfitTags>
     </apparel>
 	<comps>
-		<li Class="VFEV.CompProperties_ApparelHediffs">
+		<li Class="VFECore.CompProperties_ApparelHediffs">
 			<hediffDefnames>
 				<li>VFEV_EnragedWithDamage</li>
 			</hediffDefnames>

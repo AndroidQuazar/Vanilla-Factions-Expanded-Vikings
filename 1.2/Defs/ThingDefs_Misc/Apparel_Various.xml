@@ -419,7 +419,7 @@
 		</apparel>
 		<tickerType>Normal</tickerType>
 		<comps>
-			<li Class="VFEV.CompProperties_ApparelHediffs">
+			<li Class="VFECore.CompProperties_ApparelHediffs">
 				<hediffDefnames>
 					<li>VFEV_BleedrateCrypto_10</li>
 				</hediffDefnames>
@@ -445,7 +445,7 @@
 		</apparel>
 		<tickerType>Normal</tickerType>
 		<comps>
-			<li Class="VFEV.CompProperties_ApparelHediffs">
+			<li Class="VFECore.CompProperties_ApparelHediffs">
 				<hediffDefnames>
 					<li>VFEV_BleedrateCrypto_20</li>
 				</hediffDefnames>

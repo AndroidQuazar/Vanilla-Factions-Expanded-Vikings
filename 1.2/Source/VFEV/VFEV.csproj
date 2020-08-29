@@ -79,12 +79,10 @@
     <Compile Include="Comp\CompLightningWhenHit.cs" />
     <Compile Include="Comp\CompPawnPsyWaver.cs" />
     <Compile Include="Comp\CompPawnTeleporter.cs" />
-    <Compile Include="Comp\CompApparelHediffs.cs" />
     <Compile Include="Comp\CompProperties_CureHypothermia.cs" />
     <Compile Include="Comp\CompProperties_LightningWhenHit.cs" />
     <Compile Include="Comp\CompProperties_PawnPsyWaver.cs" />
     <Compile Include="Comp\CompProperties_PawnTeleporter.cs" />
-    <Compile Include="Comp\CompProperties_ApparelHediffs.cs" />
     <Compile Include="Comp\CompTargetable_AllPlantsOnTheMap.cs" />
     <Compile Include="Comp\CompTargetEffect_PlantGrower.cs" />
     <Compile Include="Enraged_MentalState\AdjustedCooldown_Patch.cs" />
