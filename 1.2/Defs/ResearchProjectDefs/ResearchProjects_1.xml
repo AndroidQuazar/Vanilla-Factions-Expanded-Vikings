@@ -8,8 +8,8 @@
         <baseCost>500</baseCost>
 		<tab>VanillaExpanded</tab>
         <techLevel>Neolithic</techLevel>
-        <researchViewX>4.00</researchViewX>
-        <researchViewY>1.40</researchViewY>
+		<researchViewX>2.00</researchViewX>
+		<researchViewY>0.15</researchViewY>
     </ResearchProjectDef>
 
 </Defs>

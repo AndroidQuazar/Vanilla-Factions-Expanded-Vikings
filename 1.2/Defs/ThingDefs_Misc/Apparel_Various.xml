@@ -16,7 +16,6 @@
 			<skillRequirements>
 				<Crafting>9</Crafting>
 			</skillRequirements>
-			<researchPrerequisite>PlateArmor</researchPrerequisite>
 		</recipeMaker>
 		<stuffCategories>
 			<li>Metallic</li>

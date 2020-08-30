@@ -7,7 +7,7 @@
         <description>A strong medieval helmet that provides full-head coverage. While it offers fantastic protection, ones vision is grealy obscured, thus it is only recommended for front line infantry, particularly those foregoing shields.</description>
         <techLevel>Medieval</techLevel>
         <recipeMaker>
-            <researchPrerequisite>PlateArmor</researchPrerequisite>
+            <researchPrerequisite Inherit='False'>PlateArmor</researchPrerequisite>
             <recipeUsers>
                 <li>ElectricSmithy</li>
                 <li>FueledSmithy</li>
@@ -163,7 +163,6 @@
     <label>moose headdress</label>
     <description>A very heavy, albeit fragile helmet stitched together from many hides and furs made to represent a hardy moose. This shamanistic headdress is believed to bring great durability and tenacity to it's wearer. Due to the simple design, this helmet does not offer defense or insulation.</description>
     <recipeMaker>
-      <researchPrerequisite />
       <recipeUsers>
         <li>ElectricTailoringBench</li>
         <li>HandTailoringBench</li>
@@ -218,7 +217,6 @@
     <label>bear headdress</label>
     <description>A very heavy, albeit fragile helmet stitched together from many hides and furs made to represent a ferocious bear. This shamanistic headdress is believed to bring great aggression and strength to it's wearer. Due to the simple design, this helmet does not offer defense or insulation.</description>
     <recipeMaker>
-      <researchPrerequisite />
       <recipeUsers>
         <li>ElectricTailoringBench</li>
         <li>HandTailoringBench</li>
