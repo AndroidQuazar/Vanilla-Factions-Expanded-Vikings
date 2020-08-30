@@ -1,15 +1,19 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
-    <ThingDef ParentName="SculptureBase">
+    <ThingDef ParentName="BuildingBase">
         <defName>VFEV_RuneStone</defName>
         <label>rune stone</label>
         <description>A loosely carved and smoothed structure ascribed with ancient text and ornate patterns. Ancient northern tribes were known to pray at these shrines as well as keep them in their halls as aesthetic decorum.</description>
-        <castEdgeShadows>true</castEdgeShadows>
+        <castEdgeShadows>false</castEdgeShadows>
         <graphicData>
             <graphicClass>Graphic_Random</graphicClass>
             <texPath>Things/Building/Art/VikingShrine</texPath>
-            <drawSize>(2,2)</drawSize>
+            <drawSize>(1,1)</drawSize>
+			<shadowData>
+				<volume>(0.8, 0.7, 0.6)</volume>
+				<offset>(0,0,-0.5)</offset>
+			</shadowData>
         </graphicData>
         <fillPercent>0.5</fillPercent>
         <rotatable>false</rotatable>
@@ -53,6 +57,20 @@
         </offsets>
       </li>
     </comps>
+    <placeWorkers>
+      <li>PlaceWorker_ArtificialBuildingsNear</li>
+      <li>PlaceWorker_RequireNaturePsycaster</li>
+      <li>PlaceWorker_MeditationOffsetBuildingsNear</li>
+    </placeWorkers>
+    <designationCategory>Misc</designationCategory>
+    <building>
+      <artificialForMeditationPurposes>false</artificialForMeditationPurposes>
+      <ai_neverTrashThis>true</ai_neverTrashThis>
+	  <destroySound>BuildingDestroyed_Stone_Small</destroySound>
+    </building>
+    <researchPrerequisites>
+      <li>Stonecutting</li>
+    </researchPrerequisites>
     </ThingDef>
 
 </Defs>

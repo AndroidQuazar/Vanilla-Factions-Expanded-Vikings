@@ -4,7 +4,7 @@
     <ThingDef ParentName="ArtifactBase">
         <defName>VFEV_PlantGrowerArtifact</defName>
         <label>psychic cornucopia</label>
-        <description>A mysterious, single-use artifact which grows all plants nearby to maturity when activated.</description>
+        <description>A mysterious, single-use artifact which grows all plants nearby to maturity when activated. Created by a superior AI, it served as a gift to humanity long ago.</description>
         <graphicData>
             <texPath>Things/Item/Artifact/PsychicPlantGrower</texPath>
             <graphicClass>Graphic_Single</graphicClass>

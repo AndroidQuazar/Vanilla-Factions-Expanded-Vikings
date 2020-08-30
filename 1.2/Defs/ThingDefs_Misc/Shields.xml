@@ -97,7 +97,7 @@
                 </offHandGraphicData>
                 <offHandHoldOffset>
                     <northDefault>
-                        <offset>(-1, 0, 0.2)</offset>
+                        <offset>(-0.05, 0, 0.2)</offset>
                         <behind>true</behind>
                     </northDefault>
                     <east>
@@ -105,7 +105,7 @@
                         <behind>true</behind>
                     </east>
                     <south>
-                        <offset>(0.4, -0.04, 0.2)</offset>
+                        <offset>(0.2, -0.04, 0.2)</offset>
                     </south>
                     <west>
                         <offset>(0.15, 0, 0.2)</offset>
@@ -115,8 +115,47 @@
         </comps>
     </ThingDef>
 	
-    <ThingDef Name="VFEV_BaseShieldCrypto" ParentName="VFEV_BaseShield" Abstract="True">
+    <ThingDef Name="VFEV_BaseShieldCrypto" ParentName="BaseMeleeWeapon_Blunt_Quality" Abstract="True">
         <techLevel>Ultra</techLevel>
+        <thingCategories Inherit="False">
+            <li>VFEC_Shields</li>
+        </thingCategories>
+        <equippedStatOffsets>
+            <ShootingAccuracyPawn>-2</ShootingAccuracyPawn>
+            <MeleeDodgeChance>-2</MeleeDodgeChance>
+        </equippedStatOffsets>
+		<thingClass>VFECore.Apparel_Shield</thingClass>
+		<apparel>
+			<defaultOutfitTags>
+				<li>Soldier</li>
+			</defaultOutfitTags>
+			<bodyPartGroups>
+				<li>LeftHand</li>
+			</bodyPartGroups>
+			<layers>
+				<li>VFEC_OuterShell</li>
+			</layers>
+		</apparel>
+        <equippedAngleOffset>-30</equippedAngleOffset>
+        <tools>
+            <li>
+                <label>base</label>
+                <capacities>
+                    <li>Poke</li>
+                </capacities>
+                <power>9</power>
+                <cooldownTime>2</cooldownTime>
+            </li>
+            <li>
+                <label>centre</label>
+                <labelUsedInLogging>false</labelUsedInLogging>
+                <capacities>
+                    <li>Blunt</li>
+                </capacities>
+                <power>9</power>
+                <cooldownTime>2</cooldownTime>
+            </li>
+        </tools>
     </ThingDef>
 	
     <ThingDef ParentName="VFEV_BaseShieldCrypto">
@@ -147,7 +186,6 @@
 			<Plasteel>120</Plasteel>
 			<ComponentSpacer>6</ComponentSpacer>
         </costList>
-        <costStuffCount Inherit='False' />
 		<thingClass>VFECore.Apparel_Shield</thingClass>
 		<apparel>
 			<defaultOutfitTags>
@@ -181,7 +219,7 @@
                 </offHandGraphicData>
                 <offHandHoldOffset>
                     <northDefault>
-                        <offset>(-1, 0, 0.2)</offset>
+                        <offset>(-0.05, 0, 0.2)</offset>
                         <behind>true</behind>
                     </northDefault>
                     <east>
@@ -189,7 +227,7 @@
                         <behind>true</behind>
                     </east>
                     <south>
-                        <offset>(0.4, -0.04, 0.2)</offset>
+                        <offset>(0.2, -0.04, 0.2)</offset>
                     </south>
                     <west>
                         <offset>(0.15, 0, 0.2)</offset>

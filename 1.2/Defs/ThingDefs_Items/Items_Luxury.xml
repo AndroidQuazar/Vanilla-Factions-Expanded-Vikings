@@ -15,11 +15,11 @@
     <socialPropernessMatters>true</socialPropernessMatters>
     <statBases>
       <MaxHitPoints>50</MaxHitPoints>
-      <MarketValue>3.2</MarketValue>
+      <MarketValue>6.2</MarketValue>
       <Mass>0.1</Mass>
       <Flammability>1.0</Flammability>
-      <DeteriorationRate>6</DeteriorationRate>
-      <Nutrition>0.2</Nutrition>
+      <DeteriorationRate>1</DeteriorationRate>
+      <Nutrition>0.4</Nutrition>
     </statBases>
     <thingCategories>
       <li>Foods</li>
