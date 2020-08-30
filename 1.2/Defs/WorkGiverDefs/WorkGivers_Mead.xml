@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<WorkGiverDef>
+		<defName>VFEV_FillMeadBarrel</defName>
+		<label>bringing honey</label>
+		<giverClass>VFEV.WorkGiver_FillMeadBarrel</giverClass>
+		<workType>Hauling</workType>
+		<verb>bring honey to</verb>
+		<gerund>bringing honey to</gerund>
+		<priorityInType>20</priorityInType>
+		<requiredCapacities>
+			<li>Manipulation</li>
+		</requiredCapacities>
+	</WorkGiverDef>
+	
+
+	<WorkGiverDef>
+		<defName>VFEV_TakeMeadOutOfMeadBarrel</defName>
+		<label>take mead out of barrel</label>
+		<giverClass>VFEV.WorkGiver_TakeMeadOutOfMeadBarrel</giverClass>
+		<workType>Hauling</workType>
+		<verb>take mead out of</verb>
+		<gerund>taking mead out of</gerund>
+		<priorityInType>20</priorityInType>
+		<requiredCapacities>
+			<li>Manipulation</li>
+		</requiredCapacities>
+	</WorkGiverDef>
+
+
+
+
+
+
+</Defs>

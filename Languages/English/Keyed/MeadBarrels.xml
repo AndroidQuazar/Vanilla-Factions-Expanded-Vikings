@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+    <VFEV_NoHoney>No honey</VFEV_NoHoney>
+	<VFEV_ContainsWort>Contains {0} / {1} honey.</VFEV_ContainsWort>
+  <VFEV_ContainsBeer>Contains {0} / {1} mead.</VFEV_ContainsBeer>
+  <VFEV_Fermented>Fermented</VFEV_Fermented>
+  <VFEV_FermentationProgress>Progress: {0} ({1} left)</VFEV_FermentationProgress>
+  <VFEV_FermentationBarrelOutOfIdealTemperature>Non-ideal temperature. Fermentation speed: {0}</VFEV_FermentationBarrelOutOfIdealTemperature>
+</LanguageData>

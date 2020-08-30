@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+
+   <JobDef>
+    <defName>VFEV_FillMeadBarrel</defName>
+    <driverClass>VFEV.JobDriver_FillMeadBarrel</driverClass>
+    <reportString>filling TargetA.</reportString>
+    <suspendable>false</suspendable>
+    <allowOpportunisticPrefix>true</allowOpportunisticPrefix>
+  </JobDef>
+  
+    <JobDef>
+    <defName>VFEV_TakeMeadOutOfMeadBarrel</defName>
+    <driverClass>VFEV.JobDriver_TakeMeadOutOfMeadBarrel</driverClass>
+    <reportString>taking mead out of TargetA.</reportString>
+    <allowOpportunisticPrefix>true</allowOpportunisticPrefix>
+  </JobDef>
+
+  
+</Defs>

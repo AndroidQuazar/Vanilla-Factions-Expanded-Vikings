@@ -21,6 +21,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <LangVersion>7.3</LangVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -29,6 +30,7 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <LangVersion>7.1</LangVersion>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="0Harmony, Version=2.0.2.0, Culture=neutral, processorArchitecture=MSIL">
@@ -96,6 +98,12 @@
     <Compile Include="Facepaint\FacepaintExtension.cs" />
     <Compile Include="Facepaint\HarmonyPatches_Facepaint.cs" />
     <Compile Include="Facepaint\JobDriver_ChangeFacepaint.cs" />
+    <Compile Include="Mead\Building_MeadBarrel.cs" />
+    <Compile Include="Mead\JobDriver_FillMeadBarrel.cs" />
+    <Compile Include="Mead\JobDriver_TakeMeadOutOfMeadBarrel.cs" />
+    <Compile Include="Mead\MeadBarrels_MapComponent.cs" />
+    <Compile Include="Mead\WorkGiver_FillMeadBarrel.cs" />
+    <Compile Include="Mead\WorkGiver_TakeMeadOutOfMeadBarrel.cs" />
     <Compile Include="RecreationJob\JoyGiver_PlayTrainingDummy.cs" />
     <Compile Include="MapGeneration\GenStep_VikingsAmbush.cs" />
     <Compile Include="HarmonyInit.cs" />
