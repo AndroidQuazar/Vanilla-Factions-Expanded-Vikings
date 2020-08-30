@@ -302,6 +302,9 @@
       <Mass>0.9</Mass>
       <EquipDelay>0.8</EquipDelay>
     </statBases>
+    <equippedStatOffsets>
+      <SocialImpact>0.2</SocialImpact>
+    </equippedStatOffsets>
     <apparel>
       <bodyPartGroups>
         <li>UpperHead</li>
