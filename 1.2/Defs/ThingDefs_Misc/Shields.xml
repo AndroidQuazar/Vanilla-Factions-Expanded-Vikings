@@ -67,6 +67,9 @@
             <WoodLog>50</WoodLog>
 			<Steel>20</Steel>
         </costList>
+		<recipeMaker>
+			<researchPrerequisite Inherit='False'>Smithing</researchPrerequisite>
+		</recipeMaker>
         <statBases>
             <MaxHitPoints>120</MaxHitPoints>
             <Flammability>1.0</Flammability>

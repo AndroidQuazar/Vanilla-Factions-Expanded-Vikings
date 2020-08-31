@@ -174,7 +174,6 @@
       <factionPrerequisiteTags>
         <li>Viking</li>
       </factionPrerequisiteTags>
-	  <researchPrerequisite>ComplexClothing</researchPrerequisite>
     </recipeMaker>
     <graphicData>
       <texPath>Things/Pawn/Humanlike/Apparel/MooseHeaddress/MooseHeaddress</texPath>
@@ -207,7 +206,7 @@
 				<li>Apparel_VikingBerserker</li>
 			</tags>
       <defaultOutfitTags>
-        <li>Worker</li>
+        <li>Soldier</li>
       </defaultOutfitTags>
     </apparel>
   </ThingDef>
@@ -228,7 +227,6 @@
       <factionPrerequisiteTags>
         <li>Viking</li>
       </factionPrerequisiteTags>
-	  <researchPrerequisite>ComplexClothing</researchPrerequisite>
     </recipeMaker>
 	<tickerType>Normal</tickerType>
     <graphicData>
@@ -242,7 +240,10 @@
     <statBases>
       <WorkToMake>6000</WorkToMake>
       <Mass>0.11</Mass>
-      <EquipDelay>1</EquipDelay>
+      <StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
+      <StuffEffectMultiplierInsulation_Cold>0.1</StuffEffectMultiplierInsulation_Cold>
+      <StuffEffectMultiplierInsulation_Heat>0.15</StuffEffectMultiplierInsulation_Heat>
+      <EquipDelay>1.5</EquipDelay>
     </statBases>
     <apparel>
       <bodyPartGroups>
@@ -256,7 +257,7 @@
 				<li>Apparel_VikingBerserker</li>
 			</tags>
       <defaultOutfitTags>
-        <li>Worker</li>
+        <li>Soldier</li>
       </defaultOutfitTags>
     </apparel>
 	<comps>
@@ -299,11 +300,14 @@
     <statBases>
       <MaxHitPoints>80</MaxHitPoints>
       <WorkToMake>12000</WorkToMake>
-      <Mass>0.9</Mass>
+      <Mass>1.6</Mass>
       <EquipDelay>0.8</EquipDelay>
+      <StuffEffectMultiplierArmor>0.15</StuffEffectMultiplierArmor>
+      <StuffEffectMultiplierInsulation_Cold>0.0</StuffEffectMultiplierInsulation_Cold>
+      <StuffEffectMultiplierInsulation_Heat>0.0</StuffEffectMultiplierInsulation_Heat>
     </statBases>
     <equippedStatOffsets>
-      <SocialImpact>0.2</SocialImpact>
+      <SocialImpact>0.35</SocialImpact>
     </equippedStatOffsets>
     <apparel>
       <bodyPartGroups>
