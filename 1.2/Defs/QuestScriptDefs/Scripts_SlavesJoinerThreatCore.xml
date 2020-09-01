@@ -97,7 +97,7 @@
 				<li Class="QuestNode_GetWalkInSpot" /> 
 
 				<!-- Get raider faction -->
-				<li Class="VFEV.QuestNode_GetFaction">
+				<li Class="VFECore.QuestNode_GetFaction">
 					<allowEnemy>true</allowEnemy>
 					<mustBePermanentEnemy>true</mustBePermanentEnemy>
 					<storeAs>enemyFaction</storeAs>
