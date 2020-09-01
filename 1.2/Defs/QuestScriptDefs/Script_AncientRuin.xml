@@ -7,6 +7,19 @@
     <autoAccept>true</autoAccept>
     <questNameRules>
       <rulesStrings>
+        <li>questName(priority=1)->[asker_nameDef]'s [ancient] [ruins]</li>
+        <li>questName->[ancient] [ruins]</li>
+        <li>ancient->Ancient</li>
+        <li>ancient->Legendary</li>
+        <li>ancient->Long forgotten</li>
+        <li>ancient->Old</li>
+        <li>ruins->Ruins</li>
+        <li>ruins->Ruin Complex</li>
+        <li>ruins->Danger</li>
+        <li>ruins->Stash</li>
+        <li>ruins->Tomb</li>
+      </rulesStrings>
+      <rulesStrings>
         <li>questName(priority=1)->[ancient] [ruins]</li>
         <li>ancient->Ancient</li>
         <li>ruins->Ruins</li>
@@ -14,7 +27,7 @@
     </questNameRules>
     <questDescriptionRules>
       <rulesStrings>
-        <li>questDescription->Placeholder todo</li>
+        <li>questDescription->[asker_nameDef], [asker_faction_leaderTitle] of [asker_faction_name] informed us about the location of an old ruin complex near [map_definite]. These ruins can contain anything, from cryptosleep caskets and archotech artifacts to rare weapons and armor.\n\nBe careful, as these ancient ruins are certainly defended by a number of threats. We should be prepared for anything.</li>
       </rulesStrings>
     </questDescriptionRules>
     <root Class="QuestNode_Sequence">

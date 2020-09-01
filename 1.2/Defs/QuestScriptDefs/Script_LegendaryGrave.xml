@@ -22,7 +22,7 @@
     </questNameRules>
     <questDescriptionRules>
       <rulesStrings>
-        <li>questDescription->We've found the location of a legendary vikings grave not far from [map_definite]. The place might be guarded by Vikings, defending their sleeping hero.</li>
+        <li>questDescription->We've found the location of a legendary vikings grave not far from [map_definite]. The place might be guarded by Vikings, defending their sleeping hero.\n\nYou can travel there and defeat the guardians to obtain valuable rewards and perhaps recruit a legendary viking hero.</li>
       </rulesStrings>
     </questDescriptionRules>
     <root Class="QuestNode_Sequence">

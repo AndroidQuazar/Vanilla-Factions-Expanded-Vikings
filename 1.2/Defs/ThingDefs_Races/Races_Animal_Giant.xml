@@ -183,7 +183,7 @@
     <ThingDef ParentName="AnimalThingBase">
         <defName>VFEV_Lothurr</defName>
         <label>lothurr</label>
-        <description>A gigantic, dragon-like creature of unknown origin. The lothurr is peaceful by nature, but extremely dangerous when enraged. Its fur and armour plates are incredibly resistant to damage and cold, while it's majestic antlers fetch a huge price. \n\n Many legends surround the lothurrs. Some say it is the manifestation of the old nordic gods while others claim they are a truly alien species, other tall tales claim the beast is able to vanish and rapidly reappear elsewhere at will.</description>
+        <description>A gigantic, dragon-like creature of unknown origin. The lothurr is peaceful by nature, but extremely dangerous when enraged. Its fur and armour plates are incredibly resistant to damage and cold, while it's majestic antlers fetch a huge price.\n\nMany legends surround the lothurrs. Some say it is the manifestation of the old nordic gods while others claim they are a truly alien species, other tall tales claim the beast is able to vanish and rapidly reappear elsewhere at will.</description>
 		<statBases>
             <MoveSpeed>3.5</MoveSpeed>
             <MarketValue>3500</MarketValue>

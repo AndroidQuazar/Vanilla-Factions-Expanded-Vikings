@@ -14,7 +14,7 @@
         </questNameRules>
         <questDescriptionRules>
             <rulesStrings>
-                <li>questDescription-&gt;A legendary Fenrir has been sighted nearby. It will stay there for the foreseeable future but move on in time.</li>
+                <li>questDescription-&gt;A legendary Fenrir has been sighted nearby. It will stay there for the foreseeable future but move on in time. You can use this moment to hunt it for it’s precious pelt, or try to tame it if you dare.\n\nA gigantic, deadly wolf of unknown origin. The fenrir is aggressive by nature and extremely dangerous when enraged. Its fur and hide is incredibly resistant to damage and cold, while it's razor-sharp teeths can pierce even the best armour.\n\nLegends say that fenrir were bioengineered in ancient times for war and only follow the bravest leader's into combat.</li>
             </rulesStrings>
         </questDescriptionRules>
         <root Class="QuestNode_Sequence">
@@ -89,7 +89,7 @@
         </questNameRules>
         <questDescriptionRules>
             <rulesStrings>
-                <li>questDescription-&gt;A legendary Lothurr has been sighted nearby. It will stay there for the foreseeable future but move on in time.</li>
+                <li>questDescription-&gt;A legendary Lothurr has been sighted nearby. It will stay there for the foreseeable future but move on in time. You can use this moment to hunt it for it’s majestic antlers, or try to tame it if you dare.\n\nA gigantic, dragon-like creature of unknown origin. The lothurr is peaceful by nature, but extremely dangerous when enraged. Its fur and armour plates are incredibly resistant to damage and cold, while it's majestic antlers fetch a huge price. \n\n Many legends surround the lothurrs. Some say it is the manifestation of the old nordic gods while others claim they are a truly alien species, other tall tales claim the beast is able to vanish and rapidly reappear elsewhere at will.</li>
             </rulesStrings>
         </questDescriptionRules>
         <root Class="QuestNode_Sequence">
@@ -164,7 +164,7 @@
         </questNameRules>
         <questDescriptionRules>
             <rulesStrings>
-                <li>questDescription-&gt;A legendary Njörun has been sighted nearby. It will stay there for the foreseeable future but move on in time.</li>
+                <li>questDescription-&gt;A legendary Njörun has been sighted nearby. It will stay there for the foreseeable future but move on in time. You can use this moment to hunt it for it’s thick leather and meat.\n\nA gigantic, ox-like creature of unknown origin. The njorun is wary by nature, traveling the planet in small herds and staying hidden from anyone who might wish it harm. Though docile, the beast is far too skittish to be tamed and is likely to retaliate if attacked.\n\n Legends say the njoruns are the result of breeding by long gone corporations in an attempt to create the perfect animal to breed for profits.</li>
             </rulesStrings>
         </questDescriptionRules>
         <root Class="QuestNode_Sequence">
@@ -239,7 +239,7 @@
         </questNameRules>
         <questDescriptionRules>
             <rulesStrings>
-                <li>questDescription-&gt;A legendary Thrumbo has been sighted nearby. It will stay there for the foreseeable future but move on in time.</li>
+                <li>questDescription-&gt;A legendary Thrumbo has been sighted nearby. It will stay there for the foreseeable future but move on in time.\n\nA gigantic, graceful creature of unknown origin. The thrumbo is gentle by nature, but extremely dangerous when enraged. While its long fur is exceptionally beautiful, its hide is also incredibly resistant to damage. Its razor-sharp horn fetches a huge price.\n\nLegends say that an old thrumbo is the wisest creature in the universe - it simply chooses not to speak.</li>
             </rulesStrings>
         </questDescriptionRules>
         <root Class="QuestNode_Sequence">
@@ -314,7 +314,7 @@
         </questNameRules>
         <questDescriptionRules>
             <rulesStrings>
-                <li>questDescription-&gt;A legendary Odin has been sighted nearby. It will stay there for the foreseeable future but move on in time.</li>
+                <li>questDescription-&gt;A legendary Odin has been sighted nearby. It will stay there for the foreseeable future but move on in time. You can hunt it for glory and rare components, but be aware it’s a formidable foe.\n\nHeavily armoured, combat mechanoids originally designed for non-lethal combat at medium and short range. Their bodies are heavy, making them hard to take down but also slow. They are able to fire off a small EMP pulse, disabling electronics within a short range.\n\nThose who get close enough to Odin can get zapped with a high voltage lighting bolt.</li>
             </rulesStrings>
         </questDescriptionRules>
         <root Class="QuestNode_Sequence">

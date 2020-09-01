@@ -9,7 +9,7 @@
       <texPath>Things/Building/Misc/Hearth/Hearth</texPath>
       <graphicClass>Graphic_Multi</graphicClass>
       <shaderType>CutoutComplex</shaderType>
-      <drawSize>(3,3)</drawSize>
+      <drawSize>(2,2)</drawSize>
       <damageData>
         <rect>(0,0.05,1,1.95)</rect>
       </damageData>
@@ -27,7 +27,7 @@
     <tickerType>Normal</tickerType>
     <drawerType>RealtimeOnly</drawerType>
     <fillPercent>0.15</fillPercent>
-    <size>(3,2)</size>
+    <size>(2,1)</size>
     <selectable>true</selectable>
     <designationCategory>Temperature</designationCategory>
     <uiIconPath>Things/Building/Misc/Hearth/HearthIcon</uiIconPath>
