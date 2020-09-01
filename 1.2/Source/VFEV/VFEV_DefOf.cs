@@ -44,6 +44,7 @@ namespace VFEV
         public static DutyDef VFEV_Feast;
         public static InteractionDef VFEV_DrunkChitchat;
         public static InteractionDef VFEV_VeryDrunkChitchat;
+        public static ThoughtDef VFEV_AttendedFeast;
 
         //mental break
         public static MentalBreakDef VFEV_Enraged;

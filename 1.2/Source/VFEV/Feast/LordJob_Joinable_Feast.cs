@@ -13,7 +13,7 @@ namespace VFEV
 
 		public override bool AllowStartNewGatherings => false;
 
-		protected virtual ThoughtDef AttendeeThought => ThoughtDefOf.AttendedParty;
+		protected virtual ThoughtDef AttendeeThought => VFEV_DefOf.VFEV_AttendedFeast;
 
 		protected virtual TaleDef AttendeeTale => TaleDefOf.AttendedParty;
 
