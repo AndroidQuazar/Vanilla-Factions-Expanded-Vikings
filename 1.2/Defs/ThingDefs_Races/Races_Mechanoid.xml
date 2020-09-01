@@ -4,7 +4,7 @@
   <ThingDef ParentName="BaseMechanoidWalker">
     <defName>VFEV_Mech_Odin</defName>
     <label>odin</label>
-    <description>Heavily armoured, combat mechanoids originally designed for non-lethal combat at medium and short range. Their bodies are heavy, making them hard to take down but also slow. They are able to fire off a small EMP pulse, disabling electronics within a short range.</description>
+    <description>Heavily armoured, combat mechanoids originally designed for non-lethal combat at medium and short range. Their bodies are heavy, making them hard to take down but also slow. They are able to fire off a small EMP pulse, disabling electronics within a short range.\n\nThose who get close enough to Odin can get zapped with a high voltage lighting bolt.</description>
     <statBases>
       <MoveSpeed>1.0</MoveSpeed>
     </statBases>

@@ -84,7 +84,7 @@
     <projectile>
       <flyOverhead>false</flyOverhead>
       <damageDef>RangedStab</damageDef>
-      <damageAmountBase>16</damageAmountBase>
+      <damageAmountBase>18</damageAmountBase>
       <stoppingPower>2</stoppingPower>
       <armorPenetrationBase>0.25</armorPenetrationBase>
       <speed>45</speed>
@@ -124,7 +124,7 @@
         <li>ElectricSmithy</li>
         <li>CraftingSpot</li>
       </recipeUsers>
-      <researchPrerequisite>Smithing</researchPrerequisite>
+      <researchPrerequisite>LongBlades</researchPrerequisite>
       <skillRequirements>
         <Crafting>5</Crafting>
       </skillRequirements>

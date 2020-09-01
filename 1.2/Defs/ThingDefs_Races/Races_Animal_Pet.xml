@@ -4,7 +4,7 @@
     <ThingDef ParentName="AnimalThingBase">
         <defName>VFEV_Wolfhound</defName>
         <label>wolfhound</label>
-        <description>A large, energetic dog with a thick, brown fur coat for remaining comfortable in arctic environments. Thought to be a evolutionary hybrid of wolf and hound bred for hunting.</description>
+        <description>A large, energetic dog with a thick, brown fur coat for remaining comfortable in arctic environments. Thought to be an evolutionary hybrid of wolf and hound bred for hunting.</description>
         <statBases>
             <MoveSpeed>5.5</MoveSpeed>
             <MarketValue>350</MarketValue>

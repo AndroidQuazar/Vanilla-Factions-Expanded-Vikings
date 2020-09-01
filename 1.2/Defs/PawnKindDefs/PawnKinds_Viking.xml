@@ -209,7 +209,7 @@
             <li>VikingMeleeDecent</li>
             <li>VikingMeleeAdvanced</li>
         </weaponTags>
-        <apparelTags>
+        <apparelTags Inherit='False'>
             <li>Apparel_Viking</li>
             <li>Apparel_VikingBerserker</li>
         </apparelTags>
