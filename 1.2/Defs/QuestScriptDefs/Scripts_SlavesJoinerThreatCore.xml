@@ -97,22 +97,17 @@
 				<li Class="QuestNode_GetWalkInSpot" /> 
 
 				<!-- Get raider faction -->
-				<li Class="QuestNode_GetFaction">
+				<li Class="VFEV.QuestNode_GetFaction">
 					<allowEnemy>true</allowEnemy>
 					<mustBePermanentEnemy>true</mustBePermanentEnemy>
 					<storeAs>enemyFaction</storeAs>
+					<factionDef>VFEV_VikingsSlaver</factionDef>
 				</li>
+	
 				
-				
-
 				<!-- Joiner arrives -->
 				<li Class="QuestNode_SubScript">
 					<def>VFEV_Util_JoinerThreat_SlavesJoiner</def>
-				</li>
-
-				<li Class="QuestNode_Set">
-					<name>enemyFaction</name>
-					<value>VFEV_VikingsSlaver</value>
 				</li>
 				
 				<!-- Raid arrives -->

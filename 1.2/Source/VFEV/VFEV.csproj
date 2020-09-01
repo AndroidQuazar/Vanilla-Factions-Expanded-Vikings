@@ -104,6 +104,7 @@
     <Compile Include="Mead\MeadBarrels_MapComponent.cs" />
     <Compile Include="Mead\WorkGiver_FillMeadBarrel.cs" />
     <Compile Include="Mead\WorkGiver_TakeMeadOutOfMeadBarrel.cs" />
+    <Compile Include="Raids\LordToil_BurnStealColonySappers - Copy.cs" />
     <Compile Include="RecreationJob\JoyGiver_PlayTrainingDummy.cs" />
     <Compile Include="MapGeneration\GenStep_VikingsAmbush.cs" />
     <Compile Include="HarmonyInit.cs" />
