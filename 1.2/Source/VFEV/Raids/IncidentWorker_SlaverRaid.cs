@@ -47,7 +47,6 @@ namespace VFEV
                 pawns.Add(pawn);
             }
         }
-
         protected override bool TryExecuteWorker(IncidentParms parms)
         {
             this.ResolveRaidPoints(parms);
@@ -74,7 +73,15 @@ namespace VFEV
 
             if (list == null)
             {
-                list = PawnGroupMakerUtility.GeneratePawns(IncidentParmsUtility.GetDefaultPawnGroupMakerParms(combat, parms, false), true).ToList<Pawn>();
+                var groupMaker = IncidentParmsUtility.GetDefaultPawnGroupMakerParms(combat, parms, false);
+                Log.Message("groupMaker: " + groupMaker.groupKind, true);
+                Log.Message("groupMaker.raidStrategy: " + groupMaker.raidStrategy, true);
+                Log.Message("groupMaker.points: " + groupMaker.points, true);
+                list = PawnGroupMakerUtility.GeneratePawns(groupMaker, true).ToList<Pawn>();
+                foreach (var p in list)
+                {
+                    Log.Message("parms.pawnKind: " + p.kindDef, true);
+                }
                 if (list.Count == 0)
                 {
                     Log.Error("Got no pawns spawning raid from parms " + parms, false);
