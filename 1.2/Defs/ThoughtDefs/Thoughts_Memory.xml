@@ -26,5 +26,18 @@
       </li>
     </stages>
   </ThoughtDef>
+  
+	<ThoughtDef>
+    <defName>VFEV_AttendedFeast</defName>
+    <durationDays>15</durationDays>
+    <stackLimit>1</stackLimit>
+    <stages>
+      <li>
+        <label>Attended feast</label>
+        <description>I had an amazing time at the feast!</description>
+        <baseMoodEffect>12</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
 
 </Defs>
