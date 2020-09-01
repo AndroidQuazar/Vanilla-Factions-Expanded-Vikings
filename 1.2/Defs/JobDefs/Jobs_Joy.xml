@@ -51,7 +51,7 @@
 		</thingDefs>
 		<desireSit>false</desireSit>
 		<jobDef>Play_TrainingDummy</jobDef>
-		<joyKind>Meditative</joyKind>
+		<joyKind>Gaming_Dexterity</joyKind>
 		<requiredCapacities>
 			<li>Manipulation</li>
 		</requiredCapacities>
