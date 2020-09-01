@@ -19,11 +19,6 @@
         <li>ruins->Stash</li>
         <li>ruins->Tomb</li>
       </rulesStrings>
-      <rulesStrings>
-        <li>questName(priority=1)->[ancient] [ruins]</li>
-        <li>ancient->Ancient</li>
-        <li>ruins->Ruins</li>
-      </rulesStrings>
     </questNameRules>
     <questDescriptionRules>
       <rulesStrings>
