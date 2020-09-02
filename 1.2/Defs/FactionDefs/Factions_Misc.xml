@@ -83,7 +83,7 @@
 		<permanentEnemy>false</permanentEnemy>
 		<goodwillDailyGain>0</goodwillDailyGain>
 		<goodwillDailyFall>2</goodwillDailyFall>
-		<startingGoodwill>20</startingGoodwill>
+		<startingGoodwill>0</startingGoodwill>
 		<pawnGroupMakers>
 			<li>
 				<!-- Peaceful -->
