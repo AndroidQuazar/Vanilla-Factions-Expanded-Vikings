@@ -155,7 +155,7 @@
         </graphicData>
         <projectile>
             <damageDef>VFEV_CryptoDamageBolt</damageDef>
-            <damageAmountBase>16</damageAmountBase>
+            <damageAmountBase>12</damageAmountBase>
             <armorPenetrationBase>0.32</armorPenetrationBase>
             <speed>60</speed>
             <stoppingPower>1.0</stoppingPower>

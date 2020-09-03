@@ -80,7 +80,7 @@
     <ThingDef ParentName="VFEV_BaseMeleeWeapon_Sharp_Quality">
         <defName>VFEV_CryptoLightAxe</defName>
         <label>crypto hatchet</label>
-        <description>An easily swung, high-tech hatchet of unknown origin with an icy cold alloy edge. Crypto weapons are laced with what appears to be a cryogenic coating along their blade, targets struck by them without proper insulation may feel themselves crippled by hypothermia</description>
+        <description>An easily swung, high-tech hatchet of unknown origin with an icy cold alloy edge. Crypto weapons are laced with what appears to be a cryogenic coating along their blade, targets struck by them without proper insulation may feel themselves crippled by hypothermia.</description>
         <graphicData>
             <texPath>Things/Item/Equipment/WeaponMelee/CryptoLightAxe</texPath>
             <graphicClass>Graphic_Single</graphicClass>
@@ -111,7 +111,7 @@
                 <capacities>
                     <li>VFEV_CryptoCut</li>
                 </capacities>
-                <power>20</power>
+                <power>14</power>
                 <armorPenetration>0.35</armorPenetration>
                 <cooldownTime>2.1</cooldownTime>
             </li>

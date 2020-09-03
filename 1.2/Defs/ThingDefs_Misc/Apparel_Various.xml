@@ -340,7 +340,7 @@
 		<generateCommonality>0.5</generateCommonality>
 		<statBases>
 			<MaxHitPoints>300</MaxHitPoints>
-			<Mass>10</Mass>
+			<Mass>18</Mass>
 			<Flammability>0.5</Flammability>
 			<ArmorRating_Sharp>1.08</ArmorRating_Sharp>
 			<ArmorRating_Blunt>0.47</ArmorRating_Blunt>
@@ -421,6 +421,18 @@
 			</tags>
 		</apparel>
 		<tickerType>Normal</tickerType>
+		<statBases>
+			<MaxHitPoints>270</MaxHitPoints>
+			<Mass>10</Mass>
+			<Flammability>0.5</Flammability>
+			<ArmorRating_Sharp>0.98</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.56</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.60</ArmorRating_Heat>
+			<Insulation_Cold>30</Insulation_Cold>
+			<Insulation_Heat>10</Insulation_Heat>
+			<EquipDelay>12</EquipDelay>
+            <MarketValue>2000</MarketValue>
+		</statBases>
 		<comps>
 			<li Class="VFECore.CompProperties_ApparelHediffs">
 				<hediffDefnames>
