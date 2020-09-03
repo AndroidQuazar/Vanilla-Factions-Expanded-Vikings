@@ -20,5 +20,12 @@
 		</value>
 	</Operation>
 
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/WorkGiverDef[defName="DoBillsCremate"]/fixedBillGiverDefs</xpath>
+		<value>
+			<li>VFEV_FuneralPyre</li>
+		</value>
+	</Operation>
+
 	
 </Patch>
