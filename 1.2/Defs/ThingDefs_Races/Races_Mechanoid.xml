@@ -4,7 +4,7 @@
   <ThingDef ParentName="BaseMechanoidWalker">
     <defName>VFEV_Mech_Odin</defName>
     <label>odin</label>
-    <description>Heavily armoured, combat mechanoids originally designed for non-lethal combat at medium and short range. Their bodies are heavy, making them hard to take down but also slow. They are able to fire off a small EMP pulse, disabling electronics within a short range.\n\nThose who get close enough to Odin can get zapped with a high voltage lighting bolt.</description>
+    <description>A monolothic, fortified mechanoid theorized to have the ability to cause lightning strikes through envirionmental manipulation and static discharge. Serrated, bladed arms are paired alongside EMP pulse resonators capable of disabling nearby electronics. Those brave enough to fight this mechanoid at point blank range are swiftly dispatched by high-voltage lightning strikes.\n\nDuring the mechanoid wars, the Odin's very sighting is known to usher in demand for retreat. Very few have encountered it and survived long enough to report back.</description>
     <statBases>
       <MoveSpeed>1.0</MoveSpeed>
     </statBases>
