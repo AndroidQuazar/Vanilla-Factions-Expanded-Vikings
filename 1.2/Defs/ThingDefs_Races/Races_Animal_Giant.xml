@@ -121,7 +121,7 @@
             <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
         </race>
         <tradeTags>
-            <li>AnimalExotic</li>
+            <li>VFEV_AnimalDontSellMePleaseThankYou</li>
         </tradeTags>
     </ThingDef>
 
@@ -291,7 +291,7 @@
             </li>
         </comps>
         <tradeTags>
-            <li>AnimalExotic</li>
+            <li>VFEV_AnimalDontSellMePleaseThankYou</li>
         </tradeTags>
     </ThingDef>
 
@@ -459,7 +459,7 @@
             <soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
         </race>
         <tradeTags>
-            <li>AnimalExotic</li>
+            <li>VFEV_AnimalDontSellMePleaseThankYou</li>
         </tradeTags>
     </ThingDef>
 

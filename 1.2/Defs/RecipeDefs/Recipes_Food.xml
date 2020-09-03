@@ -4,7 +4,7 @@
   <RecipeDef>
     <defName>VFEV_Make_Sweetroll</defName>
     <label>make sweetrolls</label>
-    <description>Make sweetrolls out of honey and animal produce.</description>
+    <description>Make sweetrolls out of honey and eggs.</description>
     <jobString>Making sweetrolls.</jobString>
     <workAmount>450</workAmount>
     <workSpeedStat>CookSpeed</workSpeedStat>
@@ -12,20 +12,22 @@
     <soundWorking>Recipe_CookMeal</soundWorking>
     <allowMixingIngredients>true</allowMixingIngredients>
     <ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
+	<recipeUsers>
+			<li>ElectricStove</li>	
+			<li>FueledStove</li>	
+		</recipeUsers>
     <ingredients>
       <li>
         <filter>
           <categories>
-            <li>AnimalProductRaw</li>
+            <li>EggsUnfertilized</li>
           </categories>
         </filter>
         <count>1</count>
       </li>
       <li>
         <filter>
-          <categories>
-            <li>AnimalProductRaw</li>
-          </categories>
+          
           <thingDefs>
             <li>VFEV_Honey</li>
           </thingDefs>
@@ -38,7 +40,7 @@
     </products>
     <fixedIngredientFilter>
       <categories>
-        <li>AnimalProductRaw</li>
+        <li>EggsUnfertilized</li>
       </categories>
       <thingDefs>
         <li>VFEV_Honey</li>
@@ -48,12 +50,7 @@
       <categories>
         <li>Foods</li>
       </categories>
-      <disallowedCategories>
-        <li>EggsFertilized</li>
-      </disallowedCategories>
-      <disallowedThingDefs>
-        <li>InsectJelly</li>
-      </disallowedThingDefs>
+     
     </defaultIngredientFilter>
     <workSkill>Cooking</workSkill>
   </RecipeDef>

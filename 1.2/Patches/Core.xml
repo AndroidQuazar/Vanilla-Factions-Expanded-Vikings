@@ -21,16 +21,11 @@
 	</Operation>
 
 	<Operation Class="PatchOperationAdd">
-		<xpath>/Defs/ThingDef[defName="ElectricStove"]/recipes</xpath>
+		<xpath>Defs/WorkGiverDef[defName="DoBillsCremate"]/fixedBillGiverDefs</xpath>
 		<value>
-			<li>VFEV_Make_Sweetroll</li>
+			<li>VFEV_FuneralPyre</li>
 		</value>
 	</Operation>
 
-	<Operation Class="PatchOperationAdd">
-		<xpath>/Defs/ThingDef[defName="FueledStove"]/recipes</xpath>
-		<value>
-			<li>VFEV_Make_Sweetroll</li>
-		</value>
-	</Operation>
+	
 </Patch>
