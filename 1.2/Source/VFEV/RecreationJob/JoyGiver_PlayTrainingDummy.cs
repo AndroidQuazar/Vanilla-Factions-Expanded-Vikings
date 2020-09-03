@@ -21,7 +21,7 @@ namespace VFEV
                 verb = pawn.meleeVerbs.TryGetMeleeVerb(targetThing);
             }
             Job result;
-            if (pawn.WorkTagIsDisabled(WorkTags.Violent) || verb == null || verb.verbProps == null || !verb.verbProps.IsMeleeAttack)
+            if (pawn.WorkTagIsDisabled(WorkTags.Violent) || verb == null || verb.verbProps == null)
             {
                 result = null;
             }
