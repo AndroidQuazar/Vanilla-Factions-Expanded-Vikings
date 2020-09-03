@@ -81,8 +81,8 @@
 		</colorSpectrum>
 		<factionIconPath>World/WorldObjects/Expanding/VikingsSavage</factionIconPath>
 		<permanentEnemy>false</permanentEnemy>
-		<goodwillDailyGain>0</goodwillDailyGain>
-		<goodwillDailyFall>2</goodwillDailyFall>
+		<goodwillDailyGain>0.2</goodwillDailyGain>
+		<goodwillDailyFall>0.2</goodwillDailyFall>
 		<startingGoodwill>0</startingGoodwill>
 		<pawnGroupMakers>
 			<li>
@@ -225,7 +225,7 @@
 		<permanentEnemy>false</permanentEnemy>
 		<goodwillDailyGain>0</goodwillDailyGain>
 		<!-- Reset goodwill inherited from TribeBase->HumanFactionBase for permanent enemy -->
-		<goodwillDailyFall>5</goodwillDailyFall>
+		<goodwillDailyFall>0.2</goodwillDailyFall>
 		<startingGoodwill>-20</startingGoodwill>
 		<pawnGroupMakers>
 			<li>
@@ -251,6 +251,15 @@
 					<VFEV_HousecarlRanged>1</VFEV_HousecarlRanged>
 					<VFEV_Archer>10</VFEV_Archer>
 				</guards>
+			</li>
+			<li>
+				<kindDef>Peaceful</kindDef>
+				<options>
+					<VFEV_Slave>25</VFEV_Slave>
+					<VFEV_Raider>25</VFEV_Raider>
+					<VFEV_Guardian>20</VFEV_Guardian>
+					<VFEV_Ravager>10</VFEV_Ravager>
+				</options>
 			</li>
 			<li>
 				<kindDef>Settlement</kindDef>

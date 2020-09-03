@@ -105,20 +105,12 @@
           <li>Cut</li>
         </capacities>
         <power>13</power>
-        <cooldownTime>2</cooldownTime>
-      </li>
-      <li>
-        <label>edge</label>
-        <capacities>
-          <li>Cut</li>
-        </capacities>
-        <power>13</power>
         <cooldownTime>2.6</cooldownTime>
         <extraMeleeDamages>
           <li>
             <def>Stun</def>
             <amount>5</amount>
-            <chance>1</chance>
+            <chance>0.5</chance>
           </li>
         </extraMeleeDamages>
       </li>
@@ -170,19 +162,11 @@
         </capacities>
         <power>23</power>
         <cooldownTime>3</cooldownTime>
-      </li>
-      <li>
-        <label>edge</label>
-        <capacities>
-          <li>Cut</li>
-        </capacities>
-        <power>23</power>
-        <cooldownTime>3</cooldownTime>
         <extraMeleeDamages>
           <li>
             <def>Stun</def>
             <amount>5</amount>
-            <chance>1</chance>
+            <chance>0.3</chance>
           </li>
         </extraMeleeDamages>
       </li>
