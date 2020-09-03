@@ -8,7 +8,7 @@ namespace VFEV
 	{
 		protected override LordJob CreateLordJob(IntVec3 spot, Pawn organizer)
 		{
-			return new LordJob_Joinable_Feast(spot, organizer, def);
+			return new LordJob_Joinable_Feast(spot, organizer, DefDatabase<GatheringDef>.GetNamed("VFEV_Feast"));
 		}
 
         public override bool CanExecute(Map map, Pawn organizer = null)
@@ -53,7 +53,7 @@ namespace VFEV
 		}
         protected override bool TryFindGatherSpot(Pawn organizer, out IntVec3 spot)
 		{
-			return RCellFinder.TryFindGatheringSpot_NewTemp(organizer, def, ignoreRequiredColonistCount: false, out spot);
+			return RCellFinder.TryFindGatheringSpot_NewTemp(organizer, DefDatabase<GatheringDef>.GetNamed("VFEV_Feast"), ignoreRequiredColonistCount: false, out spot);
 		}
 	}
 }

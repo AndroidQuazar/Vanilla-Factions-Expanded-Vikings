@@ -51,6 +51,14 @@ namespace VFEV
             yield break;
         }
 
+        public override object[] TaleParameters()
+        {
+            return new object[2]
+            {
+                pawn,
+                base.TargetA.Thing.def
+            };
+        }
         public override void ExposeData()
         {
             base.ExposeData();

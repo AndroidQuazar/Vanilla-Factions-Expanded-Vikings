@@ -10,14 +10,13 @@ namespace VFEV
 	public class LordJob_Joinable_Feast : LordJob_Joinable_Gathering
 	{
 		private int durationTicks;
-
 		public override bool AllowStartNewGatherings => false;
 
 		protected virtual ThoughtDef AttendeeThought => VFEV_DefOf.VFEV_AttendedFeast;
 
 		protected virtual TaleDef AttendeeTale => TaleDefOf.AttendedParty;
 
-		protected virtual ThoughtDef OrganizerThought => ThoughtDefOf.AttendedParty;
+		protected virtual ThoughtDef OrganizerThought => VFEV_DefOf.VFEV_AttendedFeast;
 
 		protected virtual TaleDef OrganizerTale => TaleDefOf.AttendedParty;
 
@@ -46,7 +45,6 @@ namespace VFEV
 		public override StateGraph CreateGraph()
 		{
 			Log.Message("START: " + Find.TickManager.TicksGame, true);
-			this.Map.GetComponent<VFEV_MapComponentHelper>().feastIsActive = true;
 			StateGraph stateGraph = new StateGraph();
 			LordToil party = CreateGatheringToil(spot, organizer, gatheringDef);
 			stateGraph.AddToil(party);
@@ -174,8 +172,6 @@ namespace VFEV
         {
             base.Cleanup();
 			Log.Message("END: " + Find.TickManager.TicksGame, true);
-			this.Map.GetComponent<VFEV_MapComponentHelper>().feastIsActive = false;
-
 		}
 
 		public override void ExposeData()
@@ -184,7 +180,7 @@ namespace VFEV
 			Scribe_Values.Look(ref durationTicks, "durationTicks", 0);
 			if (Scribe.mode == LoadSaveMode.PostLoadInit && gatheringDef == null)
 			{
-				gatheringDef = GatheringDefOf.Party;
+				gatheringDef = DefDatabase<GatheringDef>.GetNamed("VFEV_Feast");
 			}
 		}
 	}
