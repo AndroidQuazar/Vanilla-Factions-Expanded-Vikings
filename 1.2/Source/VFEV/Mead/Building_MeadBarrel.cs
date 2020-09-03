@@ -50,7 +50,7 @@ namespace VFEV
             {
                 mapComp.RemoveMeadBarrelFromMap(this);
             }
-            base.DeSpawn(DestroyMode.Vanish);
+            base.DeSpawn(mode);
 
         }
 
@@ -61,7 +61,7 @@ namespace VFEV
             {
                 mapComp.RemoveMeadBarrelFromMap(this);
             }
-            base.Destroy(DestroyMode.Vanish);
+            base.Destroy(mode);
         }
 
 

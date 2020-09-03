@@ -30,8 +30,7 @@
       <MaxHitPoints>100</MaxHitPoints>
       <Flammability>1.0</Flammability>
     </statBases>
-    <costList>
-     
+    <costList>   	
       <WoodLog>45</WoodLog>
     </costList>
     <comps>
@@ -54,6 +53,8 @@
     <researchPrerequisites>
       <li>Brewing</li>
     </researchPrerequisites>
+	<leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
+	<resourcesFractionWhenDeconstructed>0.75</resourcesFractionWhenDeconstructed>
   </ThingDef>
 
 </Defs>

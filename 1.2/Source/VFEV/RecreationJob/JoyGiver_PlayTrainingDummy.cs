@@ -21,7 +21,7 @@ namespace VFEV
                 verb = pawn.TryGetAttackVerb(targetThing, false);
             }
             Job result;
-            if (verb == null || verb.verbProps == null || !verb.verbProps.IsMeleeAttack)
+            if (pawn.WorkTagIsDisabled(WorkTags.Violent) || verb == null || verb.verbProps == null || !verb.verbProps.IsMeleeAttack)
             {
                 result = null;
             }
