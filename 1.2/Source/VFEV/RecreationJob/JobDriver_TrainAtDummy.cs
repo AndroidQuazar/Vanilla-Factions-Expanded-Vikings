@@ -45,7 +45,6 @@ namespace VFEV
             toil.AddFinishAction(delegate
             {
                 JoyUtility.TryGainRecRoomThought(this.pawn);
-
             });
             yield return toil;
             yield break;
