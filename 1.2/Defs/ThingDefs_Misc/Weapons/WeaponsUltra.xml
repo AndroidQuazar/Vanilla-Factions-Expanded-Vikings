@@ -77,7 +77,7 @@
             <drawSize>1.0</drawSize>
         </graphicData>
         <projectile>
-            <damageDef>VFEV_CryptoDamageBolt</damageDef>
+            <damageDef>VFEV_CryptoDamageBoltEffect</damageDef>
             <damageAmountBase>32</damageAmountBase>
             <armorPenetrationBase>0.45</armorPenetrationBase>
             <stoppingPower>1.7</stoppingPower>
@@ -154,7 +154,7 @@
             <drawSize>1.00</drawSize>
         </graphicData>
         <projectile>
-            <damageDef>VFEV_CryptoDamageBolt</damageDef>
+            <damageDef>VFEV_CryptoDamageBoltEffect</damageDef>
             <damageAmountBase>16</damageAmountBase>
             <armorPenetrationBase>0.32</armorPenetrationBase>
             <speed>60</speed>
@@ -233,7 +233,7 @@
             <drawSize>0.60</drawSize>
         </graphicData>
         <projectile>
-            <damageDef>VFEV_CryptoDamageBullet</damageDef>
+            <damageDef>VFEV_CryptoDamageBulletEffect</damageDef>
             <damageAmountBase>6</damageAmountBase>
             <armorPenetrationBase>0.20</armorPenetrationBase>
             <speed>55</speed>
@@ -314,7 +314,7 @@
             <drawSize>0.80</drawSize>
         </graphicData>
         <projectile>
-            <damageDef>VFEV_CryptoDamageBullet</damageDef>
+            <damageDef>VFEV_CryptoDamageBulletEffect</damageDef>
             <damageAmountBase>18</damageAmountBase>
             <armorPenetrationBase>0.35</armorPenetrationBase>
             <speed>60</speed>
