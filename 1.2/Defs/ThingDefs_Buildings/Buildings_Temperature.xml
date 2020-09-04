@@ -38,6 +38,7 @@
     <costStuffCount>150</costStuffCount>
     <placeWorkers>
       <li>PlaceWorker_Heater</li>
+      <li>PlaceWorker_NeverAdjacentUnstandable</li>
     </placeWorkers>
     <canOverlapZones>false</canOverlapZones>
     <altitudeLayer>Building</altitudeLayer>
@@ -111,9 +112,6 @@
       <artificialForMeditationPurposes>false</artificialForMeditationPurposes>
       <destroySound>BuildingDestroyed_Wood_Small</destroySound>
     </building>
-    <placeWorkers>
-      <li>PlaceWorker_NeverAdjacentUnstandable</li>
-    </placeWorkers>
     <researchPrerequisites>
       <li>ComplexFurniture</li>
     </researchPrerequisites>
