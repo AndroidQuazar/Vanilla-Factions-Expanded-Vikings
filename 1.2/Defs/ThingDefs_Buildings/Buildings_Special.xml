@@ -47,7 +47,7 @@
             </curve>
           </li>
           <li Class="FocusStrengthOffset_BuildingDefs">
-            <defs><li>AnimusStone</li></defs>
+            <defs><li>AnimusStone</li><li>NatureShrine_Small</li><li>NatureShrine_Large</li></defs>
             <radius>9.9</radius>
             <maxBuildings>4</maxBuildings>
             <offsetPerBuilding>0.02</offsetPerBuilding>
@@ -62,6 +62,10 @@
       <li>PlaceWorker_RequireNaturePsycaster</li>
       <li>PlaceWorker_MeditationOffsetBuildingsNear</li>
     </placeWorkers>
+    <minifiedDef>MinifiedThing</minifiedDef>
+    <thingCategories>
+      <li>BuildingsFurniture</li>
+    </thingCategories>
     <designationCategory>Misc</designationCategory>
     <building>
       <artificialForMeditationPurposes>false</artificialForMeditationPurposes>

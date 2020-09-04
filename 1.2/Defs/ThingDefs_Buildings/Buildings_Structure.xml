@@ -7,6 +7,7 @@
         <description>A column with ornate engravings in a supposedly mysterious language only legible by few. Quite pleasing to look at while also being a handy roof support.</description>
         <graphicData>
             <drawSize>(1.5,1.5)</drawSize>
+			<drawOffset>(0,0,0.2)</drawOffset>
             <texPath>Things/Building/Furniture/RunedColumn</texPath>
             <graphicClass>Graphic_Random</graphicClass>
             <shadowData>
@@ -18,6 +19,7 @@
             </damageData>
         </graphicData>
         <designationCategory>Structure</designationCategory>
+		<uiIconScale>0.85</uiIconScale>
         <altitudeLayer>Building</altitudeLayer>
         <passability>PassThroughOnly</passability>
         <fillPercent>0.25</fillPercent>
