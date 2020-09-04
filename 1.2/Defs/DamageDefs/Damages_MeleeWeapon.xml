@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
-  <DamageDef Name="VFEV_Cut">
+  <DamageDef>
     <defName>VFEV_Cut</defName>
     <label>cut</label>
-    <workerClass>DamageWorker_Cut</workerClass>
+    <workerClass>VFEV.DamageWorker_CryptoCut</workerClass>
     <externalViolence>true</externalViolence>
     <deathMessage>{0} has been cut to death.</deathMessage>
     <hediff>Cut</hediff>
@@ -25,16 +25,22 @@
     <cutCleaveBonus>1.4</cutCleaveBonus>
   </DamageDef>
 
-  <DamageDef ParentName="VFEV_Cut">
-    <defName>VFEV_CryptoCut</defName>
-    <label>cryptogenic cut</label>
-    <additionalHediffs>
-      <li>
-        <hediff>Hypothermia</hediff>
-        <severityPerDamageDealt>0.20</severityPerDamageDealt>
-        <victimSeverityScaling>ComfyTemperatureMin</victimSeverityScaling>
-      </li>
-    </additionalHediffs>
-  </DamageDef>
+  <ToolCapacityDef>
+    <defName>VFEV_Cut</defName>
+  </ToolCapacityDef>
+
+  <ManeuverDef>
+    <defName>VFEV_Cut</defName>
+    <requiredCapacity>VFEV_Cut</requiredCapacity>
+    <verb>
+      <verbClass>Verb_MeleeAttackDamage</verbClass>
+      <meleeDamageDef>VFEV_Cut</meleeDamageDef>
+    </verb>
+    <logEntryDef>MeleeAttack</logEntryDef>
+    <combatLogRulesHit>Maneuver_Slash_MeleeHit</combatLogRulesHit>
+    <combatLogRulesDeflect>Maneuver_Slash_MeleeDeflect</combatLogRulesDeflect>
+    <combatLogRulesMiss>Maneuver_Slash_MeleeMiss</combatLogRulesMiss>
+    <combatLogRulesDodge>Maneuver_Slash_MeleeDodge</combatLogRulesDodge>
+  </ManeuverDef>
 
 </Defs>

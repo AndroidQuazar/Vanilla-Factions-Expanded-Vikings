@@ -87,6 +87,7 @@
     <Compile Include="Comp\CompProperties_PawnTeleporter.cs" />
     <Compile Include="Comp\CompTargetable_AllPlantsOnTheMap.cs" />
     <Compile Include="Comp\CompTargetEffect_PlantGrower.cs" />
+    <Compile Include="CryptoBullet.cs" />
     <Compile Include="Enraged_MentalState\AdjustedCooldown_Patch.cs" />
     <Compile Include="Enraged_MentalState\MentalState_Enraged.cs" />
     <Compile Include="DeathActionWorker_MoodBoost.cs" />

@@ -58,7 +58,7 @@
       <li>
         <label>blade</label>
         <capacities>
-          <li>VFEV_CryptoCut</li>
+          <li>VFEV_Cut</li>
         </capacities>
         <power>32</power>
         <armorPenetration>0.35</armorPenetration>
@@ -107,13 +107,13 @@
         <cooldownTime>2.1</cooldownTime>
       </li>
       <li>
-                <label>blade</label>
-                <capacities>
-                    <li>VFEV_CryptoCut</li>
-                </capacities>
-                <power>14</power>
-                <armorPenetration>0.35</armorPenetration>
-                <cooldownTime>2.1</cooldownTime>
+        <label>blade</label>
+        <capacities>
+          <li>VFEV_Cut</li>
+        </capacities>
+        <power>14</power>
+        <armorPenetration>0.35</armorPenetration>
+        <cooldownTime>2.1</cooldownTime>
       </li>
     </tools>
     <generateCommonality>1.0</generateCommonality>

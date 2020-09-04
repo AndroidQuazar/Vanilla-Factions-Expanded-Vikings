@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
-    <DamageDef Name="VFEV_CryptoDamageBullet">
+    <DamageDef>
         <defName>VFEV_CryptoDamageBullet</defName>
         <label>bullet</label>
         <workerClass>DamageWorker_AddInjury</workerClass>
@@ -16,19 +16,7 @@
         <makesAnimalsFlee>true</makesAnimalsFlee>
     </DamageDef>
 
-    <DamageDef ParentName="VFEV_CryptoDamageBullet">
-        <defName>VFEV_CryptoDamageBulletEffect</defName>
-        <label>cryptogenic coating</label>
-        <additionalHediffs>
-            <li>
-                <hediff>Hypothermia</hediff>
-                <severityPerDamageDealt>0.20</severityPerDamageDealt>
-                <victimSeverityScaling>ComfyTemperatureMin</victimSeverityScaling>
-            </li>
-        </additionalHediffs>
-    </DamageDef>
-
-    <DamageDef Name="VFEV_CryptoDamageBolt">
+    <DamageDef>
         <defName>VFEV_CryptoDamageBolt</defName>
         <label>bolt</label>
         <workerClass>DamageWorker_AddInjury</workerClass>
@@ -42,18 +30,6 @@
         <overkillPctToDestroyPart>0~0.7</overkillPctToDestroyPart>
         <isRanged>true</isRanged>
         <makesAnimalsFlee>true</makesAnimalsFlee>
-    </DamageDef>
-
-    <DamageDef ParentName="VFEV_CryptoDamageBolt">
-        <defName>VFEV_CryptoDamageBoltEffect</defName>
-        <label>cryptogenic coating</label>
-        <additionalHediffs>
-            <li>
-                <hediff>Hypothermia</hediff>
-                <severityPerDamageDealt>0.35</severityPerDamageDealt>
-                <victimSeverityScaling>ComfyTemperatureMin</victimSeverityScaling>
-            </li>
-        </additionalHediffs>
     </DamageDef>
 
 </Defs>
