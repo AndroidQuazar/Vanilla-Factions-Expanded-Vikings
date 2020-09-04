@@ -11,7 +11,7 @@
 
     <ScenarioDef>
         <defName>VFEV_NewClan</defName>
-        <label>Failed Raid</label>
+        <label>Prepare for attack</label>
         <description>After the last raid went horribly wrong, you and the other survivors decided to form a new clan and start anew. With your old jarl thinking you dead, you decided to keep the few spoils you were able to gather.\n\nNote: Since you start without low supplies, but some gold, sleeping bags, armour and slaves, this is a medium scenario.</description>
         <scenario>
             <summary>A group of raiders who survived a failed raid form a new clan.</summary>
