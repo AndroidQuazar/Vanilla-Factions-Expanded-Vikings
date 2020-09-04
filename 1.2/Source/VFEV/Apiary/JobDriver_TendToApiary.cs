@@ -35,14 +35,13 @@ namespace VFEV
                 initAction = delegate ()
                 {
                     int skill = pawn.skills.skills.Find((SkillRecord r) => r.def.defName == "Animals").levelInt / 2;
-                    Random rnd = new Random();
-                    if (rnd.Next(0, 11 - skill) <= 5)
+                    if (Rand.RangeInclusive(0, 11 - skill) <= 5)
                     {
                         this.Apiary.tickBeforeTend += 120000;
                     }
                     else
                     {
-                        if (rnd.Next(1, 4) == 2)
+                        if (Rand.RangeInclusive(1, 2) == 1)
                         {
                             pawn.TakeDamage(new DamageInfo(VFEV_DefOf.VFEV_DamageSting, 1));
                             pawn.TakeDamage(new DamageInfo(DamageDefOf.Stun, 1));

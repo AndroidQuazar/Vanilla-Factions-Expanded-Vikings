@@ -12,7 +12,7 @@ namespace VFEV
     {
         protected override void Impact(Thing hitThing)
         {
-            if (Rand.RangeInclusive(1, 100) >= 75 && hitThing is Pawn pawn && this.ParentHolder is Pawn instigator)
+            if (Rand.RangeInclusive(1, 100) >= 50 && hitThing is Pawn pawn && this.ParentHolder is Pawn instigator)
             {
                 pawn.stances.stunner.StunFor_NewTmp(100, instigator);
             }
