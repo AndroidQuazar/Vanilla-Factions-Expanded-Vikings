@@ -98,6 +98,7 @@
     <Compile Include="Facepaint\FacepaintExtension.cs" />
     <Compile Include="Facepaint\HarmonyPatches_Facepaint.cs" />
     <Compile Include="Facepaint\JobDriver_ChangeFacepaint.cs" />
+    <Compile Include="MapGeneration\ScenPart_AddSettlements.cs" />
     <Compile Include="Mead\Building_MeadBarrel.cs" />
     <Compile Include="Mead\JobDriver_FillMeadBarrel.cs" />
     <Compile Include="Mead\JobDriver_TakeMeadOutOfMeadBarrel.cs" />
