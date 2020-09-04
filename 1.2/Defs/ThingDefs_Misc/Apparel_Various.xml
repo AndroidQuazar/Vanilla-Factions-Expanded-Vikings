@@ -407,7 +407,7 @@
 	<ThingDef ParentName="VFEV_ApparelArmorCryptoBase">
 		<defName>VFEV_CryptoArmor</defName>
 		<label>crypto armor</label>
-		<description>A suit of experimental powered armor using crypto tech. Layered plasteel-weave plates are very effective at stopping attacks, while crypto tech slows down the bleeding rate of any wound. Originally made for hunting down rogue mechanoids, it is near impossible to find anymore.</description>
+		<description>Low-powered plasteel carapace armor draped with an unknown but impossibly durable cloth sash affixed over one shoulder, the armor emits a low electrical hum and feels smooth to the touch. The power supply itself features embedded cryptocasket technology and will use a stasis effect to slow ones bleeding.</description>
 		<graphicData>
 			<texPath>Things/Pawn/Humanlike/Apparel/CryptoLightArmor/CryptoLightArmor</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -445,7 +445,7 @@
 	<ThingDef ParentName="VFEV_ApparelArmorCryptoBase">
 		<defName>VFEV_CryptoHeavyArmor</defName>
 		<label>crypto heavy armor</label>
-		<description>A suit of experimental powered armor using crypto tech. Layered plasteel-weave plates are very effective at stopping attacks, while crypto tech slows down the bleeding rate of any wound. Originally made for hunting down rogue mechanoids, it is near impossible to find anymore.</description>
+		<description>Heavy, high-powered plasteel plate armor affixed with an unknown but impossibly durable cloth cowl, the armor emits a low electrical hum and feels smooth to the touch. The power supply itself features embedded cryptocasket technology and will use a stasis effect to slow ones bleeding.</description>
 		<graphicData>
 			<texPath>Things/Pawn/Humanlike/Apparel/CryptoHeavyArmor/CryptoHeavyArmor</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -531,7 +531,7 @@
   <ThingDef ParentName="VFEV_ApparelCryptoHelmetPowerBase">
     <defName>VFEV_Apparel_CryptoLightHelmet</defName>
     <label>crypto helmet</label>
-    <description>to-do</description>
+    <description>A lower-powered helmet with an unknown but impossibly durable cloth hood. It's theorized that either a long-lost or far-advanced civilizations scout troopers would adorn this helmet before recon missions during the mechanoid wars. The helmet itself features embedded cryptocasket technology and will use a stasis effect to slow ones bleeding.</description>
     <graphicData>
       <texPath>Things/Pawn/Humanlike/Apparel/CryptoLightHelmet/CryptoLightHelmet</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -549,7 +549,7 @@
   <ThingDef ParentName="VFEV_ApparelCryptoHelmetPowerBase">
     <defName>VFEV_Apparel_CryptoHeavyHelmet</defName>
     <label>heavy crypto helmet</label>
-    <description>to-do</description>
+    <description>A heavy, high-powered helmet complete with an embedded HUD system and diagnostics display. It's theorized that either a long-lost or far-advanced civilizations shock troopers would adorn this helmet before strike missions during the mechanoid wars. The helmet itself features embedded cryptocasket technology and will use a stasis effect to slow ones bleeding.</description>
     <graphicData>
       <texPath>Things/Pawn/Humanlike/Apparel/CryptoHeavyHelmet/CryptoHeavyHelmet</texPath>
       <graphicClass>Graphic_Single</graphicClass>
