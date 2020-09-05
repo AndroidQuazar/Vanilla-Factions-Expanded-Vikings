@@ -7,7 +7,7 @@
 		<defName>VFEV_DrunkChitchat</defName>
 		<label>drunk chitchat</label>
 		<socialFightBaseChance>0.01</socialFightBaseChance>
-		<workerClass>InteractionWorker_Chitchat</workerClass>
+		<workerClass>VFEV.InteractionWorker_DrunkChat</workerClass>
 		<symbol>Things/Mote/SpeechSymbols/Chitchat</symbol>
 		<initiatorThought>Chitchat</initiatorThought>
 		<initiatorXpGainSkill>Social</initiatorXpGainSkill>
@@ -40,7 +40,7 @@
 	<InteractionDef>
 		<defName>VFEV_VeryDrunkChitchat</defName>
 		<label>very drunk chitchat</label>
-		<workerClass>InteractionWorker_Chitchat</workerClass>
+		<workerClass>VFEV.InteractionWorker_VeryDrunkChat</workerClass>
 		<socialFightBaseChance>0.03</socialFightBaseChance>
 		<symbol>Things/Mote/SpeechSymbols/Chitchat</symbol>
 		<initiatorThought>Chitchat</initiatorThought>
