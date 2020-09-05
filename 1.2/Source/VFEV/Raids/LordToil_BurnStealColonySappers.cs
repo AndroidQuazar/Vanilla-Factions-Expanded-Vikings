@@ -76,16 +76,16 @@ namespace RimWorld
 				{
 					pawn3.mindState.duty = new PawnDuty(DutyDefOf.Sapper, Data.sapperDest);
 				}
-				else if (!list.NullOrEmpty())
-				{
-					float radius = (pawn3.equipment == null || pawn3.equipment.Primary == null || !pawn3.equipment.Primary.def.IsRangedWeapon) ? EscortRadiusMelee.RandomInRange : EscortRadiusRanged.RandomInRange;
-					pawn3.mindState.duty = new PawnDuty(DutyDefOf.Escort, list.RandomElement(), radius);
-				}
-				else if (pawn3.mindState.duty == null)
-				{
-					Log.Message(pawn3 + " - " + pawn3.mindState.duty?.def + " changing duty to " + VFEV_DefOf.VFEV_BurnAndStealColony);
-					pawn3.mindState.duty = new PawnDuty(VFEV_DefOf.VFEV_BurnAndStealColony);
-				}
+				//else if (!list.NullOrEmpty())
+				//{
+				//	float radius = (pawn3.equipment == null || pawn3.equipment.Primary == null || !pawn3.equipment.Primary.def.IsRangedWeapon) ? EscortRadiusMelee.RandomInRange : EscortRadiusRanged.RandomInRange;
+				//	pawn3.mindState.duty = new PawnDuty(DutyDefOf.Escort, list.RandomElement(), radius);
+				//}
+				//else if (pawn3.mindState.duty == null)
+				//{
+				//	Log.Message(pawn3 + " - " + pawn3.mindState.duty?.def + " changing duty to " + VFEV_DefOf.VFEV_BurnAndStealColony);
+				//	pawn3.mindState.duty = new PawnDuty(VFEV_DefOf.VFEV_BurnAndStealColony);
+				//}
 			}
 		}
 

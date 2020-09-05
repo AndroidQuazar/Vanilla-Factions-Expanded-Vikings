@@ -105,6 +105,7 @@ namespace VFEV
 		}
 		protected override Job TryGiveJob(Pawn pawn)
 		{
+			Log.Message(pawn + " - " + pawn.mindState.duty);
 			if (!pawn.HostileTo(Faction.OfPlayer))
 			{
 				Log.Message("0 - " + pawn + " - null", true);
