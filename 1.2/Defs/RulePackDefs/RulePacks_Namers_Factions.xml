@@ -78,7 +78,7 @@
         <li>r_name->[NorseNames] '[AnimalBadass]slayer' [NorseNames]son</li>
         <li>r_name->[NorseNames] '[Color] [Animal]' [NorseNames]son</li>
         <li>r_name->[NorseNames] [NorseNames]-son</li>
-        <li>r_name->[NorseNames] '[Color] [Animal]' of [Animal] clan</li>
+        <li>r_name->[NorseNames] 'of [Animal] clan' [NorseNames]-son</li>
       </rulesStrings>
     </rulePack>
   </RulePackDef>
