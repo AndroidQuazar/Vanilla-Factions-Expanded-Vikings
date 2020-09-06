@@ -23,7 +23,7 @@
     <moodRecoveryThought>Catharsis</moodRecoveryThought>
     <blockNormalThoughts>true</blockNormalThoughts>
     <nameColor>(0.9,0.2,0.5)</nameColor>
-    <beginLetter>{0} has gone rage.\n\n[PAWN_pronoun] will attack any hostile [PAWN_pronoun] sees.</beginLetter>
+    <beginLetter>{0} has become enraged.\n\n[PAWN_pronoun] will attack any hostiles [PAWN_pronoun] sees, with double attack speed.</beginLetter>
     <beginLetterDef>ThreatSmall</beginLetterDef>
     <minTicksBeforeRecovery>40000</minTicksBeforeRecovery>
     <maxTicksBeforeRecovery>60000</maxTicksBeforeRecovery>

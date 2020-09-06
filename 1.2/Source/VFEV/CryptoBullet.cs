@@ -12,7 +12,7 @@ namespace VFEV
     {
         protected override void Impact(Thing hitThing)
         {
-            if (hitThing is Pawn hitPawn && hitPawn != null)
+            if (hitThing is Pawn hitPawn && hitPawn != null && hitPawn.RaceProps.FleshType == FleshTypeDefOf.Normal)
             {
                 if (hitPawn.health.hediffSet.GetFirstHediffOfDef(HediffDefOf.Hypothermia) is Hediff hypo && hypo != null)
                 {
@@ -32,7 +32,7 @@ namespace VFEV
     {
         public override DamageResult Apply(DamageInfo dinfo, Thing thing)
         {
-            if (thing is Pawn hitPawn && hitPawn != null)
+            if (thing is Pawn hitPawn && hitPawn != null && hitPawn.RaceProps.FleshType == FleshTypeDefOf.Normal)
             {
                 if (hitPawn.health.hediffSet.GetFirstHediffOfDef(HediffDefOf.Hypothermia) is Hediff hypo && hypo != null)
                 {

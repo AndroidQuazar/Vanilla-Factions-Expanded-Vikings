@@ -20,7 +20,7 @@ namespace VFEV
     }
 
     [HarmonyPatch(typeof(Toils_LayDown))]
-    class Patches
+    class PatchToils_LayDown
     {
         [HarmonyPostfix]
         [HarmonyPatch("ApplyBedThoughts")]
@@ -31,5 +31,15 @@ namespace VFEV
             if (building_Bed != null && building_Bed.def.defName.Contains("FurBed")) actor.needs.mood.thoughts.memories.RemoveMemoriesOfDef(ThoughtDefOf.SleptInCold);
         }
     }
-}
 
+    [HarmonyPatch(typeof(RaceProperties))]
+    class PatchIsMechanoid
+    {
+        [HarmonyPostfix]
+        [HarmonyPatch("IsMechanoid", MethodType.Getter)]
+        static void PostFix(ref RaceProperties __instance, ref bool __result)
+        {
+            if (__instance.FleshType == FleshTypeDefOf.Mechanoid && __instance?.body.defName == "VFEV_Odin") __result = false;
+        }
+    }
+}

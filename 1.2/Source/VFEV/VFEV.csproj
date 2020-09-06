@@ -99,6 +99,8 @@
     <Compile Include="Facepaint\FacepaintExtension.cs" />
     <Compile Include="Facepaint\HarmonyPatches_Facepaint.cs" />
     <Compile Include="Facepaint\JobDriver_ChangeFacepaint.cs" />
+    <Compile Include="Feast\InteractionWorker_DrunkChat.cs" />
+    <Compile Include="Feast\InteractionWorker_VeryDrunkChat.cs" />
     <Compile Include="MapGeneration\ScenPart_AddSettlements.cs" />
     <Compile Include="Mead\Building_MeadBarrel.cs" />
     <Compile Include="Mead\JobDriver_FillMeadBarrel.cs" />
@@ -110,7 +112,6 @@
     <Compile Include="MapGeneration\GenStep_VikingsAmbush.cs" />
     <Compile Include="HarmonyInit.cs" />
     <Compile Include="Feast\JobGiver_EatDrinkAndTakeDrugsInGatheringArea.cs" />
-    <Compile Include="Feast\DrunkFighting.cs" />
     <Compile Include="Feast\LordJob_Joinable_Feast.cs" />
     <Compile Include="Feast\GatheringWorker_Feast.cs" />
     <Compile Include="Enraged_MentalState\Hediff_EnragedWithDamage.cs" />
