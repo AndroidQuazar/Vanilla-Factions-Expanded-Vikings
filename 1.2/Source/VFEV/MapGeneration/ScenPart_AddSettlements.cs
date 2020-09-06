@@ -32,6 +32,7 @@ namespace VFEV.MapGeneration
 				ResolveParams resolveParams = default(ResolveParams);
 				resolveParams.rect = rect;
 				resolveParams.faction = Find.FactionManager.AllFactions.ToList().Find(f => f.def.techLevel <= TechLevel.Medieval && !f.defeated && !f.Hidden && f.HostileTo(Faction.OfPlayer));
+				resolveParams.settlementPawnGroupPoints = 500f;
 				BaseGen.globalSettings.map = map;
 				BaseGen.globalSettings.minBuildings = 1;
 				BaseGen.globalSettings.minBarracks = 1;
@@ -62,6 +63,7 @@ namespace VFEV.MapGeneration
 							Thing silver = ThingMaker.MakeThing(ThingDefOf.Silver);
 							silver.stackCount = 300;
 							silver.SetForbidden(true);
+							
 							List<IntVec3> chooseFrom = room.Cells.ToList();
 							chooseFrom.RemoveAll(cell => cell.GetFirstItem(map) != null && cell.GetFirstBuilding(map) != null && cell.GetDoor(map) != null);
 							
