@@ -25,7 +25,7 @@ namespace VFEV
         public override void CompTick()
         {
             base.CompTick();
-            if (this.parent is Pawn pawn && Find.TickManager.TicksGame >= readyToUseTicks)
+            if (this.parent is Pawn pawn && pawn.Spawned && Find.TickManager.TicksGame >= readyToUseTicks)
             {
                 readyToUseTicks = Find.TickManager.TicksGame + Props.interval.RandomInRange;
                 var victims = pawn.Map.mapPawns.AllPawns.Where(x => x.Position.DistanceTo(pawn.Position) 

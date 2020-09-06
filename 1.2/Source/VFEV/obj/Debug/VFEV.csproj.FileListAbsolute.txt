@@ -6,9 +6,6 @@ C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Vanilla-Factions-Exp
 C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Vanilla-Factions-Expanded-Vikings\1.1\Source\VFEV\obj\Debug\VFEV.csproj.CoreCompileInputs.cache
 C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Vanilla-Factions-Expanded-Vikings\1.1\Source\VFEV\obj\Debug\VFEV.dll
 C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Vanilla-Factions-Expanded-Vikings\1.1\Source\VFEV\obj\Debug\VFEV.csprojAssemblyReference.cache
-C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Vanilla-Factions-Expanded-Vikings\1.2\Assemblies\VFEV.dll
-C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Vanilla-Factions-Expanded-Vikings\1.2\Source\VFEV\obj\Debug\VFEV.csproj.CoreCompileInputs.cache
-C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Vanilla-Factions-Expanded-Vikings\1.2\Source\VFEV\obj\Debug\VFEV.dll
 c:\GAMES\Rimworld\Mods\Vanilla-Factions-Expanded-Vikings\1.2\Assemblies\VFEV.dll
 c:\GAMES\Rimworld\Mods\Vanilla-Factions-Expanded-Vikings\1.2\Source\VFEV\obj\Debug\VFEV.csproj.CoreCompileInputs.cache
 c:\GAMES\Rimworld\Mods\Vanilla-Factions-Expanded-Vikings\1.2\Source\VFEV\obj\Debug\VFEV.dll
@@ -17,3 +14,6 @@ E:\SteamLibrary\steamapps\common\RimWorld\Mods\Vanilla-Factions-Expanded-Vikings
 E:\SteamLibrary\steamapps\common\RimWorld\Mods\Vanilla-Factions-Expanded-Vikings\1.2\Source\VFEV\obj\Debug\VFEV.csproj.CoreCompileInputs.cache
 E:\SteamLibrary\steamapps\common\RimWorld\Mods\Vanilla-Factions-Expanded-Vikings\1.2\Source\VFEV\obj\Debug\VFEV.dll
 C:\GAMES\Rimworld\Mods\Vanilla-Factions-Expanded-Vikings\1.2\Source\VFEV\obj\Debug\VFEV.csprojAssemblyReference.cache
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Vanilla-Factions-Expanded-Vikings\1.2\Assemblies\VFEV.dll
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Vanilla-Factions-Expanded-Vikings\1.2\Source\VFEV\obj\Debug\VFEV.csproj.CoreCompileInputs.cache
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Vanilla-Factions-Expanded-Vikings\1.2\Source\VFEV\obj\Debug\VFEV.dll
