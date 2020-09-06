@@ -278,7 +278,7 @@
         <soundCastTail>GunTail_Medium</soundCastTail>
         <muzzleFlashScale>11</muzzleFlashScale>
         <ticksBetweenBurstShots>22</ticksBetweenBurstShots>
-        <burstShotCount>2</burstShotCount>
+        <burstShotCount>3</burstShotCount>
       </li>
     </verbs>
     <tools>
