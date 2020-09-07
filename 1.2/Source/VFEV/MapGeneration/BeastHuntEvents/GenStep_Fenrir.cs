@@ -29,7 +29,6 @@ namespace VFEV.MapGeneration.BeastHuntEvents
 			pawns.Add(pawn);
 			GenSpawn.Spawn(pawn, loc, map, WipeMode.Vanish);
 			pawn.mindState.mentalStateHandler.TryStartMentalState(MentalStateDefOf.ManhunterPermanent, null, false, false, null, false);
-			// LordMaker.MakeNewLord(null, new LordJob_DefendPoint(loc), map, pawns);
 			MapGenerator.rootsToUnfog.Add(loc);
 			MapGenerator.SetVar<CellRect>("RectOfInterest", CellRect.CenteredOn(loc, 1, 1));
 		}

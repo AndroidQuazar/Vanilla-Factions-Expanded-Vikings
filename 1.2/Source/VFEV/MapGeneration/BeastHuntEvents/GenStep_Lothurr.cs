@@ -25,6 +25,7 @@ namespace VFEV.MapGeneration.BeastHuntEvents
 			Pawn pawn = PawnGenerator.GeneratePawn(VFEV_DefOf.VFEV_Lothurr);
 			pawn.mindState.exitMapAfterTick = 120000;
 			GenSpawn.Spawn(pawn, loc, map, WipeMode.Vanish);
+			pawn.mindState.mentalStateHandler.TryStartMentalState(MentalStateDefOf.ManhunterPermanent, null, false, false, null, false);
 			MapGenerator.rootsToUnfog.Add(loc);
 			MapGenerator.SetVar<CellRect>("RectOfInterest", CellRect.CenteredOn(loc, 1, 1));
 		}
