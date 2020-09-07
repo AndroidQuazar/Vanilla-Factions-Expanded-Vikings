@@ -325,15 +325,6 @@
 				</options>
 			</li>
 			<li>
-				<!-- Normal fights, ranged only -->
-				<kindDef>Combat</kindDef>
-				<commonality>30</commonality>
-				<options>
-					<VFEV_Archer>60</VFEV_Archer>
-					<VFEV_HousecarlRanged>1</VFEV_HousecarlRanged>
-				</options>
-			</li>
-			<li>
 				<!-- Normal fights, mix only -->
 				<kindDef>Combat</kindDef>
 				<commonality>40</commonality>
@@ -353,7 +344,6 @@
 				<kindDef>Combat</kindDef>
 				<commonality>100</commonality>
 				<options>
-					<VFEV_Slave>60</VFEV_Slave>
 					<VFEV_Raider>25</VFEV_Raider>
 					<VFEV_Guardian>20</VFEV_Guardian>
 					<VFEV_Ravager>10</VFEV_Ravager>
