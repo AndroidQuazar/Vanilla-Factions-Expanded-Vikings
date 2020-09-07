@@ -237,7 +237,7 @@
     <PawnKindDef ParentName="VFEV_NordsmenArcherBase">
         <defName>VFEV_Archer</defName>
         <label>archer</label>
-        <combatPower>48</combatPower>
+        <combatPower>100</combatPower>
         <itemQuality>Poor</itemQuality>
         <gearHealthRange>0.5~1.8</gearHealthRange>
         <apparelMoney>180~550</apparelMoney>
