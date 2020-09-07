@@ -171,9 +171,6 @@
       <skillRequirements>
         <Crafting>4</Crafting>
       </skillRequirements>
-      <factionPrerequisiteTags>
-        <li>Viking</li>
-      </factionPrerequisiteTags>
     </recipeMaker>
     <graphicData>
       <texPath>Things/Pawn/Humanlike/Apparel/MooseHeaddress/MooseHeaddress</texPath>
@@ -224,9 +221,6 @@
       <skillRequirements>
         <Crafting>4</Crafting>
       </skillRequirements>
-      <factionPrerequisiteTags>
-        <li>Viking</li>
-      </factionPrerequisiteTags>
     </recipeMaker>
 	<tickerType>Normal</tickerType>
     <graphicData>
@@ -282,9 +276,6 @@
       <skillRequirements>
         <Crafting>9</Crafting>
       </skillRequirements>
-      <factionPrerequisiteTags>
-        <li>Viking</li>
-      </factionPrerequisiteTags>
     </recipeMaker>
     <graphicData>
       <texPath>Things/Pawn/Humanlike/Apparel/CrownJarl/CrownJarl</texPath>
