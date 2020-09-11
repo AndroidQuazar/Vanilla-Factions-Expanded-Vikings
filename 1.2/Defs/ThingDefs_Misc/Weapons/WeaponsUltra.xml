@@ -1,11 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
+  <ThingCategoryDef>
+    <defName>WeaponsRangedCrypto</defName>
+    <label>crypto weapons</label>
+    <parent>WeaponsRanged</parent>
+  </ThingCategoryDef>
+
   <ThingDef ParentName="BaseGunWithQuality">
     <defName>VFEV_CryptoHeavyCrossbow</defName>
     <label>crypto heavy crossbow</label>
     <description>Less of a crossbow and more of an experimental artillery piece, fires metal-cored bolts wrapped in unstable crypto technology, held in place by an energy field. Targets are both pierced by the bolt, as well as frozen by crypto coating. Due to its weight, it is unable to be fired at close range and will slightly slow down the wielder.</description>
     <techLevel>Ultra</techLevel>
+    <thingCategories Inherit="False" >
+      <li>WeaponsRangedCrypto</li>
+    </thingCategories>
     <recipeMaker Inherit="False" />
     <costList>
       <ComponentSpacer>7</ComponentSpacer>
@@ -61,7 +70,7 @@
     <equippedStatOffsets>
       <MoveSpeed>-0.23</MoveSpeed>
     </equippedStatOffsets>
-    <tradeability>Sellable</tradeability>
+    <tradeability>Buyable</tradeability>
     <weaponTags>
       <li>CryptoWeaponAdvanced</li>
     </weaponTags>
@@ -91,6 +100,9 @@
     <label>crypto crossbow</label>
     <description>An experimental small crossbow with metal-cored bolts wrapped in unstable crypto technology, held in place by an energy field. Targets are both pierced by the bolt, as well as frozen by crypto coating. Able to be fired single-handedly, extremely rare and powerful.</description>
     <techLevel>Ultra</techLevel>
+    <thingCategories Inherit="False" >
+      <li>WeaponsRangedCrypto</li>
+    </thingCategories>
     <graphicData>
       <texPath>Things/Item/Equipment/WeaponRanged/CryptoCrossbowSidearm</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -134,7 +146,7 @@
       </li>
     </tools>
     <generateCommonality>0.0</generateCommonality>
-    <tradeability>Sellable</tradeability>
+    <tradeability>Buyable</tradeability>
     <weaponTags>
       <li>CryptoWeaponAdvanced</li>
     </weaponTags>
@@ -169,6 +181,9 @@
     <label>crypto pistol</label>
     <description>An experimental micro pistol with metal-cored projectiles wrapped in unstable crypto technology, held in place by an energy field. Targets are both pierced by the metal core, as well as frozen by crypto coating. Extremely rare and powerful.</description>
     <techLevel>Ultra</techLevel>
+    <thingCategories Inherit="False" >
+      <li>WeaponsRangedCrypto</li>
+    </thingCategories>
     <graphicData>
       <texPath>Things/Item/Equipment/WeaponRanged/CryptoPistol</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -214,7 +229,7 @@
       </li>
     </tools>
     <generateCommonality>0.0</generateCommonality>
-    <tradeability>Sellable</tradeability>
+    <tradeability>Buyable</tradeability>
     <weaponTags>
       <li>CryptoWeaponAdvanced</li>
     </weaponTags>
@@ -248,6 +263,9 @@
     <label>crypto rifle</label>
     <description>An experimental rifle with metal-cored projectiles wrapped in unstable crypto technology, held in place by an energy field. Targets are both pierced by the metal core, as well as frozen by crypto coating. Extremely rare and powerful.</description>
     <techLevel>Ultra</techLevel>
+    <thingCategories Inherit="False" >
+      <li>WeaponsRangedCrypto</li>
+    </thingCategories>
     <graphicData>
       <texPath>Things/Item/Equipment/WeaponRanged/CryptoAssaultRifle</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -301,7 +319,7 @@
       </li>
     </tools>
     <generateCommonality>0.0</generateCommonality>
-    <tradeability>Sellable</tradeability>
+    <tradeability>Buyable</tradeability>
     <weaponTags>
       <li>CryptoWeaponAdvanced</li>
     </weaponTags>

@@ -1,12 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
+  <ThingCategoryDef>
+    <defName>WeaponsMeleeCrypto</defName>
+    <label>crypto weapons</label>
+    <parent>WeaponsMelee</parent>
+  </ThingCategoryDef>
+
   <ThingDef Name="VFEV_BaseMeleeWeapon" Abstract="True" ParentName="BaseWeapon">
     <techLevel>Ultra</techLevel>
     <smeltable>true</smeltable>
     <burnableByRecipe>true</burnableByRecipe>
     <thingCategories>
-      <li>WeaponsMelee</li>
+      <li>WeaponsMeleeCrypto</li>
     </thingCategories>
     <costList>
       <ComponentSpacer>7</ComponentSpacer>
@@ -66,7 +72,7 @@
       </li>
     </tools>
     <generateCommonality>0.0</generateCommonality>
-    <tradeability>Sellable</tradeability>
+    <tradeability>Buyable</tradeability>
     <weaponTags>
       <li>CryptoHeavyMelee</li>
     </weaponTags>
@@ -117,7 +123,7 @@
       </li>
     </tools>
     <generateCommonality>1.0</generateCommonality>
-    <tradeability>Sellable</tradeability>
+    <tradeability>Buyable</tradeability>
     <weaponTags>
       <li>CryptoLightMelee</li>
     </weaponTags>
