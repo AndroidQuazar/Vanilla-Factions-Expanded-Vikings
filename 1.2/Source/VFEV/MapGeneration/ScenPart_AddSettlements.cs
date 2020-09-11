@@ -18,7 +18,7 @@ namespace VFEV.MapGeneration
 
 		public override void PostMapGenerate(Map map)
 		{
-			if (Find.TickManager.TicksGame < 1000f)
+			if (Find.TickManager.TicksGame < 10f)
 			{
 				IntRange SettlementSizeRange = new IntRange(38, 16);
 				int randomInRange = SettlementSizeRange.RandomInRange;
@@ -49,31 +49,28 @@ namespace VFEV.MapGeneration
 					GenStep_Settlement.GenerateLandingPadNearby(resolveParams.rect, map, resolveParams.faction, out cellRect);
 				}
 
-				bool stop = false;
-				foreach (IntVec3 i in rect.ExpandedBy(5))
-				{
-					if (i.Fogged(map) && (i.GetThingList(map).Any((t) => t.Faction != null) || i.Walkable(map))) map.fogGrid.Unfog(i);
-					if (i.Roofed(map) && i.GetRoom(map) is Room room && room != null)
-					{
-						if (!stop)
-						{
-							Thing gold = ThingMaker.MakeThing(ThingDefOf.Gold);
-							gold.stackCount = 150;
-							gold.SetForbidden(true);
-							Thing silver = ThingMaker.MakeThing(ThingDefOf.Silver);
-							silver.stackCount = 300;
-							silver.SetForbidden(true);
-							
-							List<IntVec3> chooseFrom = room.Cells.ToList();
-							chooseFrom.RemoveAll(cell => cell.GetFirstItem(map) != null && cell.GetFirstBuilding(map) != null && cell.GetDoor(map) != null);
-							
-							GenSpawn.Spawn(gold, chooseFrom.RandomElement(), map, WipeMode.VanishOrMoveAside);
-							GenSpawn.Spawn(silver, chooseFrom.RandomElement(), map, WipeMode.VanishOrMoveAside);
-							stop = true;
-						}
-					}
-				}
+				this.UnfogBuildingsInRect(map, rect);
+				this.SpawnThingPostBaseGen(ThingDefOf.Gold, 150, map, rect);
+				this.SpawnThingPostBaseGen(ThingDefOf.Silver, 300, map, rect);
 			}
+		}
+
+		private void UnfogBuildingsInRect(Map map, CellRect rect)
+        {
+			foreach (IntVec3 i in rect.ExpandedBy(5))
+			{
+				if (i.Fogged(map) && (i.GetThingList(map).Any((t) => t.Faction != null) || i.Walkable(map))) map.fogGrid.Unfog(i);
+			}
+		}
+
+		private void SpawnThingPostBaseGen(ThingDef thingDef, int stackCount, Map map, CellRect rect)
+        {
+			IntVec3 spawnPos = rect.Cells.ToList().FindAll(c => c.Roofed(map) && c.Standable(map) && c.GetEdifice(map) == null && c.GetFirstItem(map) == null).RandomElement();
+			Thing thing = ThingMaker.MakeThing(thingDef);
+			thing.stackCount = stackCount;
+			thing.SetForbidden(true);
+
+			GenSpawn.Spawn(thing, spawnPos, map, WipeMode.VanishOrMoveAside);
 		}
 	}
 }
