@@ -14,13 +14,13 @@ namespace VFEV
         public override bool CanExecute(Map map, Pawn organizer = null)
         {
 			var nextTick = new IntRange(3500000, 3700000).RandomInRange;
-			Log.Message("map.GetComponent<VFEV_MapComponentHelper>().lastFeastStartTick: " + map.GetComponent<VFEV_MapComponentHelper>().lastFeastStartTick, true);
-			Log.Message("nextTick: " + nextTick, true);
-			Log.Message("Find.TickManager.TicksGame: " + Find.TickManager.TicksGame, true);
+		 //Log.Message("map.GetComponent<VFEV_MapComponentHelper>().lastFeastStartTick: " + map.GetComponent<VFEV_MapComponentHelper>().lastFeastStartTick, true);
+		 //Log.Message("nextTick: " + nextTick, true);
+		 //Log.Message("Find.TickManager.TicksGame: " + Find.TickManager.TicksGame, true);
 
 			if (map.GetComponent<VFEV_MapComponentHelper>().lastFeastStartTick + nextTick > Find.TickManager.TicksGame)
             {
-				Log.Message("Result false");
+			 //Log.Message("Result false");
 				return false;
             }
 			if (organizer == null)

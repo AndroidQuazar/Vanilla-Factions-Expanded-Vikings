@@ -74,13 +74,13 @@ namespace VFEV
             if (list == null)
             {
                 var groupMaker = IncidentParmsUtility.GetDefaultPawnGroupMakerParms(combat, parms, false);
-                Log.Message("groupMaker: " + groupMaker.groupKind, true);
-                Log.Message("groupMaker.raidStrategy: " + groupMaker.raidStrategy, true);
-                Log.Message("groupMaker.points: " + groupMaker.points, true);
+                //Log.Message("groupMaker: " + groupMaker.groupKind, true);
+                //Log.Message("groupMaker.raidStrategy: " + groupMaker.raidStrategy, true);
+                //Log.Message("groupMaker.points: " + groupMaker.points, true);
                 list = PawnGroupMakerUtility.GeneratePawns(groupMaker, true).ToList<Pawn>();
                 foreach (var p in list)
                 {
-                    Log.Message("parms.pawnKind: " + p.kindDef, true);
+                    //Log.Message("parms.pawnKind: " + p.kindDef, true);
                 }
                 if (list.Count == 0)
                 {

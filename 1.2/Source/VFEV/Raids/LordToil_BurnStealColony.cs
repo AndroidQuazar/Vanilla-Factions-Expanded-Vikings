@@ -26,7 +26,7 @@ namespace VFEV
 		{
 			for (int i = 0; i < lord.ownedPawns.Count; i++)
 			{
-				Log.Message("Updating duty: " + lord.ownedPawns[i], true);
+			 //Log.Message("Updating duty: " + lord.ownedPawns[i], true);
 				lord.ownedPawns[i].mindState.duty = new PawnDuty(VFEV_DefOf.VFEV_BurnAndStealColony);
 				lord.ownedPawns[i].mindState.duty.attackDownedIfStarving = attackDownedIfStarving;
 			}

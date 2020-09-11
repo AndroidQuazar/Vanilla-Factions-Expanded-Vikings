@@ -22,7 +22,7 @@ namespace VFEV
 
 		protected override TargetingParameters GetTargetingParameters()
 		{
-			Log.Message("TEST");
+		 //Log.Message("TEST");
 			return new TargetingParameters
 			{
 				validator = (TargetInfo x) => x.Thing is Plant

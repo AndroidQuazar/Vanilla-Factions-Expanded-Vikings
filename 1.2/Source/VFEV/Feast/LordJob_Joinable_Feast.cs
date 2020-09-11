@@ -44,7 +44,7 @@ namespace VFEV
 
 		public override StateGraph CreateGraph()
 		{
-			Log.Message("START: " + Find.TickManager.TicksGame, true);
+		 //Log.Message("START: " + Find.TickManager.TicksGame, true);
 			StateGraph stateGraph = new StateGraph();
 			LordToil party = CreateGatheringToil(spot, organizer, gatheringDef);
 			stateGraph.AddToil(party);
@@ -76,12 +76,12 @@ namespace VFEV
 		{
 			if (!PawnCanStartOrContinueGathering(organizer))
 			{
-				Log.Message(" - ShouldBeCalledOff - return true; - 2", true);
+			 //Log.Message(" - ShouldBeCalledOff - return true; - 2", true);
 				return true;
 			}
 			if (!AcceptableGameConditionsToContinueGathering(base.Map))
 			{
-				Log.Message(" - ShouldBeCalledOff - return true; - 4", true);
+			 //Log.Message(" - ShouldBeCalledOff - return true; - 4", true);
 				return true;
 			}
 			return false;
@@ -91,7 +91,7 @@ namespace VFEV
 		{
 			if (map.dangerWatcher.DangerRating == StoryDanger.High)
 			{
-				Log.Message(" - AcceptableGameConditionsToContinueGathering - return false; - 7", true);
+			 //Log.Message(" - AcceptableGameConditionsToContinueGathering - return false; - 7", true);
 				return false;
 			}
 			return true;
@@ -102,28 +102,28 @@ namespace VFEV
 		{
 			if (pawn.Drafted)
 			{
-				Log.Message(" - PawnCanStartOrContinueGathering - return false; - 2", true);
+			 //Log.Message(" - PawnCanStartOrContinueGathering - return false; - 2", true);
 				return false;
 			}
 			if (pawn.health.hediffSet.BleedRateTotal > 0.3f)
 			{
-				Log.Message(" - PawnCanStartOrContinueGathering - return false; - 4", true);
+			 //Log.Message(" - PawnCanStartOrContinueGathering - return false; - 4", true);
 				return false;
 			}
 			if (pawn.IsPrisoner)
 			{
-				Log.Message(" - PawnCanStartOrContinueGathering - return false; - 6", true);
+			 //Log.Message(" - PawnCanStartOrContinueGathering - return false; - 6", true);
 				return false;
 			}
 			Hediff firstHediffOfDef = pawn.health.hediffSet.GetFirstHediffOfDef(HediffDefOf.BloodLoss);
 			if (firstHediffOfDef != null && firstHediffOfDef.Severity > 0.2f)
 			{
-				Log.Message(" - PawnCanStartOrContinueGathering - return false; - 9", true);
+			 //Log.Message(" - PawnCanStartOrContinueGathering - return false; - 9", true);
 				return false;
 			}
 			if (pawn.IsWildMan())
 			{
-				Log.Message(" - PawnCanStartOrContinueGathering - return false; - 11", true);
+			 //Log.Message(" - PawnCanStartOrContinueGathering - return false; - 11", true);
 				return false;
 			}
 
@@ -171,7 +171,7 @@ namespace VFEV
         public override void Cleanup()
         {
             base.Cleanup();
-			Log.Message("END: " + Find.TickManager.TicksGame, true);
+		 //Log.Message("END: " + Find.TickManager.TicksGame, true);
 		}
 
 		public override void ExposeData()

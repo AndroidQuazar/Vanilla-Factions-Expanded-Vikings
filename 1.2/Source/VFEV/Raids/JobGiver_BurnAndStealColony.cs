@@ -37,44 +37,44 @@ namespace VFEV
 		{
 			if (map == null)
 			{
-				Log.Message(" - TryFindBestItemToSteal - item = null; - 2", true);
+			 //Log.Message(" - TryFindBestItemToSteal - item = null; - 2", true);
 				item = null;
-				Log.Message(" - TryFindBestItemToSteal - return false; - 3", true);
+			 //Log.Message(" - TryFindBestItemToSteal - return false; - 3", true);
 				return false;
 			}
 			if (thief != null && !thief.health.capacities.CapableOf(PawnCapacityDefOf.Manipulation))
 			{
-				Log.Message(" - TryFindBestItemToSteal - item = null; - 5", true);
+			 //Log.Message(" - TryFindBestItemToSteal - item = null; - 5", true);
 				item = null;
-				Log.Message(" - TryFindBestItemToSteal - return false; - 6", true);
+			 //Log.Message(" - TryFindBestItemToSteal - return false; - 6", true);
 				return false;
 			}
 			if ((thief != null && !map.reachability.CanReachMapEdge(thief.Position, TraverseParms.For(thief, Danger.Some))) || (thief == null && !map.reachability.CanReachMapEdge(root, TraverseParms.For(TraverseMode.PassDoors, Danger.Some))))
 			{
-				Log.Message(" - TryFindBestItemToSteal - item = null; - 8", true);
+			 //Log.Message(" - TryFindBestItemToSteal - item = null; - 8", true);
 				item = null;
-				Log.Message(" - TryFindBestItemToSteal - return false; - 9", true);
+			 //Log.Message(" - TryFindBestItemToSteal - return false; - 9", true);
 				return false;
 			}
 			Predicate<Thing> validator = delegate (Thing t)
 			{
 				if (!t.def.defName.ToLower().Contains("chunk"))
                 {
-					Log.Message("Item candidate: " + t, true);
+				 //Log.Message("Item candidate: " + t, true);
                 }
 				if (thief != null && !thief.CanReserve(t))
 				{
-					Log.Message(" - TryFindBestItemToSteal - return false; - 11", true);
+				 //Log.Message(" - TryFindBestItemToSteal - return false; - 11", true);
 					return false;
 				}
 				if (disallowed != null && disallowed.Contains(t))
 				{
-					Log.Message(" - TryFindBestItemToSteal - return false; - 13", true);
+				 //Log.Message(" - TryFindBestItemToSteal - return false; - 13", true);
 					return false;
 				}
 				if (!t.def.stealable)
 				{
-					Log.Message(" - TryFindBestItemToSteal - return false; - 15", true);
+				 //Log.Message(" - TryFindBestItemToSteal - return false; - 15", true);
 					return false;
 				}
 				if (GetValue(t) < 10f)
@@ -82,18 +82,18 @@ namespace VFEV
 					return false;
                 }
 				return (!t.IsBurning()) ? true : false;
-				Log.Message(" - TryFindBestItemToSteal - }; - 17", true);
+			 //Log.Message(" - TryFindBestItemToSteal - }; - 17", true);
 			};
 
 			item = GenClosest.ClosestThing_Regionwise_ReachablePrioritized(root, map, ThingRequest.ForGroup(ThingRequestGroup.HaulableEverOrMinifiable),
 					PathEndMode.ClosestTouch, TraverseParms.For(TraverseMode.PassDoors, danger), maxDist, validator, (Thing x) => GetValue(x), 15, 15);
 			if (item == null)
             {
-				Log.Message("Item is null", true);
+			 //Log.Message("Item is null", true);
             }
 			else
             {
-				Log.Message(item + " - " + GetValue(item), true);
+			 //Log.Message(item + " - " + GetValue(item), true);
             }
 			return item != null;
 		}
@@ -105,16 +105,16 @@ namespace VFEV
 		}
 		protected override Job TryGiveJob(Pawn pawn)
 		{
-			Log.Message(pawn + " - " + pawn.mindState.duty);
+		 //Log.Message(pawn + " - " + pawn.mindState.duty);
 			if (!pawn.HostileTo(Faction.OfPlayer))
 			{
-				Log.Message("0 - " + pawn + " - null", true);
+			 //Log.Message("0 - " + pawn + " - null", true);
 				return null;
 			}
 
 			if (RCellFinder.TryFindBestExitSpot(pawn, out IntVec3 spot))
 			{
-				Log.Message(pawn + " found spot: " + spot, true);
+			 //Log.Message(pawn + " found spot: " + spot, true);
 				if (TryFindBestItemToSteal(pawn.Position, pawn.Map, 50f, out Thing item, pawn))// && !GenAI.InDangerousCombat(pawn))
 				{
 					Job job = JobMaker.MakeJob(JobDefOf.Steal);
@@ -122,10 +122,10 @@ namespace VFEV
 					job.targetB = spot;
 					job.canBash = true;
 					job.count = Mathf.Min(item.stackCount, (int)(pawn.GetStatValue(StatDefOf.CarryingCapacity) / item.def.VolumePerUnit));
-					Log.Message("3 - " + pawn + " - " + job, true);
+				 //Log.Message("3 - " + pawn + " - " + job, true);
 					return job;
 				}
-				Log.Message(pawn + " cant find item to steal", true);
+			 //Log.Message(pawn + " cant find item to steal", true);
 			}
 			bool flag = pawn.natives.IgniteVerb != null && pawn.natives.IgniteVerb.IsStillUsableBy(pawn) && pawn.HostileTo(Faction.OfPlayer);
 			CellRect cellRect = CellRect.CenteredOn(pawn.Position, 5);
@@ -142,7 +142,7 @@ namespace VFEV
 					Job job = TrashJob(pawn, edifice);
 					if (job != null)
 					{
-						Log.Message("1 - " + pawn + " - " + job, true);
+					 //Log.Message("1 - " + pawn + " - " + job, true);
 						return job;
 					}
 				}
@@ -154,7 +154,7 @@ namespace VFEV
 						Job job2 = TrashJob(pawn, plant);
 						if (job2 != null)
 						{
-							Log.Message("2 - " + pawn + " - " + job2, true);
+						 //Log.Message("2 - " + pawn + " - " + job2, true);
 
 							return job2;
 						}
@@ -165,7 +165,7 @@ namespace VFEV
 			List<Building> allBuildingsColonist = pawn.Map.listerBuildings.allBuildingsColonist;
 			if (allBuildingsColonist.Count == 0)
 			{
-				Log.Message("4 - " + pawn + " - null", true);
+			 //Log.Message("4 - " + pawn + " - null", true);
 				return null;
 			}
 			foreach (var building in allBuildingsColonist.OrderBy(x => IntVec3Utility.DistanceTo(x.Position, pawn.Position)).Take(10).InRandomOrder())
@@ -175,14 +175,14 @@ namespace VFEV
 					Job job = TrashJob(pawn, building, true);
 					if (job != null)
 					{
-						Log.Message("5 - " + pawn + " - " + job, true);
+					 //Log.Message("5 - " + pawn + " - " + job, true);
 						return job;
 					}
 				}
 			}
 			if (RCellFinder.TryFindBestExitSpot(pawn, out IntVec3 spot2))
 			{
-				Log.Message(pawn + " found spot: " + spot2, true);
+			 //Log.Message(pawn + " found spot: " + spot2, true);
 				if (TryFindBestItemToSteal(pawn.Position, pawn.Map, 100f, out Thing item, pawn, danger: Danger.None))// && !GenAI.InDangerousCombat(pawn))
 				{
 					Job job = JobMaker.MakeJob(JobDefOf.Steal);
@@ -190,12 +190,12 @@ namespace VFEV
 					job.targetB = spot2;
 					job.canBash = true;
 					job.count = Mathf.Min(item.stackCount, (int)(pawn.GetStatValue(StatDefOf.CarryingCapacity) / item.def.VolumePerUnit));
-					Log.Message("6 - " + pawn + " - " + job, true);
+				 //Log.Message("6 - " + pawn + " - " + job, true);
 					return job;
 				}
-				Log.Message(pawn + " cant find item to steal", true);
+			 //Log.Message(pawn + " cant find item to steal", true);
 			}
-			Log.Message("7 - " + pawn + " - null", true);
+		 //Log.Message("7 - " + pawn + " - null", true);
 			return null;
 		}
 

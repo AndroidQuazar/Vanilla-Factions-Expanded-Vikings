@@ -95,7 +95,7 @@ namespace VFEV
             List<Pawn> list = new List<Pawn>();
             while (num < 10)
             {
-                Log.Message("Loop", true);
+                //Log.Message("Loop", true);
                 list = parms.raidStrategy.Worker.SpawnThreats(parms);
                 //if (list != null) GenerateAnimals(parms.faction, list);
 
@@ -170,27 +170,27 @@ namespace VFEV
                 }
             }
             base.SendStandardLetter(baseLetterLabel, baseLetterText, this.GetLetterDef(), parms, list2, Array.Empty<NamedArgument>());
-            Log.Message("Checking1 : " + list, true);
+            //Log.Message("Checking1 : " + list, true);
 
             foreach (var pawn in list)
             {
-                Log.Message("Checking2 : " + pawn, true);
+                //Log.Message("Checking2 : " + pawn, true);
                 if (pawn.RaceProps.Humanlike)
                 {
                     if (Rand.Chance(0.3f) && !ignitors.Contains(pawn))
                     {
-                        Log.Message(pawn + " got duty: " + DutyDefOf.AssaultColony, true);
+                        //Log.Message(pawn + " got duty: " + DutyDefOf.AssaultColony, true);
                         pawn.mindState.duty = new PawnDuty(DutyDefOf.AssaultColony);
                     }
                     else
                     {
-                        Log.Message(pawn + " got duty: " + VFEV_DefOf.VFEV_BurnAndStealColony, true);
+                        //Log.Message(pawn + " got duty: " + VFEV_DefOf.VFEV_BurnAndStealColony, true);
                         pawn.mindState.duty = new PawnDuty(VFEV_DefOf.VFEV_BurnAndStealColony);
                     }
                 }
                 else
                 {
-                    Log.Message(pawn + " got duty: " + DutyDefOf.AssaultColony, true);
+                    //Log.Message(pawn + " got duty: " + DutyDefOf.AssaultColony, true);
                     pawn.mindState.duty = new PawnDuty(DutyDefOf.AssaultColony);
                 }
             }

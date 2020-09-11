@@ -83,7 +83,7 @@ namespace RimWorld
 				//}
 				//else if (pawn3.mindState.duty == null)
 				//{
-				//	Log.Message(pawn3 + " - " + pawn3.mindState.duty?.def + " changing duty to " + VFEV_DefOf.VFEV_BurnAndStealColony);
+				// //Log.Message(pawn3 + " - " + pawn3.mindState.duty?.def + " changing duty to " + VFEV_DefOf.VFEV_BurnAndStealColony);
 				//	pawn3.mindState.duty = new PawnDuty(VFEV_DefOf.VFEV_BurnAndStealColony);
 				//}
 			}
