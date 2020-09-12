@@ -180,6 +180,9 @@
     <uiIconScale>1.15</uiIconScale>
     <techLevel>Neolithic</techLevel>
     <costStuffCount>50</costStuffCount>
+    <stuffCategories>
+      <li>Leathery</li>
+    </stuffCategories>
     <statBases>
       <WorkToMake>6000</WorkToMake>
       <Mass>0.11</Mass>
@@ -231,6 +234,9 @@
     <uiIconScale>1.15</uiIconScale>
     <techLevel>Neolithic</techLevel>
     <costStuffCount>50</costStuffCount>
+    <stuffCategories>
+      <li>Leathery</li>
+    </stuffCategories>
     <statBases>
       <WorkToMake>6000</WorkToMake>
       <Mass>0.11</Mass>
