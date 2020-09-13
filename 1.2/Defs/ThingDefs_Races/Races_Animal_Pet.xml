@@ -52,6 +52,7 @@
         </tools>
         <race>
             <body>QuadrupedAnimalWithPawsAndTail</body>
+            <predator>true</predator>
             <petness>0.9</petness>
             <baseBodySize>0.86</baseBodySize>
             <baseHungerRate>0.5</baseHungerRate>
