@@ -4,7 +4,7 @@
   <ThingDef ParentName="ResourceBase">
     <defName>VFEV_Sweetroll</defName>
     <label>sweetroll</label>
-    <description>A baked treat made of an eggy bread base drizzled with a thick, sweetened honey glaze. Any trader selling these should be immediately concerned, as sweetrolls have a knack for being stolen.</description>
+    <description>A baked treat made of an eggy bread base drizzled with a thick, sweetened glaze. Any trader selling these should be immediately concerned, as sweetrolls have a knack for being stolen.</description>
     <graphicData>
       <texPath>Things/Item/Resource/Food/Sweetroll</texPath>
       <graphicClass>Graphic_StackCount</graphicClass>
