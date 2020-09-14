@@ -63,7 +63,7 @@
         <capacities>
           <li>Cut</li>
         </capacities>
-        <power>19</power>
+        <power>12</power>
         <cooldownTime>2</cooldownTime>
       </li>
     </tools>
@@ -94,7 +94,7 @@
   <ThingDef ParentName="BaseWeaponNeolithic">
     <defName>VFE_Harpoon</defName>
     <label>harpoon</label>
-    <description>A long spear-like weapon usually used in fishing and hunting. Can be thrown over a very long distance and has a significant stopping power.</description>
+    <description>A long spear-like weapon usually used in fishing and hunting. Can be thrown over a very long distance and has a significant stopping power. This weapon represents a bundle of harpoons and can be thrown over and over.</description>
     <graphicData>
       <texPath>Things/Item/Equipment/WeaponRanged/Harpoon</texPath>
       <graphicClass>Graphic_Single</graphicClass>
