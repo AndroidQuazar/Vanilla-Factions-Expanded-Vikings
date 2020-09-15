@@ -223,7 +223,7 @@
 		</colorSpectrum>
 		<factionIconPath>World/WorldObjects/Expanding/VikingsSlaver</factionIconPath>
 		<permanentEnemy>false</permanentEnemy>
-		<goodwillDailyGain>0</goodwillDailyGain>
+		<goodwillDailyGain>-0.1</goodwillDailyGain>
 		<!-- Reset goodwill inherited from TribeBase->HumanFactionBase for permanent enemy -->
 		<goodwillDailyFall>0.2</goodwillDailyFall>
 		<startingGoodwill>-20</startingGoodwill>
