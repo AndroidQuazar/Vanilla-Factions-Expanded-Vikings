@@ -7,7 +7,7 @@
     <stackLimit>3</stackLimit>
     <stages>
       <li>
-        <label>Stung by a bee</label>
+        <label>Stung by bees</label>
         <description>I was stung, and it hurt!</description>
         <baseMoodEffect>-2</baseMoodEffect>
       </li>
