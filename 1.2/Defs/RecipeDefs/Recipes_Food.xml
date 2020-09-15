@@ -23,7 +23,7 @@
             <li>EggsUnfertilized</li>
           </categories>
         </filter>
-        <count>1</count>
+        <count>4</count>
       </li>
       <li>
         <filter>
@@ -32,7 +32,7 @@
             <li>VFEV_Honey</li>
           </thingDefs>
         </filter>
-        <count>1</count>
+        <count>4</count>
       </li>
     </ingredients>
     <products>
