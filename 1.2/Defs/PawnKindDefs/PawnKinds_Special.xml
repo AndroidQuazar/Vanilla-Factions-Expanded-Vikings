@@ -46,7 +46,7 @@
         <itemQuality>Normal</itemQuality>
         <gearHealthRange>0.2~1.1</gearHealthRange>
         <apparelMoney>4250~6000</apparelMoney>
-        <weaponMoney>4290~6650</weaponMoney>
+        <weaponMoney>1280~2450</weaponMoney>
         <weaponTags>
 			<li>CryptoLightMelee</li>
             <li>CryptoHeavyMelee</li>
@@ -58,9 +58,10 @@
         <apparelTags Inherit="False">
 			<li>CryptoLight</li>
         </apparelTags>
-        <techHediffsMoney>50~50</techHediffsMoney>
+        <techHediffsMoney>50~500</techHediffsMoney>
         <techHediffsTags>
-            <li>Poor</li>
+      <li>Advanced</li>
+      <li>AdvancedWeapon</li>
         </techHediffsTags>
         <techHediffsChance>0.15</techHediffsChance>
         <modExtensions Inherit="False">
@@ -80,6 +81,10 @@
                 </shieldTags>
             </li>
         </modExtensions>
+    <requiredWorkTags>
+      <li>Violent</li>
+    </requiredWorkTags>
+    <apparelColor>(58,58,58)</apparelColor>
     </PawnKindDef>
 	
     <PawnKindDef ParentName="VFEV_NordsmenBase">
@@ -91,7 +96,7 @@
         <itemQuality>Normal</itemQuality>
         <gearHealthRange>0.2~1.1</gearHealthRange>
         <apparelMoney>4250~6000</apparelMoney>
-        <weaponMoney>1290~4550</weaponMoney>
+        <weaponMoney>870~1700</weaponMoney>
         <weaponTags>
             <li>CryptoWeaponAdvanced</li>
         </weaponTags>
@@ -102,12 +107,16 @@
         <apparelTags Inherit="False">
 			<li>CryptoHeavy</li>
         </apparelTags>
-        <techHediffsMoney>50~50</techHediffsMoney>
+        <techHediffsMoney>50~500</techHediffsMoney>
         <techHediffsTags>
-            <li>Poor</li>
+      <li>Advanced</li>
+      <li>AdvancedWeapon</li>
         </techHediffsTags>
         <techHediffsChance>0.15</techHediffsChance>
-
+    <requiredWorkTags>
+      <li>Violent</li>
+    </requiredWorkTags>
+    <apparelColor>(58,58,58)</apparelColor>
     </PawnKindDef>
 
 </Defs>
