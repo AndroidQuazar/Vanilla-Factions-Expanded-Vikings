@@ -1,163 +1,163 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
-    <ThingDef ParentName="ArmorHelmetMakeableBase">
-        <defName>VFEV_Apparel_GuardianHelmet</defName>
-        <label>guardian helmet</label>
-        <description>A strong medieval helmet that provides full-head coverage. While it offers fantastic protection, ones vision is grealy obscured, thus it is only recommended for front line infantry, particularly those foregoing shields.</description>
-        <techLevel>Medieval</techLevel>
-        <recipeMaker>
-            <researchPrerequisite Inherit='False'>PlateArmor</researchPrerequisite>
-            <recipeUsers>
-                <li>ElectricSmithy</li>
-                <li>FueledSmithy</li>
-            </recipeUsers>
-            <skillRequirements>
-                <Crafting>9</Crafting>
-            </skillRequirements>
-        </recipeMaker>
-        <graphicData>
-            <texPath>Things/Pawn/Humanlike/Apparel/BrigandineHelmet/BrigandineHelmet</texPath>
-            <graphicClass>Graphic_Single</graphicClass>
-        </graphicData>
-        <statBases>
-            <WorkToMake>12000</WorkToMake>
-            <MaxHitPoints>150</MaxHitPoints>
-            <Mass>3.5</Mass>
-            <StuffEffectMultiplierArmor>0.55</StuffEffectMultiplierArmor>
-            <StuffEffectMultiplierInsulation_Cold>0.15</StuffEffectMultiplierInsulation_Cold>
-            <StuffEffectMultiplierInsulation_Heat>0</StuffEffectMultiplierInsulation_Heat>
-            <EquipDelay>4</EquipDelay>
-        </statBases>
-        <equippedStatOffsets>
-            <ShootingAccuracyPawn>-1</ShootingAccuracyPawn>
-            <MeleeHitChance>1</MeleeHitChance>
-        </equippedStatOffsets>
-        <stuffCategories>
-            <li>Metallic</li>
-        </stuffCategories>
-        <costStuffCount>70</costStuffCount>
-        <apparel>
-            <bodyPartGroups>
-                <li>FullHead</li>
-            </bodyPartGroups>
-            <wornGraphicPath>Things/Pawn/Humanlike/Apparel/BrigandineHelmet/BrigandineHelmet</wornGraphicPath>
-            <layers>
-                <li>Overhead</li>
-            </layers>
-			<tags Inherit="False">
-				<li>Apparel_VikingGuardian</li>
-			</tags>
-            <defaultOutfitTags>
-                <li>Soldier</li>
-            </defaultOutfitTags>
-        </apparel>
-    </ThingDef>
-	
-    <ThingDef ParentName="ArmorHelmetMakeableBase">
-        <defName>VFEV_Apparel_LeatherHelmet</defName>
-        <label>leather helmet</label>
-        <description>A lightweight medieval helmet meant for stropping bladed weapon and animal attacks, notably leaves ones chin and jaw exposed. Not effective against blunt weapons.</description>
-        <techLevel>Medieval</techLevel>
-        <recipeMaker>
+  <ThingDef ParentName="ArmorHelmetMakeableBase">
+    <defName>VFEV_Apparel_GuardianHelmet</defName>
+    <label>guardian helmet</label>
+    <description>A strong medieval helmet that provides full-head coverage. While it offers fantastic protection, ones vision is grealy obscured, thus it is only recommended for front line infantry, particularly those foregoing shields.</description>
+    <techLevel>Medieval</techLevel>
+    <recipeMaker>
+      <researchPrerequisite Inherit='False'>PlateArmor</researchPrerequisite>
+      <recipeUsers>
+        <li>ElectricSmithy</li>
+        <li>FueledSmithy</li>
+      </recipeUsers>
+      <skillRequirements>
+        <Crafting>9</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+    <graphicData>
+      <texPath>Things/Pawn/Humanlike/Apparel/BrigandineHelmet/BrigandineHelmet</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <WorkToMake>12000</WorkToMake>
+      <MaxHitPoints>150</MaxHitPoints>
+      <Mass>3.5</Mass>
+      <StuffEffectMultiplierArmor>0.55</StuffEffectMultiplierArmor>
+      <StuffEffectMultiplierInsulation_Cold>0.15</StuffEffectMultiplierInsulation_Cold>
+      <StuffEffectMultiplierInsulation_Heat>0</StuffEffectMultiplierInsulation_Heat>
+      <EquipDelay>4</EquipDelay>
+    </statBases>
+    <equippedStatOffsets>
+      <ShootingAccuracyPawn>-1</ShootingAccuracyPawn>
+      <MeleeHitChance>1</MeleeHitChance>
+    </equippedStatOffsets>
+    <stuffCategories>
+      <li>Metallic</li>
+    </stuffCategories>
+    <costStuffCount>70</costStuffCount>
+    <apparel>
+      <bodyPartGroups>
+        <li>FullHead</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Things/Pawn/Humanlike/Apparel/BrigandineHelmet/BrigandineHelmet</wornGraphicPath>
+      <layers>
+        <li>Overhead</li>
+      </layers>
+      <tags Inherit="False">
+        <li>Apparel_VikingGuardian</li>
+      </tags>
+      <defaultOutfitTags>
+        <li>Soldier</li>
+      </defaultOutfitTags>
+    </apparel>
+  </ThingDef>
+
+  <ThingDef ParentName="ArmorHelmetMakeableBase">
+    <defName>VFEV_Apparel_LeatherHelmet</defName>
+    <label>leather helmet</label>
+    <description>A lightweight medieval helmet meant for stropping bladed weapon and animal attacks, notably leaves ones chin and jaw exposed. Not effective against blunt weapons.</description>
+    <techLevel>Medieval</techLevel>
+    <recipeMaker>
       <recipeUsers Inherit="False">
         <li>ElectricTailoringBench</li>
         <li>HandTailoringBench</li>
       </recipeUsers>
-            <skillRequirements>
-                <Crafting>5</Crafting>
-            </skillRequirements>
-			<researchPrerequisite>ComplexClothing</researchPrerequisite>
-        </recipeMaker>
-        <graphicData>
-            <texPath>Things/Pawn/Humanlike/Apparel/LeatherHelmet/LeatherHelmet</texPath>
-            <graphicClass>Graphic_Single</graphicClass>
-        </graphicData>
-        <costStuffCount>40</costStuffCount>
-        <statBases>
-            <WorkToMake>3200</WorkToMake>
-            <MaxHitPoints>100</MaxHitPoints>
-            <Mass>2</Mass>
-            <StuffEffectMultiplierArmor>0.42</StuffEffectMultiplierArmor>
-            <StuffEffectMultiplierInsulation_Cold>0.15</StuffEffectMultiplierInsulation_Cold>
-            <StuffEffectMultiplierInsulation_Heat>0</StuffEffectMultiplierInsulation_Heat>
-            <EquipDelay>2.5</EquipDelay>
-        </statBases>
-        <generateCommonality>0.4</generateCommonality>
-        <stuffCategories>
-			<li>Leathery</li>
-        </stuffCategories>
-        <apparel>
-            <bodyPartGroups>
-                <li>UpperHead</li>
-            </bodyPartGroups>
-            <wornGraphicPath>Things/Pawn/Humanlike/Apparel/LeatherHelmet/LeatherHelmet</wornGraphicPath>
-            <layers>
-                <li>Overhead</li>
-            </layers>
-			<tags Inherit="False">
-				<li>Apparel_Viking</li>
-			</tags>
-            <defaultOutfitTags>
-                <li>Soldier</li>
-            </defaultOutfitTags>
-        </apparel>
-    </ThingDef>
-	
-    <ThingDef ParentName="ArmorHelmetMakeableBase">
-        <defName>VFEV_Apparel_RavagerHelmet</defName>
-        <label>ravager helmet</label>
-        <description>A simple metallic helmet designed to not block ones communication during combat. Often worn by front line, shield-wielding infantry to soak damage.</description>
-        <techLevel>Medieval</techLevel>
-        <recipeMaker>
-            <recipeUsers>
-                <li>ElectricSmithy</li>
-                <li>FueledSmithy</li>
-            </recipeUsers>
-            <skillRequirements>
-                <Crafting>5</Crafting>
-            </skillRequirements>
-			<researchPrerequisite>Smithing</researchPrerequisite>
-        </recipeMaker>
-        <graphicData>
-            <texPath>Things/Pawn/Humanlike/Apparel/RavagerHelmet/RavagerHelmet</texPath>
-            <graphicClass>Graphic_Single</graphicClass>
-        </graphicData>
-        <costStuffCount>40</costStuffCount>
-        <statBases>
-            <WorkToMake>3200</WorkToMake>
-            <MaxHitPoints>100</MaxHitPoints>
-            <Mass>2</Mass>
-            <StuffEffectMultiplierArmor>0.42</StuffEffectMultiplierArmor>
-            <StuffEffectMultiplierInsulation_Cold>0.25</StuffEffectMultiplierInsulation_Cold>
-            <StuffEffectMultiplierInsulation_Heat>0</StuffEffectMultiplierInsulation_Heat>
-            <EquipDelay>2.5</EquipDelay>
-        </statBases>
-        <generateCommonality>0.4</generateCommonality>
-		<equippedStatOffsets>
-			<PainShockThreshold>0.20</PainShockThreshold>
-            <ShootingAccuracyPawn>-8</ShootingAccuracyPawn>
-		</equippedStatOffsets>
-        <stuffCategories>
-            <li>Metallic</li>
-        </stuffCategories>
-        <apparel>
-            <bodyPartGroups>
-                <li>UpperHead</li>
-            </bodyPartGroups>
-            <wornGraphicPath>Things/Pawn/Humanlike/Apparel/RavagerHelmet/RavagerHelmet</wornGraphicPath>
-            <layers>
-                <li>Overhead</li>
-            </layers>
-			<tags Inherit="False">
-				<li>Apparel_VikingRavager</li>
-			</tags>
-            <defaultOutfitTags>
-                <li>Soldier</li>
-            </defaultOutfitTags>
-        </apparel>
-    </ThingDef>
-	
+      <skillRequirements>
+        <Crafting>5</Crafting>
+      </skillRequirements>
+      <researchPrerequisite>ComplexClothing</researchPrerequisite>
+    </recipeMaker>
+    <graphicData>
+      <texPath>Things/Pawn/Humanlike/Apparel/LeatherHelmet/LeatherHelmet</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <costStuffCount>40</costStuffCount>
+    <statBases>
+      <WorkToMake>3200</WorkToMake>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Mass>2</Mass>
+      <StuffEffectMultiplierArmor>0.42</StuffEffectMultiplierArmor>
+      <StuffEffectMultiplierInsulation_Cold>0.15</StuffEffectMultiplierInsulation_Cold>
+      <StuffEffectMultiplierInsulation_Heat>0</StuffEffectMultiplierInsulation_Heat>
+      <EquipDelay>2.5</EquipDelay>
+    </statBases>
+    <generateCommonality>0.4</generateCommonality>
+    <stuffCategories>
+      <li>Leathery</li>
+    </stuffCategories>
+    <apparel>
+      <bodyPartGroups>
+        <li>UpperHead</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Things/Pawn/Humanlike/Apparel/LeatherHelmet/LeatherHelmet</wornGraphicPath>
+      <layers>
+        <li>Overhead</li>
+      </layers>
+      <tags Inherit="False">
+        <li>Apparel_Viking</li>
+      </tags>
+      <defaultOutfitTags>
+        <li>Soldier</li>
+      </defaultOutfitTags>
+    </apparel>
+  </ThingDef>
+
+  <ThingDef ParentName="ArmorHelmetMakeableBase">
+    <defName>VFEV_Apparel_RavagerHelmet</defName>
+    <label>ravager helmet</label>
+    <description>A simple metallic helmet designed to not block ones communication during combat. Often worn by front line, shield-wielding infantry to soak damage.</description>
+    <techLevel>Medieval</techLevel>
+    <recipeMaker>
+      <recipeUsers>
+        <li>ElectricSmithy</li>
+        <li>FueledSmithy</li>
+      </recipeUsers>
+      <skillRequirements>
+        <Crafting>5</Crafting>
+      </skillRequirements>
+      <researchPrerequisite>Smithing</researchPrerequisite>
+    </recipeMaker>
+    <graphicData>
+      <texPath>Things/Pawn/Humanlike/Apparel/RavagerHelmet/RavagerHelmet</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <costStuffCount>40</costStuffCount>
+    <statBases>
+      <WorkToMake>3200</WorkToMake>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Mass>2</Mass>
+      <StuffEffectMultiplierArmor>0.42</StuffEffectMultiplierArmor>
+      <StuffEffectMultiplierInsulation_Cold>0.25</StuffEffectMultiplierInsulation_Cold>
+      <StuffEffectMultiplierInsulation_Heat>0</StuffEffectMultiplierInsulation_Heat>
+      <EquipDelay>2.5</EquipDelay>
+    </statBases>
+    <generateCommonality>0.4</generateCommonality>
+    <equippedStatOffsets>
+      <PainShockThreshold>0.20</PainShockThreshold>
+      <ShootingAccuracyPawn>-8</ShootingAccuracyPawn>
+    </equippedStatOffsets>
+    <stuffCategories>
+      <li>Metallic</li>
+    </stuffCategories>
+    <apparel>
+      <bodyPartGroups>
+        <li>UpperHead</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Things/Pawn/Humanlike/Apparel/RavagerHelmet/RavagerHelmet</wornGraphicPath>
+      <layers>
+        <li>Overhead</li>
+      </layers>
+      <tags Inherit="False">
+        <li>Apparel_VikingRavager</li>
+      </tags>
+      <defaultOutfitTags>
+        <li>Soldier</li>
+      </defaultOutfitTags>
+    </apparel>
+  </ThingDef>
+
   <ThingDef ParentName="HatMakeableBase">
     <defName>VFEV_MooseHeaddress</defName>
     <label>moose headdress</label>
@@ -202,15 +202,15 @@
       <layers>
         <li>Overhead</li>
       </layers>
-			<tags Inherit="False">
-				<li>Apparel_VikingBerserker</li>
-			</tags>
+      <tags Inherit="False">
+        <li>Apparel_VikingBerserker</li>
+      </tags>
       <defaultOutfitTags>
         <li>Soldier</li>
       </defaultOutfitTags>
     </apparel>
   </ThingDef>
-  
+
   <ThingDef ParentName="HatMakeableBase">
     <defName>VFEV_BearHeaddress</defName>
     <label>bear headdress</label>
@@ -225,7 +225,7 @@
         <Crafting>4</Crafting>
       </skillRequirements>
     </recipeMaker>
-	<tickerType>Normal</tickerType>
+    <tickerType>Normal</tickerType>
     <graphicData>
       <texPath>Things/Pawn/Humanlike/Apparel/BearHeaddress/BearHeaddress</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -253,27 +253,27 @@
       <layers>
         <li>Overhead</li>
       </layers>
-			<tags Inherit="False">
-				<li>Apparel_VikingBerserker</li>
-			</tags>
+      <tags Inherit="False">
+        <li>Apparel_VikingBerserker</li>
+      </tags>
       <defaultOutfitTags>
         <li>Soldier</li>
       </defaultOutfitTags>
     </apparel>
-	<comps>
-		<li Class="VFECore.CompProperties_ApparelHediffs">
-			<hediffDefnames>
-				<li>VFEV_EnragedWithDamage</li>
-			</hediffDefnames>
-		</li>
-	</comps>
+    <comps>
+      <li Class="VFECore.CompProperties_ApparelHediffs">
+        <hediffDefnames>
+          <li>VFEV_EnragedWithDamage</li>
+        </hediffDefnames>
+      </li>
+    </comps>
   </ThingDef>
-  
+
   <ThingDef ParentName="HatMakeableBase">
     <defName>VFEV_JarlCrown</defName>
     <label>jarl crown</label>
     <description>A grand crown worthy of nordic leaders. As a symbol of status, it requires the antlers of a legendary Lothurr.</description>
-	<techLevel>Medieval</techLevel>
+    <techLevel>Medieval</techLevel>
     <recipeMaker>
       <recipeUsers>
         <li>ElectricSmithy</li>
@@ -287,9 +287,9 @@
       <texPath>Things/Pawn/Humanlike/Apparel/CrownJarl/CrownJarl</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
-	<costList>
-		<VFEV_LothurrAntler>1</VFEV_LothurrAntler>
-	</costList>
+    <costList>
+      <VFEV_LothurrAntler>1</VFEV_LothurrAntler>
+    </costList>
     <costStuffCount>80</costStuffCount>
     <stuffCategories>
       <li>Metallic</li>
@@ -314,12 +314,12 @@
       <layers>
         <li>Overhead</li>
       </layers>
-			<tags Inherit="False">
-				<li>Apparel_VikingJarl</li>
-				<li>Royal</li>
-				<li>RoyalTier7</li>
-			</tags>
-		<canBeGeneratedToSatisfyWarmth>false</canBeGeneratedToSatisfyWarmth>
+      <tags Inherit="False">
+        <li>Apparel_VikingJarl</li>
+        <li>Royal</li>
+        <li>RoyalTier7</li>
+      </tags>
+      <canBeGeneratedToSatisfyWarmth>false</canBeGeneratedToSatisfyWarmth>
     </apparel>
   </ThingDef>
 
