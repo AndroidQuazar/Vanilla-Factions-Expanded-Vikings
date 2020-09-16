@@ -75,6 +75,7 @@
     <Compile Include="Apiary\JobDriver_TakeHoneyOutOfApiary.cs" />
     <Compile Include="Apiary\JobDriver_TendToApiary.cs" />
     <Compile Include="Apiary\Apiary.cs" />
+    <Compile Include="Apiary\Placeworker_Apiary.cs" />
     <Compile Include="Apiary\WorkGiver_TakeHoneyOutOfApiary.cs" />
     <Compile Include="Apiary\WorkGiver_TendToApiary.cs" />
     <Compile Include="BulletStun.cs" />
