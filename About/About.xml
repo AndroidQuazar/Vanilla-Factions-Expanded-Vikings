@@ -1,17 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ModMetaData>
 	<name>Vanilla Factions Expanded - Vikings</name>
-	<author>Oskar Potocki, Chowder</author>
+	<author>Vanilla Expanded team</author>
 	<supportedVersions>
 		<li>1.2</li>
-		<li>1.1</li>
 	</supportedVersions>
 	<packageId>OskarPotocki.VFE.Vikings</packageId>
-	<description>Placeholder</description>
+	<description>After 6 months in development and almost 2 months in beta testing, we are absolutely ecstatic to show you the effect of our hard work - Vanilla Factions Expanded - Vikings. This mod will enhance your selection of pre-industrial factions by adding two new Viking tribes - both with new, custom-made, legit name generators! It’s up to you to decide whether you want to help them pillage, or get pillaged by them!
+
+This mod utilises a vast amount of new custom code we made available in Vanilla Expanded framework, including custom base generation code, which makes all sieges much more authentic! A number of new weapons, armor, apparel and furniture is also added, greatly adding to your selection of medieval flavour. To those who prefer spacer vibes, rare, experimental cryptotech weapons and armor are also added - now you can literally freeze your enemies as you shoot them!
+
+Various new quests and events allow you to add more dynamic to any playthrough, as they will work just as well for a viking clan as they will for industrial or spacer colony. Hunt legendary creatures, explore ancient dangers, ransack viking tombs or get raided by two new raid types - pillagers, who will come and go like a thunder, stealing your valuables and throwing torches at your base, and slavers, led by a number of wolfhounds, they will try to kidnap all your colonists!
+
+Freya Fierce storyteller introduces a new raid restlessness mechanic, forcing your colony to venture into the world and complete missions in order to remove a stacking debuff for inactivity! Event-wise, she’s just like Randy, but allows you to have 2x as many pawns due to the need for annual caravans.
+
+This mod is the effect of hard work of a large number of us. I really hope you will appreciate it. Check out our new Youtube channel for a full content breakdown.
+</description>
 	<modDependencies>
         <li>
 			<packageId>OskarPotocki.VanillaFactionsExpanded.Core</packageId>
-			<displayName>Vanilla Factions Expanded - Core</displayName>
+			<displayName>Vanilla Expanded Framework</displayName>
 			<steamWorkshopUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=1854607105</steamWorkshopUrl>
 		</li>
 	</modDependencies>
