@@ -13,21 +13,6 @@ namespace VFEV
 	{
 		public override AcceptanceReport AllowsPlacing(BuildableDef def, IntVec3 center, Rot4 rot, Map map, Thing thingToIgnore = null, Thing thing = null)
 		{
-			/*foreach (Thing apiary in map.listerBuildings.allBuildingsColonist.FindAll(b => b.def.defName == "VFEV_Apiary"))
-            {
-				if (apiary != null && apiary.CellsAdjacent8WayAndInside().Contains(center))
-                {
-					return "APlaceWorker".Translate();
-				}
-            }*/
-
-			/*CellRect cellAround = CellRect.CenteredOn(center, 1);
-            foreach (IntVec3 cell in cellAround)
-            {
-				if (cell.GetFirstBuilding(map)?.def?.defName == "VFEV_Apiary") return "APlaceWorker".Translate();
-			}
-			if (center.Roofed(map)) return "APlaceWorkerNoRoof".Translate();*/
-
 			foreach (IntVec3 c in GenAdj.OccupiedRect(center, rot, def.Size).ExpandedBy(1))
 			{
 				List<Thing> list = map.thingGrid.ThingsListAt(c);
