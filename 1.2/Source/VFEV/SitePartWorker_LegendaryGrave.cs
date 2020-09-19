@@ -16,7 +16,9 @@ namespace VFEV
         public override void Notify_GeneratedByQuestGen(SitePart part, Slate slate, List<Rule> outExtraDescriptionRules, Dictionary<string, string> outExtraDescriptionConstants)
         {
             base.Notify_GeneratedByQuestGen(part, slate, outExtraDescriptionRules, outExtraDescriptionConstants);
-            part.site.SetFaction(Find.FactionManager.AllFactionsListForReading.Find(f => !f.defeated && f.RelationKindWith(Faction.OfPlayer) == FactionRelationKind.Hostile && f.def.defName.Contains("VFEV_Vikings")));
+            Faction faction = Find.FactionManager.AllFactionsListForReading.Find(f => !f.defeated && !f.IsPlayer && f.RelationKindWith(Faction.OfPlayer) == FactionRelationKind.Hostile && f.def.defName.Contains("VFEV_Vikings"));
+            if (faction == null) faction = Find.FactionManager.RandomEnemyFaction(false, false, true, TechLevel.Neolithic);
+            part.site.SetFaction(faction);
         }
     }
 }
