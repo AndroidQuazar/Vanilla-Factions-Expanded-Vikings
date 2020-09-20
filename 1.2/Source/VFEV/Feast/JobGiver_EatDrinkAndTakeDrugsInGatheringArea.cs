@@ -11,19 +11,26 @@ namespace VFEV
 	{
 		protected override Job TryGiveJob(Pawn pawn)
 		{
-		 //Log.Message(pawn + " at feast", true);
-            PawnDuty duty = pawn.mindState.duty;
+            PawnDuty duty = pawn.mindState?.duty;
 			if (duty == null)
 			{
 			 //Log.Message(pawn + " - TryGiveJob - return null; - 4", true);
 				return null;
 			}
-			if ((double)pawn.needs.food.CurLevelPercentage > 0.9)
+			if (pawn.needs?.food == null && (double)pawn.needs.food.CurLevelPercentage > 0.9)
 			{
 			 //Log.Message(pawn + " - TryGiveJob - return null; - 6", true);
 				return null;
 			}
-			IntVec3 cell = duty.focus.Cell;
+            IntVec3 cell = IntVec3.Invalid;
+            if (duty.focus.IsValid)
+            {
+                cell = duty.focus.Cell;
+            }
+            else
+            {
+                cell = pawn.Position;
+            }
 			Thing thing = FindFood(pawn, cell);
 			if (thing == null)
 			{
