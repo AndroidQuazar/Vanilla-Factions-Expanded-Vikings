@@ -11,36 +11,44 @@ namespace VFEV
 	{
 		protected override Job TryGiveJob(Pawn pawn)
 		{
-            PawnDuty duty = pawn.mindState?.duty;
-			if (duty == null)
-			{
-			 //Log.Message(pawn + " - TryGiveJob - return null; - 4", true);
-				return null;
-			}
-			if (pawn.needs?.food == null && (double)pawn.needs.food.CurLevelPercentage > 0.9)
-			{
-			 //Log.Message(pawn + " - TryGiveJob - return null; - 6", true);
-				return null;
-			}
-            IntVec3 cell = IntVec3.Invalid;
-            if (duty.focus.IsValid)
+            try
             {
-                cell = duty.focus.Cell;
+                PawnDuty duty = pawn.mindState?.duty;
+                if (duty == null)
+                {
+                    //Log.Message(pawn + " - TryGiveJob - return null; - 4", true);
+                    return null;
+                }
+                if (pawn.needs?.food == null && (double)pawn.needs.food.CurLevelPercentage > 0.9)
+                {
+                    //Log.Message(pawn + " - TryGiveJob - return null; - 6", true);
+                    return null;
+                }
+                IntVec3 cell = IntVec3.Invalid;
+                if (duty.focus.IsValid)
+                {
+                    cell = duty.focus.Cell;
+                }
+                else
+                {
+                    cell = pawn.Position;
+                }
+                Thing thing = FindFood(pawn, cell);
+                if (thing == null)
+                {
+                    //Log.Message(pawn + " - TryGiveJob - return null; - 10", true);
+                    return null;
+                }
+                Job job = JobMaker.MakeJob(JobDefOf.Ingest, thing);
+                job.count = FoodUtility.WillIngestStackCountOf(pawn, thing.def, thing.def.GetStatValueAbstract(StatDefOf.Nutrition));
+                //Log.Message(pawn + " - TryGiveJob - return job; - " + job, true);
+                return job;
             }
-            else
+            catch (Exception ex)
             {
-                cell = pawn.Position;
+                Log.Error("Excention in Feast: " + ex, true);
+                return null;
             }
-			Thing thing = FindFood(pawn, cell);
-			if (thing == null)
-			{
-			 //Log.Message(pawn + " - TryGiveJob - return null; - 10", true);
-				return null;
-			}
-			Job job = JobMaker.MakeJob(JobDefOf.Ingest, thing);
-			job.count = FoodUtility.WillIngestStackCountOf(pawn, thing.def, thing.def.GetStatValueAbstract(StatDefOf.Nutrition));
-		 //Log.Message(pawn + " - TryGiveJob - return job; - " + job, true);
-			return job;
 		}
 
         private static Thing SpawnedFoodSearchInnerScan(Pawn eater, IntVec3 root, List<Thing> searchSet, PathEndMode peMode, TraverseParms traverseParams, 
