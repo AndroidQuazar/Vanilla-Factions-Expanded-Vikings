@@ -23,6 +23,7 @@ namespace VFEV
 		{
 			IncidentParms incidentParms = StorytellerUtility.DefaultParmsNow(IncidentCategoryDefOf.ThreatBig, map);
 			incidentParms.faction = parms.sitePart.site.Faction;
+			if (incidentParms.faction == null) incidentParms.faction = Faction.OfMechanoids;
 			incidentParms.points = parms.sitePart.parms.threatPoints;
 			
 			List<Pawn> list = PawnGroupMakerUtility.GeneratePawns(IncidentParmsUtility.GetDefaultPawnGroupMakerParms(PawnGroupKindDefOf.Combat, incidentParms, false), true).ToList<Pawn>();
