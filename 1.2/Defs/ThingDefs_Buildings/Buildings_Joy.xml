@@ -4,7 +4,7 @@
   <ThingDef ParentName="FurnitureWithQualityBase">
     <defName>VFEV_Hnefatafl</defName>
     <label>hnefatafl table</label>
-    <description>An ancient board game played on a latticed board. Unlike it’s cousin Chess this game is asymmetrical, one player must safely retreat their Jarl to the edge of the board and the other player must capture the enemy Jarl before they escape. Notably more fights seem to break out over Hnefatafl compared to other games.</description>
+    <description>An ancient board game played on a latticed board. Unlike its cousin Chess this game is asymmetrical, one player must safely retreat their Jarl to the edge of the board and the other player must capture the enemy Jarl before they escape. Notably more fights seem to break out over Hnefatafl compared to other games.</description>
     <graphicData>
       <texPath>Things/Building/Joy/Hnefatafl</texPath>
       <graphicClass>Graphic_Single</graphicClass>
