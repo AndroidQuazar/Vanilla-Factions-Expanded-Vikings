@@ -43,6 +43,7 @@
       <li>Stony</li>
     </stuffCategories>
     <costStuffCount>90</costStuffCount>
+    <holdsRoof>false</holdsRoof>
     <constructionSkillPrerequisite>6</constructionSkillPrerequisite>
     <uiIconScale>0.6</uiIconScale>
     <specialDisplayRadius>4.9</specialDisplayRadius>
