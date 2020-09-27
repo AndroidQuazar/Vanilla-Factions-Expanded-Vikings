@@ -77,6 +77,14 @@ namespace VFEV
 				 //Log.Message(" - TryFindBestItemToSteal - return false; - 15", true);
 					return false;
 				}
+				if (t.Faction == thief.Faction)
+                {
+					return false;
+                }
+				if (t.def.IsWeapon)
+                {
+					return false;
+                }
 				if (GetValue(t) < 10f)
                 {
 					return false;
