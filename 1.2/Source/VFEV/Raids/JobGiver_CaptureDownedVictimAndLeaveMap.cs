@@ -10,7 +10,7 @@ namespace VFEV
 		protected override Job TryGiveJob(Pawn pawn)
 		{
 			if (pawn.mindState.meleeThreat != null && pawn.mindState.meleeThreat.RaceProps.Humanlike 
-				&& pawn.mindState.meleeThreat.Downed)
+				&& pawn.mindState.meleeThreat.Downed && pawn.mindState.meleeThreat.HostileTo(pawn))
 			{
 				if (ReservationUtility.CanReserve(pawn, pawn.mindState.meleeThreat))
 				{
@@ -27,7 +27,7 @@ namespace VFEV
 				}
 			}
 			else if (pawn.mindState.enemyTarget != null && pawn.mindState.enemyTarget is Pawn pawn2 
-				&& pawn2.RaceProps.Humanlike && pawn2.Downed)
+				&& pawn2.RaceProps.Humanlike && pawn2.Downed && pawn2.HostileTo(pawn))
 			{
 				if (ReservationUtility.CanReserve(pawn, pawn.mindState.enemyTarget))
 				{
