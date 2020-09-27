@@ -6,7 +6,7 @@
     <label>feast</label>
     <randomSelectionWeight>1</randomSelectionWeight>
     <letterTitle>Feast</letterTitle>
-    <letterText>{ORGANIZER_labelShort} suggests throwing a feast after the last stockpile check to boost morality. Be warned - Feasts can last up to 48h. Colonists will binge on food and drugs until it is over.</letterText>
+    <letterText>{ORGANIZER_labelShort} suggests throwing a feast after the last stockpile check to boost morale. Be warned - Feasts can last up to 48h. Colonists will binge on food and drugs until it is over. Simply draft your colonists to stop them taking part in the feast.</letterText>
     <calledOffMessage>The feast has been called off.</calledOffMessage>
     <finishedMessage>The feast has finished.</finishedMessage>
     <duty>VFEV_Feast</duty>
