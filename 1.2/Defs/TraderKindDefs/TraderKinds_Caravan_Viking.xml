@@ -4,6 +4,7 @@
   <TraderKindDef>
     <defName>VFEV_Caravan_Looter</defName>
     <label>loot trader</label>
+	<commonality>2</commonality>
    <stockGenerators>
 
       <!-- Resources -->
