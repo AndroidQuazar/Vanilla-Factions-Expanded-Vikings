@@ -29,7 +29,7 @@ namespace VFEV
 		public LordJob_Joinable_Feast(IntVec3 spot, Pawn organizer, GatheringDef gatheringDef)
 			: base(spot, organizer, gatheringDef)
 		{
-			durationTicks = Rand.RangeInclusive(115000, 125000);
+			durationTicks = Rand.RangeInclusive(55000, 65000);
 		}
 
 		public override string GetReport(Pawn pawn)
