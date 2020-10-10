@@ -140,7 +140,7 @@ namespace VFEV
             }
             else
             {
-                foodCandidate = list.OrderByDescending(x => x.def.ingestible.joy).ToList().FirstOrDefault();
+                foodCandidate = list.Where(x => validator(x)).OrderByDescending(x => x.def.ingestible.joy).ToList().FirstOrDefault();
                 if (!(foodCandidate.def.ingestible.joy > 0))
                 {
                     foodCandidate = SpawnedFoodSearchInnerScan(pawn, pawn.Position, list, PathEndMode.OnCell, TraverseParms.For(TraverseMode.ByPawn, Danger.Deadly), 50, validator);

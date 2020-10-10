@@ -102,6 +102,7 @@
     <Compile Include="Facepaint\JobDriver_ChangeFacepaint.cs" />
     <Compile Include="Feast\InteractionWorker_DrunkChat.cs" />
     <Compile Include="Feast\InteractionWorker_VeryDrunkChat.cs" />
+    <Compile Include="Feast\ThoughtWorker_TakingPartInFeast.cs" />
     <Compile Include="MapGeneration\ScenPart_AddSettlements.cs" />
     <Compile Include="Mead\Building_MeadBarrel.cs" />
     <Compile Include="Mead\JobDriver_FillMeadBarrel.cs" />

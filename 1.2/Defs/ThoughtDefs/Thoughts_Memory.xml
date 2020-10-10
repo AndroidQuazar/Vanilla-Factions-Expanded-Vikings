@@ -39,5 +39,17 @@
       </li>
     </stages>
   </ThoughtDef>
+  
+	<ThoughtDef>
+    <defName>VFEV_TakingPartInFeast</defName>
+	<workerClass>VFEV.ThoughtWorker_TakingPartInFeast</workerClass>
+    <stages>
+      <li>
+        <label>I am taking part in a feast</label>
+        <description>I have a good time at the feast!</description>
+        <baseMoodEffect>10</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
 
 </Defs>
