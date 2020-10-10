@@ -46,7 +46,7 @@ namespace VFEV
 
         protected override void ResolveRaidPoints(IncidentParms parms)
         {
-            parms.points = StorytellerUtility.DefaultThreatPointsNow(parms.target) * 5f;
+            parms.points = StorytellerUtility.DefaultThreatPointsNow(parms.target) * 2f;
         }
 
         public override void ResolveRaidStrategy(IncidentParms parms, PawnGroupKindDef groupKind)
