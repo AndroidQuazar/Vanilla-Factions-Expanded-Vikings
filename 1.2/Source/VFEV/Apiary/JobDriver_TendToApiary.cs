@@ -41,11 +41,11 @@ namespace VFEV
                     }
                     else
                     {
-                        if (Rand.RangeInclusive(1, 2) == 1)
+                        /*if (Rand.RangeInclusive(1, 2) == 1)
                         {
                             pawn.TakeDamage(new DamageInfo(VFEV_DefOf.VFEV_DamageSting, 1));
                             pawn.TakeDamage(new DamageInfo(DamageDefOf.Stun, 1));
-                        } 
+                        }*/
                         pawn.needs.mood.thoughts.memories.TryGainMemoryFast(VFEV_DefOf.VFEV_StingMoodDebuff);
                         MoteMaker.ThrowText(pawn.DrawPos, pawn.Map, "Tending failed", 5f);
                         pawn.jobs.StartJob(new Job(VFEV_DefOf.VFEV_TendToApiary, TargetA));
