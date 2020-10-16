@@ -32,7 +32,10 @@ namespace VFEV
                 this.pawn.GainComfortFromCellIfPossible(false);
                 if (this.pawn.meleeVerbs.TryMeleeAttack(TargetA.Thing))
                 {
-                    SoundDef.Named("Pawn_Melee_Punch_HitBuilding_Quiet").PlayOneShot(new TargetInfo(this.TargetThingA));
+                    var info = SoundInfo.InMap(new TargetInfo(this.TargetThingA), MaintenanceType.None);
+                    SoundInfo var = SoundInfo.InMap(new TargetInfo(this.TargetThingA));
+                    var.volumeFactor = 0.25f;
+                    SoundDef.Named("Pawn_Melee_Punch_HitBuilding_Quiet").PlayOneShot(var);
                     this.pawn.skills.Learn(SkillDefOf.Melee, 30f, false);
                     TargetThingA.HitPoints = initialXP;
                 }
