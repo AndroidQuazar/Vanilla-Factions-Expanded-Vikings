@@ -21,7 +21,7 @@ namespace VFEV
 
 		public override void Generate(Map map, GenStepParams parms)
 		{
-			IncidentParms incidentParms = StorytellerUtility.DefaultParmsNow(IncidentCategoryDefOf.ThreatBig, map);
+			IncidentParms incidentParms = StorytellerUtility.DefaultParmsNow(IncidentCategoryDefOf.ThreatSmall, map);
 			incidentParms.faction = parms.sitePart.site.Faction;
 			if (incidentParms.faction == null) incidentParms.faction = Faction.OfMechanoids;
 			incidentParms.points = parms.sitePart.parms.threatPoints;

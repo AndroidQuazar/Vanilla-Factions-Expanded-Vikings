@@ -184,7 +184,7 @@
         <defName>VFEV_Lothurr</defName>
         <label>lothurr</label>
         <description>A gigantic, dragon-like creature of unknown origin. The lothurr is peaceful by nature, but extremely dangerous when enraged. Its fur and armour plates are incredibly resistant to damage and cold, while it's majestic antlers fetch a huge price.\n\nMany legends surround the lothurrs. Some say it is the manifestation of the old nordic gods while others claim they are a truly alien species, other tall tales claim the beast is able to vanish and rapidly reappear elsewhere at will.</description>
-		<statBases>
+        <statBases>
             <MoveSpeed>3.5</MoveSpeed>
             <MarketValue>3500</MarketValue>
             <ComfyTemperatureMin>-65</ComfyTemperatureMin>
@@ -283,11 +283,14 @@
             <soundMeleeHitBuilding>Pawn_Melee_BigBash_HitBuilding</soundMeleeHitBuilding>
             <soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
         </race>
-		<comps>
+        <butcherProducts>
+			<VFEV_LothurrAntler>1</VFEV_LothurrAntler>
+		</butcherProducts>
+        <comps>
             <li Class="VFEV.CompProperties_PawnTeleporter">
                 <cooldown>4200</cooldown>
-				<minDistance>200</minDistance>
-				<disableManhunterState>true</disableManhunterState>
+                <minDistance>200</minDistance>
+                <disableManhunterState>true</disableManhunterState>
             </li>
         </comps>
         <tradeTags>
@@ -346,11 +349,6 @@
                     <texPath>Things/Pawn/Animal/Lothurr/Dessicated_Lothurr</texPath>
                     <drawSize>4.8</drawSize>
                 </dessicatedBodyGraphicData>
-		<butcherBodyPart>
-          <bodyPartGroup>HornAttackTool</bodyPartGroup>
-          <thing>VFEV_LothurrAntler</thing>
-          <allowFemale>false</allowFemale>
-        </butcherBodyPart>
             </li>
         </lifeStages>
     </PawnKindDef>
