@@ -46,14 +46,18 @@
               </points>
             </curve>
           </li>
-          <li Class="FocusStrengthOffset_BuildingDefs">
-            <defs><li>AnimusStone</li><li>NatureShrine_Small</li><li>NatureShrine_Large</li></defs>
-            <radius>9.9</radius>
-            <maxBuildings>4</maxBuildings>
-            <offsetPerBuilding>0.02</offsetPerBuilding>
-            <explanationKey>MeditationFocusPerAnimusStone</explanationKey>
-            <explanationKeyAbstract>MeditationFocusPerAnimusStoneAbstract</explanationKeyAbstract>
-          </li>
+<li Class="FocusStrengthOffset_BuildingDefs">
+    <defs>
+        <li MayRequire="Ludeon.RimWorld.Royalty">AnimusStone</li>
+        <li MayRequire="Ludeon.RimWorld.Royalty">NatureShrine_Small</li>
+        <li MayRequire="Ludeon.RimWorld.Royalty">NatureShrine_Large</li>
+    </defs>
+    <radius>9.9</radius>
+    <maxBuildings>4</maxBuildings>
+    <offsetPerBuilding>0.02</offsetPerBuilding>
+    <explanationKey>MeditationFocusPerAnimusStone</explanationKey>
+    <explanationKeyAbstract>MeditationFocusPerAnimusStoneAbstract</explanationKeyAbstract>
+</li>
         </offsets>
       </li>
     </comps>
