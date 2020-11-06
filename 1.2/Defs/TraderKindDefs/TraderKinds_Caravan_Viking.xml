@@ -87,13 +87,11 @@
       <!-- Rewards -->
 	<li Class="VFECore.StockGenerator_ThingSetMakerTags">
 		<thingSetMakerTags>
-			<li>RewardStandardLowFreq</li>
 			<li>RewardStandardMidFreq</li>
 			<li>RewardStandardHighFreq</li>
-			<li>RewardStandardQualitySuper</li>
 		</thingSetMakerTags>
-        <thingDefCountRange>3~9</thingDefCountRange>
-        <countRange>3~9</countRange>
+        <thingDefCountRange>9~12</thingDefCountRange>
+        <countRange>1</countRange>
       </li>
       <li Class="StockGenerator_Tag">
         <tradeTag>ExoticBuilding</tradeTag>
