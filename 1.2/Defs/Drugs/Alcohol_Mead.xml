@@ -121,7 +121,7 @@
               </li>
             </capMods>
 			<statOffsets>
-					<PsychicSensitivity>-0.02</PsychicSensitivity>
+					<MentalBreakThreshold>-0.05</MentalBreakThreshold>
 			</statOffsets>
         </li>
         <li>
@@ -140,7 +140,7 @@
               </li>
             </capMods>
 			<statOffsets>
-					<PsychicSensitivity>-0.05</PsychicSensitivity>
+					<MentalBreakThreshold>-0.15</MentalBreakThreshold>
 				</statOffsets>
         </li>
         <li>
@@ -161,7 +161,7 @@
               </li>
             </capMods>
 			<statOffsets>
-					<PsychicSensitivity>-0.15</PsychicSensitivity>
+					<MentalBreakThreshold>-0.25</MentalBreakThreshold>
 				</statOffsets>
         </li>
         <li>
@@ -182,7 +182,7 @@
               </li>
             </capMods>
 			<statOffsets>
-					<PsychicSensitivity>-0.25</PsychicSensitivity>
+					<MentalBreakThreshold>-0.50</MentalBreakThreshold>
 				</statOffsets>
         </li>
         <li>
