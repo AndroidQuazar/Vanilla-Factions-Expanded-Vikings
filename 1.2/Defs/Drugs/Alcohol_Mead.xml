@@ -207,6 +207,35 @@
         </li>
       </stages>
   </HediffDef>
+  
+  <ThoughtDef>
+    <defName>VFEV_Inebriated</defName>
+    <workerClass>ThoughtWorker_Hediff</workerClass>
+    <hediff>VFEF_MeadAlcoholHigh</hediff>
+    <validWhileDespawned>true</validWhileDespawned>
+    <stages>
+      <li>
+        <label>alcohol warmth</label>
+        <description>I just feel a bit more relaxed after that drink. That's good.</description>
+        <baseMoodEffect>10</baseMoodEffect>
+      </li>
+      <li>
+        <label>quite inebriated</label>
+        <description>I'm a bit wobbly! And this is quite enjoyable.</description>
+        <baseMoodEffect>14</baseMoodEffect>
+      </li>     
+      <li>
+        <label>drunk</label>
+        <description>I feel so uninhibited and unafraid! This is a great time!</description>
+        <baseMoodEffect>20</baseMoodEffect>
+      </li>
+      <li>
+        <label>hammered</label>
+        <description>Wooo! What's going on?</description>
+        <baseMoodEffect>26</baseMoodEffect>
+      </li>   
+    </stages>
+  </ThoughtDef>
 
  
 
