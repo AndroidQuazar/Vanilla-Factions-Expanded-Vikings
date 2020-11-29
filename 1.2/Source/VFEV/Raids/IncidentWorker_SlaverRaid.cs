@@ -47,88 +47,88 @@ namespace VFEV
                 pawns.Add(pawn);
             }
         }
+
+
+        public List<Pawn> SpawnThreats(IncidentParms parms)
+        {
+            if (parms.pawnKind != null)
+            {
+                List<Pawn> list = new List<Pawn>();
+                for (int i = 0; i < parms.pawnCount; i++)
+                {
+                    PawnGenerationRequest request = new PawnGenerationRequest(parms.pawnKind, parms.faction, PawnGenerationContext.NonPlayer, -1, forceGenerateNewPawn: false, newborn: false, allowDead: false, allowDowned: false, canGeneratePawnRelations: true, mustBeCapableOfViolence: true, 1f, forceAddFreeWarmLayerIfNeeded: false, allowGay: true, biocodeWeaponChance: parms.biocodeWeaponsChance, allowFood: true);
+                    request.BiocodeApparelChance = 1f;
+                    Pawn pawn = PawnGenerator.GeneratePawn(request);
+                    if (pawn != null)
+                    {
+                        list.Add(pawn);
+                    }
+                }
+            }
+            return null;
+        }
+
         protected override bool TryExecuteWorker(IncidentParms parms)
         {
-            this.ResolveRaidPoints(parms);
-            if (!this.TryResolveRaidFaction(parms))
-            {
-                return false;
-            }
-            if (parms.faction.RelationKindWith(Faction.OfPlayer) == FactionRelationKind.Ally
-                || parms.faction.RelationKindWith(Faction.OfPlayer) == FactionRelationKind.Neutral)
+            ResolveRaidPoints(parms);
+            if (!TryResolveRaidFaction(parms))
             {
                 return false;
             }
             PawnGroupKindDef combat = PawnGroupKindDefOf.Combat;
-            this.ResolveRaidStrategy(parms, combat);
-            this.ResolveRaidArriveMode(parms);
+            ResolveRaidStrategy(parms, combat);
+            ResolveRaidArriveMode(parms);
             parms.raidStrategy.Worker.TryGenerateThreats(parms);
             if (!parms.raidArrivalMode.Worker.TryResolveRaidSpawnCenter(parms))
             {
                 return false;
             }
-            parms.points = IncidentWorker_Raid.AdjustedRaidPoints(parms.points, parms.raidArrivalMode, parms.raidStrategy, parms.faction, combat);
-            List<Pawn> list = parms.raidStrategy.Worker.SpawnThreats(parms);
-            if (list != null) GenerateAnimals(parms.faction, list);
-
+            float points = parms.points;
+            parms.points = AdjustedRaidPoints(parms.points, parms.raidArrivalMode, parms.raidStrategy, parms.faction, combat);
+            List<Pawn> list = SpawnThreats(parms);
             if (list == null)
             {
-                var groupMaker = IncidentParmsUtility.GetDefaultPawnGroupMakerParms(combat, parms, false);
-                //Log.Message("groupMaker: " + groupMaker.groupKind, true);
-                //Log.Message("groupMaker.raidStrategy: " + groupMaker.raidStrategy, true);
-                //Log.Message("groupMaker.points: " + groupMaker.points, true);
-                list = PawnGroupMakerUtility.GeneratePawns(groupMaker, true).ToList<Pawn>();
-                foreach (var p in list)
-                {
-                    //Log.Message("parms.pawnKind: " + p.kindDef, true);
-                }
+                list = PawnGroupMakerUtility.GeneratePawns(IncidentParmsUtility.GetDefaultPawnGroupMakerParms(combat, parms)).ToList();
                 if (list.Count == 0)
                 {
-                    Log.Error("Got no pawns spawning raid from parms " + parms, false);
+                    Log.Error("Got no pawns spawning raid from parms " + parms);
                     return false;
                 }
-                GenerateAnimals(parms.faction, list);
-                parms.raidArrivalMode.Worker.Arrive(list, parms);
             }
-            StringBuilder stringBuilder = new StringBuilder();
-            stringBuilder.AppendLine("Points = " + parms.points.ToString("F0"));
-            foreach (Pawn pawn in list)
-            {
-                string str = (pawn.equipment != null && pawn.equipment.Primary != null) ? pawn.equipment.Primary.LabelCap : "unarmed";
-                stringBuilder.AppendLine(pawn.KindLabel + " - " + str);
-            }
-            TaggedString baseLetterLabel = this.GetLetterLabel(parms);
-            TaggedString baseLetterText = this.GetLetterText(parms, list);
-            PawnRelationUtility.Notify_PawnsSeenByPlayer_Letter(list, ref baseLetterLabel, ref baseLetterText, this.GetRelatedPawnsInfoLetterText(parms), true, true);
+
+            GenerateAnimals(parms.faction, list);
+            parms.raidArrivalMode.Worker.Arrive(list, parms);
+            GenerateRaidLoot(parms, points, list);
+            TaggedString letterLabel = GetLetterLabel(parms);
+            TaggedString letterText = GetLetterText(parms, list);
+            PawnRelationUtility.Notify_PawnsSeenByPlayer_Letter(list, ref letterLabel, ref letterText, GetRelatedPawnsInfoLetterText(parms), informEvenIfSeenBefore: true);
             List<TargetInfo> list2 = new List<TargetInfo>();
             if (parms.pawnGroups != null)
             {
                 List<List<Pawn>> list3 = IncidentParmsUtility.SplitIntoGroups(list, parms.pawnGroups);
                 List<Pawn> list4 = list3.MaxBy((List<Pawn> x) => x.Count);
-                if (list4.Any<Pawn>())
+                if (list4.Any())
                 {
                     list2.Add(list4[0]);
                 }
                 for (int i = 0; i < list3.Count; i++)
                 {
-                    if (list3[i] != list4 && list3[i].Any<Pawn>())
+                    if (list3[i] != list4 && list3[i].Any())
                     {
                         list2.Add(list3[i][0]);
                     }
                 }
             }
-            else if (list.Any<Pawn>())
+            else if (list.Any())
             {
-                foreach (Pawn t in list)
+                foreach (Pawn item in list)
                 {
-                    list2.Add(t);
+                    list2.Add(item);
                 }
             }
-            base.SendStandardLetter(baseLetterLabel, baseLetterText, this.GetLetterDef(), parms, list2, Array.Empty<NamedArgument>());
-            
+            SendStandardLetter(letterLabel, letterText, GetLetterDef(), parms, list2);
             var lord = new LordJob_AssaultColony(parms.faction, false, true, true, true, false);
             LordMaker.MakeNewLord(parms.faction, lord, (Map)parms.target, list);
-
             foreach (var pawn in list)
             {
                 if (pawn.RaceProps.Humanlike)
@@ -140,6 +140,7 @@ namespace VFEV
                     pawn.mindState.duty = new PawnDuty(DutyDefOf.AssaultColony);
                 }
             }
+
             LessonAutoActivator.TeachOpportunity(ConceptDefOf.EquippingWeapons, OpportunityType.Critical);
             if (!PlayerKnowledgeDatabase.IsComplete(ConceptDefOf.ShieldBelts))
             {
@@ -154,7 +155,6 @@ namespace VFEV
             }
             return true;
         }
-
         protected override string GetLetterLabel(IncidentParms parms)
         {
             return base.def.letterLabel;

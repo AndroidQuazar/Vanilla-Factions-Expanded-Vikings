@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
     <ThingDef ParentName="AnimalThingBase">
@@ -106,7 +106,7 @@
         <defName>VFEV_Wolfhound</defName>
         <label>wolfhound</label>
         <race>VFEV_Wolfhound</race>
-        <combatPower>85</combatPower>
+        <combatPower>115</combatPower>
         <ecoSystemWeight>0.7</ecoSystemWeight>
         <lifeStages>
             <li>
