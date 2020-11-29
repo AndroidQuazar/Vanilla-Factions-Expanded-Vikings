@@ -4,7 +4,7 @@
 	<ThingDef ParentName="ArmorSmithableBase">
 		<defName>VFEV_Apparel_GuardianArmor</defName>
 		<label>guardian armor</label>
-		<description>A heavy, metallic breastplate meant to provide warmth and protection to heavy infantry during battles in frigid tundras. Unfortunately, this armor leaves on slowed and more vulnerable to melee attacks.</description>
+		<description>A heavy, metallic breastplate meant to provide warmth and protection to heavy infantry during battles in frigid tundras. Unfortunately, this armor leaves one slowed and more vulnerable to melee attacks.</description>
 		<graphicData>
 			<texPath>Things/Pawn/Humanlike/Apparel/BrigandineArmor/BrigandineArmor</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
