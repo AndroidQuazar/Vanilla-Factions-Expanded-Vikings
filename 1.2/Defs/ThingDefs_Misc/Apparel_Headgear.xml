@@ -8,7 +8,7 @@
     <techLevel>Medieval</techLevel>
     <recipeMaker>
       <researchPrerequisite Inherit='False'>PlateArmor</researchPrerequisite>
-      <recipeUsers>
+      <recipeUsers Inherit='False'>
         <li>ElectricSmithy</li>
         <li>FueledSmithy</li>
       </recipeUsers>
@@ -110,7 +110,7 @@
     <description>A simple metallic helmet designed to not block ones communication during combat. Often worn by front line, shield-wielding infantry to soak damage.</description>
     <techLevel>Medieval</techLevel>
     <recipeMaker>
-      <recipeUsers>
+      <recipeUsers Inherit='False'>
         <li>ElectricSmithy</li>
         <li>FueledSmithy</li>
       </recipeUsers>
