@@ -45,8 +45,8 @@
 	<workerClass>VFEV.ThoughtWorker_TakingPartInFeast</workerClass>
     <stages>
       <li>
-        <label>I am taking part in a feast</label>
-        <description>I have a good time at the feast!</description>
+        <label>Taking part in a feast</label>
+        <description>I'm just having enjoying myself!</description>
         <baseMoodEffect>10</baseMoodEffect>
       </li>
     </stages>
