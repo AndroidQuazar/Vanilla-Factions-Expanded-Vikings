@@ -84,6 +84,7 @@
     <goodwillDailyGain>0.2</goodwillDailyGain>
     <goodwillDailyFall>0.2</goodwillDailyFall>
     <startingGoodwill>-20</startingGoodwill>
+    <naturalColonyGoodwill>-20~-5</naturalColonyGoodwill>
     <pawnGroupMakers>
       <li>
         <!-- Peaceful -->
