@@ -29,7 +29,6 @@ namespace VFEV
                 foreach (var pawnData in pawnsToTeleport)
                 {
                     var teleportComp = pawnData.Key.TryGetComp<CompPawnTeleporter>();
-                    //Log.Message("teleportComp.appearInTick: " + teleportComp.appearInTick);
                     if (teleportComp != null && teleportComp.disappear && Find.TickManager.TicksGame >= teleportComp.appearInTick)
                     {
                         GenPlace.TryPlaceThing(pawnData.Key, pawnData.Value, this.map,

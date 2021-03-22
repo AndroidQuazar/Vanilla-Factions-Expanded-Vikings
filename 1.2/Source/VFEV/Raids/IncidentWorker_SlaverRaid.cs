@@ -75,6 +75,10 @@ namespace VFEV
             {
                 return false;
             }
+            if (!parms.faction.HostileTo(Faction.OfPlayer))
+            {
+                return false;
+            }
             PawnGroupKindDef combat = PawnGroupKindDefOf.Combat;
             ResolveRaidStrategy(parms, combat);
             ResolveRaidArriveMode(parms);
