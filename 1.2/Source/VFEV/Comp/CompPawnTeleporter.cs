@@ -36,7 +36,7 @@ namespace VFEV
                 readyToUseTicks = Find.TickManager.TicksGame + Props.cooldown;
                 IntVec3 loc = IntVec3.Invalid;
                 if (CellFinderLoose.TryFindRandomNotEdgeCellWith(10, (IntVec3 x) =>
-                    hostiles.Where(y => y.Position.DistanceTo(x) > Props.minDistance).Count() == 0, 
+                    hostiles.Where(y => y.Position.DistanceTo(x) > Props.minDistance).Count() == 0 && x.Walkable(this.parent.Map) && !x.Fogged(this.parent.Map), 
                     pawn.Map, out loc))
                 {
                     MoteMaker.MakeStaticMote(pawn.Position, pawn.Map, ThingDefOf.Mote_PsycastAreaEffect, 10f);
