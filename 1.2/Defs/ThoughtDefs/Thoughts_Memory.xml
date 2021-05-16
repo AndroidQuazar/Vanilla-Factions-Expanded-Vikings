@@ -46,7 +46,7 @@
     <stages>
       <li>
         <label>Taking part in a feast</label>
-        <description>I'm just having enjoying myself!</description>
+        <description>I'm just enjoying myself!</description>
         <baseMoodEffect>10</baseMoodEffect>
       </li>
     </stages>
