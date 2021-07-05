@@ -367,6 +367,7 @@ namespace VFEV.Facepaint
 
                 pawn.Drawer.renderer.graphics.ResolveAllGraphics();
                 PortraitsCache.SetDirty(pawn);
+                GlobalTextureAtlasManager.TryMarkPawnFrameSetDirty(pawn);
             }
 
             public Color FacepaintColor(bool coloursTied)

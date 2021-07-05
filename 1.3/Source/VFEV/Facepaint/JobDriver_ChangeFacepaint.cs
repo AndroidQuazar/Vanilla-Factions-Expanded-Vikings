@@ -55,6 +55,7 @@ namespace VFEV.Facepaint
                                                                   facepaintComp.colorTwo = this.newFacepaintColorTwo.Value;
                                                           }
 
+                                                          GlobalTextureAtlasManager.TryMarkPawnFrameSetDirty(pawn);
                                                           pawn.Drawer.renderer.graphics.ResolveAllGraphics();
                                                           PortraitsCache.SetDirty(pawn);
                                                           pawn.jobs.EndCurrentJob(JobCondition.Succeeded);

@@ -53,36 +53,34 @@ namespace VFEV.Facepaint
                 }
 
                 // Looking for any assignments to 'bool flag'
-                if (instruction.operand is LocalBuilder lb && lb.LocalIndex == 4)
+                if (instruction.opcode == OpCodes.Stloc_3)
                 {
-                    if (instruction.opcode == OpCodes.Stloc_S)
+                    if (!hideHairDeclared)
                     {
-                        var prevInstruction = instructionList[i - 1];
-                        if (!hideHairDeclared)
-                        {
-                            yield return instruction; // bool beardHidden
-                            yield return new CodeInstruction(OpCodes.Ldc_I4_0); // false
-                            instruction = new CodeInstruction(OpCodes.Stloc_S, hideFacepaint.LocalIndex); // hideFacepaint = false
-                            hideHairDeclared = true;
-                        } else if (!hideHairAssigned)
-                        {
-                            yield return instruction; // flag = true
-                            yield return new CodeInstruction(OpCodes.Ldc_I4_1);
-                            yield return new CodeInstruction(OpCodes.Stloc_S, hideFacepaint.LocalIndex); // hideFacepaint
-                            hideHairAssigned = true;
-                        }
-                    }else if (!drawFacepaintCall && hideHairAssigned && instruction.opcode == OpCodes.Ldloc_S)
-                    {
-                        yield return new CodeInstruction(OpCodes.Ldarg_0) { labels = instruction.ExtractLabels()}; // this
-                        yield return new CodeInstruction(OpCodes.Ldloc_S, hideFacepaint.LocalIndex); // hideFacepaint
-                        yield return new CodeInstruction(OpCodes.Ldarg_S, 6);                        // bodyDrawType
-                        yield return new CodeInstruction(OpCodes.Ldarg_S, 7);                        // renderFlags
-                        yield return new CodeInstruction(OpCodes.Ldarg_S, 5);                        // headFacing
-                        yield return new CodeInstruction(OpCodes.Ldloc_0);                       // loc2
-                        yield return new CodeInstruction(OpCodes.Ldloc_2);                           // quaternion
-                        yield return new CodeInstruction(OpCodes.Call,    renderFacepaint);          // RenderFacepaint(this, hideFacepaint, bodyDrawType, headStump, headFacing, loc2, quaternion, portrait)
-                        drawFacepaintCall = true;
+                        yield return instruction;                                                          // bool beardHidden
+                        yield return new CodeInstruction(OpCodes.Ldc_I4_0);                                // false
+                        instruction      = new CodeInstruction(OpCodes.Stloc_S, hideFacepaint.LocalIndex); // hideFacepaint = false
+                        hideHairDeclared = true;
                     }
+                    else if (!hideHairAssigned)
+                    {
+                        yield return instruction; // flag = true
+                        yield return new CodeInstruction(OpCodes.Ldc_I4_1);
+                        instruction = new CodeInstruction(OpCodes.Stloc_S, hideFacepaint.LocalIndex); // hideFacepaint
+                        hideHairAssigned = true;
+                    }
+                }
+                else if (!drawFacepaintCall && hideHairAssigned && instruction.opcode == OpCodes.Ldloc_3)
+                {
+                    yield return new CodeInstruction(OpCodes.Ldarg_0) {labels = instruction.ExtractLabels()}; // this
+                    yield return new CodeInstruction(OpCodes.Ldloc_S, hideFacepaint.LocalIndex); // hideFacepaint
+                    yield return new CodeInstruction(OpCodes.Ldarg_S, 6); // bodyDrawType
+                    yield return new CodeInstruction(OpCodes.Ldarg_S, 7); // renderFlags
+                    yield return new CodeInstruction(OpCodes.Ldarg_S, 5); // headFacing
+                    yield return new CodeInstruction(OpCodes.Ldloc_0); // loc2
+                    yield return new CodeInstruction(OpCodes.Ldloc_2); // quaternion
+                    yield return new CodeInstruction(OpCodes.Call, renderFacepaint); // RenderFacepaint(this, hideFacepaint, bodyDrawType, renderFlags, headFacing, loc2, quaternion)
+                    drawFacepaintCall = true;
                 }
 
 
@@ -98,13 +96,16 @@ namespace VFEV.Facepaint
 
         private static void RenderFacepaint(PawnRenderer instance, bool hideFacepaint, RotDrawMode bodyDrawType, PawnRenderFlags flags, Rot4 headFacing, Vector3 baseDrawPos, Quaternion quaternion)
         {
+
             var pawn = instance.graphics.pawn;
             if (bodyDrawType != RotDrawMode.Dessicated && !flags.FlagSet(PawnRenderFlags.HeadStump) &&
                 pawn.GetComp<CompFacepaint>() is CompFacepaint facepaintComp)
             {
                 Mesh mesh = instance.graphics.HairMeshSet.MeshAt(headFacing);
+
                 if (facepaintComp.facepaintGraphicOne != null) 
                     GenDraw.DrawMeshNowOrLater(mesh, baseDrawPos - new Vector3(0, 0.0007f, 0), quaternion, facepaintComp.facepaintGraphicOne.MatAt(headFacing), flags.FlagSet(PawnRenderFlags.DrawNow));
+
                 if (facepaintComp.facepaintGraphicTwo != null)
                     GenDraw.DrawMeshNowOrLater(mesh, baseDrawPos - new Vector3(0, 0.0005f, 0), quaternion, facepaintComp.facepaintGraphicTwo.MatAt(headFacing), flags.FlagSet(PawnRenderFlags.DrawNow));
             }
