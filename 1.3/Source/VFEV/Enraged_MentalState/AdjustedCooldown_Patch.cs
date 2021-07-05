@@ -8,7 +8,7 @@ using Verse.AI.Group;
 
 namespace VFEV
 {
-    [HarmonyPatch(typeof(Tool), "AdjustedCooldown")]
+    [HarmonyPatch(typeof(Tool), "AdjustedCooldown", new Type[] { typeof(Thing) })]
     internal static class AdjustedCooldown_Patch
     {
         public static void Postfix(Thing ownerEquipment, ref float __result)
