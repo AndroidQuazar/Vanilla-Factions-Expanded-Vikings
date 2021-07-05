@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <!-- ============= NewWorkType ============== -->
+
+    <!-- <WorkTypeDef>
+        <defName>VFEV_Beekeeping</defName>
+        <labelShort>Beekeeping</labelShort>
+        <pawnLabel>Beekeeper</pawnLabel>
+        <gerundLabel>beekeeping</gerundLabel>
+        <description>Tend to apiaries and harverst honey from them</description>
+        <verb>Beekeeping</verb>
+        <naturalPriority>1060</naturalPriority>
+        <alwaysStartActive>false</alwaysStartActive>
+    </WorkTypeDef> -->
+
+    <!-- ============= TakeHoneyOutOfApiary ============= -->
+
+    <WorkGiverDef>
+        <defName>VFEV_TakeHoneyOutOfApiary</defName>
+        <label>take honey out of apiary</label>
+        <giverClass>VFEV.WorkGiver_TakeHoneyOutOfApiary</giverClass>
+        <workType>Handling</workType>
+        <verb>take honey</verb>
+        <gerund>taking honey from</gerund>
+        <priorityInType>20</priorityInType>
+        <requiredCapacities>
+            <li>Manipulation</li>
+        </requiredCapacities>
+    </WorkGiverDef>
+
+    <!-- ============= TendToTheApiary ============= -->
+
+    <WorkGiverDef>
+        <defName>VFEV_endToTheApiary</defName>
+        <label>tend to the apiary</label>
+        <giverClass>VFEV.WorkGiver_TendToApiary</giverClass>
+        <workType>Handling</workType>
+        <verb>tend apiary</verb>
+        <gerund>tend to</gerund>
+        <priorityInType>20</priorityInType>
+        <requiredCapacities>
+            <li>Manipulation</li>
+        </requiredCapacities>
+    </WorkGiverDef>
+
+</Defs>

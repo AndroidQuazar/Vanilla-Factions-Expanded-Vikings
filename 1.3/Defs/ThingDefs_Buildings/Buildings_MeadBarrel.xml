@@ -1,0 +1,111 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <ThingDef ParentName="BuildingBase">
+    <defName>VFEV_MeadFermentingBarrel</defName>
+    <label>mead fermenting barrel</label>
+    <description>A very simple barrel, held together with a series of mortise and tenon joints.</description>
+    <thingClass>ItemProcessor.Building_ItemProcessor</thingClass>
+    <drawerType>MapMeshAndRealTime</drawerType>
+    <graphicData>
+      <texPath>Things/Building/Misc/MeadBarrel/MeadBarrel</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <damageData>
+        <rect>(0.05,0.1,0.9,0.9)</rect>
+      </damageData>
+      <shadowData>
+        <volume>(0.75, 0.35, 0.33)</volume>
+      </shadowData>
+    </graphicData>
+    <minifiedDef>MinifiedThing</minifiedDef>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+    <fillPercent>0.45</fillPercent>
+    <pathCost>42</pathCost>
+    <thingCategories>
+      <li>BuildingsProduction</li>
+    </thingCategories>
+    <statBases>
+      <WorkToBuild>600</WorkToBuild>
+      <Mass>10</Mass>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Flammability>1.0</Flammability>
+    </statBases>
+    <costList>
+      <WoodLog>45</WoodLog>
+    </costList>
+    <comps>
+      <li Class="ItemProcessor.CompProperties_ItemProcessor">
+        <buildingOnGraphic>Things/Building/Misc/MeadBarrel/MeadBarrel</buildingOnGraphic>
+        <numberOfInputs>1</numberOfInputs>
+        <qualitySelector>false</qualitySelector>
+        <acceptsNoneAsInput>false</acceptsNoneAsInput>
+        <InsertFirstItemDesc>VanillaFactionsExpanded.Mead.InsertFirstItemDesc</InsertFirstItemDesc>
+
+        <isSemiAutomaticMachine>true</isSemiAutomaticMachine>
+        <resetSemiautomaticIcon>UI/HoneyReset</resetSemiautomaticIcon> <!---->
+        <chooseIngredientsIcon>UI/HoneyEmpty</chooseIngredientsIcon> <!---->
+        <showProgressBar>true</showProgressBar>
+
+        <bringIngredientsText>VanillaFactionsExpanded.Mead.bringIngredientsText</bringIngredientsText>
+        <bringIngredientsDesc>VanillaFactionsExpanded.Mead.bringIngredientsDesc</bringIngredientsDesc>
+        <bringIngredientsIcon>UI/HoneyInsert</bringIngredientsIcon> <!---->
+
+        <cancelIngredientsText>VanillaFactionsExpanded.Mead.cancelIngredientsText</cancelIngredientsText>
+        <cancelIngredientsDesc>VanillaFactionsExpanded.Mead.cancelIngredientsDesc</cancelIngredientsDesc>
+        <cancelIngredientsIcon>UI/HoneyCancel</cancelIngredientsIcon> <!---->
+
+        <noPowerDestroysProgress>false</noPowerDestroysProgress>
+
+        <removeProductText>VanillaFactionsExpanded.Mead.removeProductText</removeProductText>
+        <removeProductDesc>VanillaFactionsExpanded.Mead.removeProductDesc</removeProductDesc>
+        <removeProductIcon>UI/RemoveMead</removeProductIcon> <!---->
+
+        <isTemperatureDependingMachine>true</isTemperatureDependingMachine>
+        <minTemp>7</minTemp>
+        <maxTemp>32</maxTemp>
+
+        <destroyIngredientsAtStartOfProcess>true</destroyIngredientsAtStartOfProcess>
+      </li>
+    </comps>
+    <tickerType>Rare</tickerType>
+    <rotatable>true</rotatable>
+    <designationCategory>Production</designationCategory>
+    <constructEffect>ConstructWood</constructEffect>
+    <building>
+      <buildingTags>
+        <li>Production</li>
+      </buildingTags>
+      <destroySound>BuildingDestroyed_Wood_Small</destroySound>
+    </building>
+    <researchPrerequisites>
+      <li>Brewing</li>
+    </researchPrerequisites>
+    <leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
+    <resourcesFractionWhenDeconstructed>0.75</resourcesFractionWhenDeconstructed>
+  </ThingDef>
+
+  <ItemProcessor.ItemAcceptedDef>
+    <defName>VFEV_MeadBarrelFirstItem</defName>
+    <building>VFEV_MeadFermentingBarrel</building>
+    <slot>1</slot>
+    <items>
+      <li>VFEV_Honey</li>
+    </items>
+  </ItemProcessor.ItemAcceptedDef>
+
+  <ItemProcessor.CombinationDef>
+    <defName>VFEV_HoneyToMead</defName>
+    <building>VFEV_MeadFermentingBarrel</building>
+    <items>
+      <li>VFEV_Honey</li>
+    </items>
+    <amount>
+      <li>75</li>
+    </amount>
+    <result>VFEV_Mead</result>
+    <yield>25</yield>
+    <useQualityIncreasing>false</useQualityIncreasing>
+  </ItemProcessor.CombinationDef>
+
+</Defs>

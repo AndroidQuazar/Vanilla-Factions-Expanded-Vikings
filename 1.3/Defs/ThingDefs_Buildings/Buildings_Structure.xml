@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <ThingDef ParentName="BuildingBase">
+        <defName>VFEV_RunedColumn</defName>
+        <label>runed column</label>
+        <description>A column with ornate engravings in a supposedly mysterious language only legible by few. Quite pleasing to look at while also being a handy roof support.</description>
+        <graphicData>
+            <drawSize>(1.5,1.5)</drawSize>
+			<drawOffset>(0,0,0.2)</drawOffset>
+            <texPath>Things/Building/Furniture/RunedColumn</texPath>
+            <graphicClass>Graphic_Random</graphicClass>
+            <shadowData>
+                <volume>(0.3, 0.5, 0.3)</volume>
+                <offset>(0,0,-0.23)</offset>
+            </shadowData>
+            <damageData>
+                <rect>(0.2,0.2,0.6,0.6)</rect>
+            </damageData>
+        </graphicData>
+        <designationCategory>Structure</designationCategory>
+		<uiIconScale>0.85</uiIconScale>
+        <altitudeLayer>Building</altitudeLayer>
+        <passability>PassThroughOnly</passability>
+        <fillPercent>0.25</fillPercent>
+        <pathCost>0</pathCost>
+        <minTechLevelToBuild>Neolithic</minTechLevelToBuild>
+		<specialDisplayRadius>6.9</specialDisplayRadius> <!-- must be kept in sync with roof hold-up radius -->
+        <statBases>
+            <MaxHitPoints>140</MaxHitPoints>
+            <WorkToBuild>1550</WorkToBuild>
+            <Mass>8</Mass>
+            <Flammability>1.0</Flammability>
+            <Beauty>10</Beauty>
+        </statBases>
+        <stuffCategories>
+            <li>Metallic</li>
+            <li>Woody</li>
+            <li>Stony</li>
+        </stuffCategories>
+        <costStuffCount>20</costStuffCount>
+        <holdsRoof>true</holdsRoof>
+        <canOverlapZones>false</canOverlapZones>
+        <rotatable>false</rotatable>
+        <fertility>0</fertility>
+        <building>
+            <isInert>true</isInert>
+            <ai_chillDestination>false</ai_chillDestination>
+        </building>
+    </ThingDef>
+
+</Defs>

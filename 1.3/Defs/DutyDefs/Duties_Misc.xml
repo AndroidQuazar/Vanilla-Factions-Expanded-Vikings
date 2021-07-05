@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<DutyDef>
+		<defName>VFEV_CaptureDownedVictimAndLeaveMap</defName>
+		<alwaysShowWeapon>true</alwaysShowWeapon>
+		<thinkNode Class="ThinkNode_Priority">
+			<subNodes>
+				<li Class="JobGiver_TakeCombatEnhancingDrug" />
+				<li Class="VFEV.JobGiver_CaptureDownedVictimAndLeaveMap" />
+				<li Class="JobGiver_AIFightEnemies">
+					<targetAcquireRadius>65</targetAcquireRadius>
+					<targetKeepRadius>72</targetKeepRadius>
+				</li>
+				<li Class="VFEV.JobGiver_CaptureDownedVictimAndLeaveMap" />
+				<li Class="JobGiver_AITrashColonyClose" />
+				<li Class="VFEV.JobGiver_CaptureDownedVictimAndLeaveMap" />
+				<li Class="JobGiver_AITrashBuildingsDistant" />
+				<li Class="VFEV.JobGiver_CaptureDownedVictimAndLeaveMap" />
+				<li Class="JobGiver_AIGotoNearestHostile" />
+				<li Class="VFEV.JobGiver_CaptureDownedVictimAndLeaveMap" />
+				<li Class="JobGiver_AITrashBuildingsDistant">
+					<attackAllInert>true</attackAllInert>
+				</li>
+				<li Class="VFEV.JobGiver_CaptureDownedVictimAndLeaveMap" />
+				<li Class="JobGiver_AISapper">
+					<canMineNonMineables>false</canMineNonMineables>
+				</li>
+				<li Class="VFEV.JobGiver_CaptureDownedVictimAndLeaveMap" />
+			</subNodes>
+		</thinkNode>
+	</DutyDef>
+
+	<DutyDef>
+		<defName>VFEV_BurnAndStealColony</defName>
+		<alwaysShowWeapon>true</alwaysShowWeapon>
+		<thinkNode Class="ThinkNode_Priority">
+			<subNodes>
+				<li Class="JobGiver_TakeCombatEnhancingDrug" />
+				<li Class="VFEV.JobGiver_BurnAndStealColony" />
+			</subNodes>
+		</thinkNode>
+	</DutyDef>
+
+	<DutyDef>
+		<defName>VFEV_Feast</defName>
+		<label>feast</label>
+		<hook>MediumPriority</hook>
+		<thinkNode Class="ThinkNode_Priority">
+			<subNodes>
+				<li Class="ThinkNode_ConditionalInGatheringArea">
+					<subNodes>
+						<!-- Eat -->
+						<li Class="ThinkNode_ConditionalRandom">
+							<chance>0.05</chance>
+							<subNodes>
+								<li Class="VFEV.JobGiver_EatDrinkAndTakeDrugsInGatheringArea" />
+							</subNodes>
+						</li>
+
+						<!-- Stand where you are and be socially active -->
+						<li Class="ThinkNode_ConditionalRandom">
+							<chance>0.35</chance>
+							<subNodes>
+								<li Class="JobGiver_StandAndBeSociallyActive">
+									<ticksRange>350~750</ticksRange>
+								</li>
+							</subNodes>
+						</li>
+
+						<!-- Get joy -->
+						<li Class="ThinkNode_ConditionalRandom">
+							<chance>0.1</chance>
+							<subNodes>
+								<li Class="JobGiver_GetJoyInGatheringArea" />
+							</subNodes>
+						</li>
+
+						<!-- Wander -->
+						<li Class="JobGiver_WanderInGatheringArea">
+							<ticksBetweenWandersRange>50~250</ticksBetweenWandersRange>
+						</li>
+					</subNodes>
+				</li>
+
+				<!-- Reach the party area -->
+				<li Class="JobGiver_WanderInGatheringArea">
+					<ticksBetweenWandersRange>50~250</ticksBetweenWandersRange>
+					<locomotionUrgency>Jog</locomotionUrgency>
+				</li>
+			</subNodes>
+		</thinkNode>
+	</DutyDef>
+
+</Defs>

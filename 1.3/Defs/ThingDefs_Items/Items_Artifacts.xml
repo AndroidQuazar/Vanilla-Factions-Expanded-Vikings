@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <ThingDef ParentName="ArtifactBase">
+        <defName>VFEV_PlantGrowerArtifact</defName>
+        <label>psychic cornucopia</label>
+        <description>A mysterious, single-use artifact which grows all plants nearby to maturity when activated. Created by a superior AI, it served as a gift to humanity long ago.</description>
+        <graphicData>
+            <texPath>Things/Item/Artifact/PsychicPlantGrower</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <resourceReadoutPriority>Middle</resourceReadoutPriority>
+        <stackLimit>1</stackLimit>
+        <tradeNeverStack>true</tradeNeverStack>
+        <useHitPoints>true</useHitPoints>
+        <statBases>
+            <MarketValue>700</MarketValue>
+            <MaxHitPoints>80</MaxHitPoints>
+        </statBases>
+        <drawGUIOverlay>false</drawGUIOverlay>
+        <comps>
+            <li Class="CompProperties_Targetable">
+                <compClass>VFEV.CompTargetable_AllPlantsOnTheMap</compClass>
+                <doCameraShake>true</doCameraShake>
+                <fleckOnUsed>PsycastAreaEffect</fleckOnUsed>
+                <fleckOnUsedScale>10</fleckOnUsedScale>
+            </li>
+            <li>
+                <compClass>VFEV.CompTargetEffect_PlantGrower</compClass>
+            </li>
+            <li Class="CompProperties_UseEffectArtifact">
+                <sound>PsychicAnimalPulserCast</sound>
+            </li>
+        </comps>
+    </ThingDef>
+
+</Defs>

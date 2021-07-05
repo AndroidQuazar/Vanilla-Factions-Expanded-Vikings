@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>RimBees</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationReplace"> 
+					<xpath>/Defs/ThingDef[defName="VFEV_MeadFermentingBarrel"]/label</xpath>
+					<value>
+						<label>honey-wine fermenting barrel</label>		
+					</value>
+				</li>
+							
+				<li Class="PatchOperationReplace"> 
+					<xpath>/Defs/ThingDef[defName="VFEV_Mead"]/label</xpath>
+					<value>
+						<label>honey-wine</label>		
+					</value>
+				</li>
+				
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>[SYR] Universal Fermenter</li>
+					</mods>
+					<nomatch Class="PatchOperationSequence">
+						<operations>
+							<li Class="PatchOperationReplace"> 
+								<xpath>/Defs/WorkGiverDef[defName="VFEV_TakeMeadOutOfMeadBarrel"]/verb</xpath>
+								<value>
+									<verb>take honey-wine out of</verb>
+								</value>
+							</li>
+							<li Class="PatchOperationReplace"> 
+								<xpath>/Defs/WorkGiverDef[defName="VFEV_TakeMeadOutOfMeadBarrel"]/gerund</xpath>
+								<value>
+									<gerund>taking honey-wine out of</gerund>
+								</value>
+							</li>
+							<li Class="PatchOperationReplace"> 
+								<xpath>/Defs/JobDef[defName="VFEV_TakeMeadOutOfMeadBarrel"]/reportString</xpath>
+								<value>
+									<reportString>taking honey-wine out of TargetA.</reportString>
+								</value>
+							</li>
+						</operations>
+					</nomatch>
+				</li>
+
+			</operations>
+		</match>
+	</Operation>
+
+</Patch>
+

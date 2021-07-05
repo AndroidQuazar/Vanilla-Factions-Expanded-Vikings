@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <CultureDef>
+    <defName>Vikings</defName>
+    <label>vikings</label>
+    <description>A techno-feudal culture centered on the planet Sophiamunda.</description>
+    <pawnNameMaker>NamerPersonViking</pawnNameMaker>
+    <pawnNameMakerFemale>NamerPersonViking</pawnNameMakerFemale>
+    <allowedPlaceTags>
+      <li>OriginTribal</li>
+    </allowedPlaceTags>
+    <iconPath>World/WorldObjects/Expanding/Village</iconPath>
+    <iconColor>(0.8, 0.8, 0.8)</iconColor>
+    <styleItemTags>
+      <li>
+        <tag>Rural</tag>
+        <baseWeight>1</baseWeight>
+        <weightFactor>1</weightFactor>
+      </li>
+      <li>
+        <tag>NoBeard</tag>
+        <baseWeight>10</baseWeight>
+        <weightFactor>1</weightFactor>
+      </li>
+      <li>
+        <tag>BeardRural</tag>
+        <baseWeight>0.15</baseWeight>
+        <weightFactor>1</weightFactor>
+      </li>
+      <li>
+        <tag>MoustacheOnly</tag>
+        <baseWeight>0.1</baseWeight>
+        <weightFactor>1</weightFactor>
+      </li>
+    </styleItemTags>
+  </CultureDef>
+
+</Defs>

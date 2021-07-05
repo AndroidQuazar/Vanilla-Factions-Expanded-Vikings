@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+    <ANeedTend>The apiary needs to be tended to.</ANeedTend>
+    <AResting>The apiary is resting, because the ambient temperature is below 10°C.</AResting>
+    <AReady>Honey ready.</AReady>
+    <ANeedFlower>The apiary needs {0} more flowers around it for bees to forage.</ANeedFlower>
+    <ANeedTIn>The apiary needs tending in {0}.</ANeedTIn>
+
+    <APlaceWorker>The apiary needs to be one cell away from any other apiaries.</APlaceWorker>
+    <APlaceWorkerNoRoof>The apiary can't be builded under a roof.</APlaceWorkerNoRoof>
+</LanguageData>

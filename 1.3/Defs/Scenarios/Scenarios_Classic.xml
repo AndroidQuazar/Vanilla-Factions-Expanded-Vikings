@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <ScenPartDef>
+		<defName>ScenPart_Settlement</defName>
+		<label>generate settlement</label>
+		<category>Misc</category>
+		<scenPartClass>ScenPart_GameStartDialog</scenPartClass>
+		<maxUses>1</maxUses>
+	</ScenPartDef>
+
+    <ScenarioDef>
+        <defName>VFEV_NewClan</defName>
+        <label>Restless Raid</label>
+        <description>The gods have been merciful. After a long and tiring journey through the land, your raiding party discovers a small tribal settlement, ready for the taking. Whilst certainly posing a challenge, the loot that can be obtained is more than worth it, and the makeshift shelter will be excellent for upcoming winter.\n\nNote: Due to lack of resources and a tough enemy present on the map, this is a difficult scenario.</description>
+        <scenario>
+            <summary>A group of raiders, ready to pillage a tribal settlement. Difficult.</summary>
+            <playerFaction>
+                <def>PlayerFaction</def>
+                <factionDef>VFEV_PlayerClan</factionDef>
+            </playerFaction>
+		<parts>
+			<li Class="VFEV.MapGeneration.ScenPart_AddSettlements">
+				<def>ScenPart_Settlement</def>
+			</li>
+			<li Class="ScenPart_ConfigPage_ConfigureStartingPawns">
+				<def>ConfigPage_ConfigureStartingPawns</def>
+				<pawnCount>7</pawnCount>
+				<pawnChoiceCount>10</pawnChoiceCount>
+			</li>
+			<li Class="VFECore.ScenPart_ArriveAtEdge">
+				<def>VFEC_PlayerPawnsArriveMethodEdge</def>
+				<location>(48, 0, 0)</location>
+			</li>
+			<li Class="ScenPart_SetNeedLevel">
+				<def>SetNeedLevel</def>
+				<chance>1</chance>
+				<context>PlayerStarter</context>
+				<need>Food</need>
+				<levelRange>0.5~0.7</levelRange>
+			</li>
+			<li Class="ScenPart_StartingThing_Defined">
+				<def>StartingThing_Defined</def>
+				<thingDef>VFE_MeleeWeapon_BeardedAxe</thingDef>
+				<stuff>Steel</stuff>
+				<count>2</count>
+			</li>
+			<li Class="ScenPart_StartingThing_Defined">
+				<def>StartingThing_Defined</def>
+				<thingDef>Bow_Recurve</thingDef>
+			</li>
+			<li Class="ScenPart_StartingThing_Defined">
+				<def>StartingThing_Defined</def>
+				<thingDef>VFE_Harpoon</thingDef>
+				<count>2</count>
+			</li>
+			<li Class="ScenPart_StartingThing_Defined">
+				<def>StartingThing_Defined</def>
+				<thingDef>VFE_MeleeWeapon_DaneAxe</thingDef>
+				<stuff>Steel</stuff>
+				<count>2</count>
+			</li>
+			<li Class="ScenPart_StartingThing_Defined">
+				<def>StartingThing_Defined</def>
+				<thingDef>VFEV_Shield_Round</thingDef>
+				<stuff>Leather_Bear</stuff>
+				<count>2</count>
+			</li>
+			<li Class="ScenPart_StartingThing_Defined">
+				<def>StartingThing_Defined</def>
+				<thingDef>Pemmican</thingDef>
+				<count>75</count>
+			</li>
+			<li Class="ScenPart_StartingThing_Defined">
+				<def>StartingThing_Defined</def>
+				<thingDef>MedicineHerbal</thingDef>
+				<count>20</count>
+			</li>
+			<li Class="ScenPart_StartingAnimal">
+				<def>StartingAnimal</def>
+				<animalKind>VFEV_Wolfhound</animalKind>
+				<count>4</count>
+			</li>
+		</parts>
+        </scenario>
+    </ScenarioDef>
+
+</Defs>

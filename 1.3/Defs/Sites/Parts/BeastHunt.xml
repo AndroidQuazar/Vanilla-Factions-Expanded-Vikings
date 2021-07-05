@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- Fenrir Hunt -->
+  <SitePartDef>
+    <defName>VFEV_FenrirHunt</defName>
+    <label>fenrir hunt</label>
+    <description>A legendary Fenrir has been sighted here. It will stay there for the foreseeable future but move on in time.</description>
+    <siteTexture>World/WorldObjects/Sites/GenericSite</siteTexture>
+    <expandingIconTexture>UI/Hunt_Fenrir</expandingIconTexture>
+    <handlesWorldObjectTimeoutInspectString>true</handlesWorldObjectTimeoutInspectString>
+    <tags>
+      <li>VFEV_FenrirHunt</li>
+    </tags>
+  </SitePartDef>
+
+  <GenStepDef>
+    <defName>VFEV_FenrirHuntGen</defName>
+    <linkWithSite>VFEV_FenrirHunt</linkWithSite>
+    <order>400</order>
+    <genStep Class="VFEV.MapGeneration.BeastHuntEvents.GenStep_Fenrir">
+      <count>1</count>
+      <nearMapCenter>true</nearMapCenter>
+    </genStep>
+  </GenStepDef>
+
+  <!-- Lothurr Hunt -->
+  <SitePartDef>
+    <defName>VFEV_LothurrHunt</defName>
+    <label>lothurr hunt</label>
+    <description>A legendary Lothurr has been sighted here. It will stay there for the foreseeable future but move on in time.</description>
+    <siteTexture>World/WorldObjects/Sites/GenericSite</siteTexture>
+    <expandingIconTexture>UI/Hunt_Lothurr</expandingIconTexture>
+    <handlesWorldObjectTimeoutInspectString>true</handlesWorldObjectTimeoutInspectString>
+    <tags>
+      <li>VFEV_LothurrHunt</li>
+    </tags>
+  </SitePartDef>
+
+  <GenStepDef>
+    <defName>VFEV_LothurrHuntGen</defName>
+    <linkWithSite>VFEV_LothurrHunt</linkWithSite>
+    <order>400</order>
+    <genStep Class="VFEV.MapGeneration.BeastHuntEvents.GenStep_Lothurr">
+      <count>1</count>
+      <nearMapCenter>true</nearMapCenter>
+    </genStep>
+  </GenStepDef>
+
+  <!-- Njörun Hunt -->
+  <SitePartDef>
+    <defName>VFEV_NjorunHunt</defName>
+    <label>njorun hunt</label>
+    <description>A legendary Njorun has been sighted here. It will stay there for the foreseeable future but move on in time.</description>
+    <siteTexture>World/WorldObjects/Sites/GenericSite</siteTexture>
+    <expandingIconTexture>UI/Hunt_Njorun</expandingIconTexture>
+    <handlesWorldObjectTimeoutInspectString>true</handlesWorldObjectTimeoutInspectString>
+    <tags>
+      <li>VFEV_NjorunHunt</li>
+    </tags>
+  </SitePartDef>
+
+  <GenStepDef>
+    <defName>VFEV_NjorunHuntGen</defName>
+    <linkWithSite>VFEV_NjorunHunt</linkWithSite>
+    <order>400</order>
+    <genStep Class="VFEV.MapGeneration.BeastHuntEvents.GenStep_Njorun">
+      <count>1</count>
+      <nearMapCenter>true</nearMapCenter>
+    </genStep>
+  </GenStepDef>
+
+  <!-- Thrumbo Hunt -->
+  <SitePartDef>
+    <defName>VFEV_ThrumboHunt</defName>
+    <label>thrumbo hunt</label>
+    <description>A legendary Thrumbo has been sighted here. It will stay there for the foreseeable future but move on in time.</description>
+    <siteTexture>World/WorldObjects/Sites/GenericSite</siteTexture>
+    <expandingIconTexture>UI/Hunt_Thrumbo</expandingIconTexture>
+    <handlesWorldObjectTimeoutInspectString>true</handlesWorldObjectTimeoutInspectString>
+    <tags>
+      <li>VFEV_ThrumboHunt</li>
+    </tags>
+  </SitePartDef>
+
+  <GenStepDef>
+    <defName>VFEV_ThrumboHuntGen</defName>
+    <linkWithSite>VFEV_ThrumboHunt</linkWithSite>
+    <order>400</order>
+    <genStep Class="VFEV.MapGeneration.BeastHuntEvents.GenStep_Thrumbo">
+      <count>1</count>
+      <nearMapCenter>true</nearMapCenter>
+    </genStep>
+  </GenStepDef>
+
+  <!-- Odin Hunt -->
+  <SitePartDef>
+    <defName>VFEV_OdinHunt</defName>
+    <label>odin hunt</label>
+    <description>A legendary Odin has been sighted here. It will stay there for the foreseeable future but move on in time.</description>
+    <siteTexture>World/WorldObjects/Sites/GenericSite</siteTexture>
+    <expandingIconTexture>UI/Hunt_Odin</expandingIconTexture>
+    <handlesWorldObjectTimeoutInspectString>true</handlesWorldObjectTimeoutInspectString>
+    <tags>
+      <li>VFEV_OdinHunt</li>
+    </tags>
+  </SitePartDef>
+
+  <GenStepDef>
+    <defName>VFEV_OdinHuntGen</defName>
+    <linkWithSite>VFEV_OdinHunt</linkWithSite>
+    <order>400</order>
+    <genStep Class="VFEV.MapGeneration.BeastHuntEvents.GenStep_Odin">
+      <count>1</count>
+      <nearMapCenter>true</nearMapCenter>
+    </genStep>
+  </GenStepDef>
+
+</Defs>

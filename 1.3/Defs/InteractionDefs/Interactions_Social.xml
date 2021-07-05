@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!-- Random social interactions -->
+
+	<InteractionDef>
+		<defName>VFEV_DrunkChitchat</defName>
+		<label>drunk chitchat</label>
+		<socialFightBaseChance>0.01</socialFightBaseChance>
+		<workerClass>VFEV.InteractionWorker_DrunkChat</workerClass>
+		<symbol>Things/Mote/SpeechSymbols/Chitchat</symbol>
+		<initiatorThought>Chitchat</initiatorThought>
+		<initiatorXpGainSkill>Social</initiatorXpGainSkill>
+		<initiatorXpGainAmount>4</initiatorXpGainAmount>
+		<recipientThought>Chitchat</recipientThought>
+		<logRulesInitiator>
+			<rulesStrings>
+				<li>r_logentry->[INITIATOR_nameDef] and [RECIPIENT_nameDef] [talkedabout] [TalkTopicLight].</li>
+				<li>r_logentry->[INITIATOR_nameDef] [talkedabout] [TalkTopicLight] with [RECIPIENT_nameDef].</li>
+				<li>r_logentry(p=0.8)->[INITIATOR_nameDef] [commentedabout] [TalkTopicLight] to [RECIPIENT_nameDef].</li>
+
+				<li>talkedabout(p=4)->chatted about</li>
+				<li>talkedabout->shared a word about</li>
+				<li>talkedabout->spoke about</li>
+				<li>talkedabout->gabbed about</li>
+				<li>talkedabout->talked about</li>
+				<li>talkedabout->joked about</li>
+				<li>talkedabout->quipped about</li>
+
+				<li>commentedabout->said something about</li>
+				<li>commentedabout->said a word about</li>
+				<li>commentedabout->made a comment about</li>
+				<li>commentedabout->commented about</li>
+				<li>commentedabout->told a joke about</li>
+
+			</rulesStrings>
+		</logRulesInitiator>
+	</InteractionDef>
+
+	<InteractionDef>
+		<defName>VFEV_VeryDrunkChitchat</defName>
+		<label>very drunk chitchat</label>
+		<workerClass>VFEV.InteractionWorker_VeryDrunkChat</workerClass>
+		<socialFightBaseChance>0.03</socialFightBaseChance>
+		<symbol>Things/Mote/SpeechSymbols/Chitchat</symbol>
+		<initiatorThought>Chitchat</initiatorThought>
+		<initiatorXpGainSkill>Social</initiatorXpGainSkill>
+		<initiatorXpGainAmount>4</initiatorXpGainAmount>
+		<recipientThought>Chitchat</recipientThought>
+		<logRulesInitiator>
+			<rulesStrings>
+				<li>r_logentry->[INITIATOR_nameDef] and [RECIPIENT_nameDef] [talkedabout] [TalkTopicLight].</li>
+				<li>r_logentry->[INITIATOR_nameDef] [talkedabout] [TalkTopicLight] with [RECIPIENT_nameDef].</li>
+				<li>r_logentry(p=0.8)->[INITIATOR_nameDef] [commentedabout] [TalkTopicLight] to [RECIPIENT_nameDef].</li>
+
+				<li>talkedabout(p=4)->chatted about</li>
+				<li>talkedabout->shared a word about</li>
+				<li>talkedabout->spoke about</li>
+				<li>talkedabout->gabbed about</li>
+				<li>talkedabout->talked about</li>
+				<li>talkedabout->joked about</li>
+				<li>talkedabout->quipped about</li>
+
+				<li>commentedabout->said something about</li>
+				<li>commentedabout->said a word about</li>
+				<li>commentedabout->made a comment about</li>
+				<li>commentedabout->commented about</li>
+				<li>commentedabout->told a joke about</li>
+
+			</rulesStrings>
+		</logRulesInitiator>
+	</InteractionDef>
+
+</Defs>

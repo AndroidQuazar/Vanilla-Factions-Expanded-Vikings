@@ -1,0 +1,354 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <KCSG.SymbolDef>
+    <defName>VFEV_Hnefatafl_WoodLog</defName>
+    <thing>VFEV_Hnefatafl</thing>
+    <stuff>WoodLog</stuff>
+    <symbol>VFEV_Hnefatafl_WoodLog</symbol>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+    <defName>VFEV_DoubleFurBed_Cloth_East</defName>
+    <thing>VFEV_DoubleFurBed</thing>
+    <stuff>Cloth</stuff>
+    <rotation>East</rotation>
+    <symbol>VFEV_DoubleFurBed_Cloth_East</symbol>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+    <defName>VFEV_DoubleFurBed_Cloth_West</defName>
+    <thing>VFEV_DoubleFurBed</thing>
+    <stuff>Cloth</stuff>
+    <rotation>West</rotation>
+    <symbol>VFEV_DoubleFurBed_Cloth_West</symbol>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+    <defName>VFEV_FurBed_Cloth_West</defName>
+    <thing>VFEV_FurBed</thing>
+    <stuff>Cloth</stuff>
+    <rotation>West</rotation>
+    <symbol>VFEV_FurBed_Cloth_West</symbol>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+    <defName>VFEV_FurBed_Cloth_East</defName>
+    <thing>VFEV_FurBed</thing>
+    <stuff>Cloth</stuff>
+    <rotation>East</rotation>
+    <symbol>VFEV_FurBed_Cloth_East</symbol>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+    <defName>VFEV_FurBed_Cloth_South</defName>
+    <thing>VFEV_FurBed</thing>
+    <stuff>Cloth</stuff>
+    <rotation>South</rotation>
+    <symbol>VFEV_FurBed_Cloth_South</symbol>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+    <defName>VFEV_TrainingDummy_South</defName>
+    <thing>VFEV_TrainingDummy</thing>
+    <rotation>South</rotation>
+    <symbol>VFEV_TrainingDummy_South</symbol>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+    <defName>VFEV_RunedColumn_WoodLog</defName>
+    <thing>VFEV_RunedColumn</thing>
+    <stuff>WoodLog</stuff>
+    <symbol>VFEV_RunedColumn_WoodLog</symbol>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+    <defName>VFEV_Hearth_Steel_North</defName>
+    <thing>VFEV_Hearth</thing>
+    <stuff>Steel</stuff>
+    <rotation>North</rotation>
+    <symbol>VFEV_Hearth_Steel_North</symbol>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+    <defName>VFEV_Apiary_WoodLog</defName>
+    <thing>VFEV_Apiary</thing>
+    <stuff>WoodLog</stuff>
+    <symbol>VFEV_Apiary_WoodLog</symbol>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+    <defName>Item_VFEV_Shield_Round</defName>
+    <thing>VFEV_Shield_Round</thing>
+    <isItem>true</isItem>
+    <stackCount>1~1</stackCount>
+    <symbol>Item_VFEV_Shield_Round</symbol>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+    <defName>Item_VFE_ThrowingAxe</defName>
+    <thing>VFE_ThrowingAxe</thing>
+    <isItem>true</isItem>
+    <stackCount>1~1</stackCount>
+    <symbol>Item_VFE_ThrowingAxe</symbol>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+    <defName>Item_VFE_MeleeWeapon_BeardedAxe</defName>
+    <thing>VFE_MeleeWeapon_BeardedAxe</thing>
+    <isItem>true</isItem>
+    <stackCount>1~1</stackCount>
+    <symbol>Item_VFE_MeleeWeapon_BeardedAxe</symbol>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+    <defName>Item_VFEV_Apparel_LeatherHelmet</defName>
+    <thing>VFEV_Apparel_LeatherHelmet</thing>
+    <isItem>true</isItem>
+    <stackCount>1~1</stackCount>
+    <symbol>Item_VFEV_Apparel_LeatherHelmet</symbol>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+    <defName>VFE_TableFacePaints_WoodLog_South</defName>
+    <thing>VFE_TableFacePaints</thing>
+    <stuff>WoodLog</stuff>
+    <rotation>South</rotation>
+    <symbol>VFE_TableFacePaints_WoodLog_South</symbol>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+    <defName>Item_VFEV_BearHeaddress</defName>
+    <thing>VFEV_BearHeaddress</thing>
+    <isItem>true</isItem>
+    <stackCount>1~1</stackCount>
+    <symbol>Item_VFEV_BearHeaddress</symbol>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+    <defName>Item_VFEV_Apparel_JarlCape</defName>
+    <thing>VFEV_Apparel_JarlCape</thing>
+    <isItem>true</isItem>
+    <stackCount>1~1</stackCount>
+    <symbol>Item_VFEV_Apparel_JarlCape</symbol>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+    <defName>VFEV_FurBed_WoolSheep_South</defName>
+    <thing>VFEV_FurBed</thing>
+    <stuff>WoolSheep</stuff>
+    <rotation>South</rotation>
+    <symbol>VFEV_FurBed_WoolSheep_South</symbol>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+    <defName>VFEV_DoubleFurBed_WoolSheep_South</defName>
+    <thing>VFEV_DoubleFurBed</thing>
+    <stuff>WoolSheep</stuff>
+    <rotation>South</rotation>
+    <symbol>VFEV_DoubleFurBed_WoolSheep_South</symbol>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+    <defName>VFEV_Hnefatafl_BlocksMarble</defName>
+    <thing>VFEV_Hnefatafl</thing>
+    <stuff>BlocksMarble</stuff>
+    <symbol>VFEV_Hnefatafl_BlocksMarble</symbol>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+    <defName>VFEV_TrainingDummy_East</defName>
+    <thing>VFEV_TrainingDummy</thing>
+    <rotation>East</rotation>
+    <symbol>VFEV_TrainingDummy_East</symbol>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+    <defName>VFEV_FurBed_WoolSheep_North</defName>
+    <thing>VFEV_FurBed</thing>
+    <stuff>WoolSheep</stuff>
+    <rotation>North</rotation>
+    <symbol>VFEV_FurBed_WoolSheep_North</symbol>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+    <defName>VFEV_FurBed_WoolSheep_West</defName>
+    <thing>VFEV_FurBed</thing>
+    <stuff>WoolSheep</stuff>
+    <rotation>West</rotation>
+    <symbol>VFEV_FurBed_WoolSheep_West</symbol>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+    <defName>VFEV_RunedColumn_BlocksMarble</defName>
+    <thing>VFEV_RunedColumn</thing>
+    <stuff>BlocksMarble</stuff>
+    <symbol>VFEV_RunedColumn_BlocksMarble</symbol>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+    <defName>VFEV_Hearth_BlocksMarble_North</defName>
+    <thing>VFEV_Hearth</thing>
+    <stuff>BlocksMarble</stuff>
+    <rotation>North</rotation>
+    <symbol>VFEV_Hearth_BlocksMarble_North</symbol>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+    <defName>Item_VFEV_Apparel_GuardianArmor</defName>
+    <thing>VFEV_Apparel_GuardianArmor</thing>
+    <isItem>true</isItem>
+    <stackCount>1~1</stackCount>
+    <symbol>Item_VFEV_Apparel_GuardianArmor</symbol>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+    <defName>Item_VFE_Harpoon</defName>
+    <thing>VFE_Harpoon</thing>
+    <isItem>true</isItem>
+    <stackCount>1~1</stackCount>
+    <symbol>Item_VFE_Harpoon</symbol>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+    <defName>VFEV_DoubleFurBed_WoolSheep_North</defName>
+    <thing>VFEV_DoubleFurBed</thing>
+    <stuff>WoolSheep</stuff>
+    <rotation>North</rotation>
+    <symbol>VFEV_DoubleFurBed_WoolSheep_North</symbol>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+    <defName>VFEV_DoubleFurBed_WoolSheep_West</defName>
+    <thing>VFEV_DoubleFurBed</thing>
+    <stuff>WoolSheep</stuff>
+    <rotation>West</rotation>
+    <symbol>VFEV_DoubleFurBed_WoolSheep_West</symbol>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+    <defName>Item_VFE_MeleeWeapon_DaneAxe</defName>
+    <thing>VFE_MeleeWeapon_DaneAxe</thing>
+    <isItem>true</isItem>
+    <stackCount>1~1</stackCount>
+    <symbol>Item_VFE_MeleeWeapon_DaneAxe</symbol>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+    <defName>VFEV_FurBed_WoolSheep_East</defName>
+    <thing>VFEV_FurBed</thing>
+    <stuff>WoolSheep</stuff>
+    <rotation>East</rotation>
+    <symbol>VFEV_FurBed_WoolSheep_East</symbol>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+    <defName>Item_VFEV_Apparel_GuardianHelmet</defName>
+    <thing>VFEV_Apparel_GuardianHelmet</thing>
+    <isItem>true</isItem>
+    <stackCount>1~1</stackCount>
+    <symbol>Item_VFEV_Apparel_GuardianHelmet</symbol>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+    <defName>VFEV_Hearth_BlocksMarble_West</defName>
+    <thing>VFEV_Hearth</thing>
+    <stuff>BlocksMarble</stuff>
+    <rotation>West</rotation>
+    <symbol>VFEV_Hearth_BlocksMarble_West</symbol>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+    <defName>Item_VFEV_Honey</defName>
+    <thing>VFEV_Honey</thing>
+    <isItem>true</isItem>
+    <stackCount>1~75</stackCount>
+    <symbol>Item_VFEV_Honey</symbol>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+    <defName>VFEV_WoolyCow</defName>
+    <isPawn>true</isPawn>
+    <pawnKindDef>VFEV_WoolyCow</pawnKindDef>
+    <symbol>VFEV_WoolyCow</symbol>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+    <defName>VFEV_DoubleFurBed_WoolSheep_East</defName>
+    <thing>VFEV_DoubleFurBed</thing>
+    <stuff>WoolSheep</stuff>
+    <rotation>East</rotation>
+    <symbol>VFEV_DoubleFurBed_WoolSheep_East</symbol>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+    <defName>VFEV_Hearth_BlocksGranite_West</defName>
+    <thing>VFEV_Hearth</thing>
+    <stuff>BlocksGranite</stuff>
+    <rotation>West</rotation>
+    <symbol>VFEV_Hearth_BlocksGranite_West</symbol>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+    <defName>VFEV_CryptosleepCasket_South_SpecialViking</defName>
+    <thing>CryptosleepCasket</thing>
+    <rotation>South</rotation>
+    <containPawnKind>VFEV_VikingHero</containPawnKind>
+    <symbol>VFEV_CryptosleepCasket_South_SpecialViking</symbol>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+    <defName>VFEV_Hearth_BlocksSlate_West</defName>
+    <thing>VFEV_Hearth</thing>
+    <stuff>BlocksSlate</stuff>
+    <rotation>West</rotation>
+    <symbol>VFEV_Hearth_BlocksSlate_West</symbol>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+    <defName>Item_VFEV_LeatherArmor</defName>
+    <thing>VFEV_LeatherArmor</thing>
+    <isItem>true</isItem>
+    <stackCount>1~1</stackCount>
+    <symbol>Item_VFEV_LeatherArmor</symbol>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+    <defName>VFEV_Hearth_BlocksGranite_South</defName>
+    <thing>VFEV_Hearth</thing>
+    <stuff>BlocksGranite</stuff>
+    <rotation>South</rotation>
+    <symbol>VFEV_Hearth_BlocksGranite_South</symbol>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+    <defName>VFEV_FurBed_Cloth_North</defName>
+    <thing>VFEV_FurBed</thing>
+    <stuff>Cloth</stuff>
+    <rotation>North</rotation>
+    <symbol>VFEV_FurBed_Cloth_North</symbol>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+		<defName>VFEV_CryptosleepCasket_West_SpecialViking</defName>
+    <thing>CryptosleepCasket</thing>
+    <containPawnKind>VFEV_VikingHero</containPawnKind>
+		<rotation>West</rotation>
+		<symbol>VFEV_CryptosleepCasket_West_SpecialViking</symbol>
+	</KCSG.SymbolDef>
+
+
+	<KCSG.SymbolDef>
+		<defName>VFEV_CryptosleepCasket_East_SpecialViking</defName>
+    <thing>CryptosleepCasket</thing>
+    <containPawnKind>VFEV_VikingLegend</containPawnKind>
+		<rotation>East</rotation>
+		<symbol>VFEV_CryptosleepCasket_East_SpecialViking</symbol>
+  </KCSG.SymbolDef>
+  
+  <KCSG.SymbolDef>
+    <defName>VFEV_RunedColumn_BlocksGranite</defName>
+    <thing>VFEV_RunedColumn</thing>
+    <stuff>BlocksGranite</stuff>
+    <symbol>VFEV_RunedColumn_BlocksGranite</symbol>
+  </KCSG.SymbolDef>
+</Defs>

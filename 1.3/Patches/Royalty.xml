@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>Royalty</li>
+    </mods>
+
+    <match Class="PatchOperationAdd">
+      <xpath>/Defs/FactionDef[defName="Empire"]/permanentEnemyToEveryoneExcept</xpath>
+
+      <value>
+        <li>VFEV_PlayerClan</li>
+      </value>
+    </match>
+  </Operation>
+
+  <!--  Patch operation sequence for all apparel research changes -->
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>Royalty</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <success>Always</success>
+      <operations>
+        
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName="VFEV_JarlCrown"]/recipeMaker</xpath>
+          <value>
+            <researchPrerequisite Inherit='False'>NobleApparel</researchPrerequisite>
+          </value>
+        </li>
+
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName="VFEV_Apparel_JarlCape"]/recipeMaker</xpath>
+          <value>
+            <researchPrerequisite Inherit='False'>NobleApparel</researchPrerequisite>
+          </value>
+        </li>
+
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName="VFEV_Apparel_RoyalFurCoat"]/recipeMaker</xpath>
+          <value>
+            <researchPrerequisite Inherit='False'>NobleApparel</researchPrerequisite>
+          </value>
+        </li>
+
+      </operations>
+    </match>
+  </Operation>
+</Patch>

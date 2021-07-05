@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+    <!-- Settings -->
+    <VanillaFactionsExpandedVikings.SettingsCategory>Vanilla Factions Expanded - Vikings</VanillaFactionsExpandedVikings.SettingsCategory>
+
+    <VanillaFactionsExpandedVikings.Facepaint_ToolTip>Whether or not facepaintings are rendered on pawns.</VanillaFactionsExpandedVikings.Facepaint_ToolTip>
+
+    <!-- Float menu options -->
+    <VanillaFactionsExpandedVikings.ChangeFacepaint>Change facepainting</VanillaFactionsExpandedVikings.ChangeFacepaint>
+
+    <!-- GUI -->
+    <VanillaFactionsExpandedVikings.Facepaint>Facepainting</VanillaFactionsExpandedVikings.Facepaint>
+    
+    <VanillaFactionsExpandedVikings.CustomMode>Colour sliders</VanillaFactionsExpandedVikings.CustomMode>
+    <VanillaFactionsExpandedVikings.ColoursTied>Colours tied</VanillaFactionsExpandedVikings.ColoursTied>
+    
+</LanguageData>

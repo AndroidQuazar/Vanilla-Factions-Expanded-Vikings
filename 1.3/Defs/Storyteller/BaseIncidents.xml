@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<IncidentDef>
+		<defName>VFEV_SlaverRaid</defName>
+		<minRefireDays>120</minRefireDays>
+		<label>raid (Slavers)</label>
+		<targetTags>
+			<li>Map_PlayerHome</li>
+		</targetTags>
+		<letterLabel>Raid (Slavers)</letterLabel>
+		<letterText>A group of slavers have arrived nearby. They will use wolfhounds to hunt down your colonists and kidnap them as soon as they can. They are not interested in dealing damage and destroying your base.</letterText>
+		<letterDef>ThreatBig</letterDef>
+		<workerClass>VFEV.IncidentWorker_SlaverRaid</workerClass>
+		<baseChance>0.3</baseChance>
+		<category>ThreatBig</category>
+		<tale>Raid</tale>
+	</IncidentDef>
+
+	<IncidentDef>
+		<defName>VFEV_PillageRaid</defName>
+		<minRefireDays>120</minRefireDays>
+		<label>raid (pillage)</label>
+		<targetTags>
+			<li>Map_PlayerHome</li>
+		</targetTags>
+		<letterLabel>Raid (Pillage)</letterLabel>
+		<letterDef>ThreatBig</letterDef>
+		<letterText>A group of pillagers have arrived nearby. They will use torches to set your base ablaze. They are not interested in fighting and only want to steal your property and burn down your houses.</letterText>
+		<workerClass>VFEV.IncidentWorker_PillageRaid</workerClass>
+		<baseChance>0.3</baseChance>
+		<category>ThreatBig</category>
+		<tale>Raid</tale>
+	</IncidentDef>
+
+</Defs>

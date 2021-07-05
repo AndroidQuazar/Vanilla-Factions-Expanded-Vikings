@@ -1,0 +1,144 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <HairDef>
+        <defName>VFEV_Aslaug</defName>
+        <label>aslaug</label>
+        <hairGender>Female</hairGender>
+        <texPath>Things/Pawn/Humanlike/Hairs/Aslaug</texPath>
+        <hairTags>
+            <li>VFEV_Vikings</li>
+        </hairTags>
+    </HairDef>
+
+    <HairDef>
+        <defName>VFEV_Erik</defName>
+        <label>erik</label>
+        <hairGender>Any</hairGender>
+        <texPath>Things/Pawn/Humanlike/Hairs/Erik</texPath>
+        <hairTags>
+            <li>VFEV_Vikings</li>
+        </hairTags>
+    </HairDef>
+
+    <HairDef>
+        <defName>VFEV_Bjorn</defName>
+        <label>bjorn</label>
+        <hairGender>Male</hairGender>
+        <texPath>Things/Pawn/Humanlike/Hairs/Bjorn</texPath>
+        <hairTags>
+            <li>VFEV_Vikings</li>
+        </hairTags>
+    </HairDef>
+
+    <HairDef>
+        <defName>VFEV_Egil</defName>
+        <label>egil</label>
+        <hairGender>Any</hairGender>
+        <texPath>Things/Pawn/Humanlike/Hairs/Egil</texPath>
+        <hairTags>
+            <li>VFEV_Vikings</li>
+        </hairTags>
+    </HairDef>
+	
+    <HairDef>
+        <defName>VFEV_Freydis</defName>
+        <label>freydis</label>
+        <hairGender>Any</hairGender>
+        <texPath>Things/Pawn/Humanlike/Hairs/Freydis</texPath>
+        <hairTags>
+            <li>VFEV_Vikings</li>
+        </hairTags>
+    </HairDef>
+	
+    <HairDef>
+        <defName>VFEV_Frida</defName>
+        <label>frida</label>
+        <hairGender>Female</hairGender>
+        <texPath>Things/Pawn/Humanlike/Hairs/Frida</texPath>
+        <hairTags>
+            <li>VFEV_Vikings</li>
+        </hairTags>
+    </HairDef>
+	
+    <HairDef>
+        <defName>VFEV_Gunnar</defName>
+        <label>gunnar</label>
+        <hairGender>Male</hairGender>
+        <texPath>Things/Pawn/Humanlike/Hairs/Gunnar</texPath>
+        <hairTags>
+            <li>VFEV_Vikings</li>
+        </hairTags>
+    </HairDef>
+	
+    <HairDef>
+        <defName>VFEV_Halfdan</defName>
+        <label>halfdan</label>
+        <hairGender>Male</hairGender>
+        <texPath>Things/Pawn/Humanlike/Hairs/Halfdan</texPath>
+        <hairTags>
+            <li>VFEV_Vikings</li>
+        </hairTags>
+    </HairDef>
+	
+    <HairDef>
+        <defName>VFEV_Harald</defName>
+        <label>harald</label>
+        <hairGender>Any</hairGender>
+        <texPath>Things/Pawn/Humanlike/Hairs/Harald</texPath>
+        <hairTags>
+            <li>VFEV_Vikings</li>
+        </hairTags>
+    </HairDef>
+	
+    <HairDef>
+        <defName>VFEV_Helga</defName>
+        <label>helga</label>
+        <hairGender>Female</hairGender>
+        <texPath>Things/Pawn/Humanlike/Hairs/Helga</texPath>
+        <hairTags>
+            <li>VFEV_Vikings</li>
+        </hairTags>
+    </HairDef>
+	
+    <HairDef>
+        <defName>VFEV_Lagertha</defName>
+        <label>lagertha</label>
+        <hairGender>Female</hairGender>
+        <texPath>Things/Pawn/Humanlike/Hairs/Lagertha</texPath>
+        <hairTags>
+            <li>VFEV_Vikings</li>
+        </hairTags>
+    </HairDef>
+	
+    <HairDef>
+        <defName>VFEV_Ragnar</defName>
+        <label>ragnar</label>
+        <hairGender>Male</hairGender>
+        <texPath>Things/Pawn/Humanlike/Hairs/Ragnar</texPath>
+        <hairTags>
+            <li>VFEV_Vikings</li>
+        </hairTags>
+    </HairDef>
+	
+    <HairDef>
+        <defName>VFEV_Sigurd</defName>
+        <label>sigurd</label>
+        <hairGender>Any</hairGender>
+        <texPath>Things/Pawn/Humanlike/Hairs/Sigurd</texPath>
+        <hairTags>
+            <li>VFEV_Vikings</li>
+        </hairTags>
+    </HairDef>
+	
+    <HairDef>
+        <defName>VFEV_Ulfrik</defName>
+        <label>ulfrik</label>
+        <hairGender>Male</hairGender>
+        <texPath>Things/Pawn/Humanlike/Hairs/Ulfrik</texPath>
+        <hairTags>
+            <li>VFEV_Vikings</li>
+        </hairTags>
+    </HairDef>
+
+</Defs>

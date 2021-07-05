@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+	<VFEV.SlaverRaidDesc>A group of slavers from {0} have arrived nearby.\nBeing slavers they will try to capture as many of your colonists as possible.\nPrepare a defense or attack them preemptively.</VFEV.SlaverRaidDesc>
+	<VFEV.PillageRaidDesc>A group of vikings from {0} have arrived nearby.\nThey will attempt to burn your colony down, stealing whatever they can before they leave.\nPrepare a defense or attack them preemptively.</VFEV.PillageRaidDesc>
+	<VFEV.CausedByDamage>Caused by: Being damaged while wearing a Bear headdress.</VFEV.CausedByDamage>
+</LanguageData>

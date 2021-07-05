@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <PawnKindDef ParentName="BasePlayerPawnKind">
+        <defName>VFEV_Member</defName>
+        <label>member</label>
+        <race>Human</race>
+        <defaultFactionType>VFEV_PlayerClan</defaultFactionType>
+        <backstoryCategories>
+            <li>Tribal</li>
+        </backstoryCategories>
+        <chemicalAddictionChance>0.05</chemicalAddictionChance>
+        <apparelTags>
+            <li>Apparel_Viking</li>
+            <li>Neolithic</li>
+        </apparelTags>
+        <apparelAllowHeadgearChance>0</apparelAllowHeadgearChance>
+        <apparelMoney>
+            <min>500</min>
+            <max>1200</max>
+        </apparelMoney>
+        <backstoryCryptosleepCommonality>0</backstoryCryptosleepCommonality>
+        <techHediffsMoney>
+            <min>50</min>
+            <max>50</max>
+        </techHediffsMoney>
+        <techHediffsTags>
+            <li>Poor</li>
+        </techHediffsTags>
+        <techHediffsChance>0.02</techHediffsChance>
+        <initialResistanceRange>9~15</initialResistanceRange>
+    </PawnKindDef>
+
+</Defs>

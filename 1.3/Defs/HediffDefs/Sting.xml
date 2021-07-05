@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <DamageDef>
+        <defName>VFEV_DamageSting</defName>
+        <label>sting</label>
+        <workerClass>DamageWorker_AddInjury</workerClass>
+        <externalViolence>true</externalViolence>
+        <deathMessage>{0} has been stung to death.</deathMessage>
+        <hediff>VFEV_Sting</hediff>
+        <hediffSolid>VFEV_Sting</hediffSolid>
+        <impactSoundType>Slice</impactSoundType>
+        <armorCategory>Sharp</armorCategory>
+        <overkillPctToDestroyPart>0~0.7</overkillPctToDestroyPart>
+        <isRanged>true</isRanged>
+    </DamageDef>
+
+    <HediffDef ParentName="InjuryBase">
+        <defName>VFEV_Sting</defName>
+        <label>sting</label>
+        <labelNoun>a bee sting</labelNoun>
+        <description>A hurtful bee sting.</description>
+        <comps>
+            <li Class="HediffCompProperties_TendDuration">
+                <labelTendedWell>bandaged</labelTendedWell>
+                <labelTendedWellInner>bandaged</labelTendedWellInner>
+                <labelSolidTendedWell>bandaged</labelSolidTendedWell>
+            </li>
+            <li Class="HediffCompProperties_Infecter">
+                <infectionChance>0.01</infectionChance>
+            </li>
+            <li Class="HediffCompProperties_GetsPermanent">
+                <permanentLabel>sting scar</permanentLabel>
+            </li>
+        </comps>
+        <injuryProps>
+            <painPerSeverity>0.02</painPerSeverity>
+            <canMerge>true</canMerge>
+            <bleedRate>0.01</bleedRate>
+        </injuryProps>
+    </HediffDef>
+
+</Defs>

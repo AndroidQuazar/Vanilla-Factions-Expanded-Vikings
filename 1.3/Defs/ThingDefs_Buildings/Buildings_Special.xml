@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <ThingDef ParentName="BuildingBase">
+        <defName>VFEV_RuneStone</defName>
+        <label>rune stone</label>
+        <description>A loosely carved and smoothed structure ascribed with ancient text and ornate patterns. Ancient northern tribes were known to pray at these shrines as well as keep them in their halls as aesthetic decorum.</description>
+        <castEdgeShadows>false</castEdgeShadows>
+        <graphicData>
+            <graphicClass>Graphic_Random</graphicClass>
+            <texPath>Things/Building/Art/VikingShrine</texPath>
+            <drawSize>(1,1)</drawSize>
+			<shadowData>
+				<volume>(0.8, 0.7, 0.6)</volume>
+				<offset>(0,0,-0.5)</offset>
+			</shadowData>
+        </graphicData>
+        <fillPercent>0.5</fillPercent>
+        <rotatable>false</rotatable>
+        <statBases>
+            <MaxHitPoints>185</MaxHitPoints>
+            <Mass>12</Mass>
+            <Beauty>20</Beauty>
+            <WorkToMake>35000</WorkToMake>
+			<MeditationFocusStrength>0.08</MeditationFocusStrength>
+        </statBases>
+        <stuffCategories>
+            <li>Stony</li>
+        </stuffCategories>
+        <costStuffCount>125</costStuffCount>
+    <comps>
+      <li Class="CompProperties_MeditationFocus">
+        <statDef>MeditationFocusStrength</statDef>
+        <focusTypes>
+          <li>Natural</li>
+        </focusTypes>
+        <offsets>
+          <li Class="FocusStrengthOffset_ArtificialBuildings">
+            <radius>34.9</radius>
+            <curve>
+              <points>
+                <li>(0,   0.0)</li>
+                <li>(5,  -0.06)</li>
+                <li>(10, -0.12)</li>
+                <li>(50, -0.22)</li>
+              </points>
+            </curve>
+          </li>
+<li Class="FocusStrengthOffset_BuildingDefs">
+    <defs>
+        <li MayRequire="Ludeon.RimWorld.Royalty">AnimusStone</li>
+        <li MayRequire="Ludeon.RimWorld.Royalty">NatureShrine_Small</li>
+        <li MayRequire="Ludeon.RimWorld.Royalty">NatureShrine_Large</li>
+    </defs>
+    <radius>9.9</radius>
+    <maxBuildings>4</maxBuildings>
+    <offsetPerBuilding>0.02</offsetPerBuilding>
+    <explanationKey>MeditationFocusPerAnimusStone</explanationKey>
+    <explanationKeyAbstract>MeditationFocusPerAnimusStoneAbstract</explanationKeyAbstract>
+</li>
+        </offsets>
+      </li>
+    </comps>
+    <placeWorkers>
+      <li>PlaceWorker_ArtificialBuildingsNear</li>
+      <li>PlaceWorker_RequireNaturePsycaster</li>
+      <li>PlaceWorker_MeditationOffsetBuildingsNear</li>
+    </placeWorkers>
+    <minifiedDef>MinifiedThing</minifiedDef>
+    <thingCategories>
+      <li>BuildingsFurniture</li>
+    </thingCategories>
+    <designationCategory>Misc</designationCategory>
+    <building>
+      <artificialForMeditationPurposes>false</artificialForMeditationPurposes>
+      <ai_neverTrashThis>true</ai_neverTrashThis>
+	  <destroySound>BuildingDestroyed_Stone_Small</destroySound>
+    </building>
+    <researchPrerequisites>
+      <li>Stonecutting</li>
+    </researchPrerequisites>
+    </ThingDef>
+
+</Defs>

@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <ThingCategoryDef>
+    <defName>WeaponsMeleeCrypto</defName>
+    <label>crypto weapons</label>
+    <parent>WeaponsMelee</parent>
+  </ThingCategoryDef>
+
+  <ThingDef Name="VFEV_BaseMeleeWeapon" Abstract="True" ParentName="BaseWeapon">
+    <techLevel>Ultra</techLevel>
+    <smeltable>true</smeltable>
+    <burnableByRecipe>true</burnableByRecipe>
+    <thingCategories>
+      <li>WeaponsMeleeCrypto</li>
+    </thingCategories>
+    <costList>
+      <ComponentSpacer>7</ComponentSpacer>
+      <Plasteel>70</Plasteel>
+    </costList>
+    <inspectorTabs>
+      <li>ITab_Art</li>
+    </inspectorTabs>
+  </ThingDef>
+
+  <ThingDef Name="VFEV_BaseMeleeWeapon_Sharp_Quality" Abstract="True" ParentName="VFEV_BaseMeleeWeapon">
+    <comps>
+      <li>
+        <compClass>CompQuality</compClass>
+      </li>
+      <li Class="CompProperties_Art">
+        <nameMaker>NamerArtWeaponMelee</nameMaker>
+        <descriptionMaker>ArtDescription_WeaponMelee</descriptionMaker>
+        <minQualityForArtistic>Excellent</minQualityForArtistic>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <ThingDef ParentName="VFEV_BaseMeleeWeapon_Sharp_Quality">
+    <defName>VFEV_CryptoHeavyAxe</defName>
+    <label>heavy crypto axe</label>
+    <description>A two-handed, high-tech axe of unknown origin with an icy cold alloy edge. Crypto weapons are laced with what appears to be a cryogenic coating along their blade, targets struck by them without proper insulation may feel themselves crippled by hypothermia.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/WeaponMelee/CryptoHeavyAxe</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <techLevel>Ultra</techLevel>
+    <recipeMaker Inherit="False" />
+    <statBases>
+      <Mass>3.5</Mass>
+      <MarketValue>1450</MarketValue>
+    </statBases>
+
+    <equippedAngleOffset>-65</equippedAngleOffset>
+    <tools>
+      <li>
+        <label>pommel</label>
+        <capacities>
+          <li>Poke</li>
+        </capacities>
+        <power>12</power>
+        <cooldownTime>2.8</cooldownTime>
+      </li>
+      <li>
+        <label>blade</label>
+        <capacities>
+          <li>VFEV_Cut</li>
+        </capacities>
+        <power>32</power>
+        <armorPenetration>0.35</armorPenetration>
+        <cooldownTime>2.7</cooldownTime>
+      </li>
+    </tools>
+    <generateCommonality>0.0</generateCommonality>
+    <tradeability>Buyable</tradeability>
+    <weaponTags>
+      <li>CryptoHeavyMelee</li>
+    </weaponTags>
+    <modExtensions>
+      <li Class="VFECore.ThingDefExtension">
+        <usableWithShields>false</usableWithShields>
+      </li>
+    </modExtensions>
+  </ThingDef>
+
+  <ThingDef ParentName="VFEV_BaseMeleeWeapon_Sharp_Quality">
+    <defName>VFEV_CryptoLightAxe</defName>
+    <label>crypto hatchet</label>
+    <description>An easily swung, high-tech hatchet of unknown origin with an icy cold alloy edge. Crypto weapons are laced with what appears to be a cryogenic coating along their blade, targets struck by them without proper insulation may feel themselves crippled by hypothermia.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/WeaponMelee/CryptoLightAxe</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <recipeMaker Inherit="False" />
+    <techLevel>Ultra</techLevel>
+    <statBases>
+      <Mass>2.3</Mass>
+      <AccuracyTouch>0.72</AccuracyTouch>
+      <AccuracyShort>0.64</AccuracyShort>
+      <AccuracyMedium>0.35</AccuracyMedium>
+      <AccuracyLong>0.15</AccuracyLong>
+      <RangedWeapon_Cooldown>1.5</RangedWeapon_Cooldown>
+      <MarketValue>1280</MarketValue>
+    </statBases>
+    <equippedAngleOffset>25</equippedAngleOffset>
+    <tools>
+      <li>
+        <label>pommel</label>
+        <capacities>
+          <li>Poke</li>
+        </capacities>
+        <power>8</power>
+        <cooldownTime>2.1</cooldownTime>
+      </li>
+      <li>
+        <label>blade</label>
+        <capacities>
+          <li>VFEV_Cut</li>
+        </capacities>
+        <power>14</power>
+        <armorPenetration>0.35</armorPenetration>
+        <cooldownTime>2.1</cooldownTime>
+      </li>
+    </tools>
+    <generateCommonality>1.0</generateCommonality>
+    <tradeability>Buyable</tradeability>
+    <weaponTags>
+      <li>CryptoLightMelee</li>
+    </weaponTags>
+    <modExtensions>
+      <li Class="VFECore.ThingDefExtension">
+        <usableWithShields>true</usableWithShields>
+      </li>
+    </modExtensions>
+  </ThingDef>
+
+</Defs>

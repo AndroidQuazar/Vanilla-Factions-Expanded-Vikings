@@ -1,0 +1,112 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <ThingDef ParentName="BedWithQualityBase">
+        <defName>VFEV_FurBed</defName>
+        <label>fur bed</label>
+        <description>A wood-framed bed stuffed with dried grasses and covered in a variety of pelts and furs to provide extra insulation during frigid nights. The warmth of this bed counters hypothermia.</description>
+        <graphicData>
+            <texPath>Things/Building/Furniture/Bed/BedPelts</texPath>
+            <graphicClass>Graphic_Multi</graphicClass>
+            <shaderType>CutoutComplex</shaderType>
+            <drawSize>(2,2)</drawSize>
+            <damageData>
+                <rect>(0,0.05,1,1.95)</rect>
+            </damageData>
+        </graphicData>
+        <castEdgeShadows>True</castEdgeShadows>
+        <statBases>
+            <MaxHitPoints>125</MaxHitPoints>
+            <Flammability>1.0</Flammability>
+            <Mass>25</Mass>
+            <BedRestEffectiveness>0.98</BedRestEffectiveness>
+            <ImmunityGainSpeedFactor>1.06</ImmunityGainSpeedFactor>
+            <Comfort>0.71</Comfort>
+            <WorkToBuild>750</WorkToBuild>
+			<SurgerySuccessChanceFactor>0.8</SurgerySuccessChanceFactor>
+        </statBases>
+        <size>(1,2)</size>
+        <stuffCategories>
+            <li>Fabric</li>
+            <li>Leathery</li>
+        </stuffCategories>
+		<costList>
+			<WoodLog>25</WoodLog>
+		</costList>
+        <costStuffCount>35</costStuffCount>
+        <building>
+            <bed_showSleeperBody>False</bed_showSleeperBody>
+            <bed_healPerDay>4</bed_healPerDay>
+        </building>
+        <fillPercent>0.4</fillPercent>
+        <pathCost>50</pathCost>
+        <staticSunShadowHeight>0.17</staticSunShadowHeight>
+        <techLevel>Medieval</techLevel>
+        <uiIconScale>0.90</uiIconScale>
+        <tickerType>Rare</tickerType>
+        <comps>
+            <li Class="CompProperties_AffectedByFacilities">
+                <linkableFacilities>
+                    <li>EndTable</li>
+                    <li>Dresser</li>
+                </linkableFacilities>
+            </li>
+            <li Class="VFEV.CompProperties_CureHypothermia" />
+        </comps>
+    </ThingDef>
+	
+    <ThingDef ParentName="BedWithQualityBase">
+        <defName>VFEV_DoubleFurBed</defName>
+        <label>double fur bed</label>
+        <description>A two-person, wood-framed bed stuffed with dried grasses and covered in a variety of pelts and furs to provide extra insulation during frigid nights. The warmth of this bed counters hypothermia.</description>
+        <graphicData>
+            <texPath>Things/Building/Furniture/Bed/DoubleBedPelts</texPath>
+            <graphicClass>Graphic_Multi</graphicClass>
+            <shaderType>CutoutComplex</shaderType>
+            <drawSize>(2.05,2.05)</drawSize>
+            <damageData>
+                <rect>(0,0.05,1,1.95)</rect>
+            </damageData>
+        </graphicData>
+        <castEdgeShadows>True</castEdgeShadows>
+        <statBases>
+            <MaxHitPoints>175</MaxHitPoints>
+            <Flammability>1.0</Flammability>
+            <Mass>50</Mass>
+            <BedRestEffectiveness>0.98</BedRestEffectiveness>
+            <ImmunityGainSpeedFactor>1.06</ImmunityGainSpeedFactor>
+            <Comfort>0.71</Comfort>
+            <WorkToBuild>1500</WorkToBuild>
+			<SurgerySuccessChanceFactor>0.8</SurgerySuccessChanceFactor>
+        </statBases>
+        <size>(2,2)</size>
+        <stuffCategories>
+            <li>Fabric</li>
+            <li>Leathery</li>
+        </stuffCategories>
+        <costStuffCount>75</costStuffCount>
+		<costList>
+			<WoodLog>45</WoodLog>
+		</costList>
+        <building>
+            <bed_showSleeperBody>False</bed_showSleeperBody>
+            <bed_healPerDay>3</bed_healPerDay>
+        </building>
+        <fillPercent>0.4</fillPercent>
+        <pathCost>60</pathCost>
+        <staticSunShadowHeight>0.17</staticSunShadowHeight>
+        <techLevel>Medieval</techLevel>
+        <uiIconScale>0.90</uiIconScale>
+        <tickerType>Rare</tickerType>
+        <comps>
+            <li Class="CompProperties_AffectedByFacilities">
+                <linkableFacilities>
+                    <li>EndTable</li>
+                    <li>Dresser</li>
+                </linkableFacilities>
+            </li>
+            <li Class="VFEV.CompProperties_CureHypothermia" />
+        </comps>
+    </ThingDef>
+
+</Defs>

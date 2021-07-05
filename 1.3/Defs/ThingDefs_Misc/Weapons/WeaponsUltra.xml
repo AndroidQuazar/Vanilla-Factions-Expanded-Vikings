@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <ThingCategoryDef>
+    <defName>WeaponsRangedCrypto</defName>
+    <label>crypto weapons</label>
+    <parent>WeaponsRanged</parent>
+  </ThingCategoryDef>
+
+  <ThingDef ParentName="BaseGunWithQuality">
+    <defName>VFEV_CryptoHeavyCrossbow</defName>
+    <label>crypto heavy crossbow</label>
+    <description>Less of a crossbow and more of an experimental artillery piece, fires metal-cored bolts wrapped in unstable crypto technology, held in place by an energy field. Targets are both pierced by the bolt, as well as frozen by crypto coating. Due to its weight, it is unable to be fired at close range and will slightly slow down the wielder.</description>
+    <techLevel>Ultra</techLevel>
+    <thingCategories Inherit="False" >
+      <li>WeaponsRangedCrypto</li>
+    </thingCategories>
+    <recipeMaker Inherit="False" />
+    <costList>
+      <ComponentSpacer>7</ComponentSpacer>
+      <Plasteel>70</Plasteel>
+    </costList>
+    <graphicData>
+      <texPath>Things/Item/Equipment/WeaponRanged/CryptoHeavyCrossbow</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>VFEV_HeavyCryptoGunPickup</soundInteract>
+    <statBases>
+      <Mass>6.2</Mass>
+      <AccuracyTouch>0.45</AccuracyTouch>
+      <AccuracyShort>0.65</AccuracyShort>
+      <AccuracyMedium>0.88</AccuracyMedium>
+      <AccuracyLong>0.90</AccuracyLong>
+      <RangedWeapon_Cooldown>2.50</RangedWeapon_Cooldown>
+      <MarketValue>1420</MarketValue>
+    </statBases>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>VFEV_HeavyCryptoBolt</defaultProjectile>
+        <warmupTime>3.7</warmupTime>
+        <range>46</range>
+        <soundCast>VFEV_CryptoHeavyCrossbowShot</soundCast>
+        <soundCastTail>GunTail_Medium</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+        <minRange>4.0</minRange>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>11</power>
+        <cooldownTime>2.3</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>8</power>
+        <cooldownTime>2.3</cooldownTime>
+      </li>
+    </tools>
+    <generateCommonality>0.0</generateCommonality>
+    <equippedStatOffsets>
+      <MoveSpeed>-0.23</MoveSpeed>
+    </equippedStatOffsets>
+    <tradeability>Buyable</tradeability>
+    <weaponTags>
+      <li>CryptoWeaponAdvanced</li>
+    </weaponTags>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseBullet">
+    <defName>VFEV_HeavyCryptoBolt</defName>
+    <label>crypto bolt</label>
+    <thingClass>VFEV.CryptoBullet</thingClass>
+    <graphicData>
+      <texPath>Things/Projectile/CryptoBolt</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>TransparentPostLight</shaderType>
+      <drawSize>1.0</drawSize>
+    </graphicData>
+    <projectile>
+      <damageDef>VFEV_CryptoDamageBolt</damageDef>
+      <damageAmountBase>32</damageAmountBase>
+      <armorPenetrationBase>0.45</armorPenetrationBase>
+      <stoppingPower>1.7</stoppingPower>
+      <speed>80</speed>
+    </projectile>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseGunWithQuality">
+    <defName>VFEV_CryptoLightCrossbow</defName>
+    <label>crypto crossbow</label>
+    <description>An experimental small crossbow with metal-cored bolts wrapped in unstable crypto technology, held in place by an energy field. Targets are both pierced by the bolt, as well as frozen by crypto coating. Able to be fired single-handedly, extremely rare and powerful.</description>
+    <techLevel>Ultra</techLevel>
+    <thingCategories Inherit="False" >
+      <li>WeaponsRangedCrypto</li>
+    </thingCategories>
+    <graphicData>
+      <texPath>Things/Item/Equipment/WeaponRanged/CryptoCrossbowSidearm</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>VFEV_CryptoGunPickup</soundInteract>
+    <recipeMaker Inherit="False" />
+    <costList>
+      <ComponentSpacer>7</ComponentSpacer>
+      <Plasteel>70</Plasteel>
+    </costList>
+    <statBases>
+      <Mass>3.1</Mass>
+      <AccuracyTouch>0.50</AccuracyTouch>
+      <AccuracyShort>0.75</AccuracyShort>
+      <AccuracyMedium>0.70</AccuracyMedium>
+      <AccuracyLong>0.65</AccuracyLong>
+      <RangedWeapon_Cooldown>0.9</RangedWeapon_Cooldown>
+      <MarketValue>860</MarketValue>
+    </statBases>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>VFEV_CryptoBolt</defaultProjectile>
+        <warmupTime>0.6</warmupTime>
+        <range>29.0</range>
+        <soundCast>VFEV_CryptoLightCrossbowShot</soundCast>
+        <soundCastTail>GunTail_Light</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>butt</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2.3</cooldownTime>
+      </li>
+    </tools>
+    <generateCommonality>0.0</generateCommonality>
+    <tradeability>Buyable</tradeability>
+    <weaponTags>
+      <li>CryptoWeaponAdvanced</li>
+    </weaponTags>
+    <modExtensions>
+      <li Class="VFECore.ThingDefExtension">
+        <usableWithShields>true</usableWithShields>
+      </li>
+    </modExtensions>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseBullet">
+    <defName>VFEV_CryptoBolt</defName>
+    <label>crypto bolt</label>
+    <thingClass>VFEV.CryptoBullet</thingClass>
+    <graphicData>
+      <texPath>Things/Projectile/CryptoBolt</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>TransparentPostLight</shaderType>
+      <drawSize>1.00</drawSize>
+    </graphicData>
+    <projectile>
+      <damageDef>VFEV_CryptoDamageBolt</damageDef>
+      <damageAmountBase>12</damageAmountBase>
+      <armorPenetrationBase>0.32</armorPenetrationBase>
+      <speed>60</speed>
+      <stoppingPower>1.0</stoppingPower>
+    </projectile>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseGunWithQuality">
+    <defName>VFEV_CryptoPistol</defName>
+    <label>crypto pistol</label>
+    <description>An experimental micro pistol with metal-cored projectiles wrapped in unstable crypto technology, held in place by an energy field. Targets are both pierced by the metal core, as well as frozen by crypto coating. Extremely rare and powerful.</description>
+    <techLevel>Ultra</techLevel>
+    <thingCategories Inherit="False" >
+      <li>WeaponsRangedCrypto</li>
+    </thingCategories>
+    <graphicData>
+      <texPath>Things/Item/Equipment/WeaponRanged/CryptoPistol</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>VFEV_CryptoGunPickup</soundInteract>
+    <recipeMaker Inherit="False" />
+    <costList>
+      <ComponentSpacer>7</ComponentSpacer>
+      <Plasteel>70</Plasteel>
+    </costList>
+    <statBases>
+      <Mass>2.3</Mass>
+      <AccuracyTouch>0.85</AccuracyTouch>
+      <AccuracyShort>0.70</AccuracyShort>
+      <AccuracyMedium>0.40</AccuracyMedium>
+      <AccuracyLong>0.25</AccuracyLong>
+      <RangedWeapon_Cooldown>0.11</RangedWeapon_Cooldown>
+      <MarketValue>870</MarketValue>
+    </statBases>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>VFEV_CryptoPistolBullet</defaultProjectile>
+        <warmupTime>0.8</warmupTime>
+        <range>18.0</range>
+        <soundCast>VFEV_CryptoPistolShot</soundCast>
+        <soundCastTail>GunTail_Light</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+        <ticksBetweenBurstShots>16</ticksBetweenBurstShots>
+        <burstShotCount>3</burstShotCount>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>grip</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>6</power>
+        <cooldownTime>1.8</cooldownTime>
+      </li>
+    </tools>
+    <generateCommonality>0.0</generateCommonality>
+    <tradeability>Buyable</tradeability>
+    <weaponTags>
+      <li>CryptoWeaponAdvanced</li>
+    </weaponTags>
+    <modExtensions>
+      <li Class="VFECore.ThingDefExtension">
+        <usableWithShields>true</usableWithShields>
+      </li>
+    </modExtensions>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseBullet">
+    <defName>VFEV_CryptoPistolBullet</defName>
+    <label>crypto bullet</label>
+    <thingClass>VFEV.CryptoBullet</thingClass>
+    <graphicData>
+      <texPath>Things/Projectile/CryptoBullet</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>TransparentPostLight</shaderType>
+      <drawSize>0.60</drawSize>
+    </graphicData>
+    <projectile>
+      <damageDef>VFEV_CryptoDamageBullet</damageDef>
+      <damageAmountBase>6</damageAmountBase>
+      <armorPenetrationBase>0.20</armorPenetrationBase>
+      <speed>55</speed>
+    </projectile>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseGunWithQuality">
+    <defName>VFEV_CryptoRifle</defName>
+    <label>crypto rifle</label>
+    <description>An experimental rifle with metal-cored projectiles wrapped in unstable crypto technology, held in place by an energy field. Targets are both pierced by the metal core, as well as frozen by crypto coating. Extremely rare and powerful.</description>
+    <techLevel>Ultra</techLevel>
+    <thingCategories Inherit="False" >
+      <li>WeaponsRangedCrypto</li>
+    </thingCategories>
+    <graphicData>
+      <texPath>Things/Item/Equipment/WeaponRanged/CryptoAssaultRifle</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>VFEV_HeavyCryptoGunPickup</soundInteract>
+    <recipeMaker Inherit="False" />
+    <costList>
+      <ComponentSpacer>7</ComponentSpacer>
+      <Plasteel>70</Plasteel>
+    </costList>
+    <statBases>
+      <Mass>5.1</Mass>
+      <AccuracyTouch>0.45</AccuracyTouch>
+      <AccuracyShort>0.60</AccuracyShort>
+      <AccuracyMedium>0.65</AccuracyMedium>
+      <AccuracyLong>0.55</AccuracyLong>
+      <RangedWeapon_Cooldown>1.6</RangedWeapon_Cooldown>
+      <MarketValue>1260</MarketValue>
+    </statBases>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>VFEV_CryptoRifleBullet</defaultProjectile>
+        <warmupTime>1.4</warmupTime>
+        <range>27.0</range>
+        <soundCast>VFEV_CryptoRifleShot</soundCast>
+        <soundCastTail>GunTail_Medium</soundCastTail>
+        <muzzleFlashScale>11</muzzleFlashScale>
+        <ticksBetweenBurstShots>22</ticksBetweenBurstShots>
+        <burstShotCount>3</burstShotCount>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>11</power>
+        <cooldownTime>2.1</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>7</power>
+        <cooldownTime>2.2</cooldownTime>
+      </li>
+    </tools>
+    <generateCommonality>0.0</generateCommonality>
+    <tradeability>Buyable</tradeability>
+    <weaponTags>
+      <li>CryptoWeaponAdvanced</li>
+    </weaponTags>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseBullet">
+    <defName>VFEV_CryptoRifleBullet</defName>
+    <label>crypto bullet</label>
+    <thingClass>VFEV.CryptoBullet</thingClass>
+    <graphicData>
+      <texPath>Things/Projectile/CryptoBullet</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>TransparentPostLight</shaderType>
+      <drawSize>0.80</drawSize>
+    </graphicData>
+    <projectile>
+      <damageDef>VFEV_CryptoDamageBullet</damageDef>
+      <damageAmountBase>18</damageAmountBase>
+      <armorPenetrationBase>0.35</armorPenetrationBase>
+      <speed>60</speed>
+      <stoppingPower>0.7</stoppingPower>
+    </projectile>
+  </ThingDef>
+
+</Defs>

@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <GatheringDef>
+    <defName>VFEV_Feast</defName>
+    <label>feast</label>
+    <randomSelectionWeight>1</randomSelectionWeight>
+    <letterTitle>Feast</letterTitle>
+    <letterText>{ORGANIZER_labelShort} suggests throwing a feast after the last stockpile check to boost morale. Be warned - Feasts can last up to 48h. Colonists will binge on food and drugs until it is over. Simply draft your colonists to stop them taking part in the feast.</letterText>
+    <calledOffMessage>The feast has been called off.</calledOffMessage>
+    <finishedMessage>The feast has finished.</finishedMessage>
+    <duty>VFEV_Feast</duty>
+    <workerClass>VFEV.GatheringWorker_Feast</workerClass>
+    <gatherSpotDefs>
+      <li>PartySpot</li>
+    </gatherSpotDefs>
+  </GatheringDef>
+  
+</Defs>

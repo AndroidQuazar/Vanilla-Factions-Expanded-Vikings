@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <VFEV.Facepaint.ColourPresetDef>
+        <defName>VFEV_Red</defName>
+        <colour>(0.89, 0.14, 0.14, 1)</colour>
+    </VFEV.Facepaint.ColourPresetDef>
+
+    <VFEV.Facepaint.ColourPresetDef>
+        <defName>VFEV_Yellow</defName>
+        <colour>(0.89, 0.78, 0.14, 1)</colour>
+    </VFEV.Facepaint.ColourPresetDef>
+	
+    <VFEV.Facepaint.ColourPresetDef>
+        <defName>VFEV_Green</defName>
+        <colour>(0.31, 0.48, 0.31, 1)</colour>
+    </VFEV.Facepaint.ColourPresetDef>
+	
+    <VFEV.Facepaint.ColourPresetDef>
+        <defName>VFEV_Blue</defName>
+        <colour>(0.22, 0.27, 0.55, 1)</colour>
+    </VFEV.Facepaint.ColourPresetDef>
+	
+    <VFEV.Facepaint.ColourPresetDef>
+        <defName>VFEV_Purple</defName>
+        <colour>(0.60, 0.36, 0.60, 1)</colour>
+    </VFEV.Facepaint.ColourPresetDef>
+	
+    <VFEV.Facepaint.ColourPresetDef>
+        <defName>VFEV_White</defName>
+        <colour>(1, 1, 1, 1)</colour>
+    </VFEV.Facepaint.ColourPresetDef>
+	
+    <VFEV.Facepaint.ColourPresetDef>
+        <defName>VFEV_Black</defName>
+        <colour>(0, 0, 0, 1)</colour>
+    </VFEV.Facepaint.ColourPresetDef>
+
+</Defs>

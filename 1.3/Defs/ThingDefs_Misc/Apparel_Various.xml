@@ -1,0 +1,580 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<ThingDef ParentName="ArmorSmithableBase">
+		<defName>VFEV_Apparel_GuardianArmor</defName>
+		<label>guardian armor</label>
+		<description>A heavy, metallic breastplate meant to provide warmth and protection to heavy infantry during battles in frigid tundras. Unfortunately, this armor leaves one slowed and more vulnerable to melee attacks.</description>
+		<graphicData>
+			<texPath>Things/Pawn/Humanlike/Apparel/BrigandineArmor/BrigandineArmor</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<techLevel>Medieval</techLevel>
+		<recipeMaker>
+			<unfinishedThingDef>UnfinishedMetallicTechArmor</unfinishedThingDef>
+			<researchPrerequisite>PlateArmor</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>9</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+		<costStuffCount>220</costStuffCount>
+		<statBases>
+			<WorkToMake>38000</WorkToMake>
+			<MaxHitPoints>280</MaxHitPoints>
+			<Mass>18</Mass>
+			<StuffEffectMultiplierArmor>0.85</StuffEffectMultiplierArmor>
+			<Insulation_Cold>40</Insulation_Cold>
+			<Insulation_Heat>9</Insulation_Heat>
+			<EquipDelay>20</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<MoveSpeed>-1.1</MoveSpeed>
+			<MeleeDodgeChance>-18</MeleeDodgeChance>
+		</equippedStatOffsets>
+		<thingCategories>
+			<li>ApparelArmor</li>
+		</thingCategories>
+		<apparel>
+			<bodyPartGroups>
+				<li>Torso</li>
+				<li>Neck</li>
+				<li>Shoulders</li>
+				<li>Arms</li>
+				<li>Legs</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Things/Pawn/Humanlike/Apparel/BrigandineArmor/BrigandineArmor</wornGraphicPath>
+			<layers>
+				<li>Middle</li>
+				<li>Shell</li>
+			</layers>
+			<tags Inherit="False">
+				<li>Apparel_Viking</li>
+				<li>Apparel_VikingGuardian</li>
+			</tags>
+			<defaultOutfitTags>
+				<li>Soldier</li>
+			</defaultOutfitTags>
+		</apparel>
+		<colorGenerator Class="ColorGenerator_StandardApparel" />
+	</ThingDef>
+
+	<ThingDef ParentName="ApparelMakeableBase">
+		<defName>VFEV_LeatherArmor</defName>
+		<label>leather armor</label>
+		<description>Flexible, medium-thickness leather armor made from squares of animal hide. Meant to be worn under a pelt cloak or parka, offers suitable protection for light combat without restricting movement, making it a favorite of archers and scouts.</description>
+		<graphicData>
+			<texPath>Things/Pawn/Humanlike/Apparel/LeatherArmor/LeatherArmor</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<techLevel>Medieval</techLevel>
+		<recipeMaker>
+			<skillRequirements>
+				<Crafting>6</Crafting>
+			</skillRequirements>
+			<researchPrerequisite>ComplexClothing</researchPrerequisite>
+		</recipeMaker>
+		<costStuffCount>100</costStuffCount>
+		<stuffCategories>
+			<li>Leathery</li>
+		</stuffCategories>
+		<thingCategories>
+			<li>ApparelArmor</li>
+		</thingCategories>
+		<statBases>
+			<MaxHitPoints>150</MaxHitPoints>
+			<WorkToMake>25000</WorkToMake>
+			<Mass>10</Mass>
+			<StuffEffectMultiplierArmor>0.55</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0.90</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.11</StuffEffectMultiplierInsulation_Heat>
+			<EquipDelay>10</EquipDelay>
+		</statBases>
+		<apparel>
+			<bodyPartGroups>
+				<li>Shoulders</li>
+				<li>Torso</li>
+				<li>Legs</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Things/Pawn/Humanlike/Apparel/LeatherArmor/LeatherArmor</wornGraphicPath>
+			<layers>
+				<li>Middle</li>
+			</layers>
+			<tags Inherit="False">
+				<li>Apparel_Viking</li>
+			</tags>
+			<defaultOutfitTags>
+				<li>Soldier</li>
+			</defaultOutfitTags>
+		</apparel>
+		<colorGenerator Class="ColorGenerator_StandardApparel" />
+	</ThingDef>
+
+	<ThingDef ParentName="ApparelMakeableBase">
+		<defName>VFEV_Apparel_RavagerArmor</defName>
+		<label>ravager armor</label>
+		<description>Much heavier than its leather armor cousin, this armor is made much more carefully and tightly out of processed leathers. Intended to be worn by front-line troops and often accompanied by a shield.</description>
+		<graphicData>
+			<texPath>Things/Pawn/Humanlike/Apparel/LeatherHeavyArmor/LeatherHeavyArmor</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<techLevel>Medieval</techLevel>
+		<costStuffCount>180</costStuffCount>
+		<recipeMaker>
+			<skillRequirements>
+				<Crafting>8</Crafting>
+			</skillRequirements>
+			<researchPrerequisite>Smithing</researchPrerequisite>
+		</recipeMaker>
+		<stuffCategories>
+			<li>Leathery</li>
+		</stuffCategories>
+		<thingCategories>
+			<li>ApparelArmor</li>
+		</thingCategories>
+		<statBases>
+			<MaxHitPoints>200</MaxHitPoints>
+			<WorkToMake>38000</WorkToMake>
+			<Mass>14</Mass>
+			<StuffEffectMultiplierArmor>0.58</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>1.06</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.11</StuffEffectMultiplierInsulation_Heat>
+			<EquipDelay>15</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<PainShockThreshold>0.10</PainShockThreshold>
+		</equippedStatOffsets>
+		<apparel>
+			<bodyPartGroups>
+				<li>Shoulders</li>
+				<li>Arms</li>
+				<li>Torso</li>
+				<li>Legs</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Things/Pawn/Humanlike/Apparel/LeatherHeavyArmor/LeatherHeavyArmor</wornGraphicPath>
+			<layers>
+				<li>Middle</li>
+				<li>Shell</li>
+			</layers>
+			<tags Inherit="False">
+				<li>Apparel_VikingRavager</li>
+			</tags>
+			<defaultOutfitTags>
+				<li>Soldier</li>
+			</defaultOutfitTags>
+		</apparel>
+		<colorGenerator Class="ColorGenerator_StandardApparel" />
+	</ThingDef>
+
+	<ThingDef ParentName="ApparelMakeableBase">
+		<defName>VFEV_Apparel_JarlCape</defName>
+		<label>jarl cape</label>
+		<description>A painstakingly sewn cloak topped with a broad, furry mantle and ornate clasp. Satisfies even the highest ranks of royalty and offers surprising amounts of insulation, even down to the legs.</description>
+		<graphicData>
+			<texPath>Things/Pawn/Humanlike/Apparel/JarlCape/JarlCape</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<techLevel>Neolithic</techLevel>
+		<tradeability>Sellable</tradeability>
+		<generateCommonality>0.1</generateCommonality>
+		<costStuffCount>120</costStuffCount>
+		<stuffCategories>
+			<li>Fabric</li>
+			<li>Leathery</li>
+		</stuffCategories>
+		<thingCategories Inherit="False">
+			<li>Apparel</li>
+		</thingCategories>
+		<statBases>
+			<MaxHitPoints>180</MaxHitPoints>
+			<WorkToMake>30000</WorkToMake>
+			<Mass>4.0</Mass>
+			<StuffEffectMultiplierArmor>0.3</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>1.9</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.1</StuffEffectMultiplierInsulation_Heat>
+			<EquipDelay>1.8</EquipDelay>
+		</statBases>
+		<apparel>
+			<bodyPartGroups>
+				<li>Neck</li>
+				<li>Torso</li>
+				<li>Shoulders</li>
+				<li>Arms</li>
+				<li>Legs</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Things/Pawn/Humanlike/Apparel/JarlCape/JarlCape</wornGraphicPath>
+			<layers>
+				<li>Shell</li>
+			</layers>
+			<tags Inherit="False">
+				<li>Apparel_VikingJarl</li>
+				<li>Royal</li>
+				<li>RoyalTier7</li>
+			</tags>
+			<canBeGeneratedToSatisfyWarmth>false</canBeGeneratedToSatisfyWarmth>
+			<defaultOutfitTags>
+				<li>Worker</li>
+			</defaultOutfitTags>
+		</apparel>
+		<recipeMaker>
+			<recipeUsers Inherit="False">
+				<li>ElectricTailoringBench</li>
+				<li>HandTailoringBench</li>
+			</recipeUsers>
+		</recipeMaker>
+		<colorGenerator Class="ColorGenerator_Options">
+			<options>
+				<li>
+					<weight>10</weight>
+					<only>(0.33,0.33,0.33)</only>
+				</li>
+				<li>
+					<weight>10</weight>
+					<only>(0.65,0.65,0.65)</only>
+				</li>
+				<li>
+					<weight>10</weight>
+					<only>(0.4,0.3,0.15)</only>
+				</li>
+				<li>
+					<weight>15</weight>
+					<min>(0.3,0.3,0.3)</min>
+					<max>(0.5,0.5,0.5)</max>
+				</li>
+				<li>
+					<weight>6</weight>
+					<min>(0.5,0.5,0.5)</min>
+					<max>(1,1,1)</max>
+				</li>
+			</options>
+		</colorGenerator>
+	</ThingDef>
+
+	<ThingDef ParentName="ApparelMakeableBase">
+		<defName>VFEV_Apparel_RoyalFurCoat</defName>
+		<label>noble fur coat</label>
+		<description>An intently woven series of pelts then strapped together tightly with cured animal sinew, quite pleasing to wear even for nobility.</description>
+		<graphicData>
+			<texPath>Things/Pawn/Humanlike/Apparel/RoyalFurCoat/RoyalFurCoat</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<techLevel>Neolithic</techLevel>
+		<tradeability>Sellable</tradeability>
+		<generateCommonality>0.4</generateCommonality>
+		<costStuffCount>100</costStuffCount>
+		<stuffCategories>
+			<li>Leathery</li>
+		</stuffCategories>
+		<thingCategories>
+			<li>Apparel</li>
+		</thingCategories>
+		<statBases>
+			<MaxHitPoints>160</MaxHitPoints>
+			<WorkToMake>17000</WorkToMake>
+			<Mass>3.6</Mass>
+			<StuffEffectMultiplierArmor>0.3</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>1.7</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.1</StuffEffectMultiplierInsulation_Heat>
+			<EquipDelay>1.5</EquipDelay>
+		</statBases>
+		<apparel>
+			<bodyPartGroups>
+				<li>Neck</li>
+				<li>Torso</li>
+				<li>Shoulders</li>
+				<li>Arms</li>
+				<li>Legs</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Things/Pawn/Humanlike/Apparel/RoyalFurCoat/RoyalFurCoat</wornGraphicPath>
+			<layers>
+				<li>Shell</li>
+			</layers>
+			<tags Inherit="False">
+				<li>Apparel_VikingJarl</li>
+				<li>Royal</li>
+				<li>RoyalTier2</li>
+			</tags>
+			<defaultOutfitTags>
+				<li>Worker</li>
+				<li>Soldier</li>
+			</defaultOutfitTags>
+		</apparel>
+		<recipeMaker>
+			<recipeUsers Inherit="False">
+				<li>ElectricTailoringBench</li>
+				<li>HandTailoringBench</li>
+			</recipeUsers>
+		</recipeMaker>
+		<colorGenerator Class="ColorGenerator_Options">
+			<options>
+				<li>
+					<weight>10</weight>
+					<only>(0.33,0.33,0.33)</only>
+				</li>
+				<li>
+					<weight>10</weight>
+					<only>(0.65,0.65,0.65)</only>
+				</li>
+				<li>
+					<weight>10</weight>
+					<only>(0.4,0.3,0.15)</only>
+				</li>
+				<li>
+					<weight>15</weight>
+					<min>(0.3,0.3,0.3)</min>
+					<max>(0.5,0.5,0.5)</max>
+				</li>
+				<li>
+					<weight>6</weight>
+					<min>(0.5,0.5,0.5)</min>
+					<max>(1,1,1)</max>
+				</li>
+			</options>
+		</colorGenerator>
+	</ThingDef>
+
+	<ThingDef Name="VFEV_ApparelArmorCryptoBase" ParentName="ApparelBase" Abstract="True">
+		<techLevel>Ultra</techLevel>
+		<generateCommonality>0.5</generateCommonality>
+		<statBases>
+			<MaxHitPoints>300</MaxHitPoints>
+			<Mass>18</Mass>
+			<Flammability>0.5</Flammability>
+			<ArmorRating_Sharp>1.08</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.47</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.56</ArmorRating_Heat>
+			<Insulation_Cold>40</Insulation_Cold>
+			<Insulation_Heat>20</Insulation_Heat>
+			<EquipDelay>16</EquipDelay>
+			<MarketValue>2400</MarketValue>
+		</statBases>
+		<costList>
+			<ComponentSpacer>12</ComponentSpacer>
+			<Plasteel>130</Plasteel>
+		</costList>
+		<recipeMaker Inherit="False" />
+		<equippedStatOffsets>
+			<MoveSpeed>-0.3</MoveSpeed>
+		</equippedStatOffsets>
+		<thingCategories>
+			<li>ApparelArmor</li>
+		</thingCategories>
+		<apparel>
+			<bodyPartGroups>
+				<li>Torso</li>
+				<li>Neck</li>
+				<li>Shoulders</li>
+				<li>Arms</li>
+				<li>Legs</li>
+			</bodyPartGroups>
+			<layers>
+				<li>Middle</li>
+				<li>Shell</li>
+			</layers>
+			<defaultOutfitTags>
+				<li>Soldier</li>
+			</defaultOutfitTags>
+			<useDeflectMetalEffect>true</useDeflectMetalEffect>
+		</apparel>
+		<colorGenerator Class="ColorGenerator_Options">
+			<options>
+				<li>
+					<weight>10</weight>
+					<only>(0.33,0.33,0.33)</only>
+				</li>
+				<li>
+					<weight>10</weight>
+					<only>(0.65,0.65,0.65)</only>
+				</li>
+				<li>
+					<weight>6</weight>
+					<min>(0.3,0.3,0.3)</min>
+					<max>(0.5,0.5,0.5)</max>
+				</li>
+				<li>
+					<weight>10</weight>
+					<only>(0.9,0.9,0.9)</only>
+				</li>
+			</options>
+		</colorGenerator>
+		<comps>
+			<li Class="CompProperties_Biocodable" />
+		</comps>
+	</ThingDef>
+
+	<ThingDef ParentName="VFEV_ApparelArmorCryptoBase">
+		<defName>VFEV_CryptoArmor</defName>
+		<label>crypto armor</label>
+		<description>Low-powered plasteel carapace armor draped with an unknown but impossibly durable cloth sash affixed over one shoulder, the armor emits a low electrical hum and feels smooth to the touch. The power supply itself features embedded cryptocasket technology and will use a stasis effect to slow ones bleeding.</description>
+		<graphicData>
+			<texPath>Things/Pawn/Humanlike/Apparel/CryptoLightArmor/CryptoLightArmor</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<apparel>
+			<wornGraphicPath>Things/Pawn/Humanlike/Apparel/CryptoLightArmor/CryptoLightArmor</wornGraphicPath>
+			<useWornGraphicMask>True</useWornGraphicMask>
+			<tags Inherit="False">
+				<li>CryptoLight</li>
+			</tags>
+		</apparel>
+		<tickerType>Normal</tickerType>
+		<statBases>
+			<MaxHitPoints>270</MaxHitPoints>
+			<Mass>10</Mass>
+			<Flammability>0.5</Flammability>
+			<ArmorRating_Sharp>0.98</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.56</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.60</ArmorRating_Heat>
+			<Insulation_Cold>30</Insulation_Cold>
+			<Insulation_Heat>10</Insulation_Heat>
+			<EquipDelay>12</EquipDelay>
+			<MarketValue>2000</MarketValue>
+		</statBases>
+		<comps>
+			<li Class="VFECore.CompProperties_ApparelHediffs">
+				<hediffDefnames>
+					<li>VFEV_BleedrateCrypto_10</li>
+				</hediffDefnames>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<ThingDef ParentName="VFEV_ApparelArmorCryptoBase">
+		<defName>VFEV_CryptoHeavyArmor</defName>
+		<label>crypto heavy armor</label>
+		<description>Heavy, high-powered plasteel plate armor affixed with an unknown but impossibly durable cloth cowl, the armor emits a low electrical hum and feels smooth to the touch. The power supply itself features embedded cryptocasket technology and will use a stasis effect to slow ones bleeding.</description>
+		<graphicData>
+			<texPath>Things/Pawn/Humanlike/Apparel/CryptoHeavyArmor/CryptoHeavyArmor</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<apparel>
+			<wornGraphicPath>Things/Pawn/Humanlike/Apparel/CryptoHeavyArmor/CryptoHeavyArmor</wornGraphicPath>
+			<useWornGraphicMask>True</useWornGraphicMask>
+			<tags Inherit="False">
+				<li>CryptoHeavy</li>
+			</tags>
+		</apparel>
+		<tickerType>Normal</tickerType>
+		<comps>
+			<li Class="VFECore.CompProperties_ApparelHediffs">
+				<hediffDefnames>
+					<li>VFEV_BleedrateCrypto_20</li>
+				</hediffDefnames>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<ThingDef Name="VFEV_ApparelCryptoHelmetPowerBase" ParentName="ArmorHelmetMakeableBase" Abstract="True">
+		<techLevel>Ultra</techLevel>
+		<recipeMaker Inherit="False" />
+		<uiIconScale>1.25</uiIconScale>
+		<generateCommonality>0.5</generateCommonality>
+		<statBases>
+			<WorkToMake>11000</WorkToMake>
+			<MaxHitPoints>150</MaxHitPoints>
+			<Mass>1.5</Mass>
+			<Flammability>0.4</Flammability>
+			<ArmorRating_Sharp>1.06</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.45</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.54</ArmorRating_Heat>
+			<Insulation_Cold>10</Insulation_Cold>
+			<Insulation_Heat>2</Insulation_Heat>
+			<EquipDelay>4</EquipDelay>
+			<MarketValue>1480</MarketValue>
+		</statBases>
+		<costList>
+			<ComponentSpacer>7</ComponentSpacer>
+			<Plasteel>70</Plasteel>
+		</costList>
+		<apparel>
+			<bodyPartGroups>
+				<li>FullHead</li>
+			</bodyPartGroups>
+			<layers>
+				<li>Overhead</li>
+			</layers>
+			<defaultOutfitTags>
+				<li>Soldier</li>
+			</defaultOutfitTags>
+			<useDeflectMetalEffect>true</useDeflectMetalEffect>
+		</apparel>
+		<colorGenerator Class="ColorGenerator_Options">
+			<options>
+				<li>
+					<weight>10</weight>
+					<only>(0.33,0.33,0.33,1)</only>
+				</li>
+				<li>
+					<weight>10</weight>
+					<only>(0.65,0.65,0.65,1)</only>
+				</li>
+				<li>
+					<weight>6</weight>
+					<min>(0.3,0.3,0.3,1)</min>
+					<max>(0.5,0.5,0.5,1)</max>
+				</li>
+				<li>
+					<weight>10</weight>
+					<only>(0.9,0.9,0.9,1)</only>
+				</li>
+			</options>
+		</colorGenerator>
+		<comps>
+			<li Class="CompProperties_Biocodable"/>
+		</comps>
+	</ThingDef>
+
+	<ThingDef ParentName="VFEV_ApparelCryptoHelmetPowerBase">
+		<defName>VFEV_Apparel_CryptoLightHelmet</defName>
+		<label>crypto helmet</label>
+		<description>A lower-powered helmet with an unknown but impossibly durable cloth hood. It's theorized that either a long-lost or far-advanced civilizations scout troopers would adorn this helmet before recon missions during the mechanoid wars. The helmet itself features embedded cryptocasket technology and will use a stasis effect to slow ones bleeding.</description>
+		<graphicData>
+			<texPath>Things/Pawn/Humanlike/Apparel/CryptoLightHelmet/CryptoLightHelmet</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<apparel>
+			<wornGraphicPath>Things/Pawn/Humanlike/Apparel/CryptoLightHelmet/CryptoLightHelmet</wornGraphicPath>
+			<useWornGraphicMask>True</useWornGraphicMask>
+			<tags Inherit="False">
+				<li>CryptoLight</li>
+			</tags>
+		</apparel>
+	</ThingDef>
+
+	<ThingDef ParentName="VFEV_ApparelCryptoHelmetPowerBase">
+		<defName>VFEV_Apparel_CryptoHeavyHelmet</defName>
+		<label>heavy crypto helmet</label>
+		<description>A heavy, high-powered helmet complete with an embedded HUD system and diagnostics display. It's theorized that either a long-lost or far-advanced civilizations shock troopers would adorn this helmet before strike missions during the mechanoid wars. The helmet itself features embedded cryptocasket technology and will use a stasis effect to slow ones bleeding.</description>
+		<graphicData>
+			<texPath>Things/Pawn/Humanlike/Apparel/CryptoHeavyHelmet/CryptoHeavyHelmet</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<apparel>
+			<wornGraphicPath>Things/Pawn/Humanlike/Apparel/CryptoHeavyHelmet/CryptoHeavyHelmet</wornGraphicPath>
+			<useWornGraphicMask>True</useWornGraphicMask>
+			<tags Inherit="False">
+				<li>CryptoHeavy</li>
+			</tags>
+		</apparel>
+		<statBases>
+			<WorkToMake>21000</WorkToMake>
+			<MaxHitPoints>150</MaxHitPoints>
+			<Mass>1.5</Mass>
+			<Flammability>0.4</Flammability>
+			<ArmorRating_Sharp>1.06</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.65</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.74</ArmorRating_Heat>
+			<Insulation_Cold>16</Insulation_Cold>
+			<Insulation_Heat>3</Insulation_Heat>
+			<EquipDelay>4</EquipDelay>
+			<MarketValue>1880</MarketValue>
+		</statBases>
+	</ThingDef>
+
+</Defs>

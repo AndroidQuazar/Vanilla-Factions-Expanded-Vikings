@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+	<!-- Hnefatafl -->
+	<JobDef>
+		<defName>Play_Hnefatafl</defName>
+		<driverClass>VFEV.JobDriver_PlayHnefatafl</driverClass>
+		<reportString>playing hnefatafl.</reportString>
+		<joyDuration>4000</joyDuration>
+		<joyMaxParticipants>2</joyMaxParticipants>
+		<joySkill>Intellectual</joySkill>
+		<joyXpPerTick>0.004</joyXpPerTick>
+		<joyKind>Gaming_Cerebral</joyKind>
+		<taleOnCompletion>PlayedGame</taleOnCompletion>
+		<allowOpportunisticPrefix>true</allowOpportunisticPrefix>
+	</JobDef>
+
+	<JoyGiverDef>
+		<defName>Play_Hnefatafl</defName>
+		<giverClass>JoyGiver_InteractBuildingSitAdjacent</giverClass>
+		<baseChance>2</baseChance>
+		<thingDefs>
+			<li>VFEV_Hnefatafl</li>
+		</thingDefs>
+		<jobDef>Play_Hnefatafl</jobDef>
+		<joyKind>Gaming_Cerebral</joyKind>
+		<requiredCapacities>
+			<li>Manipulation</li>
+		</requiredCapacities>
+	</JoyGiverDef>
+
+	<!-- Training dummy -->
+	<JobDef>
+		<defName>Play_TrainingDummy</defName>
+		<driverClass>VFEV.JobDriver_TrainAtDummy</driverClass>
+		<reportString>training at dummy.</reportString>
+		<joyDuration>4000</joyDuration>
+		<joyMaxParticipants>1</joyMaxParticipants>
+		<joySkill>Melee</joySkill>
+		<joyXpPerTick>0.005</joyXpPerTick>
+		<joyKind>Gaming_Dexterity</joyKind>
+		<taleOnCompletion>PlayedGame</taleOnCompletion>
+		<allowOpportunisticPrefix>true</allowOpportunisticPrefix>
+	</JobDef>
+
+	<JoyGiverDef>
+		<defName>Play_TrainingDummy</defName>
+		<giverClass>VFEV.JoyGiver_PlayTrainingDummy</giverClass>
+		<baseChance>4</baseChance>
+		<thingDefs>
+			<li>VFEV_TrainingDummy</li>
+		</thingDefs>
+		<desireSit>false</desireSit>
+		<jobDef>Play_TrainingDummy</jobDef>
+		<joyKind>Gaming_Dexterity</joyKind>
+		<requiredCapacities>
+			<li>Manipulation</li>
+		</requiredCapacities>
+	</JoyGiverDef>
+
+
+</Defs>

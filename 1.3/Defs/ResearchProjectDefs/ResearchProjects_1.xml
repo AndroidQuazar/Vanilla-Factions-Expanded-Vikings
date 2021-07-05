@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <ResearchProjectDef>
+        <defName>VFEV_Beekeeping</defName>
+        <label>bee keeping</label>
+        <description>Learn how to keep bees to produce honey from nearby plants.</description>
+        <baseCost>500</baseCost>
+		<tab>VanillaExpanded</tab>
+        <techLevel>Neolithic</techLevel>
+		<researchViewX>2.00</researchViewX>
+		<researchViewY>0.15</researchViewY>
+    </ResearchProjectDef>
+
+</Defs>

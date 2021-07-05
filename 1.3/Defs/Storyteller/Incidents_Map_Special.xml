@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- =========================== Good - special ============================-->
+
+  <IncidentDef>
+    <defName>VFE_MysteriousHeroJoins</defName>
+    <label>mysterious wanderer</label>
+    <category>Special</category>
+    <targetTags>
+      <li>Map_PlayerHome</li>
+    </targetTags>
+    <workerClass>IncidentWorker_WandererJoin</workerClass>
+    <letterLabel>Mysterious wanderer</letterLabel>
+    <letterText>Sensing trouble, or perhaps foreboding a time of turmoil, a mysterious [PAWN_kind] has arrived.\n\nWill [PAWN_pronoun] be able to aid the colony in these dark times?</letterText>
+    <baseChance>0</baseChance>
+    <minRefireDays>60</minRefireDays>
+    <minGreatestPopulation>3</minGreatestPopulation>
+    <pawnKind>VFEV_VikingHero</pawnKind>
+    <pawnMustBeCapableOfViolence>true</pawnMustBeCapableOfViolence>
+  </IncidentDef>
+  
+  <IncidentDef>
+    <defName>VFE_MysteriousLegendJoins</defName>
+    <label>mysterious legend</label>
+    <category>Special</category>
+    <targetTags>
+      <li>Map_PlayerHome</li>
+    </targetTags>
+    <workerClass>IncidentWorker_WandererJoin</workerClass>
+    <letterLabel>Traveling legend</letterLabel>
+    <letterText>Noticing the tragedy that met your colony, a mysterious [PAWN_kind] has arrived.\n\nCan the [PAWN_pronoun] help to put things right?</letterText>
+    <baseChance>0</baseChance>
+    <minRefireDays>120</minRefireDays>
+    <minGreatestPopulation>1</minGreatestPopulation>
+    <pawnKind>VFEV_VikingLegend</pawnKind>
+    <pawnMustBeCapableOfViolence>true</pawnMustBeCapableOfViolence>
+  </IncidentDef>
+
+</Defs>

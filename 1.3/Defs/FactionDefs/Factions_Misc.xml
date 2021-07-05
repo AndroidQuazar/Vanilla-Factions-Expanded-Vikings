@@ -1,0 +1,352 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <FactionDef ParentName="FactionBase" Name="VFEV_VikingBase" Abstract="True">
+    <pawnSingular>nordsman</pawnSingular>
+    <pawnsPlural>nordspeople</pawnsPlural>
+    <categoryTag>VFEV_Vikings</categoryTag>
+    <listOrderPriority>20</listOrderPriority>
+    <settlementGenerationWeight>1</settlementGenerationWeight>
+    <requiredCountAtGameStart>1</requiredCountAtGameStart>
+    <canMakeRandomly>true</canMakeRandomly>
+    <canStageAttacks>true</canStageAttacks>
+    <factionIconPath>World/WorldObjects/Expanding/Village</factionIconPath>
+    <geneticVariance>0.1</geneticVariance>
+    <factionNameMaker>NamerFactionViking</factionNameMaker>
+    <settlementNameMaker>NamerSettlementViking</settlementNameMaker>
+    <techLevel>Medieval</techLevel>
+    <allowedCultures><li>Vikings</li></allowedCultures>
+    <backstoryFilters>
+      <li>
+        <categories>
+          <li>Tribal</li>
+        </categories>
+      </li>
+    </backstoryFilters>
+    <leaderTitle>jarl</leaderTitle>
+    <caravanTraderKinds>
+      <li>Caravan_Neolithic_BulkGoods</li>
+      <li>Caravan_Neolithic_WarMerchant</li>
+      <li>Caravan_Neolithic_Slaver</li>
+      <li>Caravan_Neolithic_ShamanMerchant</li>
+      <li>VFEV_Caravan_Looter</li>
+    </caravanTraderKinds>
+    <visitorTraderKinds>
+      <li>Visitor_Neolithic_Standard</li>
+    </visitorTraderKinds>
+    <baseTraderKinds>
+      <li>Base_Neolithic_Standard</li>
+    </baseTraderKinds>
+    <allowedArrivalTemperatureRange>-55~25</allowedArrivalTemperatureRange>
+    <raidCommonalityFromPointsCurve>
+      <points>
+        <li>(0, 1)</li>
+        <!--Constant 1 at all points levels-->
+      </points>
+    </raidCommonalityFromPointsCurve>
+    <maxPawnCostPerTotalPointsCurve>
+      <points>
+        <li>(0,35)</li>
+        <li>(70, 50)</li>
+        <li>(800, 100)</li>
+        <li>(1300, 150)</li>
+        <li>(100000, 10000)</li>
+      </points>
+    </maxPawnCostPerTotalPointsCurve>
+    <settlementTexturePath>World/WorldObjects/TribalSettlement</settlementTexturePath>
+    <modExtensions>
+      <li Class="VFECore.FactionDefExtension">
+        <allowedBiomes>
+          <li>IceSheet</li>
+          <li>SeaIce</li>
+          <li>BorealForest</li>
+          <li>ColdBog</li>
+          <li>Tundra</li>
+        </allowedBiomes>
+      </li>
+    </modExtensions>
+  </FactionDef>
+
+  <FactionDef ParentName="VFEV_VikingBase">
+    <defName>VFEV_VikingsClan</defName>
+    <label>rough clan</label>
+    <description>These clanmen have been here for a long time. Perhaps their ancestors crashed here a thousand years ago, as their legends suggest. In any case, the nordmen are fierce people who live off of the work of others, and they are not afraid to use force to take what's not theirs.\n\nAlbeit not as technologically advanced as other factions, the nordmen can be a valuable ally and a terrible enemy due to their hardiness and savage, heathen ways.\n\nThis particular clan values warlike dominance; it may be difficult to turn them into an ally.</description>
+    <colorSpectrum>
+      <li>(0.30, 0.58, 0.65)</li>
+      <li>(0.35, 0.75, 0.70)</li>
+    </colorSpectrum>
+    <factionIconPath>World/WorldObjects/Expanding/VikingsSavage</factionIconPath>
+    <permanentEnemy>false</permanentEnemy>
+    <pawnGroupMakers>
+      <li>
+        <!-- Peaceful -->
+        <kindDef>Peaceful</kindDef>
+        <options>
+          <VFEV_Raider>25</VFEV_Raider>
+          <VFEV_Guardian>20</VFEV_Guardian>
+          <VFEV_Ravager>10</VFEV_Ravager>
+          <VFEV_Berserker>15</VFEV_Berserker>
+          <VFEV_Shieldbearer>10</VFEV_Shieldbearer>
+          <VFEV_ShieldedGuardian>10</VFEV_ShieldedGuardian>
+          <VFEV_ShieldedRavager>10</VFEV_ShieldedRavager>
+          <VFEV_HousecarlMelee>1</VFEV_HousecarlMelee>
+          <VFEV_HousecarlRanged>1</VFEV_HousecarlRanged>
+          <VFEV_Archer>10</VFEV_Archer>
+        </options>
+      </li>
+      <li>
+        <kindDef>Trader</kindDef>
+        <traders>
+          <VFEV_Viking_Merchant>1</VFEV_Viking_Merchant>
+        </traders>
+        <carriers>
+          <Muffalo>8</Muffalo>
+          <Yak>4</Yak>
+          <Alpaca>2.5</Alpaca>
+        </carriers>
+        <guards>
+          <VFEV_Raider>25</VFEV_Raider>
+          <VFEV_Guardian>20</VFEV_Guardian>
+          <VFEV_Ravager>10</VFEV_Ravager>
+          <VFEV_Berserker>15</VFEV_Berserker>
+          <VFEV_Shieldbearer>10</VFEV_Shieldbearer>
+          <VFEV_ShieldedGuardian>10</VFEV_ShieldedGuardian>
+          <VFEV_ShieldedRavager>10</VFEV_ShieldedRavager>
+          <VFEV_HousecarlMelee>1</VFEV_HousecarlMelee>
+          <VFEV_HousecarlRanged>1</VFEV_HousecarlRanged>
+          <VFEV_Archer>10</VFEV_Archer>
+        </guards>
+      </li>
+      <li>
+        <kindDef>Settlement</kindDef>
+        <options>
+          <VFEV_Raider>25</VFEV_Raider>
+          <VFEV_Guardian>20</VFEV_Guardian>
+          <VFEV_Ravager>10</VFEV_Ravager>
+          <VFEV_Berserker>15</VFEV_Berserker>
+          <VFEV_Shieldbearer>10</VFEV_Shieldbearer>
+          <VFEV_ShieldedGuardian>10</VFEV_ShieldedGuardian>
+          <VFEV_ShieldedRavager>10</VFEV_ShieldedRavager>
+          <VFEV_HousecarlMelee>1</VFEV_HousecarlMelee>
+          <VFEV_HousecarlRanged>1</VFEV_HousecarlRanged>
+          <VFEV_Archer>10</VFEV_Archer>
+        </options>
+      </li>
+      <li>
+        <!-- Normal fights, ranged with melee mix-ins -->
+        <kindDef>Combat</kindDef>
+        <commonality>80</commonality>
+        <options>
+          <VFEV_Raider>25</VFEV_Raider>
+          <VFEV_Guardian>20</VFEV_Guardian>
+          <VFEV_Ravager>10</VFEV_Ravager>
+          <VFEV_Archer>10</VFEV_Archer>
+          <VFEV_Berserker>5</VFEV_Berserker>
+          <VFEV_HousecarlMelee>1</VFEV_HousecarlMelee>
+        </options>
+      </li>
+      <li>
+        <!-- Normal fights, raiders -->
+        <kindDef>Combat</kindDef>
+        <commonality>100</commonality>
+        <options>
+          <VFEV_Raider>45</VFEV_Raider>
+          <VFEV_Guardian>5</VFEV_Guardian>
+          <VFEV_Ravager>5</VFEV_Ravager>
+          <VFEV_Berserker>1</VFEV_Berserker>
+        </options>
+      </li>
+      <li>
+        <!-- Normal fights, hunting party -->
+        <kindDef>Combat</kindDef>
+        <commonality>100</commonality>
+        <options>
+          <VFEV_Raider>45</VFEV_Raider>
+          <VFEV_Guardian>5</VFEV_Guardian>
+          <VFEV_Ravager>5</VFEV_Ravager>
+          <VFEV_Wolfhound>5</VFEV_Wolfhound>
+        </options>
+      </li>
+      <li>
+        <!-- Normal fights, shield wall -->
+        <kindDef>Combat</kindDef>
+        <commonality>100</commonality>
+        <options>
+          <VFEV_Raider>30</VFEV_Raider>
+          <VFEV_ShieldedGuardian>5</VFEV_ShieldedGuardian>
+          <VFEV_ShieldedRavager>5</VFEV_ShieldedRavager>
+          <VFEV_Shieldbearer>50</VFEV_Shieldbearer>
+          <VFEV_Archer>10</VFEV_Archer>
+        </options>
+      </li>
+      <li>
+        <!-- Normal fights, ranged only -->
+        <kindDef>Combat</kindDef>
+        <commonality>30</commonality>
+        <options>
+          <VFEV_Archer>60</VFEV_Archer>
+          <VFEV_HousecarlRanged>1</VFEV_HousecarlRanged>
+        </options>
+      </li>
+      <li>
+        <!-- Normal fights, mix only -->
+        <kindDef>Combat</kindDef>
+        <commonality>40</commonality>
+        <options>
+          <VFEV_Raider>25</VFEV_Raider>
+          <VFEV_Guardian>20</VFEV_Guardian>
+          <VFEV_Ravager>10</VFEV_Ravager>
+          <VFEV_Berserker>15</VFEV_Berserker>
+          <VFEV_Shieldbearer>10</VFEV_Shieldbearer>
+          <VFEV_ShieldedGuardian>10</VFEV_ShieldedGuardian>
+          <VFEV_ShieldedRavager>10</VFEV_ShieldedRavager>
+          <VFEV_HousecarlMelee>1</VFEV_HousecarlMelee>
+        </options>
+      </li>
+    </pawnGroupMakers>
+    <maxConfigurableAtWorldCreation>9999</maxConfigurableAtWorldCreation>
+    <configurationListOrderPriority>100</configurationListOrderPriority>
+  </FactionDef>
+
+  <FactionDef ParentName="VFEV_VikingBase">
+    <defName>VFEV_VikingsSlaver</defName>
+    <label>savage clan</label>
+    <description>These clanmen have been here for a long time. Perhaps their ancestors crashed here a thousand years ago, as their legends suggest. In any case, the nordmen are fierce people who live off of the work of others, and they are not afraid to use force to take what's not theirs.\n\nAlbeit not as technologically advanced as other factions, the nordmen can be a valuable ally and a terrible enemy due to their hardiness and savage, heathen ways.\n\nThis particular clan wreaks havoc in surrounding settlements and takes any survivors into slavery - it will be very difficult to become their ally!</description>
+    <colorSpectrum>
+      <li>(0.80, 0.36, 0.30)</li>
+      <li>(0.90, 0.34, 0.34)</li>
+    </colorSpectrum>
+    <factionIconPath>World/WorldObjects/Expanding/VikingsSlaver</factionIconPath>
+    <permanentEnemy>false</permanentEnemy>
+    <pawnGroupMakers>
+      <li>
+        <kindDef>Trader</kindDef>
+        <traders>
+          <VFEV_Viking_Slaver>1</VFEV_Viking_Slaver>
+        </traders>
+        <carriers>
+          <Muffalo>8</Muffalo>
+          <Yak>4</Yak>
+          <Alpaca>2.5</Alpaca>
+        </carriers>
+        <guards>
+          <VFEV_Slave>25</VFEV_Slave>
+          <VFEV_Raider>25</VFEV_Raider>
+          <VFEV_Guardian>20</VFEV_Guardian>
+          <VFEV_Ravager>10</VFEV_Ravager>
+          <VFEV_Berserker>15</VFEV_Berserker>
+          <VFEV_Shieldbearer>10</VFEV_Shieldbearer>
+          <VFEV_ShieldedGuardian>10</VFEV_ShieldedGuardian>
+          <VFEV_ShieldedRavager>10</VFEV_ShieldedRavager>
+          <VFEV_HousecarlMelee>1</VFEV_HousecarlMelee>
+          <VFEV_HousecarlRanged>1</VFEV_HousecarlRanged>
+          <VFEV_Archer>10</VFEV_Archer>
+        </guards>
+      </li>
+      <li>
+        <kindDef>Peaceful</kindDef>
+        <options>
+          <VFEV_Slave>25</VFEV_Slave>
+          <VFEV_Raider>25</VFEV_Raider>
+          <VFEV_Guardian>20</VFEV_Guardian>
+          <VFEV_Ravager>10</VFEV_Ravager>
+        </options>
+      </li>
+      <li>
+        <kindDef>Settlement</kindDef>
+        <options>
+          <VFEV_Slave>25</VFEV_Slave>
+          <VFEV_Raider>25</VFEV_Raider>
+          <VFEV_Guardian>20</VFEV_Guardian>
+          <VFEV_Ravager>10</VFEV_Ravager>
+          <VFEV_Berserker>15</VFEV_Berserker>
+          <VFEV_Shieldbearer>10</VFEV_Shieldbearer>
+          <VFEV_ShieldedGuardian>10</VFEV_ShieldedGuardian>
+          <VFEV_ShieldedRavager>10</VFEV_ShieldedRavager>
+          <VFEV_HousecarlMelee>1</VFEV_HousecarlMelee>
+          <VFEV_HousecarlRanged>1</VFEV_HousecarlRanged>
+          <VFEV_Archer>10</VFEV_Archer>
+        </options>
+      </li>
+      <li>
+        <!-- Normal fights, ranged with melee mix-ins -->
+        <kindDef>Combat</kindDef>
+        <commonality>80</commonality>
+        <options>
+          <VFEV_Raider>25</VFEV_Raider>
+          <VFEV_Guardian>20</VFEV_Guardian>
+          <VFEV_Ravager>10</VFEV_Ravager>
+          <VFEV_Archer>10</VFEV_Archer>
+          <VFEV_Berserker>5</VFEV_Berserker>
+          <VFEV_HousecarlMelee>1</VFEV_HousecarlMelee>
+        </options>
+      </li>
+      <li>
+        <!-- Normal fights, raiders -->
+        <kindDef>Combat</kindDef>
+        <commonality>100</commonality>
+        <options>
+          <VFEV_Raider>45</VFEV_Raider>
+          <VFEV_Guardian>5</VFEV_Guardian>
+          <VFEV_Ravager>5</VFEV_Ravager>
+          <VFEV_Berserker>1</VFEV_Berserker>
+        </options>
+      </li>
+      <li>
+        <!-- Normal fights, hunting party -->
+        <kindDef>Combat</kindDef>
+        <commonality>100</commonality>
+        <options>
+          <VFEV_Raider>45</VFEV_Raider>
+          <VFEV_Guardian>5</VFEV_Guardian>
+          <VFEV_Ravager>5</VFEV_Ravager>
+          <VFEV_Wolfhound>5</VFEV_Wolfhound>
+        </options>
+      </li>
+      <li>
+        <!-- Normal fights, shield wall -->
+        <kindDef>Combat</kindDef>
+        <commonality>100</commonality>
+        <options>
+          <VFEV_Raider>30</VFEV_Raider>
+          <VFEV_ShieldedGuardian>5</VFEV_ShieldedGuardian>
+          <VFEV_ShieldedRavager>5</VFEV_ShieldedRavager>
+          <VFEV_Shieldbearer>50</VFEV_Shieldbearer>
+          <VFEV_Archer>10</VFEV_Archer>
+        </options>
+      </li>
+      <li>
+        <!-- Normal fights, mix only -->
+        <kindDef>Combat</kindDef>
+        <commonality>40</commonality>
+        <options>
+          <VFEV_Raider>25</VFEV_Raider>
+          <VFEV_Guardian>20</VFEV_Guardian>
+          <VFEV_Ravager>10</VFEV_Ravager>
+          <VFEV_Berserker>15</VFEV_Berserker>
+          <VFEV_Shieldbearer>10</VFEV_Shieldbearer>
+          <VFEV_ShieldedGuardian>10</VFEV_ShieldedGuardian>
+          <VFEV_ShieldedRavager>10</VFEV_ShieldedRavager>
+          <VFEV_HousecarlMelee>1</VFEV_HousecarlMelee>
+        </options>
+      </li>
+      <li>
+        <!-- Normal fights, slaves -->
+        <kindDef>Combat</kindDef>
+        <commonality>100</commonality>
+        <options>
+          <VFEV_Raider>25</VFEV_Raider>
+          <VFEV_Guardian>20</VFEV_Guardian>
+          <VFEV_Ravager>10</VFEV_Ravager>
+          <VFEV_Berserker>15</VFEV_Berserker>
+          <VFEV_Shieldbearer>10</VFEV_Shieldbearer>
+          <VFEV_ShieldedGuardian>10</VFEV_ShieldedGuardian>
+          <VFEV_ShieldedRavager>10</VFEV_ShieldedRavager>
+          <VFEV_HousecarlMelee>1</VFEV_HousecarlMelee>
+        </options>
+      </li>
+    </pawnGroupMakers>
+    <maxConfigurableAtWorldCreation>9999</maxConfigurableAtWorldCreation>
+    <configurationListOrderPriority>100</configurationListOrderPriority>
+  </FactionDef>
+</Defs>
