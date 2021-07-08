@@ -2,7 +2,7 @@
 <Defs>
 
 
- <!-- Viking -->
+  <!-- Viking -->
 
   <RulePackDef>
     <defName>NamerFactionViking</defName>
@@ -13,10 +13,10 @@
       <rulesStrings>
         <li>r_name->The [AnimalNordic] Clan</li>
         <li>r_name->The [Color] [AnimalNordic] Clan</li>
-		<li>r_name->[NorseNames]'s Clan</li>
+        <li>r_name->[NorseNames]'s Clan</li>
       </rulesStrings>
       <rulesFiles>
-		<li>AnimalNordic->Words/Nouns/AnimalsNordic</li>
+        <li>AnimalNordic->Words/Nouns/AnimalsNordic</li>
       </rulesFiles>
     </rulePack>
   </RulePackDef>
@@ -55,17 +55,17 @@
       </rulesStrings>
     </rulePack>
   </RulePackDef>
-  
+
   <RulePackDef>
     <defName>NamerPersonVikingUtility</defName>
     <rulePack>
       <rulesFiles>
         <li>NorseNames->Words/Names/NorseNames</li>
-		<li>AnimalNordic->Words/Nouns/AnimalsNordic</li>
+        <li>AnimalNordic->Words/Nouns/AnimalsNordic</li>
       </rulesFiles>
     </rulePack>
   </RulePackDef>
-  
+
   <RulePackDef>
     <defName>NamerPersonViking</defName>
     <include>

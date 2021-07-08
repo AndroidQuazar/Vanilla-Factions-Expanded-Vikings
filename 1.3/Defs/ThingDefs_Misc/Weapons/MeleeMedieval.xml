@@ -15,6 +15,9 @@
     <weaponTags>
       <li>VikingMeleeBasic</li>
     </weaponTags>
+    <weaponClasses>
+      <li>Vikings</li>
+    </weaponClasses>
     <statBases>
       <WorkToMake>12000</WorkToMake>
       <Mass>0.85</Mass>
@@ -56,11 +59,11 @@
         <Crafting>3</Crafting>
       </skillRequirements>
     </recipeMaker>
-        <modExtensions>
-	            <li Class="VFECore.ThingDefExtension">
-                <usableWithShields>true</usableWithShields>
-            </li>
-        </modExtensions>
+    <modExtensions>
+      <li Class="VFECore.ThingDefExtension">
+        <usableWithShields>true</usableWithShields>
+      </li>
+    </modExtensions>
   </ThingDef>
 
   <ThingDef ParentName="BaseMeleeWeapon_Blunt_Quality">
@@ -90,6 +93,9 @@
     <weaponTags>
       <li>VikingMeleeDecent</li>
     </weaponTags>
+    <weaponClasses>
+      <li>Vikings</li>
+    </weaponClasses>
     <tools>
       <li>
         <label>handle</label>
@@ -116,13 +122,13 @@
       </li>
     </tools>
     <equippedAngleOffset>-65</equippedAngleOffset>
-        <modExtensions>
-	            <li Class="VFECore.ThingDefExtension">
-                <usableWithShields>true</usableWithShields>
-            </li>
-        </modExtensions>
+    <modExtensions>
+      <li Class="VFECore.ThingDefExtension">
+        <usableWithShields>true</usableWithShields>
+      </li>
+    </modExtensions>
   </ThingDef>
-  
+
   <ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
     <defName>VFE_MeleeWeapon_DaneAxe</defName>
     <label>dane axe</label>
@@ -135,8 +141,13 @@
     <weaponTags>
       <li>VikingMeleeAdvanced</li>
     </weaponTags>
+    <weaponClasses>
+      <li>Vikings</li>
+    </weaponClasses>
     <costStuffCount>100</costStuffCount>
-    <thingSetMakerTags><li>RewardStandardQualitySuper</li></thingSetMakerTags>
+    <thingSetMakerTags>
+      <li>RewardStandardQualitySuper</li>
+    </thingSetMakerTags>
     <statBases>
       <WorkToMake>20000</WorkToMake>
       <Mass>1.7</Mass>

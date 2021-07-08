@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
-  
+
   <ThingDef ParentName="ApparelNoQualityBase">
     <defName>VFEV_Apparel_TorchBelt</defName>
     <label>throwable torch belt</label>
@@ -42,7 +42,7 @@
     <recipeMaker>
       <unfinishedThingDef>UnfinishedPack</unfinishedThingDef>
       <recipeUsers>
-            <li>CraftingSpot</li>
+        <li>CraftingSpot</li>
       </recipeUsers>
       <useIngredientsForColor>false</useIngredientsForColor>
       <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
@@ -72,36 +72,66 @@
     </thingCategories>
     <generateAllowChance>0.15</generateAllowChance>
     <apparel>
-	<wornGraphicPath>Things/Item/BeltGrenades/TorchBelt/TorchBelt</wornGraphicPath>
+      <wornGraphicPath>Things/Item/BeltGrenades/TorchBelt/TorchBelt</wornGraphicPath>
       <wornGraphicData>
         <renderUtilityAsPack>true</renderUtilityAsPack>
         <north>
           <offset>(-0.30,-0.25)</offset>
-		  <hulk><offset>(-0.0,-0.15)</offset></hulk>
-		  <fat><offset>(-0.0,-0.0)</offset></fat>
-		  <thin><offset>(0.10,-0.0)</offset></thin>
+          <hulk>
+            <offset>(-0.0,-0.15)</offset>
+          </hulk>
+          <fat>
+            <offset>(-0.0,-0.0)</offset>
+          </fat>
+          <thin>
+            <offset>(0.10,-0.0)</offset>
+          </thin>
         </north>
         <south>
           <offset>(0.25,-0.20)</offset>
-		  <hulk><offset>(-0.0,-0.10)</offset></hulk>
-		  <fat><offset>(-0.0,-0.0)</offset></fat>
-		  <thin><offset>(-0.10,-0.0)</offset></thin>
+          <hulk>
+            <offset>(-0.0,-0.10)</offset>
+          </hulk>
+          <fat>
+            <offset>(-0.0,-0.0)</offset>
+          </fat>
+          <thin>
+            <offset>(-0.10,-0.0)</offset>
+          </thin>
         </south>
         <east>
           <offset>(-0.15,-0.25)</offset>
-		  <hulk><offset>(-0.0,-0.15)</offset></hulk>
-		  <fat><offset>(-0.10,-0.10)</offset></fat>
+          <hulk>
+            <offset>(-0.0,-0.15)</offset>
+          </hulk>
+          <fat>
+            <offset>(-0.10,-0.10)</offset>
+          </fat>
         </east>
         <west>
           <offset>(0.15,-0.25)</offset>
-		  <hulk><offset>(-0.0,-0.15)</offset></hulk>
-		  <fat><offset>(-0.0,-0.10)</offset></fat>
+          <hulk>
+            <offset>(-0.0,-0.15)</offset>
+          </hulk>
+          <fat>
+            <offset>(-0.0,-0.10)</offset>
+          </fat>
         </west>
-        <male>  <scale>(0.75,0.75)</scale></male>
-        <female><scale>(0.75,0.75)</scale></female>
-        <thin>  <scale>(0.7,0.7)</scale></thin>
-        <hulk>  <scale>(0.9,0.9)</scale></hulk>
-        <fat>   <scale>(0.9,0.9)</scale></fat>
+        <male>
+          <scale>(0.75,0.75)</scale>
+        </male>
+        <female>
+          <scale>(0.75,0.75)</scale>
+        </female>
+        <thin>
+          <scale>(0.7,0.7)</scale>
+        </thin>
+        <hulk>
+          <scale>(0.9,0.9)</scale>
+        </hulk>
+        <fat>
+          <scale>(0.9,0.9)</scale>
+        </fat>
 
       </wornGraphicData>
       <careIfWornByCorpse>false</careIfWornByCorpse>
@@ -118,8 +148,8 @@
       </tags>
     </apparel>
   </ThingDef>
- 
-  
+
+
   <ThingDef>
     <defName>VFEV_Proj_GrenadeTorch</defName>
     <label>thrown torch</label>
@@ -138,7 +168,7 @@
       <explosionRadius>0.9</explosionRadius>
       <damageDef>Flame</damageDef>
       <!-- Use default damage from explosion def -->
-		<speed>24</speed>
+      <speed>24</speed>
       <ai_IsIncendiary>true</ai_IsIncendiary>
     </projectile>
   </ThingDef>

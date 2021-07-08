@@ -29,6 +29,9 @@
     <weaponTags>
       <li>VikingRangedBasic</li>
     </weaponTags>
+    <weaponClasses>
+      <li>Vikings</li>
+    </weaponClasses>
     <recipeMaker>
       <recipeUsers Inherit="False">
         <li>FueledSmithy</li>
@@ -118,6 +121,9 @@
     <weaponTags>
       <li>VikingRangedBasic</li>
     </weaponTags>
+    <weaponClasses>
+      <li>Vikings</li>
+    </weaponClasses>
     <recipeMaker>
       <recipeUsers Inherit="False">
         <li>FueledSmithy</li>
