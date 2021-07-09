@@ -91,7 +91,7 @@
           "lib/net472/0Harmony.dll": {}
         },
         "runtime": {
-          "lib/net472/0Harmony.dll": {}
+          "lib/net472/_._": {}
         }
       }
     },
@@ -185,7 +185,7 @@
           "lib/net472/0Harmony.dll": {}
         },
         "runtime": {
-          "lib/net472/0Harmony.dll": {}
+          "lib/net472/_._": {}
         }
       }
     },
@@ -279,7 +279,7 @@
           "lib/net472/0Harmony.dll": {}
         },
         "runtime": {
-          "lib/net472/0Harmony.dll": {}
+          "lib/net472/_._": {}
         }
       }
     },
@@ -373,7 +373,7 @@
           "lib/net472/0Harmony.dll": {}
         },
         "runtime": {
-          "lib/net472/0Harmony.dll": {}
+          "lib/net472/_._": {}
         }
       }
     }
@@ -505,20 +505,20 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Vova\\.nuget\\packages\\": {}
+    "C:\\Users\\kylia\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\Vanilla-Factions-Expanded-Vikings\\1.3\\Source\\VFEV\\VFEV.csproj",
+      "projectUniqueName": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\VanillaFactionsExpanded_Vikings\\1.3\\Source\\VFEV\\VFEV.csproj",
       "projectName": "VFEV",
-      "projectPath": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\Vanilla-Factions-Expanded-Vikings\\1.3\\Source\\VFEV\\VFEV.csproj",
-      "packagesPath": "C:\\Users\\Vova\\.nuget\\packages\\",
-      "outputPath": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\Vanilla-Factions-Expanded-Vikings\\1.3\\Source\\VFEV\\obj\\",
+      "projectPath": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\VanillaFactionsExpanded_Vikings\\1.3\\Source\\VFEV\\VFEV.csproj",
+      "packagesPath": "C:\\Users\\kylia\\.nuget\\packages\\",
+      "outputPath": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\VanillaFactionsExpanded_Vikings\\1.3\\Source\\VFEV\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "configFilePaths": [
-        "C:\\Users\\Vova\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\kylia\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -543,6 +543,7 @@
             "version": "[1.3.3052-beta, )"
           },
           "Lib.Harmony": {
+            "include": "Compile, Build, Native, ContentFiles, Analyzers, BuildTransitive",
             "target": "Package",
             "version": "[2.1.0, )"
           }

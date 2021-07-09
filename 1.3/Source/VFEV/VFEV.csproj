@@ -113,7 +113,7 @@
       <ExcludeAssets>runtime</ExcludeAssets>
       <IncludeAssets>compile; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
-    <PackageReference Include="Lib.Harmony">
+    <PackageReference Include="Lib.Harmony" ExcludeAssets="runtime">
       <Version>2.1.0</Version>
     </PackageReference>
   </ItemGroup>
