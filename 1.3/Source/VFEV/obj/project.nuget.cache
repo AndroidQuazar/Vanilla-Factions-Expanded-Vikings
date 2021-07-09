@@ -1,10 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "VcpLcJhp50zWXsf2J6XQ5VOpSz9KV0XO+P5M0iY39RiQhC5P7iZYAuyLCM1SKDIA4l91I0U+WnhdBORrrqYxow==",
+  "dgSpecHash": "2qhXsoeM8tKcv38rU4+Xf6fk4DrkiwJfcbMow19Bnl+Qrm+Qb8lXvSX93u8iDXzk7BM5enKoAESME8tH8rPVuw==",
   "success": true,
   "projectFilePath": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\Vanilla-Factions-Expanded-Vikings\\1.3\\Source\\VFEV\\VFEV.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Vova\\.nuget\\packages\\krafs.rimworld.ref\\1.3.3050-beta\\krafs.rimworld.ref.1.3.3050-beta.nupkg.sha512",
+    "C:\\Users\\Vova\\.nuget\\packages\\krafs.rimworld.ref\\1.3.3052-beta\\krafs.rimworld.ref.1.3.3052-beta.nupkg.sha512",
     "C:\\Users\\Vova\\.nuget\\packages\\lib.harmony\\2.1.0\\lib.harmony.2.1.0.nupkg.sha512"
   ],
   "logs": []

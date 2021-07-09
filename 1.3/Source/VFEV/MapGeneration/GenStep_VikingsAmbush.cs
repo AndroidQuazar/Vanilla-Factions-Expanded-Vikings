@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using UnityEngine;
 using Verse;
 using Verse.AI.Group;
 
@@ -25,7 +26,7 @@ namespace VFEV
 			incidentParms.faction = parms.sitePart.site.Faction;
 			if (incidentParms.faction == null) 
 				incidentParms.faction = Faction.OfMechanoids;
-			incidentParms.points *= 0.5f;
+			incidentParms.points = Mathf.Max(incidentParms.points * 0.5f, incidentParms.faction.def.MinPointsToGeneratePawnGroup(PawnGroupKindDefOf.Combat));
 			
 			List<Pawn> list = PawnGroupMakerUtility.GeneratePawns(IncidentParmsUtility.GetDefaultPawnGroupMakerParms(PawnGroupKindDefOf.Combat, incidentParms, false), true).ToList<Pawn>();
 			if (list.Count > 0)
