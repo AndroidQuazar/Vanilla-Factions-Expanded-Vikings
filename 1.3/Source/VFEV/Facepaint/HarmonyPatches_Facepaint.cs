@@ -70,7 +70,7 @@ namespace VFEV.Facepaint
                         hideHairAssigned = true;
                     }
                 }
-                else if (!drawFacepaintCall && hideHairAssigned && instruction.opcode == OpCodes.Ldloc_3)
+                else if (!drawFacepaintCall && hideHairAssigned && instruction.opcode == OpCodes.Ldloc_S && instruction.operand is LocalBuilder lb && lb.LocalIndex == 4)
                 {
                     yield return new CodeInstruction(OpCodes.Ldarg_0) {labels = instruction.ExtractLabels()}; // this
                     yield return new CodeInstruction(OpCodes.Ldloc_S, hideFacepaint.LocalIndex); // hideFacepaint
