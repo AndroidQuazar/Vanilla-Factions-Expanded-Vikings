@@ -23,12 +23,13 @@ namespace VFEV
 		public override void Generate(Map map, GenStepParams parms)
 		{
 			IncidentParms incidentParms = StorytellerUtility.DefaultParmsNow(IncidentCategoryDefOf.ThreatSmall, map);
-			incidentParms.faction = parms.sitePart.site.Faction;
+			incidentParms.faction = Find.FactionManager.AllFactionsListForReading.FindAll(f => (f.def == VFEV_DefOf.VFEV_VikingsClan || f.def == VFEV_DefOf.VFEV_VikingsSlaver) && f.HostileTo(Faction.OfPlayer))?.RandomElement();/*parms.sitePart.site.Faction;*/
 			if (incidentParms.faction == null) 
 				incidentParms.faction = Faction.OfMechanoids;
+
 			incidentParms.points = Mathf.Max(incidentParms.points * 0.5f, incidentParms.faction.def.MinPointsToGeneratePawnGroup(PawnGroupKindDefOf.Combat));
 			
-			List<Pawn> list = PawnGroupMakerUtility.GeneratePawns(IncidentParmsUtility.GetDefaultPawnGroupMakerParms(PawnGroupKindDefOf.Combat, incidentParms, false), true).ToList<Pawn>();
+			List<Pawn> list = PawnGroupMakerUtility.GeneratePawns(IncidentParmsUtility.GetDefaultPawnGroupMakerParms(PawnGroupKindDefOf.Combat, incidentParms, false), true).ToList();
 			if (list.Count > 0)
 			{
 				foreach (Pawn pawn in list)
@@ -38,8 +39,12 @@ namespace VFEV
 					GenSpawn.Spawn(pawn, result, map);
 				}
 			}
-			MapGenerator.SetVar<CellRect>("RectOfInterest", CellRect.CenteredOn(map.Center, 1, 1));
-			LordMaker.MakeNewLord(incidentParms.faction, new LordJob_DefendBase(incidentParms.faction, map.Center), map, list);
+			MapGenerator.SetVar("RectOfInterest", CellRect.CenteredOn(map.Center, 1, 1));
+
+			if (incidentParms.faction == Faction.OfMechanoids)
+				LordMaker.MakeNewLord(incidentParms.faction, new LordJob_DefendPoint(map.Center, 10, addFleeToil: false), map, list);
+			else
+				LordMaker.MakeNewLord(incidentParms.faction, new LordJob_DefendBase(incidentParms.faction, map.Center), map, list);
 		}
 	}
 }
