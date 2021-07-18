@@ -37,6 +37,7 @@ namespace VFEV.Facepaint
             var getItemInfo = AccessTools.Method(typeof(List<ApparelGraphicRecord>),"get_Item");
 
             var getHatsOnlyOnMapInfo = AccessTools.Property(typeof(Prefs), nameof(Prefs.HatsOnlyOnMap)).GetGetMethod();
+            var ideologyActiveInfo = AccessTools.Property(typeof(ModsConfig), nameof(ModsConfig.IdeologyActive)).GetGetMethod();
 
             var shouldHideHeadgearInfo = AccessTools.Method(typeof(HarmonyPatches_Facepaint), nameof(ShouldHideHeadgear));
             var renderFacepaint = AccessTools.Method(typeof(HarmonyPatches_Facepaint), nameof(RenderFacepaint));
@@ -70,16 +71,19 @@ namespace VFEV.Facepaint
                         hideHairAssigned = true;
                     }
                 }
-                else if (!drawFacepaintCall && hideHairAssigned && instruction.opcode == OpCodes.Ldloc_S && instruction.operand is LocalBuilder lb && lb.LocalIndex == 4)
+                else if (!drawFacepaintCall && hideHairAssigned && instruction.Calls(ideologyActiveInfo))// && instruction.operand is LocalBuilder lb && lb.LocalIndex == 4)
                 {
                     yield return new CodeInstruction(OpCodes.Ldarg_0) {labels = instruction.ExtractLabels()}; // this
                     yield return new CodeInstruction(OpCodes.Ldloc_S, hideFacepaint.LocalIndex); // hideFacepaint
                     yield return new CodeInstruction(OpCodes.Ldarg_S, 6); // bodyDrawType
                     yield return new CodeInstruction(OpCodes.Ldarg_S, 7); // renderFlags
                     yield return new CodeInstruction(OpCodes.Ldarg_S, 5); // headFacing
-                    yield return new CodeInstruction(OpCodes.Ldloc_0); // loc2
-                    yield return new CodeInstruction(OpCodes.Ldloc_2); // quaternion
-                    yield return new CodeInstruction(OpCodes.Call, renderFacepaint); // RenderFacepaint(this, hideFacepaint, bodyDrawType, renderFlags, headFacing, loc2, quaternion)
+                    //yield return new CodeInstruction(OpCodes.Ldloc_S, 7); // loc2
+                    yield return new CodeInstruction(OpCodes.Ldloc_0); // display class
+                    yield return new CodeInstruction(OpCodes.Ldfld, AccessTools.Field(typeof(PawnRenderer).GetNestedTypes(AccessTools.all)[0], "onHeadLoc")); // onHeadLoc
+                    yield return new CodeInstruction(OpCodes.Ldloc_0); // display class
+                    yield return new CodeInstruction(OpCodes.Ldfld, AccessTools.Field(typeof(PawnRenderer).GetNestedTypes(AccessTools.all)[0], "quat")); // quaternion
+                    yield return new CodeInstruction(OpCodes.Call,  renderFacepaint); // RenderFacepaint(this, hideFacepaint, bodyDrawType, renderFlags, headFacing, loc2, quaternion)
                     drawFacepaintCall = true;
                 }
 
@@ -96,14 +100,13 @@ namespace VFEV.Facepaint
 
         private static void RenderFacepaint(PawnRenderer instance, bool hideFacepaint, RotDrawMode bodyDrawType, PawnRenderFlags flags, Rot4 headFacing, Vector3 baseDrawPos, Quaternion quaternion)
         {
-
             var pawn = instance.graphics.pawn;
             if (bodyDrawType != RotDrawMode.Dessicated && !flags.FlagSet(PawnRenderFlags.HeadStump) &&
                 pawn.GetComp<CompFacepaint>() is CompFacepaint facepaintComp)
             {
                 Mesh mesh = instance.graphics.HairMeshSet.MeshAt(headFacing);
 
-                if (facepaintComp.facepaintGraphicOne != null) 
+                if (facepaintComp.facepaintGraphicOne != null)
                     GenDraw.DrawMeshNowOrLater(mesh, baseDrawPos - new Vector3(0, 0.0007f, 0), quaternion, facepaintComp.facepaintGraphicOne.MatAt(headFacing), flags.FlagSet(PawnRenderFlags.DrawNow));
 
                 if (facepaintComp.facepaintGraphicTwo != null)
