@@ -48,7 +48,7 @@
     </styleItemTags>
   </CultureDef>
 
-  <RulePackDef>
+  <RulePackDef MayRequire="Ludeon.RimWorld.Ideology">
     <defName>VFEV_NamerDeityVikings</defName>
     <include>
       <li>NamerDeityGlobal</li>
