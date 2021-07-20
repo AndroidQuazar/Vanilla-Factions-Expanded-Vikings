@@ -228,6 +228,7 @@
     </colorSpectrum>
     <factionIconPath>World/WorldObjects/Expanding/VikingsSlaver</factionIconPath>
     <permanentEnemy>false</permanentEnemy>
+    <naturalEnemy>true</naturalEnemy>
     <pawnGroupMakers>
       <li>
         <kindDef>Trader</kindDef>
