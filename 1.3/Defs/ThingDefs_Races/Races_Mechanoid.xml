@@ -257,11 +257,11 @@
       <soundMeleeHitBuilding>Pawn_Melee_Punch_HitBuilding</soundMeleeHitBuilding>
       <soundMeleeMiss>Pawn_Melee_Punch_Miss</soundMeleeMiss>
     </race>
-	<butcherProducts>
-			<ComponentSpacer>6</ComponentSpacer>
-			<Plasteel>40</Plasteel>
-			<ComponentIndustrial>6</ComponentIndustrial>
-		</butcherProducts>
+    <butcherProducts>
+      <ComponentSpacer>6</ComponentSpacer>
+      <Plasteel>40</Plasteel>
+      <ComponentIndustrial>6</ComponentIndustrial>
+    </butcherProducts>
     <comps>
       <li Class="VFEV.CompProperties_PawnPsyWaver">
         <interval>250~600</interval>
