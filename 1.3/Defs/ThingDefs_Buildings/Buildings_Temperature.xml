@@ -71,7 +71,7 @@
         <heatPushMaxTemperature>32</heatPushMaxTemperature>
       </li>
       <li Class="CompProperties_FireOverlay">
-        <fireSize>1.8</fireSize>
+        <fireSize>1.35</fireSize>
         <offset>(0,0,0.18)</offset>
       </li>
       <li Class="CompProperties_Art">
@@ -194,7 +194,7 @@
         <heatPushMaxTemperature>28</heatPushMaxTemperature>
       </li>
       <li Class="CompProperties_FireOverlay">
-        <fireSize>4</fireSize>
+        <fireSize>1.7</fireSize>
         <offset>(0,0,0.25)</offset>
       </li>
       <li>
