@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <!-- Mead barrel -->
+  <VanillaFactionsExpanded.Mead.InsertFirstItemDesc>Honey to Insert</VanillaFactionsExpanded.Mead.InsertFirstItemDesc>
+  <VanillaFactionsExpanded.Mead.bringIngredientsText>Bring honey</VanillaFactionsExpanded.Mead.bringIngredientsText>
+  <VanillaFactionsExpanded.Mead.bringIngredientsDesc>Bring honey to the mead barrel to start fermentation</VanillaFactionsExpanded.Mead.bringIngredientsDesc>
+  <VanillaFactionsExpanded.Mead.cancelIngredientsText>Cancel bringing honey</VanillaFactionsExpanded.Mead.cancelIngredientsText>
+  <VanillaFactionsExpanded.Mead.cancelIngredientsDesc>Cancel bringing honey to the mead barrel.</VanillaFactionsExpanded.Mead.cancelIngredientsDesc>
+  <VanillaFactionsExpanded.Mead.removeProductText>Remove mead</VanillaFactionsExpanded.Mead.removeProductText>
+  <VanillaFactionsExpanded.Mead.removeProductDesc>Remove mead from the mead barrel. The barrel will be ready.</VanillaFactionsExpanded.Mead.removeProductDesc>
+</LanguageData>
