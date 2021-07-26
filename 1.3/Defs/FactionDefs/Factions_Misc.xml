@@ -15,7 +15,12 @@
     <factionNameMaker>NamerFactionViking</factionNameMaker>
     <settlementNameMaker>NamerSettlementViking</settlementNameMaker>
     <techLevel>Medieval</techLevel>
-    <allowedCultures><li>Vikings</li></allowedCultures>
+    <allowedCultures>
+      <li>Vikings</li>
+    </allowedCultures>
+    <disallowedMemes>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Transhumanist</li>
+    </disallowedMemes>
     <structureMemeWeights>
       <Structure_TheistEmbodied MayRequire="Ludeon.RimWorld.Ideology">1</Structure_TheistEmbodied>
       <Structure_TheistAbstract MayRequire="Ludeon.RimWorld.Ideology">3</Structure_TheistAbstract>
@@ -213,6 +218,34 @@
           <VFEV_HousecarlMelee>1</VFEV_HousecarlMelee>
         </options>
       </li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">
+        <kindDef>Miners</kindDef>
+        <commonality>1</commonality>
+        <options>
+          <Miner>1</Miner>
+        </options>
+      </li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">
+        <kindDef>Hunters</kindDef>
+        <commonality>1</commonality>
+        <options>
+          <Hunter>1</Hunter>
+        </options>
+      </li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">
+        <kindDef>Loggers</kindDef>
+        <commonality>1</commonality>
+        <options>
+          <Logger>1</Logger>
+        </options>
+      </li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">
+        <kindDef>Farmers</kindDef>
+        <commonality>1</commonality>
+        <options>
+          <Farmer>1</Farmer>
+        </options>
+      </li>
     </pawnGroupMakers>
     <maxConfigurableAtWorldCreation>9999</maxConfigurableAtWorldCreation>
     <configurationListOrderPriority>100</configurationListOrderPriority>
@@ -354,6 +387,34 @@
           <VFEV_ShieldedGuardian>10</VFEV_ShieldedGuardian>
           <VFEV_ShieldedRavager>10</VFEV_ShieldedRavager>
           <VFEV_HousecarlMelee>1</VFEV_HousecarlMelee>
+        </options>
+      </li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">
+        <kindDef>Miners</kindDef>
+        <commonality>1</commonality>
+        <options>
+          <Miner>1</Miner>
+        </options>
+      </li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">
+        <kindDef>Hunters</kindDef>
+        <commonality>1</commonality>
+        <options>
+          <Hunter>1</Hunter>
+        </options>
+      </li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">
+        <kindDef>Loggers</kindDef>
+        <commonality>1</commonality>
+        <options>
+          <Logger>1</Logger>
+        </options>
+      </li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">
+        <kindDef>Farmers</kindDef>
+        <commonality>1</commonality>
+        <options>
+          <Farmer>1</Farmer>
         </options>
       </li>
     </pawnGroupMakers>
