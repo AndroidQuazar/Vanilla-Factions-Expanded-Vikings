@@ -32,7 +32,6 @@
       <Mass>8</Mass>
       <Flammability>1.0</Flammability>
       <Beauty>10</Beauty>
-      <StyleDominance MayRequire="Ludeon.RimWorld.Ideology">10</StyleDominance>
     </statBases>
     <stuffCategories>
       <li>Metallic</li>
