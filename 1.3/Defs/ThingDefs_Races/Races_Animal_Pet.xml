@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
-  <ThingDef ParentName="AnimalThingBase">
+  <ThingDef ParentName="AnimalThingBase" ADogSaidBody="LegsTail">
     <defName>VFEV_Wolfhound</defName>
     <label>wolfhound</label>
     <description>A large, energetic dog with a thick, brown fur coat for remaining comfortable in arctic environments. Thought to be an evolutionary hybrid of wolf and hound bred for hunting.</description>
