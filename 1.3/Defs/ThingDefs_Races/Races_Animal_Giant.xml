@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
-  <ThingDef ParentName="AnimalThingBase">
+  <ThingDef ParentName="AnimalThingBase" ADogSaidBody="LegsTail">
     <defName>VFEV_Fenrir</defName>
     <label>fenrir</label>
     <description>A gigantic, deadly wolf of unknown origin. The fenrir is aggressive by nature and extremely dangerous when enraged. Its fur and hide is incredibly resistant to damage and cold, while it's razor-sharp teeths can pierce even the best armour.\n\nLegends say that fenrir were bioengineered in ancient times for war and only follow the bravest leader's into combat.</description>
@@ -180,7 +180,7 @@
     </lifeStages>
   </PawnKindDef>
 
-  <ThingDef ParentName="AnimalThingBase">
+  <ThingDef ParentName="AnimalThingBase" ADogSaidBody="LegsTail">
     <defName>VFEV_Lothurr</defName>
     <label>lothurr</label>
     <description>A gigantic, dragon-like creature of unknown origin. The lothurr is peaceful by nature, but extremely dangerous when enraged. Its fur and armour plates are incredibly resistant to damage and cold, while it's majestic antlers fetch a huge price.\n\nMany legends surround the lothurrs. Some say it is the manifestation of the old nordic gods while others claim they are a truly alien species, other tall tales claim the beast is able to vanish and rapidly reappear elsewhere at will.</description>
@@ -353,7 +353,7 @@
     </lifeStages>
   </PawnKindDef>
 
-  <ThingDef ParentName="AnimalThingBase">
+  <ThingDef ParentName="AnimalThingBase" ADogSaidBody="LegsTail">
     <defName>VFEV_Njorun</defName>
     <label>njorun</label>
     <description>A gigantic, ox-like creature of unknown origin. The njorun is wary by nature, traveling the planet in small herds and staying hidden from anyone who might wish it harm. Though docile, the beast is far too skittish to be tamed and is likely to retaliate if attacked.\n\n Legends say the njoruns are the result of breeding by long gone corporations in an attempt to create the perfect animal to breed for profits.</description>
