@@ -9,20 +9,26 @@
     <defName>VFEV_CryptosleepCasket_South_SpecialViking</defName>
     <thing>CryptosleepCasket</thing>
     <rotation>South</rotation>
-    <containPawnKind>VFEV_VikingHero</containPawnKind>
+    <containPawnKindAnyOf>
+      <li>VFEV_VikingHero</li>
+    </containPawnKindAnyOf>
   </KCSG.SymbolDef>
 
   <KCSG.SymbolDef>
     <defName>VFEV_CryptosleepCasket_West_SpecialViking</defName>
     <thing>CryptosleepCasket</thing>
-    <containPawnKind>VFEV_VikingHero</containPawnKind>
     <rotation>West</rotation>
+    <containPawnKindAnyOf>
+      <li>VFEV_VikingHero</li>
+    </containPawnKindAnyOf>
   </KCSG.SymbolDef>
 
   <KCSG.SymbolDef>
     <defName>VFEV_CryptosleepCasket_East_SpecialViking</defName>
     <thing>CryptosleepCasket</thing>
-    <containPawnKind>VFEV_VikingLegend</containPawnKind>
     <rotation>East</rotation>
+    <containPawnKindAnyOf>
+      <li>VFEV_VikingLegend</li>
+    </containPawnKindAnyOf>
   </KCSG.SymbolDef>
 </Defs>
