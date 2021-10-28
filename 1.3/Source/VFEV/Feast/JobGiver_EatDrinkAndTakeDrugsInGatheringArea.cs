@@ -102,11 +102,15 @@ namespace VFEV
                     //Log.Message(" - FindFood - return false; - 4", true);
                     return false;
                 }
-                if (x.def.IsDrug && !pawn.drugs.CurrentPolicy[x.def].allowedForJoy)
+                if (x.def.IsDrug)
                 {
-                    //Log.Message(" - FindFood - return false; - 8", true);
-                    return false;
+                    if (!pawn.drugs.CurrentPolicy[x.def].allowedForJoy
+                        || pawn.ideo != null && pawn.Ideo.PreceptsListForReading.Any(precept => precept.def.defName == "DrugUse_Prohibited" || precept.def.defName == "DrugUse_MedicalOnly"))
+                    {
+                        return false;
+                    }
                 }
+
                 if ((int)x.def.ingestible.preferability <= 4 && !x.def.IsDrug)
                 {
                     //Log.Message(x.def + " - " + x.def.ingestible.preferability, true);
