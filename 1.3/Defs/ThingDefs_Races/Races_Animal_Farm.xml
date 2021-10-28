@@ -12,17 +12,18 @@
       <MoveSpeed>3</MoveSpeed>
       <ComfyTemperatureMin>-35</ComfyTemperatureMin>
       <MarketValue>460</MarketValue>
+      <FilthRate>16</FilthRate>
     </statBases>
     <comps>
       <li Class="CompProperties_Milkable">
         <milkDef>Milk</milkDef>
         <milkIntervalDays>1</milkIntervalDays>
-        <milkAmount>18</milkAmount>
+        <milkAmount>14</milkAmount>
       </li>
       <li Class="CompProperties_Shearable">
         <woolDef>VFEV_WoolCow</woolDef>
         <shearIntervalDays>15</shearIntervalDays>
-        <woolAmount>100</woolAmount>
+        <woolAmount>60</woolAmount>
       </li>
     </comps>
     <tools>
@@ -70,8 +71,8 @@
     <race>
       <body>QuadrupedAnimalWithHooves</body>
       <herdAnimal>true</herdAnimal>
-      <baseBodySize>2.0</baseBodySize>
-      <baseHungerRate>0.85</baseHungerRate>
+      <baseBodySize>2.2</baseBodySize>
+      <baseHungerRate>0.535</baseHungerRate>
       <baseHealthScale>1.5</baseHealthScale>
       <foodType>VegetarianRoughAnimal</foodType>
       <leatherDef>Leather_Plain</leatherDef>
@@ -79,7 +80,7 @@
       <roamMtbDays>2</roamMtbDays>
       <trainability>None</trainability>
       <useMeatFrom>Cow</useMeatFrom>
-      <gestationPeriodDays>20</gestationPeriodDays>
+      <gestationPeriodDays>6.66</gestationPeriodDays>
       <lifeExpectancy>22</lifeExpectancy>
       <manhunterOnDamageChance>0</manhunterOnDamageChance>
       <manhunterOnTameFailChance>0</manhunterOnTameFailChance>

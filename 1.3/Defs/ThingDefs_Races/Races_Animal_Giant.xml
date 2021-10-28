@@ -13,6 +13,7 @@
       <ArmorRating_Sharp>0.50</ArmorRating_Sharp>
       <ArmorRating_Blunt>0.30</ArmorRating_Blunt>
       <ArmorRating_Heat>0.20</ArmorRating_Heat>
+      <FilthRate>2</FilthRate>
     </statBases>
     <uiIconScale>1.75</uiIconScale>
     <tools>
@@ -93,7 +94,7 @@
       <foodType>CarnivoreAnimal</foodType>
       <leatherDef>VFEV_Leather_Fenrir</leatherDef>
       <trainability>Advanced</trainability>
-      <gestationPeriodDays>60</gestationPeriodDays>
+      <gestationPeriodDays>12</gestationPeriodDays>
       <manhunterOnTameFailChance>1.00</manhunterOnTameFailChance>
       <manhunterOnDamageChance>1.00</manhunterOnDamageChance>
       <wildness>0.95</wildness>
@@ -105,11 +106,11 @@
         </li>
         <li>
           <def>AnimalJuvenile</def>
-          <minAge>2.0</minAge>
+          <minAge>1.0</minAge>
         </li>
         <li>
           <def>AnimalAdult</def>
-          <minAge>4.0</minAge>
+          <minAge>2.0</minAge>
           <soundWounded>Pawn_Dog_Injured</soundWounded>
           <soundDeath>Pawn_Dog_Death</soundDeath>
           <soundCall>Pawn_Dog_Call</soundCall>
@@ -192,6 +193,8 @@
       <ArmorRating_Sharp>0.75</ArmorRating_Sharp>
       <ArmorRating_Blunt>0.55</ArmorRating_Blunt>
       <ArmorRating_Heat>0.45</ArmorRating_Heat>
+      <FilthRate>8</FilthRate>
+      <CaravanRidingSpeedFactor>1.6</CaravanRidingSpeedFactor>
     </statBases>
     <uiIconScale>1.75</uiIconScale>
     <tools>
@@ -254,12 +257,13 @@
       <foodType>VegetarianRoughAnimal, DendrovoreAnimal</foodType>
       <leatherDef>VFEV_Leather_Lothurr</leatherDef>
       <trainability>Advanced</trainability>
-      <gestationPeriodDays>120</gestationPeriodDays>
+      <gestationPeriodDays>26</gestationPeriodDays>
       <manhunterOnDamageChance>1.00</manhunterOnDamageChance>
       <wildness>0.99</wildness>
       <lifeExpectancy>450</lifeExpectancy>
       <willNeverEat>
         <li MayRequire="Ludeon.RimWorld.Royalty">Plant_TreeAnima</li>
+		<li MayRequire="Ludeon.RimWorld.Ideology">Plant_TreeGauranlen</li>
       </willNeverEat>
       <lifeStageAges>
         <li>
@@ -288,8 +292,8 @@
     </butcherProducts>
     <comps>
       <li Class="VFEV.CompProperties_PawnTeleporter">
-        <cooldown>4200</cooldown>
-        <minDistance>200</minDistance>
+        <cooldown>7200</cooldown>
+        <minDistance>70</minDistance>
         <disableManhunterState>true</disableManhunterState>
       </li>
     </comps>
@@ -365,6 +369,7 @@
       <ArmorRating_Sharp>0.50</ArmorRating_Sharp>
       <ArmorRating_Blunt>0.35</ArmorRating_Blunt>
       <ArmorRating_Heat>0.25</ArmorRating_Heat>
+      <FilthRate>16</FilthRate>
     </statBases>
     <uiIconScale>1.75</uiIconScale>
     <tools>
@@ -426,8 +431,9 @@
       <baseHealthScale>12.0</baseHealthScale>
       <foodType>OmnivoreRoughAnimal</foodType>
       <leatherDef>VFEV_Leather_Njorun</leatherDef>
+      <roamMtbDays>2</roamMtbDays>
       <trainability>Advanced</trainability>
-      <gestationPeriodDays>120</gestationPeriodDays>
+      <gestationPeriodDays>22</gestationPeriodDays>
       <manhunterOnDamageChance>0.01</manhunterOnDamageChance>
       <wildness>0.99</wildness>
       <lifeExpectancy>100</lifeExpectancy>
@@ -441,11 +447,11 @@
         </li>
         <li>
           <def>AnimalJuvenile</def>
-          <minAge>2.0</minAge>
+          <minAge>0.5</minAge>
         </li>
         <li>
           <def>AnimalAdult</def>
-          <minAge>4.0</minAge>
+          <minAge>2.0</minAge>
           <soundWounded>Pawn_Muffalo_Wounded</soundWounded>
           <soundDeath>Pawn_Muffalo_Death</soundDeath>
           <soundCall>Pawn_Muffalo_Call</soundCall>
