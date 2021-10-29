@@ -105,7 +105,7 @@ namespace VFEV
                 if (x.def.IsDrug)
                 {
                     if (!pawn.drugs.CurrentPolicy[x.def].allowedForJoy
-                        || pawn.ideo != null && pawn.Ideo.PreceptsListForReading.Any(precept => precept.def.defName == "DrugUse_Prohibited" || precept.def.defName == "DrugUse_MedicalOnly"))
+                        || pawn.Ideo != null && pawn.Ideo.PreceptsListForReading.Any(precept => precept.def.defName == "DrugUse_Prohibited" || precept.def.defName == "DrugUse_MedicalOnly"))
                     {
                         return false;
                     }
