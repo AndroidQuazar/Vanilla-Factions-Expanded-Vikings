@@ -153,7 +153,7 @@
         <li>TrapSpike_BlocksLimestone,Barricade_BlocksLimestone,.,.,TorchLamp,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,Wall_WoodLog,.,.,Stool_WoodLog_East,.,.,Stool_WoodLog_East,.,.,.,.,.,.,.,Wall_WoodLog,.,.,.,.,.,Wall_WoodLog,TorchLamp,.,.,.,Wall_WoodLog,.,.,.,.,.,.,.,.,Barricade_BlocksLimestone,.</li>
         <li>.,Barricade_BlocksLimestone,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,Wall_WoodLog,AnimalBed_Cloth,.,.,.,.,.,.,.,.,.,.,.,.,Wall_WoodLog,.,.,.,.,Wall_WoodLog,Wall_WoodLog,Wall_WoodLog,Wall_WoodLog,Wall_WoodLog,Wall_WoodLog,Wall_WoodLog,Wall_WoodLog,.,.,.,.,.,.,.,Barricade_BlocksLimestone,.</li>
         <li>TrapSpike_BlocksLimestone,Barricade_BlocksLimestone,.,.,.,.,.,.,.,VFEV_TrainingDummy_South,.,.,.,.,.,VFEV_TrainingDummy_South,.,.,.,.,.,Wall_WoodLog,.,AnimalBed_Cloth,.,.,.,Stool_WoodLog_North,.,.,Stool_WoodLog_North,.,.,.,.,Wall_WoodLog,.,.,.,.,.,Wall_WoodLog,.,.,.,.,Wall_WoodLog,.,.,.,.,.,.,.,.,Barricade_BlocksLimestone,TrapSpike_BlocksLimestone</li>
-        <li>.,Barricade_BlocksLimestone,.,.,.,.,.,.,.,.,.,.,VFEV_TrainingDummy_South,.,.,.,.,.,.,.,.,Wall_WoodLog,Wall_WoodLog,.,VFEV_RunedColumn_WoodLog,.,.,.,VFEV_Hearth_Steel_North,.,.,.,VFEV_RunedColumn_WoodLog,.,Wall_WoodLog,Wall_WoodLog,.,.,.,TorchLamp,.,.,.,.,.,.,.,.,.,.,.,TorchLamp,.,.,.,Barricade_BlocksLimestone,.</li>
+        <li>.,Barricade_BlocksLimestone,.,.,.,.,.,.,.,.,.,.,VFEV_TrainingDummy_South,.,.,.,.,.,.,.,.,Wall_WoodLog,Wall_WoodLog,.,VFEV_RunedColumn_WoodLog,.,.,.,VFEV_Hearth_BlocksMarble_North,.,.,.,VFEV_RunedColumn_WoodLog,.,Wall_WoodLog,Wall_WoodLog,.,.,.,TorchLamp,.,.,.,.,.,.,.,.,.,.,.,TorchLamp,.,.,.,Barricade_BlocksLimestone,.</li>
         <li>.,Wall_BlocksLimestone,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,Wall_WoodLog,.,.,.,.,.,.,.,.,.,.,.,Wall_WoodLog,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,Wall_BlocksLimestone,.</li>
         <li>.,Wall_BlocksLimestone,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,Wall_WoodLog,.,.,Stool_WoodLog_West,.,.,.,.,.,Stool_WoodLog_East,.,.,Wall_WoodLog,.,.,.,.,.,Plant_Daylily,.,Plant_Daylily,Plant_Daylily,.,.,Wall_WoodLog,.,.,.,Wall_WoodLog,.,.,.,.,Wall_BlocksLimestone,.</li>
         <li>.,Wall_BlocksLimestone,Wall_BlocksLimestone,.,.,.,.,.,.,.,.,.,.,.,.,.,.,TorchLamp,.,.,.,Wall_WoodLog,Wall_WoodLog,Wall_WoodLog,Wall_WoodLog,.,.,VFEV_RunedColumn_WoodLog,Stool_WoodLog_South,VFEV_RunedColumn_WoodLog,.,.,Wall_WoodLog,Wall_WoodLog,Wall_WoodLog,Wall_WoodLog,.,.,Plant_Daylily,Plant_Daylily,Plant_Daylily,Plant_Daylily,Plant_Daylily,Plant_Daylily,Plant_Daylily,Wall_WoodLog,Wall_WoodLog,Wall_WoodLog,Door_WoodLog,Wall_WoodLog,Wall_WoodLog,Wall_WoodLog,.,.,Wall_BlocksLimestone,Wall_BlocksLimestone,.</li>
@@ -2047,7 +2047,7 @@
     </roofGrid>
   </KCSG.StructureLayoutDef>
 
-  <KCSG.StructureLayoutDef>
+  <!-- <KCSG.StructureLayoutDef>
     <defName>VFEV_VikingVillage6</defName>
     <layouts>
       <li>
@@ -2315,7 +2315,7 @@
       <li>.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
       <li>.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.,.</li>
     </roofGrid>
-  </KCSG.StructureLayoutDef>
+  </KCSG.StructureLayoutDef> -->
 
   <KCSG.StructureLayoutDef>
     <defName>VFEV_LegendaryTomb1</defName>
