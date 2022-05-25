@@ -49,6 +49,15 @@ namespace VFEV
         //mental break
         public static MentalBreakDef VFEV_Enraged;
 
+        //quests
+        public static QuestScriptDef VFEV_FenrirHunt;
+        public static QuestScriptDef VFEV_LothurrHunt;
+        public static QuestScriptDef VFEV_NjorunHunt;
+        public static QuestScriptDef VFEV_ThrumboHunt;
+        public static QuestScriptDef VFEV_OdinHunt;
+
+        public static QuestScriptDef VFEV_OpportunitySite_LegendaryGrave;
+        public static QuestScriptDef VFEV_OpportunitySite_AncientRuin;
 
     }
 }

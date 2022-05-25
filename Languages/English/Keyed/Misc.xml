@@ -7,4 +7,11 @@
     <ANeedTIn>The apiary need tending in {0}</ANeedTIn>
 
     <ScenPartSettlemntDesc>You will start during the attack of a base. The coveted treasure, 150 gold and 300 silver, is located in rooms of this base.</ScenPartSettlemntDesc>
+	
+	
+	<VFEV_HuntQuestMultiplier>Hunt quests rate multiplier (READ MOUSEOVER TOOLTIP)</VFEV_HuntQuestMultiplier>
+	<VFEV_HuntQuestMultiplierTooltip>The frequency of the hunt quests (Lothurr, Njörun, Fenrir, Thrumbo and Odin) being offered is multiplied by this number (with a multiplier of 1, it is offered every between 10 and 30 days at random). Numbers below 1 decrease the time, while numbers above it increase it. Note that this event doesn't "replace" normal quests, it works independently.</VFEV_HuntQuestMultiplierTooltip>
+	<VFEV_StructureQuestMultiplier>Grave and Ruin quests rate multiplier (READ MOUSEOVER TOOLTIP)</VFEV_StructureQuestMultiplier>
+	<VFEV_StructureQuestMultiplierTooltip>The frequency of the legendary grave and ancient ruin quests being offered is multiplied by this number (with a multiplier of 1, it is offered every between 10 and 30 days at random). Numbers below 1 decrease the time, while numbers above it increase it. Note that this event doesn't "replace" normal quests, it works independently.</VFEV_StructureQuestMultiplierTooltip>
+	<VFEV_Reset>Reset</VFEV_Reset>
 </LanguageData>

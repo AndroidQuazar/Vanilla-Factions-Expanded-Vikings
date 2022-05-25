@@ -2,7 +2,7 @@
 <Defs>
   <QuestScriptDef>
     <defName>VFEV_OpportunitySite_AncientRuin</defName>
-    <rootSelectionWeight>1.0</rootSelectionWeight>
+    <rootSelectionWeight>0</rootSelectionWeight>
     <rootMinPoints>0</rootMinPoints>
     <autoAccept>true</autoAccept>
     <questNameRules>

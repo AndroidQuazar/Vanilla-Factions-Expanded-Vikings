@@ -75,6 +75,7 @@
     <Compile Include="Feast\InteractionWorker_DrunkChat.cs" />
     <Compile Include="Feast\InteractionWorker_VeryDrunkChat.cs" />
     <Compile Include="Feast\ThoughtWorker_TakingPartInFeast.cs" />
+    <Compile Include="Game, World and Map Components\WorldComponent_HuntQuests.cs" />
     <Compile Include="MapGeneration\ScenPart_AddSettlements.cs" />
     <Compile Include="RecreationJob\JoyGiver_PlayTrainingDummy.cs" />
     <Compile Include="MapGeneration\GenStep_VikingsAmbush.cs" />
@@ -97,6 +98,9 @@
     <Compile Include="Raids\JobGiver_CaptureDownedVictimAndLeaveMap.cs" />
     <Compile Include="RecreationJob\JobDriver_TrainAtDummy.cs" />
     <Compile Include="HypothermiaResponse.cs" />
+    <Compile Include="Settings\SettingsHelper.cs" />
+    <Compile Include="Settings\VFEV_Settings.cs" />
+    <Compile Include="Settings\VFEV_SettingsController.cs" />
     <Compile Include="SitePartWorker_LegendaryGrave.cs" />
     <Compile Include="Verb_LightningStrike.cs" />
     <Compile Include="VFEV_MapComponentHelper.cs" />
@@ -108,13 +112,13 @@
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Krafs.Rimworld.Ref">
-      <Version>1.3.3159</Version>
+      <Version>1.3.3326</Version>
       <Private>false</Private>
       <ExcludeAssets>runtime</ExcludeAssets>
       <IncludeAssets>compile; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
     <PackageReference Include="Lib.Harmony" ExcludeAssets="runtime">
-      <Version>2.1.1</Version>
+      <Version>2.2.1</Version>
       <IncludeAssets>compile; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
   </ItemGroup>

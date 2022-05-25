@@ -3,7 +3,7 @@
   <!-- Fenrir -->
   <QuestScriptDef>
     <defName>VFEV_FenrirHunt</defName>
-    <rootSelectionWeight>1.0</rootSelectionWeight>
+    <rootSelectionWeight>0</rootSelectionWeight>
     <rootMinPoints>0</rootMinPoints>
     <autoAccept>true</autoAccept>
     <questNameRules>
@@ -158,7 +158,7 @@
   <!-- Lothurr -->
   <QuestScriptDef>
     <defName>VFEV_LothurrHunt</defName>
-    <rootSelectionWeight>1.0</rootSelectionWeight>
+    <rootSelectionWeight>0</rootSelectionWeight>
     <rootMinPoints>0</rootMinPoints>
     <autoAccept>true</autoAccept>
     <questNameRules>
@@ -313,7 +313,7 @@
   <!-- Njörun -->
   <QuestScriptDef>
     <defName>VFEV_NjorunHunt</defName>
-    <rootSelectionWeight>1.0</rootSelectionWeight>
+    <rootSelectionWeight>0</rootSelectionWeight>
     <rootMinPoints>0</rootMinPoints>
     <autoAccept>true</autoAccept>
     <questNameRules>
@@ -468,7 +468,7 @@
   <!-- Thrumbo -->
   <QuestScriptDef>
     <defName>VFEV_ThrumboHunt</defName>
-    <rootSelectionWeight>1.0</rootSelectionWeight>
+    <rootSelectionWeight>0</rootSelectionWeight>
     <rootMinPoints>0</rootMinPoints>
     <autoAccept>true</autoAccept>
     <questNameRules>
@@ -623,7 +623,7 @@
   <!-- Odin -->
   <QuestScriptDef>
     <defName>VFEV_OdinHunt</defName>
-    <rootSelectionWeight>1.0</rootSelectionWeight>
+    <rootSelectionWeight>0</rootSelectionWeight>
     <rootMinPoints>0</rootMinPoints>
     <autoAccept>true</autoAccept>
     <questNameRules>
