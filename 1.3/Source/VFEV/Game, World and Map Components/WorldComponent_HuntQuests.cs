@@ -13,8 +13,8 @@ namespace VFEV
     {
         public int tickCounterStructure;
         public int tickCounterHunt;
-        public int ticksToNextStructureQuest = 60000 * 15;
-        public int ticksToNextHuntQuest = 60000 * 10;
+        public int ticksToNextStructureQuest = 60000 * 60;
+        public int ticksToNextHuntQuest = 60000 * 55;
 
 
         public WorldComponent_HuntQuests(World world) : base(world)
@@ -42,7 +42,7 @@ namespace VFEV
                 Slate slate = new Slate();
                 Quest quest = QuestUtility.GenerateQuestAndMakeAvailable(questList.RandomElement(), slate);
                 QuestUtility.SendLetterQuestAvailable(quest);
-                ticksToNextStructureQuest = (int)(60000 * Rand.RangeInclusive(10, 30) *VFEV_Mod.settings.VFEV_StructureQuestMultiplier);
+                ticksToNextStructureQuest = (int)(60000 * Rand.RangeInclusive(50, 70) *VFEV_Mod.settings.VFEV_StructureQuestMultiplier);
                 tickCounterStructure = 0;
 
 
@@ -58,7 +58,7 @@ namespace VFEV
                 Quest quest = QuestUtility.GenerateQuestAndMakeAvailable(questList.RandomElement(), slate);
 
                 QuestUtility.SendLetterQuestAvailable(quest);
-                ticksToNextStructureQuest = (int)(60000 * Rand.RangeInclusive(10, 30) * VFEV_Mod.settings.VFEV_HuntQuestMultiplier);
+                ticksToNextStructureQuest = (int)(60000 * Rand.RangeInclusive(50, 70) * VFEV_Mod.settings.VFEV_HuntQuestMultiplier);
                 tickCounterHunt = 0;
 
 
