@@ -58,7 +58,7 @@ namespace VFEV
                 Quest quest = QuestUtility.GenerateQuestAndMakeAvailable(questList.RandomElement(), slate);
 
                 QuestUtility.SendLetterQuestAvailable(quest);
-                ticksToNextStructureQuest = (int)(60000 * Rand.RangeInclusive(50, 70) * VFEV_Mod.settings.VFEV_HuntQuestMultiplier);
+                ticksToNextHuntQuest = (int)(60000 * Rand.RangeInclusive(50, 70) * VFEV_Mod.settings.VFEV_HuntQuestMultiplier);
                 tickCounterHunt = 0;
 
 
