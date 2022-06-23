@@ -258,4 +258,20 @@
     <thing>VFEV_BearHeaddress</thing>
   </KCSG.SymbolDef>
 
+  <KCSG.SymbolDef>
+    <defName>VFEV_Slave</defName>
+    <pawnKindDef>Slave</pawnKindDef>
+    <isSlave>true</isSlave>
+    <numberToSpawn>1</numberToSpawn>
+  </KCSG.SymbolDef>
+
+  <KCSG.SymbolDef>
+    <defName>VFEV_WoolyCow</defName>
+    <pawnKindDef>VFEV_WoolyCow</pawnKindDef>
+  </KCSG.SymbolDef>
+  
+  <KCSG.SymbolDef>
+    <defName>VFEV_Honey</defName>
+    <thing>VFEV_Honey</thing>
+  </KCSG.SymbolDef>  
 </Defs>
